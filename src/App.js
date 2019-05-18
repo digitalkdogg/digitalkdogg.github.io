@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 
-class App extends Component {
+class App2 extends Component {
   render() {
     return (
       <HashRouter basename="/">
@@ -24,4 +24,4 @@ class App extends Component {
 const Home = () => <div><h2>Home</h2></div>
 const About = () => <div><h2>About</h2></div>
 
-export default App;
+export default App2;
