@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>React Local</title>
+
+  <link rel= "stylesheet" href = "./public/includes/css/style.css" />
+
   <script type="application/javascript" src="./public/includes/react/react.production.min.js"></script>
   <script type="application/javascript" src="./public/includes/react/react-dom.production.min.js"></script>
   <script type="application/javascript" src="./public/includes/react/babel.js"></script>
@@ -15,47 +18,159 @@
   <div id="root"></div>
 
 <script type="text/babel">
-// Obtain the root 
-    const rootElement = document.getElementById('root')
-// Create a ES6 class component    
-   
-// Create a function to wrap up your component
-function App(){
-  return(
-  <div>
-    <Test />
-    <Testsclass />
-  </div>
-  )
-}
+  const rootElement = document.getElementById('root')
 
-function Test(){
-  return(
-    <div id = "test">test</div>
-  )
-}
+  
+/**********************************************
+**          *** init function  ***           **
+**********************************************/
+
+  function Init(){
+    return(
+    <div>
+      <Header />
+      <Guts />
+      <Footer />
+    </div>
+    )
+  }
 
 
-class Testsclass extends React.Component {
+  class Book extends React.Component {
+    constructor() {
+      super();
+    }
+    render() {
+      return(<div>test</div>)
+    }
+  }
+
+/**********************************************
+**          *** Header class  ****           **
+**********************************************/
+  class Header extends React.Component {
+    constructor() {
+      super();
+      this.state = {
+        'title': 'Kevin Bollman',
+        'phone': '814-777-1196',
+        'email': 'KevinBollman@gmail.com',
+        'headline': 'Full Stack Web Developer'
+      };
+    }
+
+    render() {
+      
+      return(
+        <div id = "header">
+          <div id = "title-container">
+            <div id = "logo-container">logo</div>
+              <div id = "text-container">
+                <this.Title title = {this.state.title} />
+                <this.Contact phone = {this.state.phone} />
+                <this.Email email = {this.state.email} />
+              </div>
+          </div>
+        </div>
+      )
+    } 
+
+    Title(props) {
+      return (
+          <div id = "title">{props.title}</div>
+      )
+    }
+
+    Contact(props) {
+      return(
+        <div class="phone">{props.phone}</div>
+      )
+    }
+
+    Email(props) {
+      return (
+        <div class = "email">{props.email}</div>
+      )
+    }
+
+    Headline(props) {
+      return(
+          <div id = "headline">{props.headline}</div>
+        )
+    }
+
+
+  }
+
+/**********************************************
+**          *** title class  ****           **
+**********************************************/
+class Title2 extends React.Component {
   constructor() {
     super();
-    this.state = {}
+  }
+
+  render(props) {
+    return(
+        <div id = "title-container">
+          <div id = "title">{this.props.text}</div>
+          <this.Address />
+        </div>
+      )
+  }
+
+  Address(props) {
+    return(
+        <div>address</div>
+      )
+  }
 }
 
-render() {
-  return(
-    <div>render</div>
-  )
-}
-
-}
 
 
-// Use the ReactDOM.render to show your component on the browser
+/**********************************************
+**          *** The Guts class  ****           **
+**********************************************/
+  class Guts extends React.Component {
+    constructor() {
+      super();
+      this.state = {}
+    }
+
+    render() {
+      return(
+        <div id = "the-guts">render</div>
+      )
+    } 
+
+  }
+
+
+/**********************************************
+**          *** The Footer class  ****           **
+**********************************************/
+  class Footer extends React.Component {
+    constructor() {
+      super();
+      this.state = {}
+    }
+
+    render() {
+      return(
+        <div id = "footer">render</div>
+      )
+    } 
+
+  }
+
+/**********************************************
+**          *** Start the app **              **
+**********************************************/
+  // Use the ReactDOM.render to show your component on the browser
   ReactDOM.render(
-    <App />,
-  document.getElementById('root')
-);
+    <Init />,
+    document.getElementById('root')
+  );
 
 </script>
 
