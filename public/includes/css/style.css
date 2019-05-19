@@ -24,7 +24,7 @@ div#title-container {
     background: #fee201;
     width: 30%;
     margin: 0 10%;
-    height:100px;
+    height:50%;
     color: #333;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -43,10 +43,28 @@ div#text-container, div#logo-container {
 }
 
 div#logo-container {
-    width: 20%;
-    vertical-align:top;
+    width: 30%;
+    vertical-align:super;
+    font-size: 2em;
+    color:#0173fe;
+	text-align:center;
 }
 
 div#text-container {
-	width:80%;
+	width:69%;
+	height:100%;
+	border-left: 1px solid black;
+	text-indent:10px;
+}
+
+@media only screen and (max-width: 1025px) {
+  div#title-container {
+    width:50%;
+    margin:10%;
+}
+
+@media only screen and (max-width: 800px) {
+  div#title-container {
+    width:100%;
+    margin:0;
 }
