@@ -20,7 +20,7 @@
 <script type="text/babel">
   const rootElement = document.getElementById('root')
 
-  
+
 /**********************************************
 **          *** init function  ***           **
 **********************************************/
@@ -52,7 +52,7 @@
     constructor() {
       super();
       this.state = {
-        'title': 'Kevin Bollman',
+        'title': 'Kevin W. Bollman',
         'phone': '814-777-1196',
         'email': 'KevinBollman@gmail.com',
         'headline': 'Full Stack Web Developer'
@@ -60,7 +60,7 @@
     }
 
     render() {
-      
+
       return(
         <div id = "header">
           <div id = "title-container">
@@ -73,7 +73,7 @@
           </div>
         </div>
       )
-    } 
+    }
 
     Title(props) {
       return (
@@ -126,20 +126,20 @@
 
         </div>
       )
-    } 
+    }
 
     About(props) {
       return (
         <div class = "item">
-          <P text = "I am a full stack web designer / developer.  I design websites both professionally and on the side. 
+          <P text = "I am a full stack web designer / developer.  I design websites both professionally and on the side.
            My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday
-            when you can give them a fishing pole and they are set for the rest of their life.  I enjoy connecting people 
+            when you can give them a fishing pole and they are set for the rest of their life.  I enjoy connecting people
             with technology and in my spare time i am often coding or learning a new language or development stack to code in." />
 
-           <P text = "People say that my biggest strength is my passion for a happy customer.  While I do find that I am very 
+           <P text = "People say that my biggest strength is my passion for a happy customer.  While I do find that I am very
            passionate about my work, I tend to think that my best strenth is my ingenuity.  My career has led me down many different
-            path and have given me the opurtunity to leverage many differnt technologies.  In doing so I have come to learn my 
-            skill set to best fit the project I am working on.  Take this website for example, why buy a domain when you can setup 
+            path and have given me the opurtunity to leverage many differnt technologies.  In doing so I have come to learn my
+            skill set to best fit the project I am working on.  Take this website for example, why buy a domain when you can setup
             a static web site using reactjs and github pages to host your work" />
         </div>
       )
@@ -148,10 +148,10 @@
     Projects(props) {
       return (
         <div class = "item">
-            <P text = "Currently working at Walmart Homeoffice which doesn't leave a lot of spare time.   For walmart I am 
-            Tech Lead - Intranet Admin and I am proud of the fact that I get to empower my teammates to run a great intranet system 
-            for 1.4 million assoicates.  When I am doing work for Walmart, I do enjoy picking a side project or even do fun 
-            stuff at home.  I am currently redoing a site for my church but I also like to challenge my self and teach my self new 
+            <P text = "Currently working at Walmart Homeoffice which doesn't leave a lot of spare time.   For walmart I am
+            Tech Lead - Intranet Admin and I am proud of the fact that I get to empower my teammates to run a great intranet system
+            for 1.4 million assoicates.  When I am doing work for Walmart, I do enjoy picking a side project or even do fun
+            stuff at home.  I am currently redoing a site for my church but I also like to challenge my self and teach my self new
             frameworks even if I don't plan on using them in the future." />
 
             <Aproject />
@@ -176,7 +176,7 @@
       return(
           <div className = "project">A project</div>
       )
-    } 
+    }
 
   }
 
@@ -193,7 +193,7 @@
       return(
           <p className = {this.props.class}>{this.props.text}</p>
       )
-    } 
+    }
 
   }
 
@@ -211,7 +211,7 @@
       return(
           <h2 className = {this.props.class}>{this.props.text}</h2>
       )
-    } 
+    }
 
   }
 
@@ -229,7 +229,7 @@
       return(
         <div id = "footer">render</div>
       )
-    } 
+    }
 
   }
 
