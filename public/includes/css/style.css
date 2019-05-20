@@ -108,6 +108,26 @@ div#text-container {
     background: #fee201;
     display:inline-block;
     margin:1%;
+    opacity: .8;
+}
+
+#the-guts .project .title {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ccc;
+    text-indent: 5px;
+}
+
+#the-guts .project .btn-container button {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    float: right;
+}
+
+#the-guts .project .desc {
+    border-bottom: 1px solid #ccc;
+    text-indent: 5px;
+    height: 60%;
 }
 
 @media only screen and (max-width: 800px) {

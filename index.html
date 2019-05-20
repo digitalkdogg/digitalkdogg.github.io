@@ -111,7 +111,14 @@
       this.state = {
         about: 'About Me',
         projects: 'My Projects',
-        skills: 'Skills'
+        skills: 'Skills',
+        projs: {'millwood' : {
+          'id': 1,
+          'title': 'Millwood',
+          'desc': 'this is what I want to say about the project',
+          'href': 'https://millwoodchurchnwa.com'
+        }, 
+        'checkbook' : {} }
       }
     }
 
@@ -121,7 +128,7 @@
           <H2 text = {this.state.about} class = 'title' />
           <this.About />
           <H2 text = {this.state.projects} class = 'title' />
-          <this.Projects />
+          <this.Projects projs = {this.state.projs} />
 
 
         </div>
@@ -154,8 +161,8 @@
             stuff at home.  I am currently redoing a site for my church but I also like to challenge my self and teach my self new
             frameworks even if I don't plan on using them in the future." />
 
-            <Aproject />
-            <Aproject />
+            <Aproject project = {props.projs.millwood} />
+            <Aproject project = {props.projs.millwood} />
         </div>
       )
     }
@@ -173,8 +180,19 @@
     }
 
     render(props) {
+    console.log(this.props.project.title)
       return(
-          <div className = "project">A project</div>
+          <div className = "project">
+            <div className = "title">
+              {this.props.project.title}
+            </div>
+            <div className = "desc">
+              {this.props.project.desc}
+            </div>
+            <div className = "btn-container">
+              <button>View More</button>
+            </div>
+          </div>
       )
     }
 
