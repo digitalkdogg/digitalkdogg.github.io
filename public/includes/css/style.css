@@ -28,6 +28,7 @@ div#title-container {
     color: #333;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    overflow:hidden;
 }
 
 div#title {
@@ -58,13 +59,60 @@ div#text-container {
 }
 
 @media only screen and (max-width: 1025px) {
-  div#title-container {
-    width:50%;
-    margin:10%;
+  	div#title-container {
+    	width:50%;
+    	margin:10%;
+	}
 }
 
 @media only screen and (max-width: 800px) {
-  div#title-container {
-    width:100%;
-    margin:0;
+  	div#title-container {
+    	width:100%;
+    	margin:0;
+	}
+
+	div#logo-container {
+		width:35%;
+	}
+
+	div#text-container {
+		width: 64%;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	div#logo-container {
+		font-size:1.7em;
+	}
+
+	#title-container div.phone, #title-container div.email {
+		font-size:14px;
+	}
+}
+
+#the-guts h2.title {
+	border-bottom:1px solid white;
+}
+
+#the-guts .item {
+	background:white;
+	color:black;
+	min-height:100px;
+	padding: 10px;
+	font-size:16px;
+}
+
+#the-guts .project {
+    height: 200px;
+    width: 30%;
+    background: #fee201;
+    display:inline-block;
+    margin:1%;
+}
+
+@media only screen and (max-width: 800px) {
+	#the-guts .project {
+		display:block;
+		width:100%;
+	}
 }
