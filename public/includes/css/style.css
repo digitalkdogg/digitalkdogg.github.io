@@ -10,6 +10,14 @@ body {
     background-image: url("../img/texture-bg.png");
 }
 
+.hidden {
+	display:none;
+}
+
+.show {
+	display:block;
+}
+
 div#header, div#the-guts, div#footer {
 	padding: 10px 5%;
 }
@@ -23,7 +31,7 @@ div#header {
 div#title-container {
     background: #fee201;
     width: 30%;
-    margin: 0 10%;
+    margin: 0 15%;
     height:50%;
     color: #333;
     border-bottom-left-radius: 10px;
@@ -106,7 +114,7 @@ div#text-container {
     height: 200px;
     width: 30%;
     background: #fee201;
-    display:inline-block;
+    display:inline-grid;
     margin:1%;
     opacity: .8;
 }
@@ -135,4 +143,15 @@ div#text-container {
 		display:block;
 		width:100%;
 	}
+}
+
+div#menu {
+    float: left;
+    top: -40%;
+    position: relative;
+}
+
+#header a#menu-item {
+    color: white;
+    text-decoration: none;
 }

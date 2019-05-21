@@ -36,15 +36,6 @@
   }
 
 
-  class Book extends React.Component {
-    constructor() {
-      super();
-    }
-    render() {
-      return(<div>test</div>)
-    }
-  }
-
 /**********************************************
 **          *** Header class  ****           **
 **********************************************/
@@ -52,17 +43,56 @@
     constructor() {
       super();
       this.state = {
+        'ismobile': isMobileDevice(),
         'title': 'Kevin W. Bollman',
         'phone': '814-777-1196',
         'email': 'KevinBollman@gmail.com',
-        'headline': 'Full Stack Web Developer'
+        'headline': 'Full Stack Web Developer',
+        'menu': {
+          'about': {
+            'id': 'menu-item',
+            'class': 'about',
+            'text': 'About Me',
+            'href': '#about'
+          }, 
+          'projects': {
+            'id': 'menu-item',
+            'class': 'projects',
+            'text': 'Projects',
+            'href': '#projects'
+          }, 
+          'skills': {
+            'id': 'menu-item',
+            'class': 'skills',
+            'text': 'Skills',
+            'href': '#skills'
+          }, 
+          'contact': {
+            'id': 'menu-item',
+            'class': 'contact',
+            'text': 'Contact Me',
+            'href': '#contact'
+          }
+        }
       };
+    }
+
+    resize = () => this.forceUpdate()
+
+    componentDidMount() {
+      window.addEventListener('resize', this.resize)
+
+    }
+
+    componentDidUpdate() {
+      //todo: update state for ismobile
+
     }
 
     render() {
 
       return(
-        <div id = "header">
+        <div id = "header" >
           <div id = "title-container">
             <div id = "logo-container">&#x3C;K/&#x3E;</div>
               <div id = "text-container">
@@ -71,6 +101,7 @@
                 <this.Email email = {this.state.email} />
               </div>
           </div>
+          <this.Menu menu = {this.state.menu} ismobile = {this.state.ismobile} />
         </div>
       )
     }
@@ -99,8 +130,26 @@
         )
     }
 
+    Menu(props) {
+      return (
+          <div id = "menu" className = {props.ismobile==true ? 'hidden': 'show' } style = {{ display: props.ismobile == true? 'none' : 'block' }}>
+            <a href = {props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
+              <div id = {props.menu.about.id}>{props.menu.about.text}</div>
+            </a>
+            <a href = {props.menu.projects.href} id = {props.menu.projects.id} class = {props.menu.projects.class}>
+              <div id = {props.menu.projects.id}>{props.menu.projects.text}</div>
+            </a>
+            <a href = {props.menu.skills.href} id = {props.menu.skills.id} class = {props.menu.skills.class}>
+              <div id = {props.menu.skills.id}>{props.menu.skills.text}</div>
+            </a>
+            <a href = {props.menu.contact.href} id = {props.menu.contact.id} class = {props.menu.contact.class}>
+              <div id = {props.menu.contact.id}>{props.menu.contact.text}</div>
+            </a>
+          </div>
+        )
+    }
 
-  }
+  }// end class
 
 /**********************************************
 **          *** The Guts class  ****           **
@@ -118,18 +167,23 @@
           'desc': 'this is what I want to say about the project',
           'href': 'https://millwoodchurchnwa.com'
         }, 
-        'checkbook' : {} }
+        'checkbook' : {
+          'id': 2,
+          'title': 'Checkbook',
+          'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with my sql db server',
+          'href' : '#'
+        } }
       }
     }
 
     render() {
       return(
         <div id = "the-guts">
-          <H2 text = {this.state.about} class = 'title' />
+          <H2 text = {this.state.about} class = 'title' id = 'about' />
           <this.About />
-          <H2 text = {this.state.projects} class = 'title' />
+          <H2 text = {this.state.projects} class = 'title' id = 'projects' />
           <this.Projects projs = {this.state.projs} />
-
+          <H2 text = {this.state.skills} class = 'title' id = 'skills' />
 
         </div>
       )
@@ -162,7 +216,7 @@
             frameworks even if I don't plan on using them in the future." />
 
             <Aproject project = {props.projs.millwood} />
-            <Aproject project = {props.projs.millwood} />
+            <Aproject project = {props.projs.checkbook} />
         </div>
       )
     }
@@ -180,7 +234,6 @@
     }
 
     render(props) {
-    console.log(this.props.project.title)
       return(
           <div className = "project">
             <div className = "title">
@@ -227,7 +280,7 @@
 
     render(props) {
       return(
-          <h2 className = {this.props.class}>{this.props.text}</h2>
+          <h2 id = {this.props.id} className = {this.props.class}>{this.props.text}</h2>
       )
     }
 
@@ -259,6 +312,10 @@
     <Init />,
     document.getElementById('root')
   );
+
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
 
 </script>
 
