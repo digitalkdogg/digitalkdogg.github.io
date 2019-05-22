@@ -77,16 +77,15 @@
       };
     }
 
-    resize = () => this.forceUpdate()
 
-    componentDidMount() {
-      window.addEventListener('resize', this.resize)
-
+    checkscreensize() {
+      this.setState({ismobile: isMobileDevice()})
     }
 
-    componentDidUpdate() {
-      //todo: update state for ismobile
-
+    componentDidMount() {
+      this.checkscreensize();
+      window.addEventListener("resize", this.checkscreensize.bind(this));
+      
     }
 
     render() {
@@ -313,8 +312,27 @@
     document.getElementById('root')
   );
 
+
+/*******************************************************
+*              *** is mobile device function  ****     *
+********************************************************
+*  This function does several differnt method checks   *
+*  to determine if you on a mobile device / screen size*
+*  @return : boolean                                   *
+*******************************************************/
   function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    var device = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+     if(window.innerWidth <= 800) {
+      device = true;
+     } else {
+      device = false;
+     }
+     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ==true) {
+      device=true;
+     } else {
+      device = false;
+     }
+    return device
   };
 
 </script>
