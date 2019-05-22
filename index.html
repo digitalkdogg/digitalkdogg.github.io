@@ -131,7 +131,14 @@
 
     Menu(props) {
       return (
-          <div id = "menu" className = {props.ismobile==true ? 'hidden': 'show' } style = {{ display: props.ismobile == true? 'none' : 'block' }}>
+        <div id = "menu-container">
+          <div id = "mobile-menu" className = {props.ismobile==true ? 'show': 'hidden'} onClick = {handleClick.bind(this)}>
+            <span className = "line"></span>
+            <span className = "line"></span>
+            <span className = "line"></span>
+          </div>
+  
+          <div id = "menu" className = {props.ismobile==true ? 'hidden': 'show'} >
             <a href = {props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
               <div id = {props.menu.about.id}>{props.menu.about.text}</div>
             </a>
@@ -145,6 +152,7 @@
               <div id = {props.menu.contact.id}>{props.menu.contact.text}</div>
             </a>
           </div>
+        </div>
         )
     }
 
@@ -334,6 +342,8 @@
      }
     return device
   };
+
+  function handleClick(event) {console.log(event)}
 
 </script>
 

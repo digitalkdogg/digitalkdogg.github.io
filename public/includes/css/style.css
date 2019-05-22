@@ -160,7 +160,38 @@ div#menu {
     position: relative;
 }
 
+div#menu-container {
+	display:contents;
+}
+
 #header a#menu-item {
     color: white;
     text-decoration: none;
+}
+
+#header #mobile-menu span.line {
+    display: block;
+    border-top: 2px solid white;
+    margin: 6px 3px 0;
+}
+
+#header div#mobile-menu {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    top: -40px;
+    position: relative;
+}
+
+#header div#mobile-menu:hover {
+	cursor: pointer;
+	opacity:.5;
+}
+
+@media only screen and (max-width: 800px) {
+	div#menu-container {
+    	display: block;
+    	position: relative;
+    	top: 30%;
+	}
 }
