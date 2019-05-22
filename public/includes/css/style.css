@@ -68,6 +68,14 @@ div#text-container {
 	text-indent:10px;
 }
 
+div#text-container a {
+    color: black;
+}
+
+div#text-container div.phone a {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1025px) {
   	div#title-container {
     	width:50%;
@@ -76,6 +84,11 @@ div#text-container {
 }
 
 @media only screen and (max-width: 800px) {
+    div#text-container div.phone a {
+        text-decoration: underline;
+    }
+    
+
   	div#title-container {
     	width:100%;
     	margin:0;
@@ -194,4 +207,16 @@ div#menu-container {
     	position: relative;
     	top: 30%;
 	}
+}
+
+#the-guts .project .btn-container button {
+    background: #0173fe;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 1em;
+}
+
+#the-guts .project .btn-container button:hover {
+    cursor: pointer;
 }

@@ -113,13 +113,13 @@
 
     Contact(props) {
       return(
-        <div class="phone">{props.phone}</div>
+        <div class="phone"><a href = {'tel://' + props.phone}>{props.phone}</a></div>
       )
     }
 
     Email(props) {
       return (
-        <div class = "email">{props.email}</div>
+        <div class = "email"><a href = {'mailto://' + props.email}>{props.email}</a></div>
       )
     }
 
@@ -250,7 +250,9 @@
               {this.props.project.desc}
             </div>
             <div className = "btn-container">
-              <button>View More</button>
+              <a href = {this.props.project.href} target="_blank">
+                <button>View More</button>
+              </a>
             </div>
           </div>
       )
