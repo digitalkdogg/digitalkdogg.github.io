@@ -293,9 +293,11 @@
             <span className = "line"></span>
             <span className = "line"></span>
           </div>
-          <div id = "mobile-menu-list" className = {this.state.menu=='despanded' ? 'hidden': 'show'}>
-            <div>test1</div>
-            <div>test2</div>
+          <div id = "mobile-menu-list" >
+            <div id = "mobile-list-container" className = {this.state.menu=='despanded' ? 'hidden': 'show'}>
+              <div>test1</div>
+              <div>test2</div>
+            </div>
           </div>
         </div> 
       )
@@ -380,12 +382,11 @@
       device = true;
      } else {
       device = false;
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ==true) {
+        device=true;
+      } 
      }
-     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ==true) {
-      device=true;
-     } else {
-      device = false;
-     }
+     
     return device
   };
 
