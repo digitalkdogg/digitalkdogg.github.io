@@ -132,11 +132,8 @@
     Menu(props) {
       return (
         <div id = "menu-container">
-          <div id = "mobile-menu" className = {props.ismobile==true ? 'show': 'hidden'} onClick = {handleClick.bind(this)}>
-            <span className = "line"></span>
-            <span className = "line"></span>
-            <span className = "line"></span>
-          </div>
+           
+          <Mobilemenu ismobile = {props.ismobile} />
   
           <div id = "menu" className = {props.ismobile==true ? 'hidden': 'show'} >
             <a href = {props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
@@ -151,7 +148,10 @@
             <a href = {props.menu.contact.href} id = {props.menu.contact.id} class = {props.menu.contact.class}>
               <div id = {props.menu.contact.id}>{props.menu.contact.text}</div>
             </a>
+            
           </div>
+
+             
         </div>
         )
     }
@@ -261,6 +261,50 @@
   }
 
 /**********************************************
+**          *** The mobile menu class  ****           **
+**********************************************/
+  class Mobilemenu extends React.Component {
+    constructor() {
+      super();
+      this.state = {
+        'menu' : 'despanded'
+      }
+    }
+
+    handleClick(e) {
+      if (this.state.menu=='despanded') {
+        var status = 'expanded';
+      } else {
+        var status = 'despanded';
+      }
+
+      if (status != null || status != '') {
+        this.setState({
+          'menu': status
+        })
+      }
+    }
+
+    render(props) {
+      return(
+        <div id = "mobile-menu-container">
+          <div id = "mobile-menu" className = {this.props.ismobile == true ? 'show': 'hidden'} onClick={this.handleClick.bind(this)}>
+            <span className = "line"></span>
+            <span className = "line"></span>
+            <span className = "line"></span>
+          </div>
+          <div id = "mobile-menu-list" className = {this.state.menu=='despanded' ? 'hidden': 'show'}>
+            <div>test1</div>
+            <div>test2</div>
+          </div>
+        </div> 
+      )
+    }
+
+  }
+
+
+/**********************************************
 **          *** The p class  ****           **
 **********************************************/
   class P extends React.Component {
@@ -344,8 +388,6 @@
      }
     return device
   };
-
-  function handleClick(event) {console.log(event)}
 
 </script>
 
