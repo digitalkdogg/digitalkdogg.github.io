@@ -46,6 +46,7 @@
         'scrollstate': 'init',
         'ismobile': isMobileDevice(),
         'classList': [],
+        'classListStr': '',
         'title': 'Kevin W. Bollman',
         'phone': '814-777-1196',
         'email': 'KevinBollman@gmail.com',
@@ -96,7 +97,7 @@
           classList.push('isdesktop');
         }
       }
-      this.setState({ismobile: isMobileDevice(), classList: classList})
+      this.setState({ismobile: isMobileDevice(), classList: classList, classListStr: convertarraytostr(classList)})
 
     }
 
@@ -120,7 +121,7 @@
         thestate = 'init'
       }
       
-      this.setState({'scrollstate': thestate, 'classList': classList})
+      this.setState({'scrollstate': thestate, 'classList': classList, classListStr: convertarraytostr(classList)})
     }
 
     componentDidMount() {
@@ -141,10 +142,10 @@
                 <this.Email email = {this.state.email} />
               </div>
           </div>
-          <this.Menu classes = {this.state.scrollstate=='init'? 'show': 'hidden'} 
-                          menu = {this.state.menu} ismobile = {this.state.ismobile}  />
+         
           <div id = "menu-container" className = {this.state.scrollstate} >
-
+            <this.Menu2 id = "desktop-menu" classList = {this.state.classListStr} />
+            <this.Mobilemenu2 id = "mobile-menu" classList = {this.state.classListStr} />
           </div>
         </div>
       )
@@ -176,13 +177,26 @@
 
     Menu2(props) {
       return (
-        <div>test</div>
+        <div id = "desktop-menu" className = {props.classList}>desktop</div>
       )
     }
 
     Mobilemenu2(props) {
       return (
-        <div>mobile</div>
+        <div id = "mobile-menu" className = {props.classList} >
+
+          <div id = "mobile-menu-container">
+            <span className = "line"></span>
+            <span className = "line"></span>
+            <span className = "line"></span>
+          </div>
+          <div id = "mobile-menu-list" >
+            <div id = "mobile-list-container">
+              <div>test1</div>
+              <div>test2</div>
+            </div>
+          </div>
+        </div> 
       )
     }
 
@@ -482,6 +496,26 @@ function removefromarray(arr, value) {
       arr = newlist
     }
     return arr;
+}
+
+/*******************************************************
+*   *** convert array to str function  ****     *
+********************************************************
+*  loops through an array and converts it to a str       *
+*. this is so we can build a poper html class list.      *
+*  @return : new string                                   *
+*******************************************************/
+
+function convertarraytostr(arr) {
+  var arrstr = '';
+  for (var x=0; x<arr.length; x++) {
+    if (arrstr == '') {
+      arrstr = arr[x] + ' ';
+    } else {
+      arrstr = arrstr + arr[x] + ' ';
+    }
+  }
+  return arrstr
 }
 
 </script>

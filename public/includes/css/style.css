@@ -228,6 +228,23 @@ div#menu-container {
     margin: 6px 3px 0;
 }
 
+div#desktop-menu.ismobile {
+    display: none;
+}
+
+div#desktop-menu.isdesktop  {
+    display:block;
+}
+
+
+div#mobile-menu.isdesktop {
+    display: none;
+}
+
+div#mobile-menu.ismobile {
+    display:block;
+}
+
 #header div#mobile-menu {
     width: 30px;
     height: 30px;
