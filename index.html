@@ -43,6 +43,7 @@
     constructor() {
       super();
       this.state = {
+        'scrollstate': 'init',
         'ismobile': isMobileDevice(),
         'title': 'Kevin W. Bollman',
         'phone': '814-777-1196',
@@ -82,16 +83,26 @@
       this.setState({ismobile: isMobileDevice()})
     }
 
+    handleScroll(event) {
+      var el = document.getElementById('header');
+
+      if (window.scrollY>50) {
+        this.setState({'scrollstate': 'scrolled'})
+      } else {
+        this.setState({'scrollstate': 'init'})
+      }
+    }
+
     componentDidMount() {
       this.checkscreensize();
       window.addEventListener("resize", this.checkscreensize.bind(this));
+      window.addEventListener('scroll', this.handleScroll.bind(this));
       
     }
 
     render() {
-
       return(
-        <div id = "header" >
+        <div id = "header" className = {this.state.scrollstate=='init' ? 'init': 'scrolled'}>
           <div id = "title-container">
             <div id = "logo-container">&#x3C;K/&#x3E;</div>
               <div id = "text-container">
@@ -100,7 +111,8 @@
                 <this.Email email = {this.state.email} />
               </div>
           </div>
-          <this.Menu menu = {this.state.menu} ismobile = {this.state.ismobile} />
+          <this.Menu classes = {this.state.scrollstate=='init'? 'show': 'hidden'} 
+                          menu = {this.state.menu} ismobile = {this.state.ismobile}  />
         </div>
       )
     }
@@ -133,9 +145,9 @@
       return (
         <div id = "menu-container">
            
-          <Mobilemenu ismobile = {props.ismobile} />
+          <Mobilemenu ismobile = {props.ismobile} classes = {props.classes=='hidden' ? 'show': 'hidden' }/>
   
-          <div id = "menu" className = {props.ismobile==true ? 'hidden': 'show'} >
+          <div id = "menu" className = {props.ismobile==true || props.classes=='hidden'? 'hidden': 'show'}  >
             <a href = {props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
               <div id = {props.menu.about.id}>{props.menu.about.text}</div>
             </a>
@@ -288,7 +300,8 @@
     render(props) {
       return(
         <div id = "mobile-menu-container">
-          <div id = "mobile-menu" className = {this.props.ismobile == true ? 'show': 'hidden'} onClick={this.handleClick.bind(this)}>
+          <div id = "mobile-menu" className = {this.props.ismobile == true || this.props.classes == 'show' ? 'show': 'hidden'} 
+                                              onClick={this.handleClick.bind(this)}>
             <span className = "line"></span>
             <span className = "line"></span>
             <span className = "line"></span>

@@ -30,6 +30,38 @@ div#header {
     padding-bottom:0;
 }
 
+div#header.scrolled {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+}
+
+div#header.scrolled div#title-container {
+  	height:100%;
+}
+
+div#header.scrolled div#title {
+	border:none;
+	margin-top: 10px;
+}
+
+div#header.scrolled div.phone, div#header.scrolled div.email {
+	visibility: hidden;
+}
+
+div#header.scrolled div#logo-container {
+	vertical-align: top;
+	margin-top: -10px;
+}
+
+@media only screen and (max-width: 800px) {
+	div#header.scrolled div#mobile-menu {
+    	margin: 30px 5px 0;
+	}
+}
+
+
 div#title-container {
     background: #fee201;
     width: 30%;
@@ -177,7 +209,7 @@ div#text-container div.phone a {
 
 div#menu {
     float: left;
-    top: -40%;
+    top: -60%;
     position: relative;
 }
 
@@ -218,6 +250,10 @@ div#mobile-list-container {
     background: #ccc;
     padding: 0 20px;
     left: -20px;
+}
+
+div#header.scrolled div#mobile-list-container {
+	top: -40px;
 }
 
 div#mobile-list-container div:hover {
