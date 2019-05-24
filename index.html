@@ -45,6 +45,7 @@
       this.state = {
         'scrollstate': 'init',
         'ismobile': isMobileDevice(),
+        'classList': [],
         'title': 'Kevin W. Bollman',
         'phone': '814-777-1196',
         'email': 'KevinBollman@gmail.com',
@@ -80,17 +81,46 @@
 
 
     checkscreensize() {
-      this.setState({ismobile: isMobileDevice()})
+      var classList = this.state.classList;
+      if (isMobileDevice() == true) {
+        classList = removefromarray(classList, 'isdesktop');
+      
+        if (hasValue(classList, 'ismobile') ==false) {
+          classList.push('ismobile')
+        }
+      } else {
+         classList = removefromarray(classList, 'ismobile');
+      
+
+        if (hasValue(classList, 'isdesktop')==false) {
+          classList.push('isdesktop');
+        }
+      }
+      this.setState({ismobile: isMobileDevice(), classList: classList})
+
     }
 
     handleScroll(event) {
       var el = document.getElementById('header');
-
+      var classList = this.state.classList
+      var thestate = '';
       if (window.scrollY>50) {
-        this.setState({'scrollstate': 'scrolled'})
+        classList = removefromarray(classList, 'init');
+        
+        if (hasValue(classList, 'scrolled')==false) {
+          classList.push('scrolled')
+        }
+        thestate='scrolled';
+        
       } else {
-        this.setState({'scrollstate': 'init'})
+        classList = removefromarray(classList, 'scrolled');
+        if (hasValue(classList, 'init')==false) {
+          classList.push('init')
+        }
+        thestate = 'init'
       }
+      
+      this.setState({'scrollstate': thestate, 'classList': classList})
     }
 
     componentDidMount() {
@@ -113,6 +143,9 @@
           </div>
           <this.Menu classes = {this.state.scrollstate=='init'? 'show': 'hidden'} 
                           menu = {this.state.menu} ismobile = {this.state.ismobile}  />
+          <div id = "menu-container" className = {this.state.scrollstate} >
+
+          </div>
         </div>
       )
     }
@@ -139,6 +172,18 @@
       return(
           <div id = "headline">{props.headline}</div>
         )
+    }
+
+    Menu2(props) {
+      return (
+        <div>test</div>
+      )
+    }
+
+    Mobilemenu2(props) {
+      return (
+        <div>mobile</div>
+      )
     }
 
     Menu(props) {
@@ -402,6 +447,42 @@
      
     return device
   };
+
+
+/*******************************************************
+*              *** in array function  ****     *
+********************************************************
+*  This function this function determines if a string  *
+* is in a certain array or not                         *
+*  @return : boolean                                   *
+*******************************************************/
+
+ function hasValue(arr,value) {
+  var i;
+  for (i=0; i<arr.length; i++) { if (arr[i] === value) return true; }
+  return false;
+}
+
+/*******************************************************
+*   *** check and remove from array function  ****     *
+********************************************************
+*  This function checks for a string in array and      *
+*  removes it                                          *
+*  @return : new array                                   *
+*******************************************************/
+function removefromarray(arr, value) {
+   if (hasValue(arr, value) ==true) {
+      var newlist = []
+      for (var x = 0; x<arr.length; x++) {
+
+        if (arr[x]!= value) {
+          newlist.push (arr[x])
+        }
+      }
+      arr = newlist
+    }
+    return arr;
+}
 
 </script>
 
