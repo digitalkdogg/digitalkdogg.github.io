@@ -207,9 +207,9 @@ div#text-container div.phone a {
 	}
 }
 
-div#menu {
+div#desktop-menu {
     float: left;
-    top: -60%;
+    top: -50%;
     position: relative;
 }
 
@@ -222,17 +222,17 @@ div#menu-container {
     text-decoration: none;
 }
 
-#header #mobile-menu span.line {
+#header #mobile-menu-box span.line {
     display: block;
     border-top: 2px solid white;
     margin: 6px 3px 0;
 }
 
-div#desktop-menu.ismobile {
+div#desktop-menu.ismobile, div#desktop-menu.isdesktop.scrolled {
     display: none;
 }
 
-div#desktop-menu.isdesktop  {
+div#desktop-menu.isdesktop.init {
     display:block;
 }
 
@@ -241,11 +241,20 @@ div#mobile-menu.isdesktop {
     display: none;
 }
 
-div#mobile-menu.ismobile {
+div#mobile-menu.ismobile, div#mobile-menu.isdesktop.scrolled {
     display:block;
 }
 
-#header div#mobile-menu {
+div#mobile-menu-list.despanded {
+	display:none;
+}
+
+div#mobile-menu-list.expanded {
+	display:block;
+}
+
+
+#header div#mobile-menu-box {
     width: 30px;
     height: 30px;
     border: 1px solid white;
@@ -254,7 +263,7 @@ div#mobile-menu.ismobile {
     left: -20px;
 }
 
-#header div#mobile-menu:hover {
+#header div#mobile-menu-box:hover {
 	cursor: pointer;
 	opacity:.5;
 }
@@ -267,6 +276,7 @@ div#mobile-list-container {
     background: #ccc;
     padding: 0 20px;
     left: -20px;
+    display: inline-block;
 }
 
 div#header.scrolled div#mobile-list-container {

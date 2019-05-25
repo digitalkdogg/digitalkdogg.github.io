@@ -43,6 +43,7 @@
     constructor() {
       super();
       this.state = {
+        'mobilemenu': '',
         'scrollstate': 'init',
         'ismobile': isMobileDevice(),
         'classList': [],
@@ -50,33 +51,7 @@
         'title': 'Kevin W. Bollman',
         'phone': '814-777-1196',
         'email': 'KevinBollman@gmail.com',
-        'headline': 'Full Stack Web Developer',
-        'menu': {
-          'about': {
-            'id': 'menu-item',
-            'class': 'about',
-            'text': 'About Me',
-            'href': '#about'
-          }, 
-          'projects': {
-            'id': 'menu-item',
-            'class': 'projects',
-            'text': 'Projects',
-            'href': '#projects'
-          }, 
-          'skills': {
-            'id': 'menu-item',
-            'class': 'skills',
-            'text': 'Skills',
-            'href': '#skills'
-          }, 
-          'contact': {
-            'id': 'menu-item',
-            'class': 'contact',
-            'text': 'Contact Me',
-            'href': '#contact'
-          }
-        }
+        'headline': 'Full Stack Web Developer'
       };
     }
 
@@ -124,11 +99,61 @@
       this.setState({'scrollstate': thestate, 'classList': classList, classListStr: convertarraytostr(classList)})
     }
 
+    handleClick(e) {
+      console.log(this)
+      if (this.state.mobilemenu=='despanded') {
+        var status = 'expanded';
+      } else {
+        var status = 'despanded';
+      }
+
+      if (status != null || status != '') {
+        this.setState({
+          'mobilemenu': status
+        })
+      }
+
+
+    }
+
+
     componentDidMount() {
       this.checkscreensize();
       window.addEventListener("resize", this.checkscreensize.bind(this));
       window.addEventListener('scroll', this.handleScroll.bind(this));
-      
+    }
+
+     
+
+    menu() {
+      return(
+        {
+          'about': {
+            'id': 'menu-item',
+            'class': 'about',
+            'text': 'About Me',
+            'href': '#about'
+          }, 
+          'projects': {
+            'id': 'menu-item',
+            'class': 'projects',
+            'text': 'Projects',
+            'href': '#projects'
+          }, 
+          'skills': {
+            'id': 'menu-item',
+            'class': 'skills',
+            'text': 'Skills',
+            'href': '#skills'
+          }, 
+          'contact': {
+            'id': 'menu-item',
+            'class': 'contact',
+            'text': 'Contact Me',
+            'href': '#contact'
+          }
+        }
+      )
     }
 
     render() {
@@ -142,10 +167,10 @@
                 <this.Email email = {this.state.email} />
               </div>
           </div>
-         
+
           <div id = "menu-container" className = {this.state.scrollstate} >
-            <this.Menu2 id = "desktop-menu" classList = {this.state.classListStr} />
-            <this.Mobilemenu2 id = "mobile-menu" classList = {this.state.classListStr} />
+            <this.Menu id = "desktop-menu" classList = {this.state.classListStr} menu = {this.menu()} />
+            <this.Mobilemenu id = "mobile-menu" classList = {this.state.classListStr} onClick={this.handleClick.bind(this)}/>
           </div>
         </div>
       )
@@ -175,56 +200,32 @@
         )
     }
 
-    Menu2(props) {
-      return (
-        <div id = "desktop-menu" className = {props.classList}>desktop</div>
-      )
-    }
-
-    Mobilemenu2(props) {
-      return (
-        <div id = "mobile-menu" className = {props.classList} >
-
-          <div id = "mobile-menu-container">
-            <span className = "line"></span>
-            <span className = "line"></span>
-            <span className = "line"></span>
-          </div>
-          <div id = "mobile-menu-list" >
-            <div id = "mobile-list-container">
-              <div>test1</div>
-              <div>test2</div>
-            </div>
-          </div>
-        </div> 
-      )
-    }
-
     Menu(props) {
       return (
-        <div id = "menu-container">
-           
-          <Mobilemenu ismobile = {props.ismobile} classes = {props.classes=='hidden' ? 'show': 'hidden' }/>
-  
-          <div id = "menu" className = {props.ismobile==true || props.classes=='hidden'? 'hidden': 'show'}  >
-            <a href = {props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
-              <div id = {props.menu.about.id}>{props.menu.about.text}</div>
-            </a>
-            <a href = {props.menu.projects.href} id = {props.menu.projects.id} class = {props.menu.projects.class}>
-              <div id = {props.menu.projects.id}>{props.menu.projects.text}</div>
-            </a>
-            <a href = {props.menu.skills.href} id = {props.menu.skills.id} class = {props.menu.skills.class}>
-              <div id = {props.menu.skills.id}>{props.menu.skills.text}</div>
-            </a>
-            <a href = {props.menu.contact.href} id = {props.menu.contact.id} class = {props.menu.contact.class}>
-              <div id = {props.menu.contact.id}>{props.menu.contact.text}</div>
-            </a>
-            
-          </div>
+        <div id = "desktop-menu" className = {props.classList}>
+          <a href ={props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
+            <div id = {props.menu.about.id}>{props.menu.about.text}</div>
+          </a>
+          <a href ={props.menu.projects.href} id = {props.menu.projects.id} class = {props.menu.projects.class}>
+            <div id = {props.menu.projects.id}>{props.menu.projects.text}</div>
+          </a>
+          <a href ={props.menu.skills.href} id = {props.menu.skills.id} class = {props.menu.skills.class}>
+            <div id = {props.menu.skills.id}>{props.menu.skills.text}</div>
+          </a>
+          <a href ={props.menu.contact.href} id = {props.menu.contact.id} class = {props.menu.contact.class}>
+            <div id = {props.menu.contact.id}>{props.menu.contact.text}</div>
+          </a>
 
-             
         </div>
-        )
+      )
+    }
+
+    Mobilemenu(props) {
+      return (
+        <div id = "mobile-menu" className = {props.classList}>
+        <Mobilemenu ismobile = 'true' classes = '' />
+        </div>
+      )
     }
 
   }// end class
@@ -359,16 +360,15 @@
     render(props) {
       return(
         <div id = "mobile-menu-container">
-          <div id = "mobile-menu" className = {this.props.ismobile == true || this.props.classes == 'show' ? 'show': 'hidden'} 
-                                              onClick={this.handleClick.bind(this)}>
+          <div id = "mobile-menu-box"  onClick={this.handleClick.bind(this)}>
             <span className = "line"></span>
             <span className = "line"></span>
             <span className = "line"></span>
           </div>
-          <div id = "mobile-menu-list" >
-            <div id = "mobile-list-container" className = {this.state.menu=='despanded' ? 'hidden': 'show'}>
-              <div>test1</div>
-              <div>test2</div>
+          <div id = "mobile-menu-list" className = {this.state.menu} >
+            <div id = "mobile-list-container">
+              <div>test11</div>
+              <div>test22</div>
             </div>
           </div>
         </div> 
