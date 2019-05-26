@@ -45,6 +45,21 @@
       this.state = {
         'mobilemenu': '',
         'scrollstate': 'init',
+        'scrollpos': {
+          'this': 'about',
+          'about': {
+              'this': 'about',
+              'start': 50,
+              'end': 200
+          
+        },
+          'projects' : {
+            'this': 'projects',
+            'start': 201,
+            'end': 400
+            }
+          
+        },
         'ismobile': isMobileDevice(),
         'classList': [],
         'classListStr': '',
@@ -65,9 +80,10 @@
           classList.push('ismobile')
         }
       } else {
+         
+       
          classList = removefromarray(classList, 'ismobile');
       
-
         if (hasValue(classList, 'isdesktop')==false) {
           classList.push('isdesktop');
         }
@@ -77,10 +93,12 @@
     }
 
     handleScroll(event) {
-
       var classList = this.state.classList
       var thestate = '';
+      var scrollpos = this.state.scrollpos
       if (window.scrollY>50) {
+       
+        scrollpos['this'] = this.getscrollpos(window.scrollY, this.state.scrollpos);
         classList = removefromarray(classList, 'init');
         
         if (hasValue(classList, 'scrolled')==false) {
@@ -96,26 +114,13 @@
         thestate = 'init'
       }
       
-      this.setState({'scrollstate': thestate, 'classList': classList, classListStr: convertarraytostr(classList)})
-    }
-
-    handleClick(e) {
-      console.log(this)
-      if (this.state.mobilemenu=='despanded') {
-        var status = 'expanded';
-      } else {
-        var status = 'despanded';
-      }
-
-      if (status != null || status != '') {
-        this.setState({
-          'mobilemenu': status
-        })
-      }
-
+      this.setState({'scrollstate': thestate, 
+                    'classList': classList, 
+                    'classListStr': convertarraytostr(classList),
+                    'scrollpos': scrollpos
+      })
 
     }
-
 
     componentDidMount() {
       this.checkscreensize();
@@ -123,7 +128,23 @@
       window.addEventListener('scroll', this.handleScroll.bind(this));
     }
 
-     
+    getscrollpos(pos, params) {
+      var section = '';
+      var keys = Object.keys(params);
+        for (var i = 0; i<keys.length; i++) {
+          try {
+            if (params[keys[i]] != undefined) {
+              if (pos >= params[keys[i]].start  ) {
+                if (pos <= params[keys[i]].end ) {
+                  section = params[keys[i]].this
+                }
+              }
+            }
+          } catch (e) {console.log(params[keys[i]])}
+        }
+    
+      return section
+    }     
 
     menu() {
       return(
@@ -170,7 +191,7 @@
 
           <div id = "menu-container" className = {this.state.scrollstate} >
             <this.Menu id = "desktop-menu" classList = {this.state.classListStr} menu = {this.menu()} />
-            <this.Mobilemenu id = "mobile-menu" classList = {this.state.classListStr} onClick={this.handleClick.bind(this)}/>
+            <this.Mobilemenu id = "mobile-menu" classList = {this.state.classListStr} />
           </div>
         </div>
       )
@@ -505,7 +526,6 @@ function removefromarray(arr, value) {
 *. this is so we can build a poper html class list.      *
 *  @return : new string                                   *
 *******************************************************/
-
 function convertarraytostr(arr) {
   var arrstr = '';
   for (var x=0; x<arr.length; x++) {
@@ -517,6 +537,22 @@ function convertarraytostr(arr) {
   }
   return arrstr
 }
+
+/*******************************************************
+*        *** get length of an object   ****            *
+********************************************************
+*  get the lendth of a object                          *
+*  @return : number                                    *
+*******************************************************/
+Object.size = function(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+
 
 </script>
 

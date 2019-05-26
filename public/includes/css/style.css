@@ -84,6 +84,10 @@ div#title {
     border-bottom: 1px solid #333;
 }
 
+#header.scrolled #title-container {
+	border-radius: 0;
+}
+
 #title-container .phone, #title-container .email {
     font-size: 16px;
 }
