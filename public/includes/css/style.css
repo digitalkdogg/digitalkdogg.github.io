@@ -234,9 +234,14 @@ div#menu-container {
 	display:contents;
 }
 
-#header a#menu-item {
+#header #desktop-menu a#menu-item {
     color: white;
     text-decoration: none;
+}
+
+#header #mobile-menu a#menu-item {
+	color:black;
+	text-decoration: none;
 }
 
 #header.scrolled a#menu-item {
@@ -328,7 +333,7 @@ div#mobile-list-container div:hover {
 }
 
 div#mobile-menu-list {
-    width: 30%;
+    width: 50%;
     opacity: .8;
     display:inline-block;
 }
