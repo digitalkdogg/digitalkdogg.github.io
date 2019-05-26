@@ -48,15 +48,15 @@
         'scrollpos': {
           'this': 'about',
           'about': {
-              'this': 'about',
+              'this': 'About Me',
               'start': 50,
-              'end': 200
+              'end': 300
           
         },
           'projects' : {
-            'this': 'projects',
-            'start': 201,
-            'end': 400
+            'this': 'My Projects',
+            'start': 301,
+            'end': 1000
             }
           
         },
@@ -113,7 +113,9 @@
         }
         thestate = 'init'
       }
-      
+
+
+
       this.setState({'scrollstate': thestate, 
                     'classList': classList, 
                     'classListStr': convertarraytostr(classList),
@@ -191,7 +193,7 @@
 
           <div id = "menu-container" className = {this.state.scrollstate} >
             <this.Menu id = "desktop-menu" classList = {this.state.classListStr} menu = {this.menu()} />
-            <this.Mobilemenu id = "mobile-menu" classList = {this.state.classListStr} />
+            <this.Mobilemenu id = "mobile-menu" classList = {this.state.classListStr} menu = {this.menu()} scrollpos = {this.state.scrollpos}/>
           </div>
         </div>
       )
@@ -244,7 +246,7 @@
     Mobilemenu(props) {
       return (
         <div id = "mobile-menu" className = {props.classList}>
-        <Mobilemenu ismobile = 'true' classes = '' />
+        <Mobilemenu ismobile = 'true' classes = '' menu = {props.menu} scrollpos = {props.scrollpos}/>
         </div>
       )
     }
@@ -386,10 +388,24 @@
             <span className = "line"></span>
             <span className = "line"></span>
           </div>
+          {console.log(this.props)}
+
+          <div id = "active-menu-item">{this.props.scrollpos.this}</div>
+
           <div id = "mobile-menu-list" className = {this.state.menu} >
             <div id = "mobile-list-container">
-              <div>test11</div>
-              <div>test22</div>
+              <a href ={this.props.menu.about.href} id = {this.props.menu.about.id} class = {this.props.menu.about.class}>
+                <div id = {this.props.menu.about.id}>{this.props.menu.about.text}</div>
+              </a>
+              <a href ={this.props.menu.projects.href} id = {this.props.menu.projects.id} class = {this.props.menu.projects.class}>
+                <div id = {this.props.menu.projects.id}>{this.props.menu.projects.text}</div>
+              </a>
+                <a href ={this.props.menu.skills.href} id = {this.props.menu.skills.id} class = {this.props.menu.skills.class}>
+                <div id = {this.props.menu.skills.id}>{this.props.menu.skills.text}</div>
+              </a>
+              <a href ={this.props.menu.contact.href} id = {this.props.menu.contact.id} class = {this.props.menu.contact.class}>
+                <div id = {this.props.menu.contact.id}>{this.props.menu.contact.text}</div>
+              </a>
             </div>
           </div>
         </div> 

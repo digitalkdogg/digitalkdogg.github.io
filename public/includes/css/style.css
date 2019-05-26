@@ -35,6 +35,7 @@ div#header.scrolled {
     width: 100%;
     height: 50px;
     z-index: 10;
+    border-bottom: 1px solid black;
 }
 
 div#header.scrolled div#title-container {
@@ -132,18 +133,30 @@ div#text-container div.phone a {
     }
     
 
-  	div#title-container {
-    	width:95%;
+  	div#header.init div#title-container {
+    	width:90%;
     	margin:0;
         float:right;
+	}
+
+	div#header.scrolled div#title-container {
+		width: 65%;
+		float: left;
+		position: relative;
+		left:15%;
 	}
 
 	div#logo-container {
 		width:35%;
 	}
 
+	div#header.scrolled #logo-container {
+		display:none;
+	}
+
 	div#text-container {
 		width: 64%;
+		font-size: 18px;
 	}
 }
 
@@ -226,6 +239,10 @@ div#menu-container {
     text-decoration: none;
 }
 
+#header.scrolled a#menu-item {
+	color:black;
+}
+
 #header #mobile-menu-box span.line {
     display: block;
     border-top: 2px solid white;
@@ -264,7 +281,7 @@ div#mobile-menu-list.expanded {
     border: 1px solid white;
     top: -40px;
     position: relative;
-    left: -20px;
+    left: -15px;
 }
 
 #header div#mobile-menu-box:hover {
@@ -277,14 +294,32 @@ div#mobile-list-container {
     position: relative;
     top: -110px;
     color: black;
-    background: #ccc;
+    background: #fff;
     padding: 0 20px;
     left: -20px;
     display: inline-block;
 }
 
+div#active-menu-item {
+    top: -75px;
+    position: relative;
+    left: 20px;
+}
+
+
+div#header.init div#mobile-menu.ismobile div#active-menu-item {
+    display: none;
+}
+
+
+div#header.scrolled div#mobile-menu.ismobile div#active-menu-item {
+    font-size:18px;
+    margin: 5px;
+}
+
 div#header.scrolled div#mobile-list-container {
-	top: -40px;
+	top: -75px;
+	border: 1px solid black;
 }
 
 div#mobile-list-container div:hover {
@@ -294,7 +329,7 @@ div#mobile-list-container div:hover {
 
 div#mobile-menu-list {
     width: 30%;
-    opacity: .7;
+    opacity: .8;
     display:inline-block;
 }
 
