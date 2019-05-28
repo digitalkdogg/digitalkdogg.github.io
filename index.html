@@ -262,18 +262,36 @@
       this.state = {
         about: 'About Me',
         projects: 'My Projects',
-        skills: 'Skills',
-        projs: {'millwood' : {
-          'id': 1,
-          'title': 'Millwood',
-          'desc': 'this is what I want to say about the project',
-          'href': 'https://millwoodchurchnwa.com'
-        }, 
-        'checkbook' : {
-          'id': 2,
-          'title': 'Checkbook',
-          'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with my sql db server',
-          'href' : '#'
+        skills  : 'Skills',
+        myskills : {
+          'frontend': {
+            'id': 1,
+            'text': 'Front End',
+            'data': {
+              'html': {
+                'id': 1,
+                'text':'HTML5'
+              }, 
+              'css': {
+                'id': 2,
+                'text':'CSS3'
+              }
+            }
+          },
+          'backend': {}
+        },
+        projs: {
+          'millwood' : {
+            'id': 1,
+            'title': 'Millwood',
+            'desc': 'this is what I want to say about the project',
+            'href': 'https://millwoodchurchnwa.com'
+          }, 
+          'checkbook' : {
+            'id': 2,
+            'title': 'Checkbook',
+            'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with my sql db server',
+            'href' : '#'
         } }
       }
     }
@@ -286,6 +304,7 @@
           <H2 text = {this.state.projects} class = 'title' id = 'projects' />
           <this.Projects projs = {this.state.projs} />
           <H2 text = {this.state.skills} class = 'title' id = 'skills' />
+          <this.Skills projs = {this.state.projs} />
 
         </div>
       )
@@ -323,6 +342,47 @@
       )
     }
 
+    Skills(props) {
+      return (
+        <div id = "skills-container" className = "item">
+          <div id = "skills">
+            <H2 text = "Front End" />
+            <Askill text = "HTML 5" />
+            <Askill text = "CSS3" />
+            <Askill text = "Javascript / Jquery" />
+            <Askill text = "Wordpress" />
+            <Askill text = "Drupal" />
+          </div>
+          <div id = "skills">
+            <H2 text = "Back End" />
+            <Askill text = "PHP" />
+            <Askill text = "Codeigniter" />
+            <Askill text = "Laravel" />
+            <Askill text = "MySQL" />
+            <Askill text = "React JS" />
+          </div>
+          <div id = "skills">
+            <H2 text = "Server" />
+            <Askill text = "Git Version Contral" />
+            <Askill text = "Node JS" />
+            <Askill text = "LAMP Stack" />
+            <Askill text = "" />
+            <Askill text = "" />
+
+          </div>
+          <div id = "skills">
+            <H2 text = "Programming Mythologies" />
+            <Askill text = "MVC Frameworks" />
+            <Askill text = "REST API's" />
+             <Askill text = "Object Oriented Programming" />
+            <Askill text = "" />
+             <Askill text = "" />
+
+          </div>
+        </div>
+      )
+    }
+
   }
 
 
@@ -349,6 +409,25 @@
                 <button>View More</button>
               </a>
             </div>
+          </div>
+      )
+    }
+
+  }
+
+  /**********************************************
+**          *** The Askill class  ****           **
+**********************************************/
+  class Askill extends React.Component {
+    constructor() {
+      super();
+      this.state = {}
+    }
+
+    render(props) {
+      return(
+          <div className = "skill">
+            {this.props.text}
           </div>
       )
     }
