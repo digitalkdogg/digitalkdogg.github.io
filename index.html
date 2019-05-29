@@ -207,13 +207,13 @@
 
     Contact(props) {
       return(
-        <div class="phone"><a href = {'tel://' + props.phone}>{props.phone}</a></div>
+        <div class="phone"><a href = {'tel:' + props.phone}>{props.phone}</a></div>
       )
     }
 
     Email(props) {
       return (
-        <div class = "email"><a href = {'mailto://' + props.email}>{props.email}</a></div>
+        <div class = "email"><a href = {'mailto:' + props.email}>{props.email}</a></div>
       )
     }
 
@@ -263,6 +263,7 @@
         about: 'About Me',
         projects: 'My Projects',
         skills  : 'Skills',
+        contact: 'Contact Me',
         myskills : {
           'frontend': {
             'id': 1,
@@ -305,6 +306,8 @@
           <this.Projects projs = {this.state.projs} />
           <H2 text = {this.state.skills} class = 'title' id = 'skills' />
           <this.Skills projs = {this.state.projs} />
+          <H2 text = {this.state.contact} class = 'title' id = 'contact' />
+          <this.Contact />
 
         </div>
       )
@@ -379,6 +382,19 @@
              <Askill text = "" />
 
           </div>
+        </div>
+      )
+    }
+
+    Contact(props) {
+      return (
+        <div id = "contact-wrapper" className="item">
+          <p>Github pages is great because it lets you have a static website for free.  Unfourtantly it doesn't let you do server side stuff, like email, 
+          too easily.  I haven't got a chance to hook it up to any kind of api so right now you will have to email me.  Relax!  I have made it
+          easy for you.  Just click the button below and it will start your email client.  I look forward to hearing from you.</p>
+         <div id ="btn-wrapper">
+           <a href = "mailto:KevinBollman@gmail.com?Subject=Kevin Bollman Website Contact"><button>Email Me!</button></a>
+         </div>
         </div>
       )
     }
@@ -541,7 +557,7 @@
 
     render() {
       return(
-        <div id = "footer">render</div>
+        <div id = "footer"><p>&copy; Kevin Bollman 2019 Hosted On Github Pages Built on React JS</p></div>
       )
     }
 

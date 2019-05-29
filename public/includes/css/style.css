@@ -19,6 +19,20 @@ body {
 	display:block;
 }
 
+button {
+    background: #0173fe;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity:.7;
+}
+
 div#header, div#the-guts, div#footer {
 	padding: 10px 5%;
 	clear: both;
@@ -400,4 +414,18 @@ div#mobile-menu-list {
 
 #the-guts .project .btn-container button:hover {
     cursor: pointer;
+}
+
+#contact-wrapper #btn-wrapper {
+    text-align: center;
+}
+
+div#footer {
+    padding: 0;
+    background: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0 0;
+    height: 40px;
 }
