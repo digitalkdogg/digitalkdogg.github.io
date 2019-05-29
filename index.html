@@ -45,20 +45,29 @@
       this.state = {
         'mobilemenu': '',
         'scrollstate': 'init',
+        'loadstate': 'init',
         'scrollpos': {
           'this': 'about',
           'about': {
               'this': 'About Me',
-              'start': 50,
-              'end': 300
-          
+              'start': {'desktop': 50, 'mobile': 50},
+              'end': {'desktop':200, 'mobile':300},          
         },
           'projects' : {
             'this': 'My Projects',
-            'start': 301,
-            'end': 1000
-            }
-          
+            'start': {'desktop': 201, 'mobile':301},
+            'end': {'desktop': 400, 'mobile': 1000}
+            },
+        'skillsection' : {
+           'this': 'Skills',
+            'start': {'desktop': 401, 'mobile':1001},
+            'end': {'desktop': 700, 'mobile': 1400}
+          },
+        'contact' : {
+           'this': 'Contact Me',
+            'start': {'desktop': 701, 'mobile':1401},
+            'end': {'desktop': 1000, 'mobile': 1800}
+          }
         },
         'ismobile': isMobileDevice(),
         'classList': [],
@@ -96,6 +105,8 @@
       var classList = this.state.classList
       var thestate = '';
       var scrollpos = this.state.scrollpos
+     
+
       if (window.scrollY>50) {
        
         scrollpos['this'] = this.getscrollpos(window.scrollY, this.state.scrollpos);
@@ -128,6 +139,16 @@
       this.checkscreensize();
       window.addEventListener("resize", this.checkscreensize.bind(this));
       window.addEventListener('scroll', this.handleScroll.bind(this));
+      this.setState({'loadstate': 'loaded'});
+
+      var hashtag = window.location.hash
+       if (hashtag.indexOf('#')>=0) {
+          hashtag = hashtag.replace('#', '');
+          hashtag = hashtag.toLowerCase();
+          var el = document.getElementById(hashtag)
+          var topPos = getTopPos(el) -50;
+          window.scrollTo({top: topPos});
+        }
     }
 
     getscrollpos(pos, params) {
@@ -136,13 +157,17 @@
         for (var i = 0; i<keys.length; i++) {
           try {
             if (params[keys[i]] != undefined) {
-              if (pos >= params[keys[i]].start  ) {
-                if (pos <= params[keys[i]].end ) {
-                  section = params[keys[i]].this
+              if (isMobileDevice == true) {
+
+              } else {
+                if (pos >= params[keys[i]].start.desktop  ) {
+                  if (pos <= params[keys[i]].end.desktop ) {
+                    section = params[keys[i]].this
+                  }
                 }
               }
             }
-          } catch (e) {console.log(params[keys[i]])}
+          } catch (e) {}//console.log(params[keys[i]])}
         }
     
       return section
@@ -483,7 +508,6 @@
             <span className = "line"></span>
             <span className = "line"></span>
           </div>
-          {console.log(this.props)}
 
           <div id = "active-menu-item">{this.props.scrollpos.this}</div>
 
@@ -648,6 +672,20 @@ function convertarraytostr(arr) {
   }
   return arrstr
 }
+
+/********************************************************
+*.                ***  get Top Pos. ***                 *
+*********************************************************
+*. Returns the top pos of an passed in element          *
+*  return : numnber                                     *
+********************************************************/ 
+function getTopPos(el) {
+    for (var topPos = 0;
+        el != null;
+        topPos += el.offsetTop, el = el.offsetParent);
+    return topPos;
+}
+
 
 /*******************************************************
 *        *** get length of an object   ****            *

@@ -161,7 +161,8 @@ div#text-container div.phone a {
 	}
 
 	div#logo-container {
-		width:35%;
+		width:30%;
+        font-size:1.7em;
 	}
 
 	div#header.scrolled #logo-container {
@@ -174,10 +175,11 @@ div#text-container div.phone a {
 	}
 }
 
-@media only screen and (max-width: 350px) {
-	div#logo-container {
-		font-size:1.7em;
-	}
+@media only screen and (max-width: 380px) {
+
+    div#logo-container {
+        font-size:1.4em;
+    }
 
 	#title-container div.phone, #title-container div.email {
 		font-size:14px;
@@ -284,7 +286,7 @@ div#the-guts div#skills .skill {
 
 div#desktop-menu {
     float: left;
-    top: -50%;
+    top: -100px;
     position: relative;
 }
 
