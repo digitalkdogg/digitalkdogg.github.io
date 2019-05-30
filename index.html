@@ -132,6 +132,10 @@
 
     }
 
+    go_to_nav_item(item) {
+      console.log(item);
+    }
+
     componentDidMount() {
       this.checkscreensize();
       window.addEventListener("resize", this.checkscreensize.bind(this));
@@ -234,21 +238,9 @@
 
     Menu(props) {
       return (
-        <div id = "desktop-menu" className = {props.classList}>
-          <a href ={props.menu.about.href} id = {props.menu.about.id} class = {props.menu.about.class}>
-            <div id = {props.menu.about.id}>{props.menu.about.text}</div>
-          </a>
-          <a href ={props.menu.projects.href} id = {props.menu.projects.id} class = {props.menu.projects.class}>
-            <div id = {props.menu.projects.id}>{props.menu.projects.text}</div>
-          </a>
-          <a href ={props.menu.skills.href} id = {props.menu.skills.id} class = {props.menu.skills.class}>
-            <div id = {props.menu.skills.id}>{props.menu.skills.text}</div>
-          </a>
-          <a href ={props.menu.contact.href} id = {props.menu.contact.id} class = {props.menu.contact.class}>
-            <div id = {props.menu.contact.id}>{props.menu.contact.text}</div>
-          </a>
-
-        </div>
+         <div id = "desktop-menu" className = {props.classList}>
+          <Desktopmenu ismobile='false' classes = '' menu = {props.menu} />
+         </div>
       )
     }
 
@@ -301,13 +293,13 @@
             'id': 2,
             'title': 'Checkbook',
             'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
-            'href' : '#'
+            'href' : './public/includes/img/checkbook.png'
         }, 
           'resume' : {
             'id': 3,
             'title': 'Resume Builder',
             'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
-            'href' : '#'
+            'href' : './public/includes/img/resume_admin.png'
         } }
       }
     }
@@ -416,7 +408,7 @@
     Contact(props) {
       return (
         <div id = "contact-wrapper" className="item">
-          <p>Github pages is great because it lets you have a static website for free.  Unfourtantly it doesn't let you do server side stuff, like email, 
+          <p>Github pages is great because it lets you have a static website for free.  Unfortunately it doesn't let you do server side stuff, like email, 
           too easily.  I haven't got a chance to hook it up to any kind of api so right now you will have to email me.  Relax!  I have made it
           easy for you.  Just click the button below and it will start your email client.  I look forward to hearing from you.</p>
          <div id ="btn-wrapper">
@@ -478,6 +470,39 @@
   }
 
 /**********************************************
+**          *** The desktop menu class  ****           **
+**********************************************/
+  class Desktopmenu extends React.Component {
+    constructor() {
+      super();
+      this.state = {
+        'menu' : 'despanded'
+      }
+    }
+
+    menu_item(item) {
+      var el = document.getElementById(item);
+      var topPos = getTopPos(el) -300; 
+      if (topPos <= 0 ) {
+        topPos=50
+      }
+      window.scrollTo({top: topPos}); 
+    }
+
+    render(props) {
+      return(
+       <div id = "desktop-menu-container">
+          <div id = {this.props.menu.about.id} onClick = {this.menu_item.bind(this, 'about')}>{this.props.menu.about.text} </div>
+          <div id = {this.props.menu.projects.id} onClick = {this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
+          <div id = {this.props.menu.skills.id} onClick = {this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
+          <div id = {this.props.menu.contact.id} onClick = {this.menu_item.bind(this, 'contact')}>{this.props.menu.contact.text}</div>
+       </div>
+      )
+    }
+
+  }
+
+/**********************************************
 **          *** The mobile menu class  ****           **
 **********************************************/
   class Mobilemenu extends React.Component {
@@ -488,7 +513,7 @@
       }
     }
 
-    handleClick(e) {
+    open_menu(e) {
       if (this.state.menu=='despanded') {
         var status = 'expanded';
       } else {
@@ -502,10 +527,22 @@
       }
     }
 
+    menu_item(item) {
+      var el = document.getElementById(item);
+      var topPos = getTopPos(el) -100; 
+      if (topPos <= 0 ) {
+        topPos=50
+      }
+      window.scrollTo({top: topPos}); 
+      var menubox = document.getElementById('mobile-menu-box')
+      menubox.click();
+
+    }
+
     render(props) {
       return(
         <div id = "mobile-menu-container">
-          <div id = "mobile-menu-box"  onClick={this.handleClick.bind(this)}>
+          <div id = "mobile-menu-box"  onClick={this.open_menu.bind(this)}>
             <span className = "line"></span>
             <span className = "line"></span>
             <span className = "line"></span>
@@ -515,18 +552,12 @@
 
           <div id = "mobile-menu-list" className = {this.state.menu} >
             <div id = "mobile-list-container">
-              <a href ={this.props.menu.about.href} id = {this.props.menu.about.id} class = {this.props.menu.about.class}>
-                <div id = {this.props.menu.about.id}>{this.props.menu.about.text}</div>
-              </a>
-              <a href ={this.props.menu.projects.href} id = {this.props.menu.projects.id} class = {this.props.menu.projects.class}>
-                <div id = {this.props.menu.projects.id}>{this.props.menu.projects.text}</div>
-              </a>
-                <a href ={this.props.menu.skills.href} id = {this.props.menu.skills.id} class = {this.props.menu.skills.class}>
-                <div id = {this.props.menu.skills.id}>{this.props.menu.skills.text}</div>
-              </a>
-              <a href ={this.props.menu.contact.href} id = {this.props.menu.contact.id} class = {this.props.menu.contact.class}>
-                <div id = {this.props.menu.contact.id}>{this.props.menu.contact.text}</div>
-              </a>
+            
+                <div id = {this.props.menu.about.id} onClick = {this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
+                <div id = {this.props.menu.projects.id}  onClick = {this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
+                <div id = {this.props.menu.skills.id}  onClick = {this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
+                <div id = {this.props.menu.contact.id}  onClick = {this.menu_item.bind(this, 'contact')}>{this.props.menu.contact.text}</div>
+              
             </div>
           </div>
         </div> 
