@@ -194,12 +194,12 @@ div#text-container div.phone a {
 	background:white;
 	color:black;
 	min-height:100px;
-	padding: 10px;
+	padding: 20px 10px;
 	font-size:16px;
 }
 
 #the-guts .project {
-    height: 250px;
+    height: 350px;
     width: 30%;
     background: #fee201;
     display:inline-grid;
@@ -225,11 +225,11 @@ div#text-container div.phone a {
 
 #the-guts .project .desc {
     margin: 0 5px;
-    height: 150px;
+    height: 200px;
 }
 
 #the-guts .project .btn-container {
-	height: 50px;
+	height: 30px;
 	border-top: 1px solid #ccc;
 }
 
@@ -246,6 +246,7 @@ div#the-guts div#skills {
     height: 235px;
     color: #555;
     text-align:left;
+    border: 1px solid black;
 }
 
 div#the-guts div#skills div.skill {

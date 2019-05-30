@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>React Local</title>
+  <title>Kevin Bollman - Full Stack Developer</title>
 
   <link rel= "stylesheet" href = "./public/includes/css/style.css" />
 
@@ -294,13 +294,19 @@
           'millwood' : {
             'id': 1,
             'title': 'Millwood',
-            'desc': 'this is what I want to say about the project',
+            'desc': 'This is a website I did for Millwood Church in rogers.  The site is built on wordpress and the features include a customized theme, an events calendar, and a blog news feed.  The updates of content is managed solely by the power users of the church.',
             'href': 'https://millwoodchurchnwa.com'
           }, 
           'checkbook' : {
             'id': 2,
             'title': 'Checkbook',
-            'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with my sql db server',
+            'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
+            'href' : '#'
+        }, 
+          'resume' : {
+            'id': 3,
+            'title': 'Resume Builder',
+            'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
             'href' : '#'
         } }
       }
@@ -335,14 +341,17 @@
         <div class = "item">
           <P text = "I am a full stack web designer / developer.  I design websites both professionally and on the side.
            My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday
-            when you can give them a fishing pole and they are set for the rest of their life.  I enjoy connecting people
+            when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people
             with technology and in my spare time i am often coding or learning a new language or development stack to code in." />
 
-           <P text = "People say that my biggest strength is my passion for a happy customer.  While I do find that I am very
-           passionate about my work, I tend to think that my best strenth is my ingenuity.  My career has led me down many different
-            path and have given me the opurtunity to leverage many differnt technologies.  In doing so I have come to learn my
-            skill set to best fit the project I am working on.  Take this website for example, why buy a domain when you can setup
-            a static web site using reactjs and github pages to host your work" />
+           <P text = "People say that my biggest strength is my passion for a happy customer. While I do find that I am very 
+           passionate about my work, I tend to think that my best strength is my ingenuity. My career has led me down many different
+            path and have given me the opportunity to leverage many different technologies. In doing, so I have come to learn my 
+            skill set to best fit the project I am working on. Take this website for example, why buy a domain when you can set up 
+            a static website using reacts and GitHub pages to host your work." />
+
+            <P text = "Currently I am working for walmart as the Tech Lead - Intranet Admin.  I am proud of the fact that I get to
+             empower my teammates to run a great intranet system for 1.4 million assoicates." />
         </div>
       )
     }
@@ -350,14 +359,13 @@
     Projects(props) {
       return (
         <div class = "item">
-            <P text = "Currently working at Walmart Homeoffice which doesn't leave a lot of spare time.   For walmart I am
-            Tech Lead - Intranet Admin and I am proud of the fact that I get to empower my teammates to run a great intranet system
-            for 1.4 million assoicates.  When I am doing work for Walmart, I do enjoy picking a side project or even do fun
-            stuff at home.  I am currently redoing a site for my church but I also like to challenge my self and teach my self new
-            frameworks even if I don't plan on using them in the future." />
+            <P text = "Currently working on Walmart's Intranet doesn't leave me with very many opportunities to share my work.  I do
+            have a number of personal projects that I can share.   I enjoy doing side projects in my spare time because it gives me the 
+            chance to grow my skills set and also learn about new technologies." />
 
             <Aproject project = {props.projs.millwood} />
             <Aproject project = {props.projs.checkbook} />
+            <Aproject project = {props.projs.resume} />
         </div>
       )
     }
@@ -369,7 +377,7 @@
             <H2 text = "Front End" />
             <Askill text = "HTML 5" />
             <Askill text = "CSS3" />
-            <Askill text = "Javascript / Jquery" />
+            <Askill text = "Javascript / Jquery / React JS" />
             <Askill text = "Wordpress" />
             <Askill text = "Drupal" />
           </div>
@@ -379,7 +387,7 @@
             <Askill text = "Codeigniter" />
             <Askill text = "Laravel" />
             <Askill text = "MySQL" />
-            <Askill text = "React JS" />
+            <Askill text = "" />
           </div>
           <div id = "skills">
             <H2 text = "Server" />
@@ -388,15 +396,17 @@
             <Askill text = "LAMP Stack" />
             <Askill text = "" />
             <Askill text = "" />
+            <Askill text = "" />
 
           </div>
           <div id = "skills">
-            <H2 text = "Programming Mythologies" />
+            <H2 text = "Other Skills" />
             <Askill text = "MVC Frameworks" />
             <Askill text = "REST API's" />
              <Askill text = "Object Oriented Programming" />
             <Askill text = "" />
              <Askill text = "" />
+            <Askill text = "" />
 
           </div>
         </div>
