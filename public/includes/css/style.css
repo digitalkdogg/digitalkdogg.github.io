@@ -135,6 +135,10 @@ div#text-container div.phone a {
     text-decoration: none;
 }
 
+div#text-container div.email a:hover {
+    color: #555;
+}
+
 @media only screen and (max-width: 1025px) {
   	div#title-container {
     	width:50%;
@@ -293,9 +297,15 @@ div#desktop-menu {
 }
 
 
-div#desktop-menu-container div#menu-item:hover, div#mobile-menu-container div#menu-item:hover {
+div#desktop-menu-container div#menu-item:hover {
     cursor: pointer;
     color: #e5d02f;
+}
+
+div#mobile-menu-container div#menu-item:hover {
+	cursor: pointer;
+	color: #555;
+	opacity:1;
 }
 
 
@@ -403,7 +413,7 @@ div#mobile-list-container div:hover {
 
 div#mobile-menu-list {
     width: 50%;
-    opacity: .8;
+    opacity: .9;
     display:inline-block;
 }
 
