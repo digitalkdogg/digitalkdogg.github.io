@@ -45,7 +45,6 @@
       this.state = {
         'mobilemenu': '',
         'scrollstate': 'init',
-        'loadstate': 'init',
         'scrollpos': {
           'this': 'about',
           'about': {
@@ -109,7 +108,7 @@
 
       if (window.scrollY>50) {
        
-        scrollpos['this'] = this.getscrollpos(window.scrollY, this.state.scrollpos);
+        scrollpos['this'] = getscrollpos(window.scrollY, this.state.scrollpos);
         classList = removefromarray(classList, 'init');
         
         if (hasValue(classList, 'scrolled')==false) {
@@ -125,8 +124,6 @@
         thestate = 'init'
       }
 
-
-
       this.setState({'scrollstate': thestate, 
                     'classList': classList, 
                     'classListStr': convertarraytostr(classList),
@@ -139,40 +136,27 @@
       this.checkscreensize();
       window.addEventListener("resize", this.checkscreensize.bind(this));
       window.addEventListener('scroll', this.handleScroll.bind(this));
-      this.setState({'loadstate': 'loaded'});
+      
+  
+     var scrollpos = this.state.scrollpos
+     scrollpos.about = getTopBotPosOfEle(scrollpos.about, 'about', 'projects');
+     scrollpos.projects = getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
+     scrollpos.skillsection = getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
+     scrollpos.contact = getTopBotPosOfEle(scrollpos.contact, 'contact', '');
+     
+     this.setState({scrollpos: scrollpos});
 
-      var hashtag = window.location.hash
-       if (hashtag.indexOf('#')>=0) {
-          hashtag = hashtag.replace('#', '');
-          hashtag = hashtag.toLowerCase();
-          var el = document.getElementById(hashtag)
-          var topPos = getTopPos(el) -50;
-          window.scrollTo({top: topPos});
-        }
+      if(window.location.hash.length > 0) {
+        var el = getElementByHash(window.location.hash);
+        var topPos = getTopPos(el) -100;
+       
+        setTimeout(function () {
+          window.scrollTo({top: topPos});  
+        }, 500);
+      }
     }
 
-    getscrollpos(pos, params) {
-      var section = '';
-      var keys = Object.keys(params);
-        for (var i = 0; i<keys.length; i++) {
-          try {
-            if (params[keys[i]] != undefined) {
-              if (isMobileDevice == true) {
-
-              } else {
-                if (pos >= params[keys[i]].start.desktop  ) {
-                  if (pos <= params[keys[i]].end.desktop ) {
-                    section = params[keys[i]].this
-                  }
-                }
-              }
-            }
-          } catch (e) {}//console.log(params[keys[i]])}
-        }
-    
-      return section
-    }     
-
+  
     menu() {
       return(
         {
@@ -325,14 +309,22 @@
     render() {
       return(
         <div id = "the-guts">
-          <H2 text = {this.state.about} class = 'title' id = 'about' />
-          <this.About />
-          <H2 text = {this.state.projects} class = 'title' id = 'projects' />
-          <this.Projects projs = {this.state.projs} />
-          <H2 text = {this.state.skills} class = 'title' id = 'skills' />
-          <this.Skills projs = {this.state.projs} />
-          <H2 text = {this.state.contact} class = 'title' id = 'contact' />
-          <this.Contact />
+          <div id = "about-section">
+            <H2 text = {this.state.about} class = 'title' id = 'about' />
+            <this.About />
+          </div>
+          <div id = "projects-section">
+            <H2 text = {this.state.projects} class = 'title' id = 'projects' />
+            <this.Projects projs = {this.state.projs} />
+          </div>
+          <div id = "skills-section">
+            <H2 text = {this.state.skills} class = 'title' id = 'skills' />
+            <this.Skills projs = {this.state.projs} />
+          </div>
+          <div id = "contact-section">
+            <H2 text = {this.state.contact} class = 'title' id = 'contact' />
+            <this.Contact />
+          </div>
 
         </div>
       )
@@ -684,6 +676,71 @@ function getTopPos(el) {
         el != null;
         topPos += el.offsetTop, el = el.offsetParent);
     return topPos;
+}
+
+/********************************************************
+*.                ***  get scroll pos. ***              *
+*********************************************************
+*. gets the pos title of the passed in scroll element   *
+*  Return text                                          *
+********************************************************/ 
+ function getscrollpos(pos, params) {
+      var section = '';
+      var keys = Object.keys(params);
+        for (var i = 0; i<keys.length; i++) {
+          try {
+            if (params[keys[i]] != undefined) {
+              if (isMobileDevice == true) {
+
+              } else {
+                if (pos >= params[keys[i]].start.desktop  ) {
+                  if (pos <= params[keys[i]].end.desktop ) {
+                    section = params[keys[i]].this
+                  }
+                }
+              }
+            }
+          } catch (e) {}//console.log(params[keys[i]])}
+        }
+    
+      return section
+    }     
+
+/********************************************************
+*.        ***  get element by hashtag ***               *
+*********************************************************
+*. finds the element based on a passed in value         *
+*  return : object                                     *
+********************************************************/ 
+function getElementByHash(hashtag) {
+  var el = null;
+  if (hashtag.indexOf('#')>=0) {
+    hashtag = hashtag.replace('#', '');
+    hashtag = hashtag.toLowerCase();
+    el = document.getElementById(hashtag)
+  }
+  return el;
+}
+
+/*******************************************************
+*        *** get top bottom pos of ele  ****           *
+********************************************************
+*  get the top and bottom pos of a given element       *
+*  @return : obj                                    *
+*******************************************************/
+function getTopBotPosOfEle(obj, ele, nextele) {
+  var top = getTopPos(document.getElementById(ele)) - 250;
+
+  if (nextele.length > 0 ) {
+    var nexttop = getTopPos(document.getElementById(nextele)) - 250;
+  } else {
+    var nexttop = top + 500;
+  }
+
+  obj.start.desktop = top
+  obj.end.desktop = nexttop-50;
+
+  return obj;
 }
 
 
