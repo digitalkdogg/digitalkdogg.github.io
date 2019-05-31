@@ -549,6 +549,24 @@
         var menubox = document.getElementById('mobile-menu-box')
         menubox.click();
       }
+
+      var activemenu = document.getElementById('active-menu-item');
+      if (item == 'about') {
+        activemenu.innerText = 'About Me'
+      }
+
+      if (item == 'projects') {
+        activemenu.innerText = 'My Projects'
+      }
+      
+      if (item == 'skills') {
+        activemenu.innerText = 'Skills'
+      }
+      
+      if (item == 'contact') {
+        activemenu.innerText = 'Contact'
+      }
+       
     }
 
     render(props) {
