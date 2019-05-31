@@ -120,6 +120,20 @@ div#logo-container {
 	text-align:center;
 }
 
+div#icon-container {
+    float: right;
+    position: relative;
+    top: -50px;
+    width: 500px;
+}
+
+@media only screen and (max-width: 1025px) {
+    div#icon-container {
+        display:none;
+    }
+}
+
+
 div#text-container {
 	width:69%;
 	height:100%;

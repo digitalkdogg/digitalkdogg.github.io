@@ -9,6 +9,10 @@
 
   <link rel= "stylesheet" href = "./public/includes/css/style.css" />
 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"> 
+
+
   <script type="application/javascript" src="./public/includes/react/react.production.min.js"></script>
   <script type="application/javascript" src="./public/includes/react/react-dom.production.min.js"></script>
   <script type="application/javascript" src="./public/includes/react/babel.js"></script>
@@ -204,11 +208,19 @@
               </div>
           </div>
 
+          <this.Icons />
+
           <div id = "menu-container" className = {this.state.scrollstate} >
             <this.Menu id = "desktop-menu" classList = {this.state.classListStr} menu = {this.menu()} />
             <this.Mobilemenu id = "mobile-menu" classList = {this.state.classListStr} menu = {this.menu()} scrollpos = {this.state.scrollpos}/>
           </div>
         </div>
+      )
+    }
+
+    Icons(props) {
+      return (
+        <div id="icon-container"><Aicon /> </div>
       )
     }
 
@@ -445,6 +457,23 @@
               </a>
             </div>
           </div>
+      )
+    }
+
+  }
+
+/**********************************************
+**          *** The AIcon class  ****     **
+**********************************************/
+  class Aicon extends React.Component {
+    constructor() {
+      super();
+      this.state = {}
+    }
+
+    render(props) {
+      return(
+         <div></div>
       )
     }
 
