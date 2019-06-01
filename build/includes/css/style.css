@@ -1,5 +1,6 @@
 /* kevin-yellow : fee201 */
 /* Hightlight-me-blue : 0173fe */
+/* come on over yellow : e5d02f  */
 
 body {
     background: #e9e9e9;
@@ -19,6 +20,20 @@ body {
 	display:block;
 }
 
+button {
+    background: #0173fe;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+	cursor: pointer;
+	opacity:.7;
+}
+
 div#header, div#the-guts, div#footer {
 	padding: 10px 5%;
 	clear: both;
@@ -35,6 +50,7 @@ div#header.scrolled {
     width: 100%;
     height: 50px;
     z-index: 10;
+    border-bottom: 1px solid black;
 }
 
 div#header.scrolled div#title-container {
@@ -84,6 +100,10 @@ div#title {
     border-bottom: 1px solid #333;
 }
 
+#header.scrolled #title-container {
+	border-radius: 0;
+}
+
 #title-container .phone, #title-container .email {
     font-size: 16px;
 }
@@ -100,6 +120,20 @@ div#logo-container {
 	text-align:center;
 }
 
+div#icon-container {
+    float: right;
+    position: relative;
+    top: -50px;
+    width: 500px;
+}
+
+@media only screen and (max-width: 1025px) {
+    div#icon-container {
+        display:none;
+    }
+}
+
+
 div#text-container {
 	width:69%;
 	height:100%;
@@ -115,6 +149,10 @@ div#text-container div.phone a {
     text-decoration: none;
 }
 
+div#text-container div.email a:hover {
+    color: #555;
+}
+
 @media only screen and (max-width: 1025px) {
   	div#title-container {
     	width:50%;
@@ -128,25 +166,39 @@ div#text-container div.phone a {
     }
     
 
-  	div#title-container {
-    	width:95%;
+  	div#header.init div#title-container {
+    	width:90%;
     	margin:0;
         float:right;
 	}
 
+	div#header.scrolled div#title-container {
+		width: 65%;
+		float: left;
+		position: relative;
+		left:15%;
+	}
+
 	div#logo-container {
-		width:35%;
+		width:30%;
+        font-size:1.7em;
+	}
+
+	div#header.scrolled #logo-container {
+		display:none;
 	}
 
 	div#text-container {
 		width: 64%;
+		font-size: 18px;
 	}
 }
 
-@media only screen and (max-width: 350px) {
-	div#logo-container {
-		font-size:1.7em;
-	}
+@media only screen and (max-width: 380px) {
+
+    div#logo-container {
+        font-size:1.4em;
+    }
 
 	#title-container div.phone, #title-container div.email {
 		font-size:14px;
@@ -161,12 +213,12 @@ div#text-container div.phone a {
 	background:white;
 	color:black;
 	min-height:100px;
-	padding: 10px;
+	padding: 20px 10px;
 	font-size:16px;
 }
 
 #the-guts .project {
-    height: 250px;
+    height: 350px;
     width: 30%;
     background: #fee201;
     display:inline-grid;
@@ -192,12 +244,78 @@ div#text-container div.phone a {
 
 #the-guts .project .desc {
     margin: 0 5px;
-    height: 150px;
+    height: 200px;
+    overflow:hidden;
+}
+
+@media only screen and (max-width: 800px) {
+	#the-guts .project {
+		height:250px;
+	}
+
+	#the-guts .project .desc {
+		height:150px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	#the-guts .project {
+		height:300px;
+	}
+
+	#the-guts .project .desc {
+		height:200px;
+	}
 }
 
 #the-guts .project .btn-container {
-	height: 50px;
+	height: 30px;
 	border-top: 1px solid #ccc;
+}
+
+div#the-guts div#skills-container {
+	text-align:center;
+}
+
+div#the-guts div#skills {
+    display: inline-grid;
+    width: 20%;
+    margin: 0 10px;
+    background: #ccc;
+    padding: 0 10px;
+    height: 235px;
+    color: #555;
+    text-align:left;
+    border: 1px solid black;
+}
+
+div#the-guts div#skills div.skill {
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+	div#the-guts div#skills {
+		margin:5px;
+		padding:5px;
+		width:22%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	div#the-guts div#skills {
+    	display: block;
+    	width: 95%;
+    	text-align: left;
+    }
+}
+
+div#the-guts div#skills h2 {
+	font-size: 20px;
+	border-bottom: 1px solid black;
+}
+
+div#the-guts div#skills .skill {
+    height: 30px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -209,17 +327,39 @@ div#text-container div.phone a {
 
 div#desktop-menu {
     float: left;
-    top: -50%;
+    top: -80px;
     position: relative;
 }
+
+
+div#desktop-menu-container div#menu-item:hover {
+    cursor: pointer;
+    color: #e5d02f;
+}
+
+div#mobile-menu-container div#menu-item:hover {
+	cursor: pointer;
+	color: #555;
+	opacity:1;
+}
+
 
 div#menu-container {
 	display:contents;
 }
 
-#header a#menu-item {
+#header #desktop-menu a#menu-item {
     color: white;
     text-decoration: none;
+}
+
+#header #mobile-menu a#menu-item {
+	color:black;
+	text-decoration: none;
+}
+
+#header.scrolled a#menu-item {
+	color:black;
 }
 
 #header #mobile-menu-box span.line {
@@ -260,7 +400,7 @@ div#mobile-menu-list.expanded {
     border: 1px solid white;
     top: -40px;
     position: relative;
-    left: -20px;
+    left: -15px;
 }
 
 #header div#mobile-menu-box:hover {
@@ -273,14 +413,32 @@ div#mobile-list-container {
     position: relative;
     top: -110px;
     color: black;
-    background: #ccc;
+    background: #fff;
     padding: 0 20px;
     left: -20px;
     display: inline-block;
 }
 
+div#active-menu-item {
+    top: -75px;
+    position: relative;
+    left: 20px;
+}
+
+
+div#header.init div#mobile-menu.ismobile div#active-menu-item {
+    display: none;
+}
+
+
+div#header.scrolled div#mobile-menu.ismobile div#active-menu-item {
+    font-size:18px;
+    margin: 5px;
+}
+
 div#header.scrolled div#mobile-list-container {
-	top: -40px;
+	top: -75px;
+	border: 1px solid black;
 }
 
 div#mobile-list-container div:hover {
@@ -289,8 +447,8 @@ div#mobile-list-container div:hover {
 }
 
 div#mobile-menu-list {
-    width: 30%;
-    opacity: .7;
+    width: 50%;
+    opacity: .9;
     display:inline-block;
 }
 
@@ -312,4 +470,18 @@ div#mobile-menu-list {
 
 #the-guts .project .btn-container button:hover {
     cursor: pointer;
+}
+
+#contact-wrapper #btn-wrapper {
+    text-align: center;
+}
+
+div#footer {
+    padding: 0;
+    background: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    margin: 15px 0 0;
+    height: 40px;
 }
