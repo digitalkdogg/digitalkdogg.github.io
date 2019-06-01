@@ -368,7 +368,7 @@ div#menu-container {
     margin: 6px 3px 0;
 }
 
-div#desktop-menu.ismobile, div#desktop-menu.isdesktop.scrolled {
+div#desktop-menu.ismobile, div#desktop-menu.isdesktop.scrolled, div#desktop-menu.scrolled {
     display: none;
 }
 
@@ -391,6 +391,10 @@ div#mobile-menu-list.despanded {
 
 div#mobile-menu-list.expanded {
 	display:block;
+}
+
+div#header.init.isdesktop div#mobile-menu-container {
+    display: none;
 }
 
 
@@ -440,6 +444,7 @@ div#header.scrolled div#mobile-list-container {
 	top: -75px;
 	border: 1px solid black;
 }
+
 
 div#mobile-list-container div:hover {
     opacity:.7;

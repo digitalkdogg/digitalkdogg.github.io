@@ -1,6 +1,6 @@
 {
   "name": "digitalkdogg.github.io",
-   "homepage": "https://github.com/digitalkdogg/digitalkdogg.github.io",
+  "homepage" : "https://digitalkdogg.github.io/digitalkdogg.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
