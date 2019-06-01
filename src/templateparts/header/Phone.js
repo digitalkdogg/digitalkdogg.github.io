@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
 
 class Phone extends Component {
 
@@ -11,7 +10,7 @@ class Phone extends Component {
 
 	render(props){ 
          return(
-        	<div class="phone"><a href = {'tel:' + this.props.phone}>{this.props.phone}</a></div>
+        	<div className="phone"><a href={'tel:' + this.props.phone}>{this.props.phone}</a></div>
       	)
 	}
 }

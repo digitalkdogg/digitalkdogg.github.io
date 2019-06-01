@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
 
 class P extends Component {
 
@@ -11,7 +10,7 @@ class P extends Component {
 
 	render(props){ 
 		 return (
-            <p className = {this.props.class}>{this.props.text}</p>
+            <p className={this.props.class}>{this.props.text}</p>
       )
 	}
 }

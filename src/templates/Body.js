@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
 
 import Header from './Header.js';
 import Guts from './Guts.js';
+import Footer from './Footer.js';
 
 class Body extends Component {
 
@@ -11,14 +11,14 @@ class Body extends Component {
       this.state = {
         scrollstate: 'init'
       }
- }
-
+  }
 
   render(){ 
     return (
-      <div id = "body" className = {this.state.scrollstate=='init' ? 'init': 'scrolled'}>
+      <div id="body" className={this.state.scrollstate==='init' ? 'init': 'scrolled'}>
         <Header />
         <Guts />
+        <Footer />
       </div>
     )
   }

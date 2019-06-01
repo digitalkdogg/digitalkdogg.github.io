@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
 
-import About from '../templateparts/guts/About'
+import About from '../templateparts/guts/About';
+import Projects from '../templateparts/guts/Projects';
+import Skills from '../templateparts/guts/Skills';
+import Contact from '../templateparts/guts/Contact';
 
+import H2 from '../templateparts/utils/H2'
 
 class Guts extends Component {
 
@@ -54,18 +57,22 @@ class Guts extends Component {
 
     render() {
       return(
-        <div id = "the-guts">
-          <div id = "about-section">
+        <div id="the-guts">
+          <H2 id="about" text="About Me" />
+          <div id="about-section">
             <About />
           </div>
-          <div id = "projects-section">
-          
+          <div id="projects-section">
+             <H2 id="projects" text="My Projects" />
+            <Projects />
           </div>
-          <div id = "skills-section">
-        
+          <div id="skills-section">
+              <H2 id="skills" text="Skills" />
+              <Skills />
           </div>
-          <div id = "contact-section">
-        
+          <div id="contact-section">
+              <H2 id="contact" text="Contact Me" />
+              <Contact />
           </div>
 
         </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
 
 class Email extends Component {
 
@@ -11,7 +10,7 @@ class Email extends Component {
 
 	render(props){ 
          return(
-        	<div class="email"><a href = {'mailto:' + this.props.email}>{this.props.email}</a></div>
+        	<div className="email"><a href={'mailto:' + this.props.email}>{this.props.email}</a></div>
       	)
 	}
 }
