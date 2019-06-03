@@ -112,9 +112,6 @@ const rootElement = document.getElementById('root')
 
     }
 
-    go_to_nav_item(item) {
-      console.log(item);
-    }
 
     componentDidMount() {
       this.checkscreensize();
@@ -196,7 +193,15 @@ const rootElement = document.getElementById('root')
 
     Icons(props) {
       return (
-        <div id="icon-container"><Aicon /> </div>
+        <div id="icon-container">
+          <Aicon class = "fa fa-git-square" valign = "top" />
+          <Aiconimg src = "./static/media/react_icon.png" height = "48px" width = "48px" valign="bottom" />
+          <Aicon class = "fa fa-html5" valign = "top" />
+          <Aiconimg src = "./static/media/nodejs_icon.png" height = "36px" width = "36px" valign="bottom" />
+          <Aicon class = "fa fa-code" valign = "top" />
+          <Aiconimg src = "./static/media/php_icon.png" height = "48px" width = "48px" valign="bottom" />
+          <Aicon class = "fa fa-jsfiddle" valign = "top" />
+        </div>
       )
     }
 
@@ -439,6 +444,25 @@ const rootElement = document.getElementById('root')
   }
 
 /**********************************************
+**          *** The AIcoimg class  ****     **
+**********************************************/
+  class Aiconimg extends React.Component {
+    constructor() {
+      super();
+      this.state = {}
+    }
+
+    render(props) {
+      return(
+         <div className={this.props.valign}>
+            <img src = {this.props.src} height= {this.props.height} width = {this.props.src} />
+          </div>
+      )
+    }
+
+  }
+
+/**********************************************
 **          *** The AIcon class  ****     **
 **********************************************/
   class Aicon extends React.Component {
@@ -449,7 +473,9 @@ const rootElement = document.getElementById('root')
 
     render(props) {
       return(
-         <div></div>
+         <div className={this.props.valign}>
+            <i className={this.props.class} aria-hidden="true"></i>
+          </div>
       )
     }
 
