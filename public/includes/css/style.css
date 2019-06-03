@@ -123,16 +123,59 @@ div#logo-container {
 div#icon-container {
     float: right;
     position: relative;
-    top: -50px;
+    top: -60px;
     width: 500px;
+    height: 60px;
+}
+
+div#icon-container div {
+    display: inline;
+    margin: 0 10px;
+}
+
+div#icon-container div.bottom {
+    top: 30px;
+    position: relative;
+}
+
+div#header.scrolled div#icon-container div.bottom {
+    top:10px;
 }
 
 @media only screen and (max-width: 1025px) {
     div#icon-container {
+       top:0;
+       text-align: center;
+       width:100%;
+    }
+
+    div#header.scrolled div#icon-container {
         display:none;
     }
 }
 
+@media only screen and (max-width: 800px) {
+    div#icon-container {
+       top:0;
+       text-align: center;
+       width:100%;
+    }
+
+    div#icon-container div {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    div#icon-container i {
+        font-size:20px;
+    }
+
+    div#icon-container img {
+        width:24px;
+        height: 24px;
+    }
+}
 
 div#text-container {
 	width:69%;
@@ -195,7 +238,6 @@ div#text-container div.email a:hover {
 }
 
 @media only screen and (max-width: 380px) {
-
     div#logo-container {
         font-size:1.4em;
     }
@@ -203,6 +245,10 @@ div#text-container div.email a:hover {
 	#title-container div.phone, #title-container div.email {
 		font-size:14px;
 	}
+
+    div#header.scrolled div#text-contianer #title {
+        font-size:14px !important;
+    }
 }
 
 #the-guts h2.title {
@@ -439,6 +485,18 @@ div#header.scrolled div#mobile-menu.ismobile div#active-menu-item {
     font-size:18px;
     margin: 5px;
 }
+
+@media only screen and (max-width: 380px) {
+    div#header.scrolled div#mobile-menu.ismobile div#active-menu-item  {
+        font-size:15px;
+    }
+
+    div#header.scrolled div#title {
+        font-size: 15px;
+    }
+
+}
+
 
 div#header.scrolled div#mobile-list-container {
 	top: -75px;
