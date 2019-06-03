@@ -195,11 +195,11 @@ const rootElement = document.getElementById('root')
       return (
         <div id="icon-container">
           <Aicon class = "fa fa-git-square" valign = "top" />
-          <Aiconimg src = "./static/media/react_icon.png" height = "48px" width = "48px" valign="bottom" />
+          <Aiconimg src = "./src/includes/img/react_icon.png" height = "48px" width = "48px" valign="bottom" />
           <Aicon class = "fa fa-html5" valign = "top" />
-          <Aiconimg src = "./static/media/nodejs_icon.png" height = "36px" width = "36px" valign="bottom" />
+          <Aiconimg src = "./src/includes/img/nodejs_icon.png" height = "36px" width = "36px" valign="bottom" />
           <Aicon class = "fa fa-code" valign = "top" />
-          <Aiconimg src = "./static/media/php_icon.png" height = "48px" width = "48px" valign="bottom" />
+          <Aiconimg src = "./src/includes/img/php_icon.png" height = "48px" width = "48px" valign="bottom" />
           <Aicon class = "fa fa-jsfiddle" valign = "top" />
         </div>
       )
@@ -286,13 +286,13 @@ const rootElement = document.getElementById('root')
             'id': 2,
             'title': 'Checkbook',
             'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
-            'href' : './public/includes/img/checkbook.png'
+            'href' : './src/includes/img/checkbook.png'
         }, 
           'resume' : {
             'id': 3,
             'title': 'Resume Builder',
             'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
-            'href' : './public/includes/img/resume_admin.png'
+            'href' : './src/includes/img/resume_admin.png'
         } }
       }
     }

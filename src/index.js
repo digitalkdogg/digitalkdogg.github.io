@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 import Body from './templates/Body';
-import '../public/includes/css/style.css';
+import './includes/css/style.css';
 
 var e = React.createElement;
 ReactDOM.render(
