@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-
 import Body from './templates/Body';
 import './includes/css/style.css';
+import './includes/font-awesome/css/font-awesome.css';
 
 var e = React.createElement;
 ReactDOM.render(

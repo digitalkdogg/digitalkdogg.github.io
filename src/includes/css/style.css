@@ -145,11 +145,19 @@ div#header.scrolled div#icon-container div.bottom {
     top:10px;
 }
 
+@media only screen and (max-width: 1250px) {
+    div#icon-container {
+        top:0;
+        left:-200px;
+    }
+
+}
+
 @media only screen and (max-width: 1025px) {
     div#icon-container {
        top:0;
        text-align: center;
-       width:100%;
+       left:-100px;
     }
 
     div#header.scrolled div#icon-container {
@@ -162,6 +170,7 @@ div#header.scrolled div#icon-container div.bottom {
        top:0;
        text-align: center;
        width:100%;
+       left:0;
     }
 
     div#icon-container div {

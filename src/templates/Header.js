@@ -6,6 +6,7 @@ import Email from '../templateparts/header/Email'
 import Desktopmenu from '../templateparts/header/Desktopmenu';
 import Mobilemenu from '../templateparts/header/Mobilemenu';
 import Utilsjs from '../templateparts/utils/Utilsjs';
+import Icons from '../templateparts/header/Icons';
 
 class Header extends Component {
 
@@ -174,6 +175,8 @@ class Header extends Component {
                 		<Email email={this.state.title_container.email} />
               		</div>
               	</div>
+
+                <Icons />
 
               	  <div id="menu-container" className={this.state.scrollstate} >
             		<Desktopmenu id="desktop-menu" classList={this.state.classListStr} menu={this.menu()} />
