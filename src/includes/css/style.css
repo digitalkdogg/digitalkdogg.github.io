@@ -133,6 +133,7 @@ div#icon-container {
 div#icon-container div {
     display: inline;
     margin: 0 10px;
+    opacity: .7;
 }
 
 div#icon-container div.bottom {
