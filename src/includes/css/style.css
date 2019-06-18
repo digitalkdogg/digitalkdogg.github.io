@@ -571,7 +571,7 @@ div#modal {
     border-radius: 5px;
     min-height: 300px;
     position: fixed;
-    top: 30%;
+    top: 5%;
     min-width: 60%;
     margin: 0 10%;
     z-index: 10;
@@ -587,6 +587,15 @@ div#modal {
 h4.modal-title {
     margin: 0 40%;
     color: #333;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+div#img-wrapper {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
 }
 
 .modal-header button.close {

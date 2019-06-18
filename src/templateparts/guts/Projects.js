@@ -21,8 +21,7 @@ class Projects extends Component {
             'title': 'Checkbook',
             'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
             'type': 'modal',
-            'href' : './src/includes/img/checkbook.png',
-            'iclicked': function (datext) {console.log(datext)}
+            'href' : './src/includes/img/checkbook.png'
         }, 
           'resume' : {
             'id': 3,

@@ -51,6 +51,9 @@ class Aproject extends Component {
             </div>
             <div className="modal-body">
               <p>{this.props.project.desc}</p>
+              <div id = "img-wrapper" className = {this.props.project.href ?  'visible': 'hidden' }>
+                <img src = {'https://digitalkdogg.github.io/' + this.props.project.href} />
+              </div>
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-default" onClick = {this.close_modal.bind(this.props.project, this)}>Close</button>
