@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Modal from '../utils/Modal';
+
 class Aproject extends Component {
 
 	constructor(props) {
@@ -11,7 +13,7 @@ class Aproject extends Component {
  }
 
  exec_proj_click (project, that) {
-    if (project.props.project.type =='url') {
+    if (project.props.project.type ==='url') {
       var url = project.props.project.href
       var win = window.open(url, '_blank');
       win.focus();
@@ -27,7 +29,7 @@ class Aproject extends Component {
 
 	render(props){
 		 return (
-      <div id = "project-container">
+      <div id="project-container">
         <div className="project">
           <div className="title">
             {this.props.project.title}
@@ -36,29 +38,14 @@ class Aproject extends Component {
             {this.props.project.desc}
           </div>
           <div className="btn-container">
-         
             <a>
-              <button onClick = {this.exec_proj_click.bind(this.props.project, this)}>View More</button>
+              <button onClick={this.exec_proj_click.bind(this.props.project, this)}>View More</button>
             </a>
 
           </div>
         </div>
-         <div id = "modal" className = {'modal ' + this.state.modalclass}>
-           <div className="modal-content">
-            <div className="modal-header">
-              <button type="button" className="close" data-dismiss="modal" onClick = {this.close_modal.bind(this.props.project, this)} >&times;</button>
-                <h4 className="modal-title">{this.props.project.title}</h4>
-            </div>
-            <div className="modal-body">
-              <p>{this.props.project.desc}</p>
-              <div id = "img-wrapper" className = {this.props.project.href ?  'visible': 'hidden' }>
-                <img src = {'https://digitalkdogg.github.io/' + this.props.project.href} />
-              </div>
-            </div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-default" onClick = {this.close_modal.bind(this.props.project, this)}>Close</button>
-            </div>
-          </div>
+         <div id="modal" className={'modal ' + this.state.modalclass}>
+          <Modal modalclass={this.state.modalclass} project={this.props.project} />
         </div>
       </div>
       )

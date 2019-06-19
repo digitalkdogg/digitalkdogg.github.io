@@ -1,4 +1,4 @@
-import React, { Component } from 'react';  
+import React from 'react';  
 
 class Aiconimg extends React.Component {
   constructor() {
@@ -9,7 +9,7 @@ class Aiconimg extends React.Component {
   render(props) {
     return(
        <div className={this.props.valign}>
-          <img src = {this.props.src} height= {this.props.height} width = {this.props.width} />
+          <img src={this.props.src} height={this.props.height} width={this.props.width} alt="icon" />
         </div>
     )
   }

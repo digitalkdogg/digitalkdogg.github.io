@@ -42,7 +42,7 @@ class Mobilemenu extends Component {
 
 
   handleScroll(event) {
-      if (this.state.menu == 'expanded') {
+      if (this.state.menu === 'expanded') {
         var menubox = document.getElementById('mobile-menu-box')
         menubox.click();
       }
@@ -108,7 +108,6 @@ class Mobilemenu extends Component {
 
   update_active_menu(item) {
    
-     var activemenu = document.getElementById('active-menu-item');
     if (item === 'about') {
       this.setState({'activemenu': 'About Me'})
     }
