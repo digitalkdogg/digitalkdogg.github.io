@@ -5,11 +5,12 @@ import Modal from '../utils/Modal';
 class Aproject extends Component {
 
 	constructor(props) {
-      super();
+      super(props);
       this.state = {
         'props': props,
         'modalclass': 'hidden' 
       }
+      
  }
 
  exec_proj_click (project, that) {
@@ -44,8 +45,9 @@ class Aproject extends Component {
 
           </div>
         </div>
-         <div id="modal" className={'modal ' + this.state.modalclass}>
-          <Modal modalclass={this.state.modalclass} project={this.props.project} />
+         <div id="modal" className={'modal ' + this.state.modalclass + ' modal_'+this.props.project.id}>
+         <span id = "close" onClick={this.close_modal.bind(this.props.project, this)}>x</span>
+          <Modal modalclass={this.state.modalclass} project={this.props.project}  />
         </div>
       </div>
       )
