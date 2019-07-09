@@ -153,7 +153,7 @@ div#header.scrolled div#icon-container div.bottom {
 
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 800px) {
+@media only screen and (max-width: 1250px) and (min-width: 1px) {
     div#icon-container {
        top:0;
        text-align: center;
