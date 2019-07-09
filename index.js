@@ -279,21 +279,38 @@ const rootElement = document.getElementById('root')
           'millwood' : {
             'id': 1,
             'title': 'Millwood',
+            'class': '',
             'desc': 'This is a website I did for Millwood Church in rogers.  The site is built on wordpress and the features include a customized theme, an events calendar, and a blog news feed.  The updates of content is managed solely by the power users of the church.',
             'href': 'https://millwoodchurchnwa.com'
           }, 
           'checkbook' : {
             'id': 2,
             'title': 'Checkbook',
+            'class': '',
             'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
             'href' : './src/includes/img/checkbook.png'
         }, 
           'resume' : {
             'id': 3,
             'title': 'Resume Builder',
+            'class': '',
             'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
             'href' : './src/includes/img/resume_admin.png'
-        } }
+        },
+          'checkboxme' : {
+            'id': 4,
+            'title': 'Checkbox.me',
+            'class': '',
+            'desc': 'This started out as a simple need to implement a fancier version of a checkbox which I thought was pretty cool so I decided to turn this into a plugin.  This written in 100% jQuery and I hope to have this published soon on jquery\'s plguin site.',
+            'href': 'https://digitalkdogg.github.io/checkbox.github.io'
+          },
+          'moretocome' : {
+            'id': 5,
+            'title': 'More To Come',
+            'class' : 'moretocome',
+            'desc': 'I am always challenging my self to learn new technologies and always taking on new project so please check back later',
+            'href': '#'
+          } }
       }
     }
 
@@ -351,6 +368,8 @@ const rootElement = document.getElementById('root')
             <Aproject project = {props.projs.millwood} />
             <Aproject project = {props.projs.checkbook} />
             <Aproject project = {props.projs.resume} />
+            <Aproject project = {props.projs.checkboxme} />
+            <Aproject project = {props.projs.moretocome} />
         </div>
       )
     }
@@ -425,7 +444,7 @@ const rootElement = document.getElementById('root')
 
     render(props) {
       return(
-          <div className = "project">
+          <div className = {"project " + this.props.project.class}>
             <div className = "title">
               {this.props.project.title}
             </div>
