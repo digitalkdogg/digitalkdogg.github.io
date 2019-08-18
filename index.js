@@ -30,7 +30,7 @@ const rootElement = document.getElementById('root')
           'about': {
               'this': 'About Me',
               'start': {'desktop': 50, 'mobile': 50},
-              'end': {'desktop':200, 'mobile':300},          
+              'end': {'desktop':200, 'mobile':300},
         },
           'projects' : {
             'this': 'My Projects',
@@ -63,15 +63,15 @@ const rootElement = document.getElementById('root')
       var classList = this.state.classList;
       if (isMobileDevice() == true) {
         classList = removefromarray(classList, 'isdesktop');
-      
+
         if (hasValue(classList, 'ismobile') ==false) {
           classList.push('ismobile')
         }
       } else {
-         
-       
+
+
          classList = removefromarray(classList, 'ismobile');
-      
+
         if (hasValue(classList, 'isdesktop')==false) {
           classList.push('isdesktop');
         }
@@ -84,18 +84,18 @@ const rootElement = document.getElementById('root')
       var classList = this.state.classList
       var thestate = '';
       var scrollpos = this.state.scrollpos
-     
+
 
       if (window.scrollY>50) {
-       
+
         scrollpos['this'] = getscrollpos(window.scrollY, this.state.scrollpos);
         classList = removefromarray(classList, 'init');
-        
+
         if (hasValue(classList, 'scrolled')==false) {
           classList.push('scrolled')
         }
         thestate='scrolled';
-        
+
       } else {
         classList = removefromarray(classList, 'scrolled');
         if (hasValue(classList, 'init')==false) {
@@ -104,8 +104,8 @@ const rootElement = document.getElementById('root')
         thestate = 'init'
       }
 
-      this.setState({'scrollstate': thestate, 
-                    'classList': classList, 
+      this.setState({'scrollstate': thestate,
+                    'classList': classList,
                     'classListStr': convertarraytostr(classList),
                     'scrollpos': scrollpos
       })
@@ -117,27 +117,27 @@ const rootElement = document.getElementById('root')
       this.checkscreensize();
       window.addEventListener("resize", this.checkscreensize.bind(this));
       window.addEventListener('scroll', this.handleScroll.bind(this));
-      
-  
+
+
      var scrollpos = this.state.scrollpos
      scrollpos.about = getTopBotPosOfEle(scrollpos.about, 'about', 'projects');
      scrollpos.projects = getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
      scrollpos.skillsection = getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
      scrollpos.contact = getTopBotPosOfEle(scrollpos.contact, 'contact', '');
-     
+
      this.setState({scrollpos: scrollpos});
 
       if(window.location.hash.length > 0) {
         var el = getElementByHash(window.location.hash);
         var topPos = getTopPos(el) -100;
-       
+
         setTimeout(function () {
-          window.scrollTo({top: topPos});  
+          window.scrollTo({top: topPos});
         }, 500);
       }
     }
 
-  
+
     menu() {
       return(
         {
@@ -146,19 +146,19 @@ const rootElement = document.getElementById('root')
             'class': 'about',
             'text': 'About Me',
             'href': '#about'
-          }, 
+          },
           'projects': {
             'id': 'menu-item',
             'class': 'projects',
             'text': 'Projects',
             'href': '#projects'
-          }, 
+          },
           'skills': {
             'id': 'menu-item',
             'class': 'skills',
             'text': 'Skills',
             'href': '#skills'
-          }, 
+          },
           'contact': {
             'id': 'menu-item',
             'class': 'contact',
@@ -266,7 +266,7 @@ const rootElement = document.getElementById('root')
               'html': {
                 'id': 1,
                 'text':'HTML5'
-              }, 
+              },
               'css': {
                 'id': 2,
                 'text':'CSS3'
@@ -282,14 +282,14 @@ const rootElement = document.getElementById('root')
             'class': '',
             'desc': 'This is a website I did for Millwood Church in rogers.  The site is built on wordpress and the features include a customized theme, an events calendar, and a blog news feed.  The updates of content is managed solely by the power users of the church.',
             'href': 'https://millwoodchurchnwa.com'
-          }, 
+          },
           'checkbook' : {
             'id': 2,
             'title': 'Checkbook',
             'class': '',
             'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
             'href' : './src/includes/img/checkbook.png'
-        }, 
+        },
           'resume' : {
             'id': 3,
             'title': 'Resume Builder',
@@ -304,12 +304,12 @@ const rootElement = document.getElementById('root')
             'desc': 'This started out as a simple need to implement a fancier version of a checkbox which I thought was pretty cool so I decided to turn this into a plugin.  This written in 100% jQuery and I hope to have this published soon on jquery\'s plguin site.',
             'href': 'https://digitalkdogg.github.io/checkbox.github.io'
           },
-          'moretocome' : {
+          'plexmanager' : {
             'id': 5,
-            'title': 'More To Come',
-            'class' : 'moretocome',
-            'desc': 'I am always challenging my self to learn new technologies and always taking on new project so please check back later',
-            'href': '#'
+            'title': 'Plex Manager',
+            'desc': 'This project, made in Laravel, is a work in progress.  It utilizes the plex api to catolog my plex movies to a database.  This can than be used to analyze and optimize my plex library',
+						'type': 'modal',
+						'href': './src/includes/img/plex_manager.jpeg'
           } }
       }
     }
@@ -346,10 +346,10 @@ const rootElement = document.getElementById('root')
             when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people
             with technology and in my spare time i am often coding or learning a new language or development stack to code in." />
 
-           <P text = "People say that my biggest strength is my passion for a happy customer. While I do find that I am very 
+           <P text = "People say that my biggest strength is my passion for a happy customer. While I do find that I am very
            passionate about my work, I tend to think that my best strength is my ingenuity. My career has led me down many different
-            path and have given me the opportunity to leverage many different technologies. In doing, so I have come to learn my 
-            skill set to best fit the project I am working on. Take this website for example, why buy a domain when you can set up 
+            path and have given me the opportunity to leverage many different technologies. In doing, so I have come to learn my
+            skill set to best fit the project I am working on. Take this website for example, why buy a domain when you can set up
             a static website using reacts and GitHub pages to host your work." />
 
             <P text = "Currently I am working for walmart as the Tech Lead - Intranet Admin.  I am proud of the fact that I get to
@@ -362,14 +362,14 @@ const rootElement = document.getElementById('root')
       return (
         <div class = "item">
             <P text = "Currently working on Walmart's Intranet doesn't leave me with very many opportunities to share my work.  I do
-            have a number of personal projects that I can share.   I enjoy doing side projects in my spare time because it gives me the 
+            have a number of personal projects that I can share.   I enjoy doing side projects in my spare time because it gives me the
             chance to grow my skills set and also learn about new technologies." />
 
             <Aproject project = {props.projs.millwood} />
             <Aproject project = {props.projs.checkbook} />
             <Aproject project = {props.projs.resume} />
             <Aproject project = {props.projs.checkboxme} />
-            <Aproject project = {props.projs.moretocome} />
+          <Aproject project = {props.projs.plexmanager} />
         </div>
       )
     }
@@ -420,7 +420,7 @@ const rootElement = document.getElementById('root')
     Contact(props) {
       return (
         <div id = "contact-wrapper" className="item">
-          <p>Github pages is great because it lets you have a static website for free.  Unfortunately it doesn't let you do server side stuff, like email, 
+          <p>Github pages is great because it lets you have a static website for free.  Unfortunately it doesn't let you do server side stuff, like email,
           too easily.  I haven't got a chance to hook it up to any kind of api so right now you will have to email me.  Relax!  I have made it
           easy for you.  Just click the button below and it will start your email client.  I look forward to hearing from you.</p>
          <div id ="btn-wrapper">
@@ -532,11 +532,11 @@ const rootElement = document.getElementById('root')
 
     menu_item(item) {
       var el = document.getElementById(item);
-      var topPos = getTopPos(el) -300; 
+      var topPos = getTopPos(el) -300;
       if (topPos <= 0 ) {
         topPos=50
       }
-      window.scrollTo({top: topPos}); 
+      window.scrollTo({top: topPos});
     }
 
     render(props) {
@@ -590,11 +590,11 @@ const rootElement = document.getElementById('root')
 
     menu_item(item) {
       var el = document.getElementById(item);
-      var topPos = getTopPos(el) -100; 
+      var topPos = getTopPos(el) -100;
       if (topPos <= 0 ) {
         topPos=50
       }
-      window.scrollTo({top: topPos}); 
+      window.scrollTo({top: topPos});
       if (this.state.menu == 'expanded') {
         var menubox = document.getElementById('mobile-menu-box')
         menubox.click();
@@ -608,15 +608,15 @@ const rootElement = document.getElementById('root')
       if (item == 'projects') {
         activemenu.innerText = 'My Projects'
       }
-      
+
       if (item == 'skills') {
         activemenu.innerText = 'Skills'
       }
-      
+
       if (item == 'contact') {
         activemenu.innerText = 'Contact'
       }
-       
+
     }
 
     render(props) {
@@ -632,15 +632,15 @@ const rootElement = document.getElementById('root')
 
           <div id = "mobile-menu-list" className = {this.state.menu} >
             <div id = "mobile-list-container">
-            
+
                 <div id = {this.props.menu.about.id} onClick = {this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
                 <div id = {this.props.menu.projects.id}  onClick = {this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
                 <div id = {this.props.menu.skills.id}  onClick = {this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
                 <div id = {this.props.menu.contact.id}  onClick = {this.menu_item.bind(this, 'contact')}>{this.props.menu.contact.text}</div>
-              
+
             </div>
           </div>
-        </div> 
+        </div>
       )
     }
 
@@ -725,9 +725,9 @@ const rootElement = document.getElementById('root')
       device = false;
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ==true) {
         device=true;
-      } 
+      }
      }
-     
+
     return device
   };
 
@@ -791,7 +791,7 @@ function convertarraytostr(arr) {
 *********************************************************
 *. Returns the top pos of an passed in element          *
 *  return : numnber                                     *
-********************************************************/ 
+********************************************************/
 function getTopPos(el) {
     for (var topPos = 0;
         el != null;
@@ -804,7 +804,7 @@ function getTopPos(el) {
 *********************************************************
 *. gets the pos title of the passed in scroll element   *
 *  Return text                                          *
-********************************************************/ 
+********************************************************/
  function getscrollpos(pos, params) {
       var section = '';
       var keys = Object.keys(params);
@@ -823,16 +823,16 @@ function getTopPos(el) {
             }
           } catch (e) {}//console.log(params[keys[i]])}
         }
-    
+
       return section
-    }     
+    }
 
 /********************************************************
 *.        ***  get element by hashtag ***               *
 *********************************************************
 *. finds the element based on a passed in value         *
 *  return : object                                     *
-********************************************************/ 
+********************************************************/
 function getElementByHash(hashtag) {
   var el = null;
   if (hashtag.indexOf('#')>=0) {
