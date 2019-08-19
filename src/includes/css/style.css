@@ -300,11 +300,11 @@ div#text-container div.email a:hover {
 
 @media only screen and (max-width: 800px) {
 	#the-guts .project {
-		height:250px;
+		height:auto
 	}
 
 	#the-guts .project .desc {
-		height:150px;
+		height:auto;
 	}
 }
 
