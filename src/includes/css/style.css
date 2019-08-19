@@ -551,6 +551,12 @@ div#project-container {
     width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+  #project-container .righttrix img {
+    width:50%;
+  }
+}
+
 
 div#footer {
     padding: 0;

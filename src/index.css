@@ -2,6 +2,8 @@
 /* Hightlight-me-blue : 0173fe */
 /* come on over yellow : e5d02f  */
 
+/* last updated on 6/14 @ 18:06   */
+
 body {
     background: #e9e9e9;
     font-size: 1.5em;
@@ -9,7 +11,7 @@ body {
     line-height: 1.5;
     color: #eee;
     margin:0;
-    background-image: url("../img/texture-bg.png");
+    background-image: url("https://digitalkdogg.github.io/src/includes/img/texture-bg.png");
 }
 
 .hidden {
@@ -123,16 +125,68 @@ div#logo-container {
 div#icon-container {
     float: right;
     position: relative;
-    top: -50px;
+    top: -60px;
     width: 500px;
+    height: 60px;
 }
 
-@media only screen and (max-width: 1025px) {
+div#icon-container div {
+    display: inline;
+    margin: 0 10px;
+    opacity: .7;
+}
+
+div#icon-container div.bottom {
+    top: 30px;
+    position: relative;
+}
+
+div#header.scrolled div#icon-container div.bottom {
+    top:10px;
+}
+
+@media only screen and (max-width: 1249px) {
     div#icon-container {
+        top:0;
+        left:-200px;
+    }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 1px) {
+    div#icon-container {
+       top:0;
+       text-align: center;
+       left:-100px;
+    }
+
+    div#header.scrolled div#icon-container {
         display:none;
     }
 }
 
+@media only screen and (max-width: 800px) {
+    div#icon-container {
+       top:0;
+       text-align: center;
+       width:100%;
+       left:0;
+    }
+
+    div#icon-container div {
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    div#icon-container i {
+        font-size:20px;
+    }
+
+    div#icon-container img {
+        width:24px;
+        height: 24px;
+    }
+}
 
 div#text-container {
 	width:69%;
@@ -164,7 +218,7 @@ div#text-container div.email a:hover {
     div#text-container div.phone a {
         text-decoration: underline;
     }
-    
+
 
   	div#header.init div#title-container {
     	width:90%;
@@ -195,7 +249,6 @@ div#text-container div.email a:hover {
 }
 
 @media only screen and (max-width: 380px) {
-
     div#logo-container {
         font-size:1.4em;
     }
@@ -203,6 +256,10 @@ div#text-container div.email a:hover {
 	#title-container div.phone, #title-container div.email {
 		font-size:14px;
 	}
+
+    div#header.scrolled div#text-contianer #title {
+        font-size:14px !important;
+    }
 }
 
 #the-guts h2.title {
@@ -218,7 +275,7 @@ div#text-container div.email a:hover {
 }
 
 #the-guts .project {
-    height: 350px;
+    height: 450px;
     width: 30%;
     background: #fee201;
     display:inline-grid;
@@ -230,21 +287,14 @@ div#text-container div.email a:hover {
 
 #the-guts .project .title {
     font-size: 1.5em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #333;
     text-indent: 5px;
     height: 50px;
 }
 
-#the-guts .project .btn-container button {
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    float: right;
-}
-
 #the-guts .project .desc {
     margin: 0 5px;
-    height: 200px;
+    height: 300px;
     overflow:hidden;
 }
 
@@ -266,11 +316,6 @@ div#text-container div.email a:hover {
 	#the-guts .project .desc {
 		height:200px;
 	}
-}
-
-#the-guts .project .btn-container {
-	height: 30px;
-	border-top: 1px solid #ccc;
 }
 
 div#the-guts div#skills-container {
@@ -368,7 +413,7 @@ div#menu-container {
     margin: 6px 3px 0;
 }
 
-div#desktop-menu.ismobile, div#desktop-menu.isdesktop.scrolled {
+div#desktop-menu.ismobile, div#desktop-menu.isdesktop.scrolled, div#desktop-menu.scrolled {
     display: none;
 }
 
@@ -391,6 +436,10 @@ div#mobile-menu-list.despanded {
 
 div#mobile-menu-list.expanded {
 	display:block;
+}
+
+div#header.init.isdesktop div#mobile-menu-container {
+    display: none;
 }
 
 
@@ -436,10 +485,23 @@ div#header.scrolled div#mobile-menu.ismobile div#active-menu-item {
     margin: 5px;
 }
 
+@media only screen and (max-width: 380px) {
+    div#header.scrolled div#mobile-menu.ismobile div#active-menu-item  {
+        font-size:15px;
+    }
+
+    div#header.scrolled div#title {
+        font-size: 15px;
+    }
+
+}
+
+
 div#header.scrolled div#mobile-list-container {
 	top: -75px;
 	border: 1px solid black;
 }
+
 
 div#mobile-list-container div:hover {
     opacity:.7;
@@ -460,21 +522,41 @@ div#mobile-menu-list {
 	}
 }
 
-#the-guts .project .btn-container button {
-    background: #0173fe;
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    font-size: 1em;
+div#project-container {
+    display: inline;
 }
 
-#the-guts .project .btn-container button:hover {
-    cursor: pointer;
-}
-
-#contact-wrapper #btn-wrapper {
+#project-container .project button {
     text-align: center;
+    margin: 40px 35%;
+    padding: 20px;
+    font-size: 1.5em;
 }
+
+#project-container .btn-container {
+    background: #555;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 10px;
+    border-top: 1px solid black;
+    color: white;
+}
+
+#project-container .righttrix, #project-container .lefttrix {
+    display: contents;
+    width:100%;
+}
+
+#project-container .righttrix img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #project-container .righttrix img {
+    width:50%;
+  }
+}
+
 
 div#footer {
     padding: 0;
@@ -484,4 +566,83 @@ div#footer {
     text-align: center;
     margin: 15px 0 0;
     height: 40px;
+}
+
+div#modal {
+    background: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+    min-height: 300px;
+    position: fixed;
+    top: 5%;
+    min-width: 60%;
+    margin: 0 10%;
+    z-index: 10;
+}
+
+#the-guts #modal span#close {
+    z-index: 1;
+    position: relative;
+    padding: 3px;
+    background: #0173fe;
+    color: white;
+    left: -3px;
+    border-radius: 20%;
+    float: right;
+    height: 20px;
+    width:20px;
+    text-align: center;
+}
+
+#the-guts #modal span#close:hover {
+    cursor: pointer;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+    display: inline-flex;
+    width: 100%;
+    height:30px;
+    background: #ccc;
+    position: relative;
+    top: -25px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+h4.modal-title {
+    margin: 0 40%;
+    color: #333;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+div#img-wrapper {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.modal-header button.close {
+    width: 40px;
+}
+
+.modal-body {
+    min-height: 200px;
+    border-bottom:1px solid #333;
+}
+
+.modal-footer {
+    text-align: right;
+    margin: 10px;
+}
+
+#the-guts .project.moretocome {
+    background: #ccc;
+    border: 1px solid #333;
+}
+
+#the-guts .project.moretocome .btn-container {
+    display: none;
 }
