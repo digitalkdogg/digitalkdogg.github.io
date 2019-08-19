@@ -2,7 +2,7 @@
 /* Hightlight-me-blue : 0173fe */
 /* come on over yellow : e5d02f  */
 
-/* last updated on 6/14 @ 18:06   */
+/* last updated on 8/19 @ 07:51   */
 
 body {
     background: #e9e9e9;
@@ -551,10 +551,23 @@ div#project-container {
     width: 100%;
 }
 
+#project-container .desc .visible button {
+    margin: 10% 30%;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
 @media only screen and (max-width: 800px) {
   #project-container .righttrix img {
     width:50%;
+    margin:0 20%;
   }
+
+  #poject-container .righttrix, #project-container .lefttrix {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
