@@ -150,7 +150,6 @@ div#header.scrolled div#icon-container div.bottom {
         top:0;
         left:-200px;
     }
-
 }
 
 @media only screen and (max-width: 1250px) and (min-width: 1px) {
@@ -219,7 +218,7 @@ div#text-container div.email a:hover {
     div#text-container div.phone a {
         text-decoration: underline;
     }
-    
+
 
   	div#header.init div#title-container {
     	width:90%;
@@ -276,7 +275,7 @@ div#text-container div.email a:hover {
 }
 
 #the-guts .project {
-    height: 350px;
+    height: 450px;
     width: 30%;
     background: #fee201;
     display:inline-grid;
@@ -293,16 +292,9 @@ div#text-container div.email a:hover {
     height: 50px;
 }
 
-#the-guts .project .btn-container button {
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    float: right;
-}
-
 #the-guts .project .desc {
     margin: 0 5px;
-    height: 200px;
+    height: 300px;
     overflow:hidden;
 }
 
@@ -324,11 +316,6 @@ div#text-container div.email a:hover {
 	#the-guts .project .desc {
 		height:200px;
 	}
-}
-
-#the-guts .project .btn-container {
-	height: 30px;
-	border-top: 1px solid #333;
 }
 
 div#the-guts div#skills-container {
@@ -535,25 +522,35 @@ div#mobile-menu-list {
 	}
 }
 
-#the-guts .project .btn-container button {
-    background: #0173fe;
-    border-radius: 5px;
-    padding: 5px;
-    color: white;
-    font-size: 1em;
-}
-
 div#project-container {
     display: inline;
 }
 
-#the-guts .project .btn-container button:hover {
-    cursor: pointer;
+#project-container .project button {
+    text-align: center;
+    margin: 40px 35%;
+    padding: 20px;
+    font-size: 1.5em;
 }
 
-#contact-wrapper #btn-wrapper {
-    text-align: center;
+#project-container .btn-container {
+    background: #555;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 10px;
+    border-top: 1px solid black;
+    color: white;
 }
+
+#project-container .righttrix, #project-container .lefttrix {
+    display: contents;
+    width:100%;
+}
+
+#project-container .righttrix img {
+    width: 100%;
+}
+
 
 div#footer {
     padding: 0;

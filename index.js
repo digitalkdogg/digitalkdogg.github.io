@@ -279,37 +279,52 @@ const rootElement = document.getElementById('root')
           'millwood' : {
             'id': 1,
             'title': 'Millwood',
-            'class': '',
             'desc': 'This is a website I did for Millwood Church in rogers.  The site is built on wordpress and the features include a customized theme, an events calendar, and a blog news feed.  The updates of content is managed solely by the power users of the church.',
+            'type': 'url',
+            'thumb': '#',
+            'platform': 'Wordpres',
+            'skills': 'PHP, Wordpres, jQuery, git, UX Design, CMS',
             'href': 'https://millwoodchurchnwa.com'
           },
           'checkbook' : {
             'id': 2,
             'title': 'Checkbook',
-            'class': '',
             'desc': 'This was a personal project that I did on my own.  It uses php code igniter along with mysql db server',
+            'type': 'modal',
+            'platform': 'PHP - Codeigniter',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/checkbook.png',
+            'skills': 'PHP, MySQL, Bootstrap 3, Responsive Design, Restfull API Design ',
             'href' : './src/includes/img/checkbook.png'
-        },
+          },
           'resume' : {
             'id': 3,
             'title': 'Resume Builder',
-            'class': '',
             'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
+            'type': 'modal',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/resume_admin.png',
+            'platform': 'PHP - Codeigniter',
+            'skills': 'PHP, MySQL, jQuery, boostrap',
             'href' : './src/includes/img/resume_admin.png'
-        },
+          },
           'checkboxme' : {
             'id': 4,
             'title': 'Checkbox.me',
-            'class': '',
             'desc': 'This started out as a simple need to implement a fancier version of a checkbox which I thought was pretty cool so I decided to turn this into a plugin.  This written in 100% jQuery and I hope to have this published soon on jquery\'s plguin site.',
-            'href': 'https://digitalkdogg.github.io/checkbox.github.io'
+            'type': 'url',
+            'thumb': '#',
+            'platform': 'jQuery',
+            'skills': 'jQuery, Plugin Design, javascript',
+            'href': 'https://digitalkdogg.github.io/checbox.github.io'
           },
           'plexmanager' : {
             'id': 5,
             'title': 'Plex Manager',
             'desc': 'This project, made in Laravel, is a work in progress.  It utilizes the plex api to catolog my plex movies to a database.  This can than be used to analyze and optimize my plex library',
-						'type': 'modal',
-						'href': './src/includes/img/plex_manager.jpeg'
+            'type': 'modal',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/plex_manager.jpeg',
+            'platform': 'PHP - Laravel',
+            'skills': 'PHP, javascript, Restful API',
+            'href': './src/includes/img/plex_manager.jpeg'
           } }
       }
     }
@@ -448,13 +463,22 @@ const rootElement = document.getElementById('root')
             <div className = "title">
               {this.props.project.title}
             </div>
-            <div className = "desc">
-              {this.props.project.desc}
+            <div className="desc">
+              <div className="lefttrix">
+                {this.props.project.desc}
+              </div>
+              <div className="righttrix">
+                <img className = {this.props.project.type == 'url'? 'hidden': 'visible'} src = {this.props.project.thumb} />
+              </div>
+              <div className = {this.props.project.type == 'url'? 'visible': 'hidden'}>
+              <a href={this.props.project.href} target="_blank">
+                <button>View Site</button>
+              </a>
+              </div>
             </div>
             <div className = "btn-container">
-              <a href = {this.props.project.href} target="_blank">
-                <button>View More</button>
-              </a>
+              <div>Platform : {this.props.project.platform}</div>
+              <div>Skills : {this.props.project.skills}</div>
             </div>
           </div>
       )

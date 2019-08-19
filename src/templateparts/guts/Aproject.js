@@ -8,9 +8,9 @@ class Aproject extends Component {
       super(props);
       this.state = {
         'props': props,
-        'modalclass': 'hidden' 
+        'modalclass': 'hidden'
       }
-      
+
  }
 
  exec_proj_click (project, that) {
@@ -36,12 +36,21 @@ class Aproject extends Component {
             {this.props.project.title}
           </div>
           <div className="desc">
-            {this.props.project.desc}
+						<div className="lefttrix">
+            	{this.props.project.desc}
+						</div>
+						<div className="righttrix">
+							<img className = {this.props.project.type == 'url'? 'hidden': 'visible'} src = {this.props.project.thumb} />
+						</div>
+						<div className = {this.props.project.type == 'url'? 'visible': 'hidden'}>
+						<a href={this.props.project.href} target="_blank">
+							<button>View Site</button>
+						</a>
+						</div>
           </div>
           <div className="btn-container">
-            <a>
-              <button onClick={this.exec_proj_click.bind(this.props.project, this)}>View More</button>
-            </a>
+						<div>Platform : {this.props.project.platform}</div>
+						<div>Skills : {this.props.project.skills}</div>
 
           </div>
         </div>
