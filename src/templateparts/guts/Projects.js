@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import P from '../utils/P';
+import Quote from '../utils/Quote';
 import Aproject from '../guts/Aproject';
 
 class Projects extends Component {
@@ -49,15 +50,25 @@ class Projects extends Component {
 						'skills': 'jQuery, Plugin Design, javascript',
             'href': 'https://digitalkdogg.github.io/checbox.github.io'
           },
-          'plexmanager' : {
+          'millwoodadmin' : {
             'id': 5,
+            'title': 'Millwood Admin',
+            'desc': 'To help support the Millwood church website, we need an applicaiton to take care of some administrative tasks.  For example, the product owner will create a constant contact newsletter and than use this admin site to import into the news section of the website.',
+						'type': 'modal',
+						'thumb': 'https://digitalkdogg.github.io/src/includes/img/millwood_admin.jpeg',
+						'platform': 'PHP 7',
+						'skills': 'PHP, javascript, Restful API, data integration',
+						'href': './src/includes/img/plex_manager.jpeg'
+          },
+          'plexmanager' : {
+            'id': 6,
             'title': 'Plex Manager',
             'desc': 'This project, made in Laravel, is a work in progress.  It utilizes the plex api to catolog my plex movies to a database.  This can than be used to analyze and optimize my plex library',
-						'type': 'modal',
-						'thumb': 'https://digitalkdogg.github.io/src/includes/img/plex_manager.jpeg',
-						'platform': 'PHP - Laravel',
-						'skills': 'PHP, javascript, Restful API',
-						'href': './src/includes/img/plex_manager.jpeg'
+            'type': 'modal',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/plex_manager.jpeg',
+            'platform': 'PHP - Laravel',
+            'skills': 'PHP, javascript, Restful API',
+            'href': './src/includes/img/plex_manager.jpeg'
           } }
       }
  }
@@ -68,14 +79,15 @@ class Projects extends Component {
 	render(props){
 		 return (
            <div className="item">
-           		  <P text="Currently working on Walmart's Intranet doesn't leave me with very many opportunities to share my work.  I do
-            have a number of personal projects that I can share.   I enjoy doing side projects in my spare time because it gives me the
-            chance to grow my skills set and also learn about new technologies." />
-
+           		  <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of changing technologies, I find it is import to constiently challenge my self to learn, develop and grow my skills the correct way" />
+                <Quote text = "&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
+                <P class = "quote-name" text = " -Thomas Edison" />
+                <P text = "" />
             <Aproject project={this.state.projs.millwood} />
             <Aproject project={this.state.projs.checkbook} />
             <Aproject project={this.state.projs.resume}/>
             <Aproject project={this.state.projs.checkboxme}/>
+            <Aproject project = {this.state.projs.millwoodadmin} />
             <Aproject project = {this.state.projs.plexmanager} />
 
 

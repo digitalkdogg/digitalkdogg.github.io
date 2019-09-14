@@ -19,7 +19,8 @@ class Skills extends Component {
             <H2 text="Front End" />
             <Askill text="HTML 5" />
             <Askill text="CSS3" />
-            <Askill text="Javascript / Jquery / React JS" />
+            <Askill text="Javascript"  />
+            <Askill text="Jquery / React JS / Angular"  />
             <Askill text="Wordpress" />
             <Askill text="Drupal" />
           </div>
@@ -35,8 +36,8 @@ class Skills extends Component {
             <H2 text="Server" />
             <Askill text="Git Version Contral" />
             <Askill text="Node JS" />
+            <Askill text="Composer" />
             <Askill text="LAMP Stack" />
-            <Askill text="" />
             <Askill text="" />
             <Askill text="" />
 
@@ -45,8 +46,8 @@ class Skills extends Component {
             <H2 text="Other Skills" />
             <Askill text="MVC Frameworks" />
             <Askill text="REST API's" />
+            <Askill text="Agile Methodoloy" />
             <Askill text="Object Oriented Programming" />
-            <Askill text="" />
             <Askill text="" />
             <Askill text="" />
 

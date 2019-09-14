@@ -526,11 +526,15 @@ div#project-container {
     display: inline;
 }
 
-#project-container .project button {
+#project-container .project button,  #contact-section #btn-wrapper button {
     text-align: center;
     margin: 40px 35%;
     padding: 20px;
     font-size: 1.5em;
+}
+
+#contact-section #btn-wrapper button {
+    margin: 40px 0;
 }
 
 #project-container .btn-container {
@@ -552,6 +556,14 @@ div#project-container {
 }
 
 @media only screen and (max-width: 800px) {
+    #the-guts .project {
+        height:auto;
+    }
+
+    #project-container .righttrix {
+        display: block;
+    }
+
   #project-container .righttrix img {
     width:50%;
   }
@@ -645,4 +657,11 @@ div#img-wrapper {
 
 #the-guts .project.moretocome .btn-container {
     display: none;
+}
+
+quote, p.quote-name {
+    font-size: 1.2em;
+    display: inline;
+    font-style: italic;
+    color: #555;
 }
