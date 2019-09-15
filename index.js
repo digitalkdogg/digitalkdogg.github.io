@@ -316,8 +316,18 @@ const rootElement = document.getElementById('root')
             'skills': 'jQuery, Plugin Design, javascript',
             'href': 'https://digitalkdogg.github.io/checbox.github.io'
           },
-          'plexmanager' : {
+          'millwoodadmin' : {
             'id': 5,
+            'title': 'Millwood Admin',
+            'desc': 'To help support the Millwood church website, we need an applicaiton to take care of some administrative tasks.  For example, the product owner will create a constant contact newsletter and than use this admin site to import into the news section of the website.',
+            'type': 'modal',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/millwood_admin.jpeg',
+            'platform': 'PHP 7',
+            'skills': 'PHP, javascript, Restful API, data integration',
+            'href': './src/includes/img/plex_manager.jpeg'
+          },
+          'plexmanager' : {
+            'id': 6,
             'title': 'Plex Manager',
             'desc': 'This project, made in Laravel, is a work in progress.  It utilizes the plex api to catolog my plex movies to a database.  This can than be used to analyze and optimize my plex library',
             'type': 'modal',
@@ -336,7 +346,7 @@ const rootElement = document.getElementById('root')
             <H2 text = {this.state.about} class = 'title' id = 'about' />
             <this.About />
           </div>
-          <div id = "projects-section">
+          <div id = "project-container">
             <H2 text = {this.state.projects} class = 'title' id = 'projects' />
             <this.Projects projs = {this.state.projs} />
           </div>
@@ -376,14 +386,15 @@ const rootElement = document.getElementById('root')
     Projects(props) {
       return (
         <div class = "item">
-            <P text = "Currently working on Walmart's Intranet doesn't leave me with very many opportunities to share my work.  I do
-            have a number of personal projects that I can share.   I enjoy doing side projects in my spare time because it gives me the
-            chance to grow my skills set and also learn about new technologies." />
-
+            <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of changing technologies, I find it is import to constiently challenge my self to learn, develop and grow my skills the correct way" />
+                <Quote text = "&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
+                <P class = "quote-name" text = " -Thomas Edison" />
+                <P text = "" />
             <Aproject project = {props.projs.millwood} />
             <Aproject project = {props.projs.checkbook} />
             <Aproject project = {props.projs.resume} />
             <Aproject project = {props.projs.checkboxme} />
+            <Aproject project = {props.projs.millwoodadmin} />
           <Aproject project = {props.projs.plexmanager} />
         </div>
       )
@@ -396,7 +407,8 @@ const rootElement = document.getElementById('root')
             <H2 text = "Front End" />
             <Askill text = "HTML 5" />
             <Askill text = "CSS3" />
-            <Askill text = "Javascript / Jquery / React JS" />
+            <Askill text = "Javascript " />
+            <Askill text = "Jquery / React JS / Angular JS" />
             <Askill text = "Wordpress" />
             <Askill text = "Drupal" />
           </div>
@@ -412,8 +424,8 @@ const rootElement = document.getElementById('root')
             <H2 text = "Server" />
             <Askill text = "Git Version Contral" />
             <Askill text = "Node JS" />
+            <Askill text = "Composer" />
             <Askill text = "LAMP Stack" />
-            <Askill text = "" />
             <Askill text = "" />
             <Askill text = "" />
 
@@ -683,6 +695,23 @@ const rootElement = document.getElementById('root')
     render(props) {
       return(
           <p className = {this.props.class}>{this.props.text}</p>
+      )
+    }
+
+  }
+
+/**********************************************
+**          *** The quote class  ****           **
+**********************************************/
+  class Quote extends React.Component {
+    constructor() {
+      super();
+      this.state = {}
+    }
+
+    render(props) {
+      return(
+          <quote className = {this.props.class}>{this.props.text}</quote>
       )
     }
 
