@@ -1,11 +1,10 @@
-const rootElement = document.getElementById('root')
-
-
+const rootElement = document.getElementById('root');
 /**********************************************
 **          *** init function  ***           **
 **********************************************/
 
   function Init(){
+
     return(
     <div>
       <Header />
