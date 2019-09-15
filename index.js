@@ -390,7 +390,7 @@ const rootElement = document.getElementById('root');
     Projects(props) {
       return (
         <div class = "item">
-            <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of changing technologies, I find it is import to constiently challenge my self to learn, develop and grow my skills the correct way" />
+            <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of every changing technologiy, I find it is important to constantly challenge one self to learn, develop and grow new skills.  Not just learn those new skills but to do that the correct way in orcer to develop consistent reusable code" />
                 <Quote text = "&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
                 <P class = "quote-name" text = " -Thomas Edison" />
                 <P text = "" />
@@ -438,10 +438,10 @@ const rootElement = document.getElementById('root');
             <H2 text = "Other Skills" />
             <Askill text = "MVC Frameworks" />
             <Askill text = "REST API's" />
+            <Askill text = "Agile Principals" />
              <Askill text = "Object Oriented Programming" />
             <Askill text = "" />
              <Askill text = "" />
-            <Askill text = "" />
 
           </div>
         </div>
