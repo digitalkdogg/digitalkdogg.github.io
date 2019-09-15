@@ -325,7 +325,7 @@ const rootElement = document.getElementById('root')
             'title': 'Millwood Admin',
             'desc': 'To help support the Millwood church website, we need an applicaiton to take care of some administrative tasks.  For example, the product owner will create a constant contact newsletter and than use this admin site to import into the news section of the website.',
             'type': 'modal',
-            'thumb': 'https://digitalkdogg.github.io/src/includes/img/millwood_admin.jpeg',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/millwood_admin.png',
             'platform': 'PHP 7',
             'skills': 'PHP, javascript, Restful API, data integration',
             'href': './src/includes/img/plex_manager.jpeg'
