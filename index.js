@@ -284,7 +284,8 @@ const rootElement = document.getElementById('root')
             'thumb': '#',
             'platform': 'Wordpres',
             'skills': 'PHP, Wordpres, jQuery, git, UX Design, CMS',
-            'href': 'https://millwoodchurchnwa.com'
+            'href': 'https://millwoodchurchnwa.com',
+            'class': 'visible'
           },
           'checkbook' : {
             'id': 2,
@@ -294,7 +295,8 @@ const rootElement = document.getElementById('root')
             'platform': 'PHP - Codeigniter',
             'thumb': 'https://digitalkdogg.github.io/src/includes/img/checkbook.png',
             'skills': 'PHP, MySQL, Bootstrap 3, Responsive Design, Restfull API Design ',
-            'href' : './src/includes/img/checkbook.png'
+            'href' : './src/includes/img/checkbook.png',
+            'class': 'visible'
           },
           'resume' : {
             'id': 3,
@@ -304,7 +306,8 @@ const rootElement = document.getElementById('root')
             'thumb': 'https://digitalkdogg.github.io/src/includes/img/resume_admin.png',
             'platform': 'PHP - Codeigniter',
             'skills': 'PHP, MySQL, jQuery, boostrap',
-            'href' : './src/includes/img/resume_admin.png'
+            'href' : './src/includes/img/resume_admin.png',
+            'class': 'visible'
           },
           'checkboxme' : {
             'id': 4,
@@ -314,7 +317,8 @@ const rootElement = document.getElementById('root')
             'thumb': '#',
             'platform': 'jQuery',
             'skills': 'jQuery, Plugin Design, javascript',
-            'href': 'https://digitalkdogg.github.io/checbox.github.io'
+            'href': 'https://digitalkdogg.github.io/checbox.github.io',
+            'class': 'visible'
           },
           'millwoodadmin' : {
             'id': 5,
@@ -334,7 +338,8 @@ const rootElement = document.getElementById('root')
             'thumb': 'https://digitalkdogg.github.io/src/includes/img/plex_manager.jpeg',
             'platform': 'PHP - Laravel',
             'skills': 'PHP, javascript, Restful API',
-            'href': './src/includes/img/plex_manager.jpeg'
+            'href': './src/includes/img/plex_manager.jpeg',
+            'class': 'visible'
           } }
       }
     }
@@ -471,7 +476,7 @@ const rootElement = document.getElementById('root')
 
     render(props) {
       return(
-          <div className = {"project " + this.props.project.class}>
+          <div id = "project-container" className = {"project " + this.props.project.class}>
             <div className = "title">
               {this.props.project.title}
             </div>
