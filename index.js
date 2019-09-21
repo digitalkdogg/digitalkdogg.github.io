@@ -50,7 +50,7 @@ const rootElement = document.getElementById('root');
         'ismobile': isMobileDevice(),
         'classList': [],
         'classListStr': '',
-        'title': 'Kevin W. Bollman',
+        'title': 'Kevin Bollman',
         'phone': '814-777-1196',
         'email': 'KevinBollman@gmail.com',
         'headline': 'Full Stack Web Developer'
@@ -172,9 +172,10 @@ const rootElement = document.getElementById('root');
       return(
         <div id = "header" className = {this.state.scrollstate=='init' ? 'init': 'scrolled'}>
           <div id = "title-container">
-            <div id = "logo-container">&#x3C;K/&#x3E;</div>
+            <div id = "logo-container"><i class="fa fa-chevron-left" /> KB / <i class="fa fa-chevron-right"></i></div>
               <div id = "text-container">
                 <this.Title title = {this.state.title} />
+                <this.Headline headline = {this.state.headline} />
                 <this.Contact phone = {this.state.phone} />
                 <this.Email email = {this.state.email} />
               </div>
