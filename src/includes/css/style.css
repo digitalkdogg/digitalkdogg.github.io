@@ -216,6 +216,7 @@ div#header.scrolled div#icon-container div.bottom {
        width:100%;
        margin:0;
        top:125px;
+       left:0;
     }
 
     div#icon-container div {
