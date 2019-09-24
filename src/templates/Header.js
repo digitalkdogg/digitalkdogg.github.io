@@ -168,7 +168,7 @@ class Header extends Component {
 		return (
 			<div id="header" className={this.state.scrollstate + ' ' + this.state.ismobile} >
 				<div id="title-container">
-            		<div id="logo-container">&#x3C;K/&#x3E;</div>
+           <div id = "logo-container"><i class="fa fa-chevron-left" /> KB / <i class="fa fa-chevron-right"></i></div>
               		<div id="text-container">
               			<Title title={this.state.title_container.title} />
                 		<Phone phone={this.state.title_container.phone} />
