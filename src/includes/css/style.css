@@ -42,8 +42,9 @@ div#header, div#the-guts, div#footer {
 }
 div#header {
     height: 200px;
-    /*background: #0173fe; */
-    background: rgba(1, 115, 254, 0.7);
+    background: url('https://digitalkdogg.github.io/src/includes/img/meoej.jpg');
+    background-repeat: repeat-x;
+    background-size:contain;
     padding-top:0;
     padding-bottom:0;
 }
@@ -54,7 +55,9 @@ div#header.scrolled {
     height: 50px;
     z-index: 10;
     border-bottom: 1px solid black;
-    background: rgba(1, 115, 254, 1);
+    background: url('https://digitalkdogg.github.io/src/includes/img/meoej.jpg');
+    background-repeat: repeat-x;
+    background-size:contain;
 }
 
 div#header.scrolled div#title-container {
