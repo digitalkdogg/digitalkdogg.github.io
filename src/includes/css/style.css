@@ -49,12 +49,6 @@ div#header {
     padding-bottom:0;
 }
 
-@media only screen and (max-width: 800px) {
-    div#header {
-        background-size:cover;
-    }
-}
-
 div#header.scrolled {
     position: fixed;
     width: 100%;
@@ -63,8 +57,19 @@ div#header.scrolled {
     border-bottom: 1px solid black;
     background: url('https://digitalkdogg.github.io/src/includes/img/meoej.jpg');
     background-repeat: repeat-x;
-    background-size:cover;
+    background-size:contain;
 }
+
+@media only screen and (max-width: 800px) {
+    div#header {
+        background-size:cover;
+    }
+
+    div#header.scrolled {
+        background-size: cover;
+    }
+}
+
 
 div#header.scrolled div#title-container {
   	height:100%;
@@ -566,12 +571,13 @@ div#header.init div#mobile-menu.ismobile div#active-menu-item {
 
 div#header.scrolled div#mobile-menu.ismobile div#active-menu-item {
     font-size:18px;
-    margin: 7px;
+    margin: 7px 0px;
 }
 
 @media only screen and (max-width: 380px) {
     div#header.scrolled div#mobile-menu.ismobile div#active-menu-item  {
-        font-size:17px;
+        font-size:16px;
+        margin: 7px -2px;
     }
 
     div#header.scrolled div#title {
