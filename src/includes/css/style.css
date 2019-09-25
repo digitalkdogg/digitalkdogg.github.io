@@ -49,6 +49,12 @@ div#header {
     padding-bottom:0;
 }
 
+@media only screen and (max-width: 800px) {
+    div#header {
+        background-size:cover;
+    }
+}
+
 div#header.scrolled {
     position: fixed;
     width: 100%;
@@ -57,7 +63,7 @@ div#header.scrolled {
     border-bottom: 1px solid black;
     background: url('https://digitalkdogg.github.io/src/includes/img/meoej.jpg');
     background-repeat: repeat-x;
-    background-size:contain;
+    background-size:cover;
 }
 
 div#header.scrolled div#title-container {
