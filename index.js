@@ -600,21 +600,32 @@ const rootElement = document.getElementById('root');
     constructor() {
       super();
       this.state = {
-        'menu' : 'despanded'
+        'menu' : 'despanded',
+        'trans': ''
       }
     }
 
     open_menu(e) {
       if (this.state.menu=='despanded') {
         var status = 'expanded';
+        var trans = 'trans';
+        document.querySelector("body").style.overflow = 'hidden';
       } else {
         var status = 'despanded';
+        var trans = '';
+        document.querySelector("body").style.overflow = 'scroll';
       }
 
       if (status != null || status != '') {
         this.setState({
           'menu': status
         })
+
+        setTimeout(
+        function() {
+          this.setState({'trans': trans});
+        }.bind(this),100);
+     
       }
     }
 
@@ -672,8 +683,8 @@ const rootElement = document.getElementById('root');
           <div id = "active-menu-item">{this.props.scrollpos.this}</div>
 
           <div id = "mobile-menu-list" className = {this.state.menu} >
-            <div id = "mobile-list-container">
-
+            <div id = "mobile-list-container" className = {this.state.trans}>
+                <span id = "close" className = {this.state.trans} onClick={this.open_menu.bind(this)}>X</span>
                 <div id = {this.props.menu.about.id} onClick = {this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
                 <div id = {this.props.menu.projects.id}  onClick = {this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
                 <div id = {this.props.menu.skills.id}  onClick = {this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>

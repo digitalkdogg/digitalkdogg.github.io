@@ -339,6 +339,64 @@ div#text-container div.email a:hover {
     }
 }
 
+div#mobile-menu-list.expanded div#mobile-list-container {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+div#mobile-menu-list.expanded #close {
+    position: fixed;
+    font-size: 2em;
+    z-index: 100;
+    color:black;
+    left: 0;
+    top: -10px;
+}
+
+div#mobile-menu-list.expanded div#mobile-list-container.trans, div#mobile-list-container.trans #close.trans {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  transition-timing-function: cubic-bezier(0.4, 0.6, 0.8, 0.7); 
+}
+
+div#mobile-menu-list.expanded div#mobile-list-container.trans {
+  width:20%;
+}
+
+div#mobile-menu-list.expanded div#mobile-list-container.trans #close.trans {
+    left:20%;
+}
+
+div#mobile-menu-list.expanded #close {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    div#mobile-menu-list.expanded div#mobile-list-container {
+        width:0;
+    }
+
+    div#mobile-menu-list.expanded #close {
+        left:0;
+    }
+
+    div#mobile-menu-list.expanded div#mobile-list-container.trans {
+        width: 50%;
+    }
+
+    div#mobile-menu-list.expanded div#mobile-list-container.trans #close.trans {
+        left: 50%;
+    }
+
+
+}
+
 #the-guts h2.title {
 	border-bottom:1px solid white;
 }

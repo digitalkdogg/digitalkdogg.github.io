@@ -105,6 +105,7 @@ class Header extends Component {
 
     handleScroll(event) {
     	const Utils = new Utilsjs();
+      var expanded = false;
 
     	var classList = this.state.classList;
      	var scrollpos = this.state.scrollpos;
@@ -113,24 +114,26 @@ class Header extends Component {
       	if (window.scrollY>50) {
       		scrollpos['this'] = Utils.getscrollpos(window.scrollY, this.state.scrollpos);
       		classList = Utils.removefromarray(classList, 'init');
-    		if (Utils.hasValue(classList, 'scrolled')===false) {
+    		  if (Utils.hasValue(classList, 'scrolled')===false) {
           		classList.push('scrolled')
         	}
         	thestate='scrolled';
-    	} else {
+    	   } else {
         	classList = Utils.removefromarray(classList, 'scrolled');
     	
         	if (Utils.hasValue(classList, 'init')===false) {
           		classList.push('init')
         	}
         	thestate = 'init'
-    	}
+    	  }
+
 
     	 this.setState({'scrollstate': thestate, 
                     'classList': classList,
                     'classListStr': Utils.convertarraytostr(classList),
                     'scrollpos' : scrollpos
                 });
+      
     }
 
 

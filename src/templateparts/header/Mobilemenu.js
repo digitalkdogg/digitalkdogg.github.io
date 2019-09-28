@@ -8,6 +8,7 @@ class Mobilemenu extends Component {
       super();
       this.state = {
          'menu' : 'despanded',
+         'trans': '',
          'activemenu' : '',
          'scrollpos': props.scrollpos
       }
@@ -26,8 +27,9 @@ class Mobilemenu extends Component {
           <div id="active-menu-item">{this.state.activemenu}</div>
 
           <div id="mobile-menu-list" className={this.state.menu} >
-            <div id="mobile-list-container">
-            
+
+            <div id="mobile-list-container" className = {this.state.trans}>
+                <span id = "close" className = {this.state.trans} onClick={this.open_menu.bind(this)}>X</span>
                 <div id={this.props.menu.about.id} onClick={this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
                 <div id={this.props.menu.projects.id}  onClick={this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
                 <div id={this.props.menu.skills.id}  onClick={this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
@@ -44,21 +46,22 @@ class Mobilemenu extends Component {
   handleScroll(event) {
       if (this.state.menu === 'expanded') {
         var menubox = document.getElementById('mobile-menu-box')
-        menubox.click();
+       // menubox.click();
       }
       const Utils = new Utilsjs();
       var scrollpos = this.state.scrollpos
       scrollpos['this'] = Utils.getscrollpos(window.scrollY, scrollpos);
 
-      this.setState({
-        'scrollpos': scrollpos,
-        'activemenu': scrollpos['this']
-      })
+        this.setState({
+          'scrollpos': scrollpos,
+          'activemenu': scrollpos['this']
+        })
     }
 
   componentDidMount() {
         window.addEventListener('scroll', this.handleScroll.bind(this));
   }
+
 
 /********************************************************
 *.            ***   Open Menu box. ***                  *
@@ -68,17 +71,31 @@ class Mobilemenu extends Component {
 *  return : scrolls to menu item                        *
 ********************************************************/ 
   open_menu(e) {
-    var status = 'depanded'
+    var status = 'depanded';
+    var trans = '';
     if (this.state.menu==='despanded') {
       status = 'expanded';
+      trans = 'trans';
+      document.querySelector("body").style.overflow = 'hidden';
     } else {
       status = 'despanded';
+      trans = '';
+      document.querySelector("body").style.overflow = 'scroll';
+    //  document.querySelector("body").style.overflow = 'visible';
     }
 
     if (status !== null || status !== '') {
       this.setState({
         'menu': status
       })
+
+     setTimeout(
+        function() {
+      //    console.log(trans)
+          this.setState({'trans': trans});
+        }.bind(this),
+        100);
+     
     }
   }
 
