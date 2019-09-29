@@ -537,10 +537,11 @@ div#desktop-menu-container div#menu-item:hover {
     cursor: pointer;
     color: #e5d02f;
     border-left: 3px solid #e4d02f;
+    padding:0 2px;
 }
 
 #mobile-list-container div#menu-item {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 div#mobile-menu-container div#menu-item:hover {
@@ -548,6 +549,7 @@ div#mobile-menu-container div#menu-item:hover {
 	color: #777;
 	opacity:1;
     border-left:3px solid #777;
+    padding: 0 2px;
 }
 
 
