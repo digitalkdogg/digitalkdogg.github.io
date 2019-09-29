@@ -172,6 +172,9 @@ const rootElement = document.getElementById('root');
       return(
         <div id = "header" className = {this.state.scrollstate=='init' ? 'init': 'scrolled'}>
           <div id = "title-container">
+            <div id = "float-container">
+              <i class = "fa fa-cog float"></i>
+            </div>
             <div id = "logo-container"><i class="fa fa-chevron-left" /> KB / <i class="fa fa-chevron-right"></i></div>
               <div id = "text-container">
                 <this.Title title = {this.state.title} />

@@ -55,7 +55,7 @@ class Header extends Component {
 
     var scrollpos = this.state.scrollpos
     scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects');
-	scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
+	  scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
     scrollpos.skillsection = Utils.getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
     scrollpos.contact = Utils.getTopBotPosOfEle(scrollpos.contact, 'contact', '');
 
@@ -70,6 +70,7 @@ class Header extends Component {
     	mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
     }
     this.setState({'ismobile': mobileordesktop});
+
  }
 
    menu() {
@@ -171,6 +172,9 @@ class Header extends Component {
 		return (
 			<div id="header" className={this.state.scrollstate + ' ' + this.state.ismobile} >
 				<div id="title-container">
+        <div id = "float-container">
+            <i id = "starti1" class="fa fa-cog float rotating" data-hstart= "1" data-step = "5" data-end = "18" ></i>
+        </div>
            <div id = "logo-container"><i class="fa fa-chevron-left" /> KB / <i class="fa fa-chevron-right"></i></div>
               		<div id="text-container">
               			<Title title={this.state.title_container.title} />
