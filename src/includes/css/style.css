@@ -342,9 +342,9 @@ div#text-container div.email a:hover {
 div#mobile-menu-list.expanded div#mobile-list-container {
     position: fixed;
     height: 100%;
-    width: 0;
+    width: 20%;
     top: 0;
-    left: 0;
+    left: -20%;
 }
 
 div#mobile-menu-list.expanded #close {
@@ -362,18 +362,35 @@ div#mobile-menu-list.expanded div#mobile-list-container.trans, div#mobile-list-c
   -o-transition: all .3s;
   -ms-transition: all .3s;
   transition: all .3s;
+
   transition-timing-function: cubic-bezier(0.4, 0.6, 0.8, 0.7); 
 }
 
+
 div#mobile-menu-list.expanded div#mobile-list-container.trans {
-  width:20%;
+    left:0;
 }
 
 div#mobile-menu-list.expanded div#mobile-list-container.trans #close.trans {
-    left:20%;
+    left:20%;    
 }
 
-div#mobile-menu-list.expanded #close {
+div#mobile-list-container.trans #close:hover {
+    color: #777;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(-360deg);
+}
+
+.spin {
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+
+}
+
+div#mobile-menu-list.expanded #close:hover {
     cursor: pointer;
 }
 
@@ -511,16 +528,26 @@ div#desktop-menu {
     position: relative;
 }
 
+div#desktop-menu div#menu-item {
+    padding: 0 5px;
+}
+
 
 div#desktop-menu-container div#menu-item:hover {
     cursor: pointer;
     color: #e5d02f;
+    border-left: 3px solid #e4d02f;
+}
+
+#mobile-list-container div#menu-item {
+    padding: 0 10px;
 }
 
 div#mobile-menu-container div#menu-item:hover {
 	cursor: pointer;
-	color: #555;
+	color: #777;
 	opacity:1;
+    border-left:3px solid #777;
 }
 
 

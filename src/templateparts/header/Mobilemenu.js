@@ -9,6 +9,7 @@ class Mobilemenu extends Component {
       this.state = {
          'menu' : 'despanded',
          'trans': '',
+         'spin': '',
          'activemenu' : '',
          'scrollpos': props.scrollpos
       }
@@ -29,7 +30,7 @@ class Mobilemenu extends Component {
           <div id="mobile-menu-list" className={this.state.menu} >
 
             <div id="mobile-list-container" className = {this.state.trans}>
-                <span id = "close" className = {this.state.trans} onClick={this.open_menu.bind(this)}>X</span>
+                <span id = "close" className = {this.state.trans + ' ' + this.state.spin} onClick={this.open_menu.bind(this)}>X</span>
                 <div id={this.props.menu.about.id} onClick={this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
                 <div id={this.props.menu.projects.id}  onClick={this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
                 <div id={this.props.menu.skills.id}  onClick={this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
@@ -71,15 +72,18 @@ class Mobilemenu extends Component {
 *  return : scrolls to menu item                        *
 ********************************************************/ 
   open_menu(e) {
-    var status = 'depanded';
-    var trans = '';
+    let status = 'depanded';
+    let trans = '';
+    let spin = '';
     if (this.state.menu==='despanded') {
       status = 'expanded';
       trans = 'trans';
+      spin = 'spin'
       document.querySelector("body").style.overflow = 'hidden';
     } else {
       status = 'despanded';
       trans = '';
+      spin = '';
       document.querySelector("body").style.overflow = 'scroll';
     //  document.querySelector("body").style.overflow = 'visible';
     }
@@ -89,12 +93,9 @@ class Mobilemenu extends Component {
         'menu': status
       })
 
-     setTimeout(
-        function() {
-      //    console.log(trans)
-          this.setState({'trans': trans});
-        }.bind(this),
-        100);
+     setTimeout(function() {
+        this.setState({'trans': trans, 'spin': spin});
+      }.bind(this),100);
      
     }
   }
