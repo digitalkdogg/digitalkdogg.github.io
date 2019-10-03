@@ -434,9 +434,10 @@ div#mobile-menu-list.expanded #close:hover {
 
 }
 
-#the-guts h2.title {
-	border-bottom:1px solid white;
+div#the-guts h2 {
+    margin: 0 0 10px 0 ;
 }
+
 
 #the-guts .item {
 	background:white;
@@ -444,6 +445,8 @@ div#mobile-menu-list.expanded #close:hover {
 	min-height:100px;
 	padding: 20px 10px;
 	font-size:16px;
+    line-height:1.7em;
+    margin-bottom: 40px;
 }
 
 #the-guts .project {
