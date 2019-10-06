@@ -12,7 +12,7 @@ class Contact extends Component {
 
   render(props){ 
     return (
-      <div id="contact-wrapper" className="item">
+      <div id="contact-wrapper" className="item contact">
           <P text="Github pages is great because it lets you have a static website for free.  Unfortunately it doesn't let 
           you do server side stuff, like email too easily.  I haven't got a chance to hook it up to any kind of api so right now you will have to email me.  Relax!  I have made it
           easy for you.  Just click the button below and it will start your email client.  I look forward to hearing from you." />

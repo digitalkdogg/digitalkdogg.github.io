@@ -11,6 +11,7 @@ class Mobilemenu extends Component {
          'trans': '',
          'spin': '',
          'activemenu' : '',
+         'activeclass' : '',
          'scrollpos': props.scrollpos
       }
  }
@@ -29,8 +30,8 @@ class Mobilemenu extends Component {
 
           <div id="mobile-menu-list" className={this.state.menu} >
 
-            <div id="mobile-list-container" className = {this.state.trans}>
-                <span id = "close" className = {this.state.trans + ' ' + this.state.spin} onClick={this.open_menu.bind(this)}>X</span>
+            <div id="mobile-list-container" className={this.state.trans}>
+                <span id="close" className={this.state.trans + ' ' + this.state.spin} onClick={this.open_menu.bind(this)}>X</span>
                 <div id={this.props.menu.about.id} onClick={this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
                 <div id={this.props.menu.projects.id}  onClick={this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
                 <div id={this.props.menu.skills.id}  onClick={this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
@@ -45,18 +46,24 @@ class Mobilemenu extends Component {
 
 
   handleScroll(event) {
-      if (this.state.menu === 'expanded') {
-        var menubox = document.getElementById('mobile-menu-box')
-       // menubox.click();
-      }
       const Utils = new Utilsjs();
+
+     // var section = Utils.getcurrentsection(window.pageYOffset, this.state.scrollpos);
+   
+
       var scrollpos = this.state.scrollpos
       scrollpos['this'] = Utils.getscrollpos(window.scrollY, scrollpos);
+      scrollpos['thisclass'] = Utils.getscrollclass(scrollpos['this']);
 
-        this.setState({
-          'scrollpos': scrollpos,
-          'activemenu': scrollpos['this']
-        })
+      this.setState({
+        'scrollpos': scrollpos,
+        'activemenu': scrollpos['this'],
+        'activeclass': scrollpos['thisclass']
+      })
+
+     Utils.setactiveclass(scrollpos['thisclass'])
+
+
     }
 
   componentDidMount() {
@@ -125,7 +132,7 @@ class Mobilemenu extends Component {
   }
 
   update_active_menu(item) {
-   
+    
     if (item === 'about') {
       this.setState({'activemenu': 'About Me'})
     }

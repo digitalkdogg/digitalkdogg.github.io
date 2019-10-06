@@ -40,9 +40,9 @@ class Aproject extends Component {
             	{this.props.project.desc}
 						</div>
 						<div className="righttrix">
-							<img className = {this.props.project.type == 'url'? 'hidden': 'visible'} src = {this.props.project.thumb} />
+							<img alt="#" className={this.props.project.type==='url'? 'hidden': 'visible'} src={this.props.project.thumb} />
 						</div>
-						<div className = {this.props.project.type == 'url'? 'visible': 'hidden'}>
+						<div className={this.props.project.type==='url'? 'visible': 'hidden'}>
 						<a href={this.props.project.href} target="_blank">
 							<button>View Site</button>
 						</a>
@@ -55,7 +55,7 @@ class Aproject extends Component {
           </div>
         </div>
          <div id="modal" className={'modal ' + this.state.modalclass + ' modal_'+this.props.project.id}>
-         <span id = "close" onClick={this.close_modal.bind(this.props.project, this)}>x</span>
+         <span id="close" onClick={this.close_modal.bind(this.props.project, this)}>x</span>
           <Modal modalclass={this.state.modalclass} project={this.props.project}  />
         </div>
       </div>

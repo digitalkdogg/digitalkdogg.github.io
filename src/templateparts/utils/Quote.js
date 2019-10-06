@@ -10,7 +10,7 @@ class Quote extends Component {
 
 	render(props){ 
 		 return (
-            <quote className={this.props.class}>{this.props.text}</quote>
+            <div className="quote {this.props.class}">{this.props.text}</div>
       )
 	}
 }

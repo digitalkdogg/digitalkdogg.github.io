@@ -54,10 +54,20 @@ class Header extends Component {
 	const Utils = new Utilsjs();
 
     var scrollpos = this.state.scrollpos
-    scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects');
+
+    console.log(Utils.isMobileDevice())
+
+ //   scrollpos.about = Utils.getTopBotPosOfEle2(scrollpos.about, '#about-section', '#projects-section');
+ //   scrollpos.projects = Utils.getTopBotPosOfEle2(scrollpos.projects, '#projects-section', '#skills-section');
+ //   scrollpos.skillsection = Utils.getTopBotPosOfEle2(scrollpos.skillsection, '#skills-section', '#contact-section');
+ //   scrollpos.contact = Utils.getTopBotPosOfEle2(scrollpos.contact, '#contact-section', '');
+    
+    scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects'); 
 	  scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
     scrollpos.skillsection = Utils.getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
     scrollpos.contact = Utils.getTopBotPosOfEle(scrollpos.contact, 'contact', '');
+
+    console.log(scrollpos);
 
     this.checkscreensize();
     window.addEventListener("resize", this.checkscreensize.bind(this));
@@ -106,14 +116,19 @@ class Header extends Component {
 
     handleScroll(event) {
     	const Utils = new Utilsjs();
-      var expanded = false;
 
     	var classList = this.state.classList;
      	var scrollpos = this.state.scrollpos;
      	var thestate = '';
 
       	if (window.scrollY>50) {
+
       		scrollpos['this'] = Utils.getscrollpos(window.scrollY, this.state.scrollpos);
+
+
+
+
+
       		classList = Utils.removefromarray(classList, 'init');
     		  if (Utils.hasValue(classList, 'scrolled')===false) {
           		classList.push('scrolled')
@@ -172,10 +187,10 @@ class Header extends Component {
 		return (
 			<div id="header" className={this.state.scrollstate + ' ' + this.state.ismobile} >
 				<div id="title-container">
-        <div id = "float-container">
-            <i id = "starti1" class="fa fa-cog float rotating" data-hstart= "1" data-step = "5" data-end = "18" ></i>
+        <div id="float-container">
+            <i id="starti1" className="fa fa-cog float rotating" data-hstart="1" data-step="5" data-end="18" ></i>
         </div>
-           <div id = "logo-container"><i class="fa fa-chevron-left" /> KB / <i class="fa fa-chevron-right"></i></div>
+           <div id="logo-container"><i className="fa fa-chevron-left" /> KB / <i className="fa fa-chevron-right"></i></div>
               		<div id="text-container">
               			<Title title={this.state.title_container.title} />
                 		<Phone phone={this.state.title_container.phone} />

@@ -188,8 +188,7 @@ div#icon-container div {
 }
 
 div#header.scrolled div#icon-container {
-    position: fixed;
-    top: -5px;
+   display:none;
 }
 
 div#icon-container div.bottom {
@@ -438,16 +437,32 @@ div#the-guts h2 {
     margin: 0 0 10px 0 ;
 }
 
+div#the-guts .quote {
+    font-style: italic;
+}
+
 
 #the-guts .item {
-	background:white;
-	color:black;
+	background:#fff;
+	color:#777;
 	min-height:100px;
 	padding: 20px 10px;
 	font-size:16px;
     line-height:1.7em;
     margin-bottom: 40px;
+    transition: all .2s ease-in-out;
 }
+
+#the-guts .item.active {
+    color: black;
+    -webkit-box-shadow: 0px 5px 15px 3px #333;
+    -moz-box-shadow: 0px 5px 15px 3px #333;
+    box-shadow: 0px 5px 15px 3px #333;
+    box-shadow: 0px 5px 15px 3px #333;
+    /* background:#fff;
+    transform: scale(1.05); 
+    font-weight: bold;*/
+} 
 
 #the-guts .project {
     height: 450px;
@@ -474,6 +489,12 @@ div#the-guts h2 {
 }
 
 @media only screen and (max-width: 800px) {
+    #the-guts .project .title {
+        text-align: center;
+        padding:10px;
+        height:30px;
+    }
+
 	#the-guts .project {
 		height:auto
 	}
@@ -501,12 +522,16 @@ div#the-guts div#skills {
     display: inline-grid;
     width: 20%;
     margin: 0 10px;
-    background: #ccc;
+    background: #777;
     padding: 0 10px;
     height: 235px;
-    color: #555;
+    color: #ccc;
     text-align:left;
     border: 1px solid black;
+}
+
+div#the-guts div#skills-container.skills.active #skills {
+    color:white;
 }
 
 div#the-guts div#skills div.skill {
@@ -682,12 +707,14 @@ div#header.init div#mobile-menu.ismobile div#active-menu-item {
 div#header.scrolled div#mobile-menu.ismobile div#active-menu-item {
     font-size:18px;
     margin: 7px 0px;
+    color:white;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 380px) {
     div#header.scrolled div#mobile-menu.ismobile div#active-menu-item  {
         font-size:16px;
-        margin: 7px -2px;
+        margin: 7px -7px;
     }
 
     div#header.scrolled div#title {
@@ -770,8 +797,8 @@ div#project-container {
     }
 
   #project-container .righttrix img {
-    width:50%;
-    margin:0 25%;
+    width:60%;
+    margin:0 20%;
   }
 
   #poject-container .righttrix, #project-container .lefttrix {

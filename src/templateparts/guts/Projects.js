@@ -78,17 +78,17 @@ class Projects extends Component {
 
 	render(props){
 		 return (
-           <div className="item">
+           <div className="item projects">
            		  <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of changing technologies, I find it is import to constiently challenge my self to learn, develop and grow my skills the correct way" />
-                <Quote text = "&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
-                <P class = "quote-name" text = " -Thomas Edison" />
-                <P text = "" />
+                <Quote text="&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
+                <P class="quote-name" text=" -Thomas Edison" />
+                <P text="" />
             <Aproject project={this.state.projs.millwood} />
             <Aproject project={this.state.projs.checkbook} />
             <Aproject project={this.state.projs.resume}/>
             <Aproject project={this.state.projs.checkboxme}/>
-            <Aproject project = {this.state.projs.millwoodadmin} />
-            <Aproject project = {this.state.projs.plexmanager} />
+            <Aproject project={this.state.projs.millwoodadmin} />
+            <Aproject project={this.state.projs.plexmanager} />
 
 
            </div>

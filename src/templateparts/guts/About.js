@@ -12,7 +12,7 @@ class About extends Component {
 
 	render(props){ 
 		 return (
-           <div className="item">
+           <div className="item about">
            		<P  text="I am a full stack web designer / developer.  I design websites both professionally and on the side.  
            		My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday
             when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people

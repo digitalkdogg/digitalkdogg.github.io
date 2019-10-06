@@ -14,7 +14,7 @@ class Skills extends Component {
 
   render(){ 
     return (
-      <div id="skills-container" className="item">
+      <div id="skills-container" className="item skills">
           <div id="skills">
             <H2 text="Front End" />
             <Askill text="HTML 5" />

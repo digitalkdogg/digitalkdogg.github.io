@@ -58,8 +58,9 @@ class Guts extends Component {
     render() {
       return(
         <div id="the-guts">
-          <H2 id="about" text="About Me" />
+        
           <div id="about-section">
+            <H2 id="about" text="About Me" />
             <About />
           </div>
           <div id="projects-section">

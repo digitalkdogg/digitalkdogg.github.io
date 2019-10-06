@@ -23,6 +23,34 @@ class Utilsjs extends Component {
       return arr;
   }
 
+
+/*******************************************************
+  *   *** check and remove from array function  ****     *
+  ********************************************************
+  *  This function checks for a string in array and      *
+  *  removes it                                          *
+  *  @return : new array                                   *
+  *******************************************************/
+  setactiveclass(classname) {
+      var items = document.querySelectorAll('.item');
+
+      var header = document.getElementById('header')
+      
+      if (header.classList.contains('init') == false) {
+        for (var x =0; x<items.length; x++) {
+          if (items[x].classList.contains('active')==true) {
+            items[x].classList.remove('active');
+          }
+        }
+        var ele = document.querySelector('.'+classname);
+
+        if (ele != null) {
+          ele.classList.add('active');
+        }
+      }
+  }
+
+
   /*******************************************************
   *              *** in array function  ****     *
   ********************************************************
@@ -68,12 +96,17 @@ class Utilsjs extends Component {
 *******************************************************/
    isMobileDevice() {
   var device = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+
   if(window.innerWidth <= 800) {
       device = true;
   } else {
     device = false;
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) === true) {
+
       device=true;
+      if (window.innerWidth>1200) {
+        device=false
+      }
     } 
  }
  
@@ -92,6 +125,7 @@ getscrollpos(pos, params) {
   var section = '';
   var keys = Object.keys(params);
     for (var i = 0; i<keys.length; i++) {
+
       try {
         if (params[keys[i]] !== undefined) {
             if (pos >= params[keys[i]].start.desktop  ) {
@@ -103,8 +137,28 @@ getscrollpos(pos, params) {
       } catch (e) {}
     }
 
+   if (section == '') {
+    section = 'About Me';
+   }
+
   return section
 }   
+
+/********************************************************
+*.                ***  get scroll class. ***              *
+*********************************************************
+*. finds the classname from the text of the item         *                                       *
+********************************************************/ 
+getscrollclass(pos) {
+  var lookup = {
+    'About Me': 'about',
+    'My Projects': 'projects',
+    'Skills' : 'skills',
+    'Contact Me' : 'contact'
+  }
+
+return lookup[pos];
+}
 
 /********************************************************
 *.                ***  get Top Pos. ***                 *
@@ -119,6 +173,7 @@ getTopPos(el) {
     return topPos;
 }
 
+
 /*******************************************************
 *        *** get top bottom pos of ele  ****           *
 ********************************************************
@@ -128,10 +183,13 @@ getTopPos(el) {
 getTopBotPosOfEle(obj, ele, nextele) {
 
   var nexttop = 0;
-  var top = this.getTopPos(document.getElementById(ele)) - 250;
+  var top = this.getTopPos(document.getElementById(ele)) - 400;
+  if (ele == 'about') {
+    top = 0;
+  }
 
   if (nextele.length > 0 ) {
-    nexttop = this.getTopPos(document.getElementById(nextele)) - 250;
+    nexttop = this.getTopPos(document.getElementById(nextele)) - 400;
   } else {
     nexttop = top + 500;
   }

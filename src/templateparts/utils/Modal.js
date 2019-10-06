@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-import Aproject from '../guts/Aproject';
-
-
 class modal extends Component {
 
 	constructor(props) {
@@ -11,7 +8,7 @@ class modal extends Component {
  }
 
 render(props){
- 	if (this.props.project.type !== 'url') { 
+ 	if (this.props.project.type!=='url') { 
 		return (
        		<div className="modal-content">
         		<div className="modal-header">
