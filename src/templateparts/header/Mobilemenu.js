@@ -48,9 +48,6 @@ class Mobilemenu extends Component {
   handleScroll(event) {
       const Utils = new Utilsjs();
 
-     // var section = Utils.getcurrentsection(window.pageYOffset, this.state.scrollpos);
-   
-
       var scrollpos = this.state.scrollpos
       scrollpos['this'] = Utils.getscrollpos(window.scrollY, scrollpos);
       scrollpos['thisclass'] = Utils.getscrollclass(scrollpos['this']);

@@ -26,6 +26,7 @@ const rootElement = document.getElementById('root');
         'scrollstate': 'init',
         'scrollpos': {
           'this': 'about',
+          'thisclass': 'about',
           'about': {
               'this': 'About Me',
               'start': {'desktop': 50, 'mobile': 50},
@@ -88,6 +89,8 @@ const rootElement = document.getElementById('root');
       if (window.scrollY>50) {
 
         scrollpos['this'] = getscrollpos(window.scrollY, this.state.scrollpos);
+        scrollpos['thisclass'] = getscrollclass(scrollpos['this']);
+
         classList = removefromarray(classList, 'init');
 
         if (hasValue(classList, 'scrolled')==false) {
@@ -109,6 +112,8 @@ const rootElement = document.getElementById('root');
                     'scrollpos': scrollpos
       })
 
+      setactiveclass(scrollpos['thisclass'])
+
     }
 
 
@@ -123,6 +128,7 @@ const rootElement = document.getElementById('root');
      scrollpos.projects = getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
      scrollpos.skillsection = getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
      scrollpos.contact = getTopBotPosOfEle(scrollpos.contact, 'contact', '');
+
 
      this.setState({scrollpos: scrollpos});
 
@@ -248,7 +254,7 @@ const rootElement = document.getElementById('root');
       )
     }
 
-  }// end class
+  } //end class
 
 /**********************************************
 **          *** The Guts class  ****           **
@@ -354,7 +360,7 @@ const rootElement = document.getElementById('root');
             <H2 text = {this.state.about} class = 'title' id = 'about' />
             <this.About />
           </div>
-          <div id = "project-container">
+          <div id = "project-section">
             <H2 text = {this.state.projects} class = 'title' id = 'projects' />
             <this.Projects projs = {this.state.projs} />
           </div>
@@ -373,7 +379,7 @@ const rootElement = document.getElementById('root');
 
     About(props) {
       return (
-        <div class = "item">
+        <div class = "item about active">
           <P text = "I am a full stack web designer / developer.  I design websites both professionally and on the side.
            My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday
             when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people
@@ -393,7 +399,7 @@ const rootElement = document.getElementById('root');
 
     Projects(props) {
       return (
-        <div class = "item">
+        <div class = "item projects">
             <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of every changing technologiy, I find it is important to constantly challenge one self to learn, develop and grow new skills.  Not just learn those new skills but to do that the correct way in orcer to develop consistent reusable code" />
                 <Quote text = "&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
                 <P class = "quote-name" text = " -Thomas Edison" />
@@ -410,7 +416,7 @@ const rootElement = document.getElementById('root');
 
     Skills(props) {
       return (
-        <div id = "skills-container" className = "item">
+        <div id = "skills-container" className = "item skills">
           <div id = "skills">
             <H2 text = "Front End" />
             <Askill text = "HTML 5" />
@@ -454,7 +460,7 @@ const rootElement = document.getElementById('root');
 
     Contact(props) {
       return (
-        <div id = "contact-wrapper" className="item">
+        <div id = "contact-wrapper" className="item contact">
           <p>Github pages is great because it lets you have a static website for free.  Unfortunately it doesn't let you do server side stuff, like email,
           too easily.  I haven't got a chance to hook it up to any kind of api so right now you will have to email me.  Relax!  I have made it
           easy for you.  Just click the button below and it will start your email client.  I look forward to hearing from you.</p>
@@ -578,7 +584,7 @@ const rootElement = document.getElementById('root');
       var el = document.getElementById(item);
       var topPos = getTopPos(el) -300;
       if (topPos <= 0 ) {
-        topPos=50
+        topPos=100
       }
       window.scrollTo({top: topPos});
     }
@@ -928,18 +934,71 @@ function getElementByHash(hashtag) {
 *  @return : obj                                    *
 *******************************************************/
 function getTopBotPosOfEle(obj, ele, nextele) {
-  var top = getTopPos(document.getElementById(ele)) - 250;
 
-  if (nextele.length > 0 ) {
-    var nexttop = getTopPos(document.getElementById(nextele)) - 250;
-  } else {
-    var nexttop = top + 500;
+ var nexttop = 0;
+  var top = getTopPos(document.getElementById(ele)) - 400;
+  if (ele == 'about') {
+    top = 0;
   }
 
-  obj.start.desktop = top
+  if (nextele.length > 0 ) {
+    nexttop = getTopPos(document.getElementById(nextele)) - 400;
+  } else {
+    nexttop = top + 500;
+  }
+
+  obj.start.desktop = top-50
   obj.end.desktop = nexttop-50;
 
   return obj;
+}
+
+/*******************************************************
+  *   *** check and remove from array function  ****     *
+  ********************************************************
+  *  This function checks for a string in array and      *
+  *  removes it                                          *
+  *  @return : new array                                   *
+  *******************************************************/
+  function setactiveclass(classname) {
+
+      console.log(classname)
+      var items = document.querySelectorAll('.item');
+
+      var header = document.getElementById('header')
+      
+      if (header.classList.contains('init') == false) {
+        for (var x =0; x<items.length; x++) {
+          if (items[x].classList.contains('active')==true) {
+            items[x].classList.remove('active');
+          }
+        }
+        var ele = document.querySelector('.'+classname);
+
+        if (ele != null) {
+          ele.classList.add('active');
+        }
+      }
+  }
+
+/********************************************************
+*.                ***  get scroll class. ***              *
+*********************************************************
+*. finds the classname from the text of the item         *                                       *
+********************************************************/ 
+
+function getscrollclass(key) {
+  var lookup = {
+    'About Me': 'about',
+    'My Projects': 'projects',    
+    'Skills' : 'skills',
+    'Contact Me' : 'contact'
+  }
+
+//  console.log(lookup)
+//  console.log(lookup[key])
+//
+return lookup[key];
 }
 
 

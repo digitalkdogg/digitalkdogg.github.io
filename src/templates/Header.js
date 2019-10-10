@@ -53,33 +53,24 @@ class Header extends Component {
  componentDidMount() {
 	const Utils = new Utilsjs();
 
-    var scrollpos = this.state.scrollpos
-
-    console.log(Utils.isMobileDevice())
-
- //   scrollpos.about = Utils.getTopBotPosOfEle2(scrollpos.about, '#about-section', '#projects-section');
- //   scrollpos.projects = Utils.getTopBotPosOfEle2(scrollpos.projects, '#projects-section', '#skills-section');
- //   scrollpos.skillsection = Utils.getTopBotPosOfEle2(scrollpos.skillsection, '#skills-section', '#contact-section');
- //   scrollpos.contact = Utils.getTopBotPosOfEle2(scrollpos.contact, '#contact-section', '');
+  var scrollpos = this.state.scrollpos
     
-    scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects'); 
-	  scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
-    scrollpos.skillsection = Utils.getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
-    scrollpos.contact = Utils.getTopBotPosOfEle(scrollpos.contact, 'contact', '');
+  scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects'); 
+	scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
+  scrollpos.skillsection = Utils.getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
+  scrollpos.contact = Utils.getTopBotPosOfEle(scrollpos.contact, 'contact', '');
 
-    console.log(scrollpos);
+  this.checkscreensize();
+  window.addEventListener("resize", this.checkscreensize.bind(this));
+  window.addEventListener('scroll', this.handleScroll.bind(this));
 
-    this.checkscreensize();
-    window.addEventListener("resize", this.checkscreensize.bind(this));
-    window.addEventListener('scroll', this.handleScroll.bind(this));
-
-    var mobileordesktop = 'isdesktop';
-    if (Utils.isMobileDevice() === true) {
-    	mobileordesktop = 'ismobile';
-    } else {
-    	mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
-    }
-    this.setState({'ismobile': mobileordesktop});
+  var mobileordesktop = 'isdesktop';
+  if (Utils.isMobileDevice() === true) {
+    mobileordesktop = 'ismobile';
+  } else {
+    mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
+  }
+  this.setState({'ismobile': mobileordesktop});
 
  }
 
@@ -124,10 +115,6 @@ class Header extends Component {
       	if (window.scrollY>50) {
 
       		scrollpos['this'] = Utils.getscrollpos(window.scrollY, this.state.scrollpos);
-
-
-
-
 
       		classList = Utils.removefromarray(classList, 'init');
     		  if (Utils.hasValue(classList, 'scrolled')===false) {
