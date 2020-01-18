@@ -9,7 +9,7 @@ import React from 'react';
     render(props) {
       return(
          <div className={this.props.valign}>
-            <i className={this.props.class} aria-hidden="true"></i>
+            <i className={this.props.className} aria-hidden="true"></i>
           </div>
       )
     }
