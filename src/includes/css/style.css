@@ -991,3 +991,9 @@ div#float-container i
         width: 75%;
     }
 }
+
+.swiper-pagination.swiper-pagination-fraction {
+    top: 20px;
+    position: relative;
+    height: 45px;
+}
