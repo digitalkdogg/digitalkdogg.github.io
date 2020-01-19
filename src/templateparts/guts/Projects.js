@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import P from '../utils/P';
 import Quote from '../utils/Quote';
 import Aproject from '../guts/Aproject';
+import Swiper from 'react-id-swiper';
+
+import "../../includes/swiper/swiper.min.css";
+
 
 class Projects extends Component {
 
@@ -77,19 +81,49 @@ class Projects extends Component {
 
 
 	render(props){
+
+      const params = {
+      slidesPerView: 1,
+      spaceBetween: 30,
+       navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        800: {
+          slidesPerView: 2,
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev'
+          },
+        }, 
+        1024: {
+          slidesPerView: 3,
+           navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        }
+      }
+    }
 		 return (
            <div className="item projects">
            		  <P text="I enjoy doing side projects in my spare time because it gives me the chance to grow my skills set and also learn about new technologies.  In today's world of changing technologies, I find it is import to constiently challenge my self to learn, develop and grow my skills the correct way" />
                 <Quote text="&quot;I have not failed, I've just found 10,000 ways that won't work&quot;" />
                 <P class="quote-name" text=" -Thomas Edison" />
                 <P text="" />
-            <Aproject project={this.state.projs.millwood} />
-            <Aproject project={this.state.projs.checkbook} />
-            <Aproject project={this.state.projs.resume}/>
-            <Aproject project={this.state.projs.checkboxme}/>
-            <Aproject project={this.state.projs.millwoodadmin} />
-            <Aproject project={this.state.projs.plexmanager} />
+                <Swiper {...params}>
+                  <Aproject project={this.state.projs.millwood} />
+                  <Aproject project={this.state.projs.checkbook} />
+                  <Aproject project={this.state.projs.resume}/>
+                  <Aproject project={this.state.projs.checkboxme}/>
+                  <Aproject project={this.state.projs.millwoodadmin} />
+                  <Aproject project={this.state.projs.plexmanager} />
 
+                  
+                 
+                </Swiper>
+   
 
            </div>
       )

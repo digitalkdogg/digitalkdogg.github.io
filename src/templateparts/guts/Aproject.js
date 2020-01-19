@@ -30,7 +30,7 @@ class Aproject extends Component {
 
 	render(props){
 		 return (
-      <div id="project-container">
+      <div id="project-container" className = "swiper-slide">
         <div className="project">
           <div className="title">
             {this.props.project.title}

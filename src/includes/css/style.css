@@ -466,7 +466,6 @@ div#the-guts .quote {
 
 #the-guts .project {
     height: 450px;
-    width: 30%;
     background: #fee201;
     display:inline-grid;
     margin:1%;
@@ -502,6 +501,10 @@ div#the-guts .quote {
 	#the-guts .project .desc {
 		height:auto;
 	}
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 380px) {
