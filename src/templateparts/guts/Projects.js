@@ -20,7 +20,7 @@ class Projects extends Component {
             'desc': 'This is a website I did for Millwood Church in rogers.  The site is built on wordpress and the features include a customized theme, an events calendar, and a blog news feed.  The updates of content is managed solely by the power users of the church.',
             'type': 'url',
 						'thumb': '#',
-						'platform': 'Wordpres',
+						'platform': 'PHP / Wordpres',
 						'skills': 'PHP, Wordpres, jQuery, git, UX Design, CMS',
             'href': 'https://millwoodchurchnwa.com'
           },
@@ -34,15 +34,15 @@ class Projects extends Component {
 						'skills': 'PHP, MySQL, Bootstrap 3, Responsive Design, Restfull API Design ',
             'href' : './src/includes/img/checkbook.png'
         },
-          'resume' : {
+          'olympic' : {
             'id': 3,
-            'title': 'Resume Builder',
-            'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
+            'title': 'Olympic Inspection',
+            'desc': 'Olympic Inspection is a wordpress site that I develop for a customer to help start up his small business of home inspections. The site is built with a custom theme and I will implement a docusign api integration into the contact section',
             'type': 'modal',
-						'thumb': 'https://digitalkdogg.github.io/src/includes/img/resume_admin.png',
-						'platform': 'PHP - Codeigniter',
-						'skills': 'PHP, MySQL, jQuery, boostrap',
-            'href' : './src/includes/img/resume_admin.png'
+						'thumb': 'https://digitalkdogg.github.io/src/includes/img/olympic_inspection.png',
+						'platform': 'PHP - Wordpress',
+						'skills': 'PHP, MySQL, jQuery',
+            'href' : 'https://olympicinspection.com'
         },
           'checkboxme' : {
             'id': 4,
@@ -73,7 +73,17 @@ class Projects extends Component {
             'platform': 'PHP - Laravel',
             'skills': 'PHP, javascript, Restful API',
             'href': './src/includes/img/plex_manager.jpeg'
-          } }
+          },
+          'resume' : {
+            'id': 7,
+            'title': 'Resume Builder',
+            'desc': 'This was another personal project that I did on my own.  As I started my job search I wanted an easy way to manage different resume layouts.  This tool that I build allows me to do that.',
+            'type': 'modal',
+            'thumb': 'https://digitalkdogg.github.io/src/includes/img/resume_admin.png',
+            'platform': 'PHP - Codeigniter',
+            'skills': 'PHP, MySQL, jQuery, boostrap',
+            'href' : './src/includes/img/resume_admin.png'
+        } }
       }
  }
 
@@ -119,10 +129,11 @@ class Projects extends Component {
                 <Swiper {...params}>
                   <Aproject project={this.state.projs.millwood} />
                   <Aproject project={this.state.projs.checkbook} />
-                  <Aproject project={this.state.projs.resume}/>
+                  <Aproject project={this.state.projs.olympic}/>
                   <Aproject project={this.state.projs.checkboxme}/>
                   <Aproject project={this.state.projs.millwoodadmin} />
                   <Aproject project={this.state.projs.plexmanager} />
+                  <Aproject project={this.state.projs.resume}/>
 
                   
                  
