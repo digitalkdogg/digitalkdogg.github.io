@@ -37,8 +37,8 @@ class Projects extends Component {
           'olympic' : {
             'id': 3,
             'title': 'Olympic Inspection',
-            'desc': 'Olympic Inspection is a wordpress site that I develop for a customer to help start up his small business of home inspections. The site is built with a custom theme and I will implement a docusign api integration into the contact section',
-            'type': 'modal',
+            'desc': 'Olympic Inspection is a site that I develop for a customer to help start up thier small business. This will feature a docusign api intergration into the contact section',
+            'type': 'url',
 						'thumb': 'https://digitalkdogg.github.io/src/includes/img/olympic_inspection.png',
 						'platform': 'PHP - Wordpress',
 						'skills': 'PHP, MySQL, jQuery',
@@ -87,11 +87,17 @@ class Projects extends Component {
       }
  }
 
-
+componentDidMount() {
+  setTimeout(function () {
+     if (document.querySelector('.swiper-pagination-total')!= null) {
+       document.querySelector('.swiper-pagination-total').innerText = document.querySelectorAll('#project-container').length;
+      }
+    },100); 
+}
 
 
 	render(props){
-
+      
       const params = {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -142,6 +148,7 @@ class Projects extends Component {
 
            </div>
       )
+
 	}
 }
 
