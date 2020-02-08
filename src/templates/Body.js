@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header.js';
 import Guts from './Guts.js';
 import Footer from './Footer.js';
+import '../includes/boostrap/bootstrap.min.css';
 
 class Body extends Component {
 

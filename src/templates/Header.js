@@ -67,6 +67,7 @@ class Header extends Component {
   var mobileordesktop = 'isdesktop';
   if (Utils.isMobileDevice() === true) {
     mobileordesktop = 'ismobile';
+
   } else {
     mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
   }
@@ -159,13 +160,19 @@ class Header extends Component {
       	}
       	
       	var mobileordesktop = 'isdesktop';
+        var hidedesktop = '';
+        var hidemobile = ''
       	 if (Utils.isMobileDevice() === true) {
-    		mobileordesktop = 'ismobile';
-    	} else {
-    		mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
-    	}
+    		  mobileordesktop = 'ismobile';
+         } else {
+    		  mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																															
+    	 }
 
-      	this.setState({ismobile: mobileordesktop, classList: classList, classListStr: Utils.convertarraytostr(classList)})
+      	this.setState({
+          ismobile: mobileordesktop, 
+          classList: classList, 
+          classListStr: Utils.convertarraytostr(classList)
+        })
 
     }
 
@@ -173,26 +180,27 @@ class Header extends Component {
 	render(){ 
 		return (
 			<div id="header" className={this.state.scrollstate + ' ' + this.state.ismobile} >
-				<div id="title-container">
-        <div id="float-container">
-            <i id="starti1" className="fa fa-cog float rotating" data-hstart="1" data-step="5" data-end="18" ></i>
+				<div id="menu-container" className={this.state.scrollstate} >
+          <Desktopmenu id="desktop-menu" classList={this.state.classListStr}  menu={this.menu()} />
+          <Mobilemenu id="mobile-menu" classList={this.state.classListStr} menu={this.menu()} scrollpos={this.state.scrollpos} />
         </div>
-           <div id="logo-container"><i className="fa fa-chevron-left" /> KB / <i className="fa fa-chevron-right"></i></div>
-              		<div id="text-container">
-              			<Title title={this.state.title_container.title} />
-                		<Phone phone={this.state.title_container.phone} />
-                		<Email email={this.state.title_container.email} />
-              		</div>
-              	</div>
+        <div id="title-container">
+          <div id="logo-container"><i className="fa fa-chevron-left" />KB /<i className="fa fa-chevron-right"></i></div>
+          <div id="text-container">
+            <Title title={this.state.title_container.title} />
+            <Phone phone={this.state.title_container.phone} />
+            <Email email={this.state.title_container.email} />
+          </div>
+           <div id="float-container">
+            <i id="starti1" className="fa fa-cog float rotating" data-hstart="1" data-step="5" data-end="18" ></i>
+          </div>
+        </div>
 
-                <Icons />
-
-              	  <div id="menu-container" className={this.state.scrollstate} >
-            		<Desktopmenu id="desktop-menu" classList={this.state.classListStr} menu={this.menu()} />
-            		<Mobilemenu id="mobile-menu" classList={this.state.classListStr} menu={this.menu()} scrollpos={this.state.scrollpos} />
-       
-            	</div>
-			</div>
+         
+               
+          <Icons />
+			
+      </div>
 		)
 	}
 }//end class

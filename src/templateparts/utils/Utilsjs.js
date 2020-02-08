@@ -23,6 +23,41 @@ class Utilsjs extends Component {
       return arr;
   }
 
+  /*******************************************************
+  *   *** show modal  ****     *
+  ********************************************************
+  *  This function adds a class of visible to the modal   *
+  *  and set the style of body to overflow hidden                                        *
+  *  @return : new null                                  *
+  *******************************************************/
+  showModal(modal) {
+      let body = document.querySelector('body');
+      body.setAttribute('style', 'overflow:hidden;');
+      
+      let ele = document.getElementById(modal);
+      ele.classList.add('visible');
+      ele.classList.remove('hidden');
+   //   let maxheight = window.innerHeight //- (window.innerHeight/100);
+   //   let maxheight = 100;
+    //  console.log(maxheight);
+      ele.setAttribute('style', 'max-height: 100%');
+      //ele.setAttribute('style', 'max-height:' + maxheight + '%');
+  }
+
+
+  /*   *** hide modal  ****     *
+  ********************************************************
+  *  This function adds a class of hidden to the modal   *
+  *  and  remove the class of visible                                      *
+  *  @return : new null                                  *
+  *******************************************************/
+  closeModal(modal) {
+      let body = document.querySelector('body');
+      body.removeAttribute('style');
+      let ele = document.getElementById('#modal-wrapper');
+      ele.classList.add('hidden');
+      ele.classList.remove('visible');
+  }
 
 /*******************************************************
   *   *** check and remove from array function  ****     *
@@ -36,9 +71,9 @@ class Utilsjs extends Component {
 
       var header = document.getElementById('header')
       
-      if (header.classList.contains('init') == false) {
+      if (header.classList.contains('init') === false) {
         for (var x =0; x<items.length; x++) {
-          if (items[x].classList.contains('active')==true) {
+          if (items[x].classList.contains('active')===true) {
             items[x].classList.remove('active');
           }
         }
@@ -137,7 +172,7 @@ getscrollpos(pos, params) {
       } catch (e) {}
     }
 
-   if (section == '') {
+   if (section === '') {
     section = 'About Me';
    }
 
@@ -184,7 +219,7 @@ getTopBotPosOfEle(obj, ele, nextele) {
 
   var nexttop = 0;
   var top = this.getTopPos(document.getElementById(ele)) - 400;
-  if (ele == 'about') {
+  if (ele === 'about') {
     top = 0;
   }
 
