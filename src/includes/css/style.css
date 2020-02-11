@@ -34,6 +34,11 @@ button:hover {
 	opacity: .7;
 }
 
+i.fas, i.far {
+    font-family: "FontAwesome";
+    font-style: normal;
+}
+
 div#header {
     height: 200px;
     background-color: #0173fe;
@@ -80,7 +85,7 @@ div#header div#title-container {
 div#header.init div#logo-container {
 	float:left;
 	height:100px;
-	font-size:.7em;
+    font-size: calc(14px + (30 - 14) * ((100vw - 1px) / (1600 - 300)));
 	position: relative;
 	top:30px;
 	font-weight: bold;
@@ -124,7 +129,7 @@ div#header div#text-container a {
 div#header div#float-container {
 	float:right;
 	opacity:.7;
-	font-size:2em;
+    font-size: calc(40px + (50 - 14) * ((100vw - 30px) / (1600 - 300)));
 	position: absolute;
 	right:5%;
 	flex-grow:1;
@@ -205,7 +210,6 @@ div#header div#mobile-menu-list.expanded {
 div#header div#mobile-menu-list.expanded div#mobile-list-container {
     position: fixed;
     height: 100%;
-   /* width: 65%; */
     top: 0;
     left: -40%;
     padding-left:10%;
@@ -520,10 +524,10 @@ div#footer {
 	}
 
 	div#header div#title-container {
-    	width: 55%;
+    	width: 50%;
     	float: right;
     	border-bottom-right-radius: 10px;
-		right: 20%;
+		right: 25%;
 		position: relative;;
 	}
 
@@ -536,19 +540,16 @@ div#footer {
 		line-height: 1.2;
 	}
 
-	div#header.init div#logo-container {
-		font-size: 1em;
-	}
-
 	div#header.init div#icon-container {
-		width: 75%;
+		width: 55%;
 		float: right;
+        right:20%;
 	}
 
 	div#header.init div#float-container {
     	right: unset;
     	position: relative;
-    	font-size:3em;
+    	/*font-size:3em; */
     	margin-top: -10px;
 	}
 
@@ -590,21 +591,10 @@ div#footer {
 
 @media only screen and (min-width: 1024px) {
 	div#header div#title-container {
-    	width: 45%;
-    	float: left;
-    	margin: 0;
-    	border-bottom-right-radius: 10px;
-	}
-
-	div#header div#title-container {
-		width: 55%;
+		width: 45%;
 		float:right;
-		right: 15%;
-	}
-
-	div#header div#icon-container {
-		float:right;
-		width: 30%;
+		right: 25%;    
+        border-bottom-right-radius: 10px;
 	}
 
 	div#the-guts div#skills-container {
