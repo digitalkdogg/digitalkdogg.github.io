@@ -160,8 +160,8 @@ class Header extends Component {
       	}
       	
       	var mobileordesktop = 'isdesktop';
-        var hidedesktop = '';
-        var hidemobile = ''
+        //var hidedesktop = '';
+        //var hidemobile = ''
       	 if (Utils.isMobileDevice() === true) {
     		  mobileordesktop = 'ismobile';
          } else {

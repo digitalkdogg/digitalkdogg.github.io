@@ -32,7 +32,7 @@ class Mobilemenu extends Component {
 
             <div id="mobile-list-container" className={this.state.trans}>
                 <span id="close" className={this.state.trans + ' ' + this.state.spin} onClick={this.open_menu.bind(this)}>X</span>
-                <div id = "menu-title">Main Menu</div>
+                <div id="menu-title">Main Menu</div>
                 <div id={this.props.menu.about.id} onClick={this.menu_item.bind(this, 'about')}>{this.props.menu.about.text}</div>
                 <div id={this.props.menu.projects.id}  onClick={this.menu_item.bind(this, 'projects')}>{this.props.menu.projects.text}</div>
                 <div id={this.props.menu.skills.id}  onClick={this.menu_item.bind(this, 'skills')}>{this.props.menu.skills.text}</div>
