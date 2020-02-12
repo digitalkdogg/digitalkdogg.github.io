@@ -101,14 +101,14 @@ componentDidMount() {
      if (document.querySelector('.swiper-pagination-total')!= null) {
        document.querySelector('.swiper-pagination-total').innerText = document.querySelectorAll('#project-container').length;
       }
-    },100); 
+    },100);
 }
 
 
   close_modal(project) {
 
       const Utils = new Utilsjs();
-      event.preventDefault(); 
+      event.preventDefault();
       Utils.closeModal('#modal-wrapper');
   }
 
@@ -116,18 +116,18 @@ componentDidMount() {
          let ele = document.getElementById('#modal-wrapper');
       let href = ele.getAttribute('data-whichproject');
 
-     if (href != '#') {
+     if (href !== '#') {
        window.open(href, '_blank');
     }
   }
 
 
 	render(props){
-      
+
       const params = {
       slidesPerView: 1,
       spaceBetween: 30,
-      slidesPerGroup: 1, 
+      slidesPerGroup: 1,
       autoHeight: true,
        pagination: {
         el: '.swiper-pagination',
@@ -145,10 +145,10 @@ componentDidMount() {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev'
           },
-        }, 
+        },
         1024: {
           slidesPerView: 3,
-          slidesPerGroup: 3, 
+          slidesPerGroup: 3,
            navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
@@ -171,9 +171,9 @@ componentDidMount() {
                   <Aproject project={this.state.projs.plexmanager} />
                   <Aproject project={this.state.projs.resume}/>
 
-                  
-                  
-                 
+
+
+
                 </Swiper>
 
                 <div className={'modal fade'} id={'#modal-wrapper'} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -188,12 +188,12 @@ componentDidMount() {
                       <div className="modal-body">
                         <p className="desc"></p>
                         <p className="img-wrap"></p>
-                        
-                       
+
+
                       </div>
                       <div className="modal-footer">
                        <div className='skills-wrap'></div>
-                       <div className = 'footer-btn-wrap'>
+                       <div className='footer-btn-wrap'>
                           <button type="button" onClick={this.exec_url.bind(this.props.project, this)} className="btn btn-secondary visiturl" >Visit Site</button>
                           <button type="button" onClick={this.close_modal.bind(this.props.project, this)} className="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
@@ -202,7 +202,7 @@ componentDidMount() {
                   </div>
                 </div>
 
-   
+
 
            </div>
       )

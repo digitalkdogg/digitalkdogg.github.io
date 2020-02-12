@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Modal from '../utils/Modal';
-import Project from './Projects';
+//import Modal from '../utils/Modal';
+//import Project from './Projects';
 import Utilsjs from '../utils/Utilsjs';
 
 class Aproject extends Component {
@@ -12,14 +12,14 @@ class Aproject extends Component {
         'props': props,
         'modalclass': 'hidden'
       }
-      
+
  }
 
  exec_proj_click (project) {
     const Utils = new Utilsjs();
-    event.preventDefault(); 
+    event.preventDefault();
     Utils.showModal('#modal-wrapper');
-      
+
 
     var ele = document.getElementById('#modal-wrapper');
    // if (project.props.project.href != '#') {
@@ -29,7 +29,7 @@ class Aproject extends Component {
    // }
 
 
-    let modal = ele.getElementsByClassName('modal-content') 
+    let modal = ele.getElementsByClassName('modal-content')
     if (modal.length === 1) {
         let title = modal[0].getElementsByClassName('modal-title');
         let body = modal[0].getElementsByClassName('modal-body');
@@ -40,12 +40,12 @@ class Aproject extends Component {
         let visiturlbtn = footer[0].getElementsByClassName('visiturl');
         let maxheight = 150;
 
-       
+
         if (Utils.isMobileDevice()===false) {
             maxheight = (window.innerHeight/2.5);
         }
         imgwrap[0].setAttribute('style', 'height:' + maxheight + 'px');
-        
+
         title[0].innerHTML = project.props.project.title;
         desc[0].innerHTML = project.props.project.desc;
         imgwrap[0].classList.add(project.props.project.thumbname);
@@ -62,7 +62,7 @@ class Aproject extends Component {
         }
 
     }
-   
+
   }
 
   close_modal(project, that) {
@@ -72,18 +72,18 @@ class Aproject extends Component {
 
 	render(props){
 		 return (
-      <div id="project-container" className = "swiper-slide">
+      <div id="project-container" className="swiper-slide">
         <div className="project">
           <div className="title">
             {this.props.project.title}
           </div>
           <div className="desc">
-              <div className = "img-wrap">
+              <div className="img-wrap">
 						    <img alt="#" className={this.props.project.type} src={this.props.project.thumb} />
-							</div>	
+							</div>
 						<div className='visible'>
 						<a href="#" onClick={this.exec_proj_click.bind(this.props.project,this)}  >
-							<button type="button" className = "btn btn-primary" data-toggle="modal2" data-target={'#modal_'+this.props.project.id}>View More</button>
+							<button type="button" className="btn btn-primary" data-toggle="modal2" data-target={'#modal_'+this.props.project.id}>View More</button>
 						</a>
 						</div>
           </div>
@@ -93,8 +93,8 @@ class Aproject extends Component {
 
           </div>
         </div>
-       
-      
+
+
 
       </div>
       )
