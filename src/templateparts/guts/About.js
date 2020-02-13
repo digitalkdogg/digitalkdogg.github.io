@@ -10,15 +10,19 @@ class About extends Component {
       this.state = { }
  }
 
-
+parseAbout = () => {
+  let text = []
+  for (let i=0; i<Aboutme.About.text.length; i++) {
+    text.push(<P key = {i} text = {Aboutme.About.text[i]} />)
+  }
+  return text
+}
 
 
 	render(props){ 
      return (
            <div className="item about">
-              <P text = {Aboutme.About.text[0]} />
-              <P text = {Aboutme.About.text[1]} />
-              <P text = {Aboutme.About.text[2]} />
+              {this.parseAbout()}
            </div>
       )
 	}
