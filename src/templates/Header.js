@@ -50,10 +50,10 @@ class Header extends Component {
 
 
 
- componentDidMount() {
+ componentDidMount = () => {
 	const Utils = new Utilsjs();
 
-  var scrollpos = this.state.scrollpos
+  let scrollpos = this.state.scrollpos
     
   scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects'); 
 	scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
@@ -64,7 +64,7 @@ class Header extends Component {
   window.addEventListener("resize", this.checkscreensize.bind(this));
   window.addEventListener('scroll', this.handleScroll.bind(this));
 
-  var mobileordesktop = 'isdesktop';
+  let mobileordesktop = 'isdesktop';
   if (Utils.isMobileDevice() === true) {
     mobileordesktop = 'ismobile';
 
@@ -75,7 +75,7 @@ class Header extends Component {
 
  }
 
-   menu() {
+   menu = () => {
       return(
         {
           'about': {
@@ -106,12 +106,12 @@ class Header extends Component {
       )
     }
 
-    handleScroll(event) {
+    handleScroll = (event) => {
     	const Utils = new Utilsjs();
 
-    	var classList = this.state.classList;
-     	var scrollpos = this.state.scrollpos;
-     	var thestate = '';
+    	let classList = this.state.classList;
+     	let scrollpos = this.state.scrollpos;
+     	let thestate = '';
 
       	if (window.scrollY>50) {
 
@@ -141,9 +141,9 @@ class Header extends Component {
     }
 
 
-    checkscreensize() {
+    checkscreensize = () => {
     	const Utils = new Utilsjs();
-      	var classList = this.state.classList;
+      	let classList = this.state.classList;
       	if (Utils.isMobileDevice() === true) {
         	classList = Utils.removefromarray(classList, 'isdesktop');
       
@@ -159,7 +159,7 @@ class Header extends Component {
         	}
       	}
       	
-      	var mobileordesktop = 'isdesktop';
+      	let mobileordesktop = 'isdesktop';
         //var hidedesktop = '';
         //var hidemobile = ''
       	 if (Utils.isMobileDevice() === true) {

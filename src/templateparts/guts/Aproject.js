@@ -15,18 +15,14 @@ class Aproject extends Component {
 
  }
 
- exec_proj_click (project) {
+ exec_proj_click = (project) => {
     const Utils = new Utilsjs();
     event.preventDefault();
     Utils.showModal('#modal-wrapper');
 
 
     var ele = document.getElementById('#modal-wrapper');
-   // if (project.props.project.href != '#') {
-      ele.setAttribute('data-whichproject', project.props.project.href);
-   // } else {
-   //   ele.setAttribute('style', 'display:none;');
-   // }
+    ele.setAttribute('data-whichproject', project.props.project.href);
 
 
     let modal = ele.getElementsByClassName('modal-content')
@@ -65,7 +61,7 @@ class Aproject extends Component {
 
   }
 
-  close_modal(project, that) {
+  close_modal = (project, that) => {
     project.setState({'modalclass': 'hidden'})
   }
 

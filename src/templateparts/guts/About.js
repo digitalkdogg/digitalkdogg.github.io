@@ -13,7 +13,7 @@ class About extends Component {
 parseAbout = () => {
   let text = []
   for (let i=0; i<Aboutme.About.text.length; i++) {
-    text.push(<P key = {i} text = {Aboutme.About.text[i]} />)
+    text.push(<P key={i} text={Aboutme.About.text[i]} />)
   }
   return text
 }
