@@ -1,0 +1,7 @@
+Options -Indexes
+
+# Deny access to .json
+<Files *.json>
+Order allow,deny
+Deny from all
+</Files>

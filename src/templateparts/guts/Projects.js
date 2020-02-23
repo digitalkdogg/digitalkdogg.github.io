@@ -5,6 +5,8 @@ import Quote from '../utils/Quote';
 import Aproject from '../guts/Aproject';
 import Swiper from 'react-id-swiper';
 import Utilsjs from '../utils/Utilsjs';
+import Modal from '../utils/Modal';
+
 import Projs from '../../JSON/Projects.json';
 
 import '../../includes/swiper/swiper.min.css';
@@ -93,38 +95,11 @@ componentDidMount() {
                   <Aproject project={Projs.millwoodadmin} />
                   <Aproject project={Projs.plexmanager} />
                   <Aproject project={Projs.resume}/>
-
-
-
-
                 </Swiper>
 
-                <div className={'modal fade'} id={'#modal-wrapper'} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                      <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel"></h5>
-                        <button type="button"  onClick={this.close_modal.bind(this.props.project, this)} className="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div className="modal-body">
-                        <p className="desc"></p>
-                        <p className="img-wrap"></p>
+                <Modal /> 
 
-
-                      </div>
-                      <div className="modal-footer">
-                       <div className='skills-wrap'></div>
-                       <div className='footer-btn-wrap'>
-                          <button type="button" onClick={this.exec_url.bind(this.props.project, this)} className="btn btn-secondary visiturl" >Visit Site</button>
-                          <button type="button" onClick={this.close_modal.bind(this.props.project, this)} className="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+               
 
 
            </div>
