@@ -1,0 +1,26 @@
+{
+  "about": {
+    "id": "menu-item",
+    "class": "about",
+    "text": "About Me",
+    "href": "#about"
+  }, 
+  "projects": {
+    "id": "menu-item",
+    "class": "projects",
+    "text": "Projects",
+    "href": "#projects"
+  }, 
+  "skills": {
+    "id": "menu-item",
+    "class": "skills",
+    "text": "Skills",
+    "href": "#skills"
+  }, 
+  "contact": {
+    "id": "menu-item",
+    "class": "contact",
+    "text": "Contact Me",
+    "href": "#contact"
+  }
+}

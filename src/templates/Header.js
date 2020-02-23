@@ -8,6 +8,10 @@ import Mobilemenu from '../templateparts/header/Mobilemenu';
 import Utilsjs from '../templateparts/utils/Utilsjs';
 import Icons from '../templateparts/header/Icons';
 
+import Titlecontainer from '../JSON/Title.json';
+import menujson from '../JSON/Menu.json';
+
+
 class Header extends Component {
 
 	constructor() {
@@ -16,12 +20,7 @@ class Header extends Component {
   			'classList': [],
     		'classListStr': '',
     		'scrollstate': 'init',
-  			'title_container' : {
-		    	'title': 'Kevin Bollman',
-    			'phone': '814-777-1196',
-    			'email': 'KevinBollman@gmail.com',
-    			'headline': 'Full Stack Web Developer'
-    		},
+  			'title_container' : {},
     		'scrollpos': {
           		'this': 'about',
           		 'about': {
@@ -71,40 +70,19 @@ class Header extends Component {
   } else {
     mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
   }
-  this.setState({'ismobile': mobileordesktop});
+  this.setState({
+    'ismobile': mobileordesktop,
+    'title_container': Titlecontainer
+  });
+
 
  }
 
-   menu = () => {
-      return(
-        {
-          'about': {
-            'id': 'menu-item',
-            'class': 'about',
-            'text': 'About Me',
-            'href': '#about'
-          }, 
-          'projects': {
-            'id': 'menu-item',
-            'class': 'projects',
-            'text': 'Projects',
-            'href': '#projects'
-          }, 
-          'skills': {
-            'id': 'menu-item',
-            'class': 'skills',
-            'text': 'Skills',
-            'href': '#skills'
-          }, 
-          'contact': {
-            'id': 'menu-item',
-            'class': 'contact',
-            'text': 'Contact Me',
-            'href': '#contact'
-          }
-        }
-      )
-    }
+ themenu = () => {
+  return (
+      menujson
+    )
+ }
 
     handleScroll = (event) => {
     	const Utils = new Utilsjs();
@@ -113,7 +91,7 @@ class Header extends Component {
      	let scrollpos = this.state.scrollpos;
      	let thestate = '';
 
-      	if (window.scrollY>50) {
+      	if (window.scrollY>100) {
 
       		scrollpos['this'] = Utils.getscrollpos(window.scrollY, this.state.scrollpos);
 
@@ -160,8 +138,6 @@ class Header extends Component {
       	}
       	
       	let mobileordesktop = 'isdesktop';
-        //var hidedesktop = '';
-        //var hidemobile = ''
       	 if (Utils.isMobileDevice() === true) {
     		  mobileordesktop = 'ismobile';
          } else {
@@ -181,8 +157,8 @@ class Header extends Component {
 		return (
 			<div id="header" className={this.state.scrollstate + ' ' + this.state.ismobile} >
 				<div id="menu-container" className={this.state.scrollstate} >
-          <Desktopmenu id="desktop-menu" classList={this.state.classListStr}  menu={this.menu()} />
-          <Mobilemenu id="mobile-menu" classList={this.state.classListStr} menu={this.menu()} scrollpos={this.state.scrollpos} />
+          <Desktopmenu id="desktop-menu" classList={this.state.classListStr}  menu={this.themenu()} />
+          <Mobilemenu id="mobile-menu" classList={this.state.classListStr} menu={this.themenu()} scrollpos={this.state.scrollpos} />
         </div>
         <div id="title-container">
           <div id="logo-container"><i className="fa fa-chevron-left" />KB /<i className="fa fa-chevron-right"></i></div>
