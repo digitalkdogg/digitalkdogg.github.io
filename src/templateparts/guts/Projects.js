@@ -52,7 +52,7 @@ componentDidMount() {
 
       const params = {
       slidesPerView: 1,
-      spaceBetween: 30,
+      spaceBetween: 10,
       slidesPerGroup: 1,
       autoHeight: true,
        pagination: {
