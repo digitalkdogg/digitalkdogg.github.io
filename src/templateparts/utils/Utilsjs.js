@@ -59,43 +59,31 @@ class Utilsjs extends Component {
       ele.classList.remove('visible');
   }
 
+
 /*******************************************************
-  *   *** check and remove from array function  ****     *
+  *   ***     set active class function         ****     *
   ********************************************************
-  *  This function checks for a string in array and      *
-  *  removes it                                          *
-  *  @return : new array                                   *
+  *  This function removes the active class from          *
+  *  all instances of section and than adds it to the     *
+  * coorect one                                           *
+  *  @return : null                                       *
   *******************************************************/
   setactiveclass(classname) {
-   
-        var items = document.querySelectorAll('.item');
+    var section = document.getElementById(classname+'-section');
+    var theothers = document.querySelectorAll('#the-guts > div');
+    
+    if (theothers != null || theothers.length > 0) {
+      for(var x=0; x<theothers.length; x++) {
+        if (theothers[x].classList.contains('active')===true) {
+          theothers[x].classList.remove('active')
+        }
+      }
+    }
 
-        var header = document.getElementById('header')
-        
-        if (header.classList.contains('init') === false) {
-          for (var x =0; x<items.length; x++) {
-            if (items[x].classList.contains('active')===true) {
-              items[x].classList.remove('active');
-            }
-          }
-          var ele = document.querySelector('.'+classname);
-
-          if (ele != null) {
-              ele.classList.add('active');
-          } 
-
-
-          
-      } else {
-        if (window.scrollY <= 50) {
-            for (var y=0; y<items.length; y++) {
-              if (items[y] != undefined) {
-                items[y].classList.remove('active');
-              }
-            }
-          }
-      }   
-
+    
+    if (section != null) {
+      section.classList.add('active');
+    }
   }
 
 

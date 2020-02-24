@@ -53,14 +53,30 @@ class Mobilemenu extends Component {
       scrollpos['this'] = Utils.getscrollpos(window.scrollY, scrollpos);
       scrollpos['thisclass'] = Utils.getscrollclass(scrollpos['this']);
 
+    
+
+      if (scrollpos['thisclass']==='about') {
+        var ele = document.querySelector('#the-guts');
+        var el = document.querySelector('#footer');
+        if (window.scrollY > 100 ) {
+          ele.setAttribute('style', 'top:160px; position:relative;');
+          el.setAttribute('style', 'top:160px; position:relative;');
+        } else {
+          ele.removeAttribute('style');
+        }
+      }
+
+
       this.setState({
         'scrollpos': scrollpos,
         'activemenu': scrollpos['this'],
         'activeclass': scrollpos['thisclass']
       })
+    
+
+
 
      Utils.setactiveclass(scrollpos['thisclass'])
-
 
     }
 
@@ -97,8 +113,6 @@ class Mobilemenu extends Component {
     if (status !== null || status !== '') {
       this.setState({
         'menu': status,
-       // 'trans': trans,
-      //  'spin': spin
       })
 
      setTimeout(function() {
