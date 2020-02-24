@@ -135,17 +135,21 @@ div#header div#float-container {
 	flex-grow:1;
 }
 
-div#header div#float-container i {
-    -webkit-animation: rotating 30s linear infinite;
-    -moz-animation: rotating 30s linear infinite;
-    -ms-animation: rotating 30s linear infinite;
-    -o-animation: rotating 30s linear infinite;
-    animation: rotating 30s linear infinite;
+div#header div#float-container i.rotating {
+    -webkit-animation: rotating 10s linear infinite;
+    -moz-animation: rotating 10s linear infinite;
+    -ms-animation: rotating 10s linear infinite;
+    -o-animation: rotating 10s linear infinite;
+    animation: rotating 10s linear infinite;
 }
 
 div#header.scrolled div#float-container {
 	font-size:1.2em;
 }
+
+div#header.scrolled div#float-container i:before {
+    content: "\F013";
+} 
 
 div#header div#icon-container {
     top: 20px;
@@ -556,7 +560,6 @@ div#footer {
 	div#header.init div#float-container {
     	right: unset;
     	position: relative;
-    	/*font-size:3em; */
     	margin-top: -10px;
 	}
 

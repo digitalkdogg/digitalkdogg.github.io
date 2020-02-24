@@ -21,6 +21,7 @@ class Header extends Component {
     		'classListStr': '',
     		'scrollstate': 'init',
   			'title_container' : {},
+        'rotating': '',
     		'scrollpos': {
           		'this': 'about',
           		 'about': {
@@ -90,6 +91,7 @@ class Header extends Component {
     	let classList = this.state.classList;
      	let scrollpos = this.state.scrollpos;
      	let thestate = '';
+      let rotating = '';
 
       	if (window.scrollY>100) {
 
@@ -100,6 +102,7 @@ class Header extends Component {
           		classList.push('scrolled')
         	}
         	thestate='scrolled';
+          rotating='rotating';
     	   } else {
         	classList = Utils.removefromarray(classList, 'scrolled');
     	
@@ -107,13 +110,15 @@ class Header extends Component {
           		classList.push('init')
         	}
         	thestate = 'init'
+          rotating = '';
     	  }
 
 
     	 this.setState({'scrollstate': thestate, 
                     'classList': classList,
                     'classListStr': Utils.convertarraytostr(classList),
-                    'scrollpos' : scrollpos
+                    'scrollpos' : scrollpos,
+                    'rotating': rotating
                 });
       
     }
@@ -168,7 +173,7 @@ class Header extends Component {
             <Email email={this.state.title_container.email} />
           </div>
            <div id="float-container">
-            <i id="starti1" className="fa fa-cog float rotating" data-hstart="1" data-step="5" data-end="18" ></i>
+            <i id="starti1" className={'fa fa-cogs float '+  this.state.rotating} data-hstart="1" data-step="5" data-end="18" ></i>
           </div>
         </div>
 
