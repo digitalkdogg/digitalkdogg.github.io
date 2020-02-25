@@ -31,17 +31,15 @@ class Utilsjs extends Component {
   *  @return : new null                                  *
   *******************************************************/
   showModal(modal) {
+
       let body = document.querySelector('body');
       body.setAttribute('style', 'overflow:hidden;');
       
       let ele = document.getElementById(modal);
       ele.classList.add('visible');
-      ele.classList.remove('hidden');
-   //   let maxheight = window.innerHeight //- (window.innerHeight/100);
-   //   let maxheight = 100;
-    //  console.log(maxheight);
+ 
       ele.setAttribute('style', 'max-height: 100%');
-      //ele.setAttribute('style', 'max-height:' + maxheight + '%');
+    
   }
 
 

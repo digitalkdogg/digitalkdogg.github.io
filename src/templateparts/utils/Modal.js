@@ -13,6 +13,10 @@ class modal extends Component {
       const Utils = new Utilsjs();
       event.preventDefault();
       Utils.closeModal('#modal-wrapper');
+
+
+      let projectsection = document.getElementById('projects-section');
+      projectsection.classList.remove('modal-visible');
   }
 
    exec_url(project) {

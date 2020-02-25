@@ -5,7 +5,6 @@ import Quote from '../utils/Quote';
 import Aproject from '../guts/Aproject';
 import Swiper from 'react-id-swiper';
 import Utilsjs from '../utils/Utilsjs';
-import Modal from '../utils/Modal';
 
 import Projs from '../../JSON/Projects.json';
 
@@ -27,26 +26,7 @@ componentDidMount() {
       }
     },100);
 
- 
- 
 }
-
-  close_modal(project) {
-
-      const Utils = new Utilsjs();
-      event.preventDefault();
-      Utils.closeModal('#modal-wrapper');
-  }
-
-  exec_url(project) {
-         let ele = document.getElementById('#modal-wrapper');
-      let href = ele.getAttribute('data-whichproject');
-
-     if (href !== '#') {
-       window.open(href, '_blank');
-    }
-  }
-
 
 	render(props){
 
@@ -97,11 +77,8 @@ componentDidMount() {
                   <Aproject project={Projs.resume}/>
                 </Swiper>
 
-                <Modal /> 
 
-               
-
-
+                
            </div>
       )
 

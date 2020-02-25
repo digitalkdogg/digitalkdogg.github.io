@@ -4,7 +4,7 @@
 
 body {
     background: #e9e9e9;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: sans-serif;
     line-height: 1.5;
     color: #eee;
@@ -266,7 +266,7 @@ div#the-guts h2 {
 }
 
 div#the-guts .item {
-	background: white;
+	background: #eee;
 	color: #333;
 	padding: 5px 10px;
 	margin-bottom:20px;
@@ -275,12 +275,19 @@ div#the-guts .item {
     box-shadow: 0px 5px 15px 3px #333;
     box-shadow: 0px 5px 15px 3px #333;
     position: relative;
-
+    font-size:.7em;
+    color:#555;
 }
 
 div#the-guts .active {
     transition:transform 1s;
-    transform: scaleX(1.07);
+    transform: scaleX(1.05);
+}
+
+div#the-guts .active .item {
+    font-size:1em;
+    background:white;
+    color:black;
 }
 
 div#the-guts .swiper-button-next, .swiper-button-prev {
@@ -320,10 +327,14 @@ div#the-guts div#project-container .project .desc {
 	height:250px;
 }
 
-div#the-guts #projects-section .modal-dialog {
+div#the-guts .modal-dialog {
     transform: translate(-10px, -10px);
     width:101%;
 } 
+
+div#the-guts .modal .modal-body {
+    color:black;
+}
 
 .modal-header .close {
     padding: 1rem 1rem;
@@ -332,11 +343,11 @@ div#the-guts #projects-section .modal-dialog {
     color:white;
 }
 
-div#the-guts #projects-section .modal-content {
+div#the-guts .modal-content {
     border: 1px solid black;
 }
 
-div#the-guts #projects-section .modal-content .desc {
+div#the-guts .modal-content .desc {
 	font-size: .8em;
 }
 
@@ -381,37 +392,38 @@ div#the-guts #modal span#close:hover {
     cursor: pointer;
 }
 
-div#the-guts #projects-section .modal.visible {
+div#the-guts div.modal.visible {
     display: block;
     opacity: 1;
     overflow-y: scroll;
     margin:0;
 }
 
-div#the-guts #projects-section .modal .footer-btn-wrap {
+div#the-guts .modal .footer-btn-wrap {
     text-align: center;
     width:100%;
 }
 
-div#the-guts #projects-section .modal .footer-btn-wrap button {
+div#the-guts .modal .footer-btn-wrap button {
     margin: 0 5px;
 }
 
-div#the-guts #projects-section .modal .modal-header {
+div#the-guts .modal .modal-header {
     background: #eee;
+    color:black;
 }
-div#the-guts #projects-section .modal .img-wrap {
+div#the-guts .modal .img-wrap {
     overflow: hidden;
     text-align: center;
     min-height: 150px;
     margin:0 20%;
 }
 
-div#the-guts #projects-section .modal-footer {
+div#the-guts .modal-footer {
 	justify-content: center;
 }
 
-div#the-guts #projects-section .modal .skills-wrap {
+div#the-guts .modal .skills-wrap {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -420,45 +432,44 @@ div#the-guts #projects-section .modal .skills-wrap {
 }
 
 div#the-guts .modal .skills-wrap span {
-    background: #0173fe;
-    background: linear-gradient(140deg, rgba(1,115,254,1) 0%, rgba(1,115,204,1) 35%, rgba(1,153,255,1) 100%);
+    background: #555;
     border-radius: 20px;
     margin: 5px;
-    padding: 5px;
+    padding: 5px 7px;
     color: white;
     font-size: .7em;
 }
 
-div#the-guts #projects-section .modal .img-wrap {
+div#the-guts .modal .img-wrap {
       background-repeat: no-repeat;
     background-size: cover;
 }
 
-div#the-guts #projects-section .modal .img-wrap.millwood {
+div#the-guts .modal .img-wrap.millwood {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/millwood.png');
 }
 
-div#the-guts #projects-section .modal .img-wrap.checkbook {
+div#the-guts .modal .img-wrap.checkbook {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/checkbook_scaled.png');
 }
 
-div#the-guts #projects-section .modal .img-wrap.olympic {
+div#the-guts .modal .img-wrap.olympic {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/olympic_inspection.png');
 }
 
-div#the-guts #projects-section .modal .img-wrap.checkboxme {
+div#the-guts .modal .img-wrap.checkboxme {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/checkboxme.png');
 }
 
-div#the-guts #projects-section .modal .img-wrap.millwoodadmin {
+div#the-guts .modal .img-wrap.millwoodadmin {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/millwood_admin.png');
 }
 
-div#the-guts #projects-section .modal .img-wrap.plexmanager {
+div#the-guts .modal .img-wrap.plexmanager {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/plex_admin.png');
 }
 
-div#the-guts #projects-section .modal .img-wrap.resumeadmin {
+div#the-guts .modal .img-wrap.resumeadmin {
     background-image: url('https://digitalkdogg.github.io/src/includes/img/resume_admin.png');
 }
 
@@ -568,7 +579,7 @@ div#footer {
 		font-size: 1.5em;
 	}
 
-	div#the-guts #projects-section .modal-dialog {
+	div#the-guts .modal-dialog {
 		max-width: 80%;
 	}
 

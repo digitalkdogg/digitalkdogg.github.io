@@ -18,12 +18,11 @@ class Aproject extends Component {
  exec_proj_click = (project) => {
     const Utils = new Utilsjs();
     event.preventDefault();
+   
     Utils.showModal('#modal-wrapper');
-
 
     var ele = document.getElementById('#modal-wrapper');
     ele.setAttribute('data-whichproject', project.props.project.href);
-
 
     let modal = ele.getElementsByClassName('modal-content')
     if (modal.length === 1) {
@@ -59,10 +58,6 @@ class Aproject extends Component {
 
     }
 
-  }
-
-  close_modal = (project, that) => {
-    project.setState({'modalclass': 'hidden'})
   }
 
 

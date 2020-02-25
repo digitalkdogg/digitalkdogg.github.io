@@ -4,6 +4,7 @@ import About from '../templateparts/guts/About';
 import Projects from '../templateparts/guts/Projects';
 import Skills from '../templateparts/guts/Skills';
 import Contact from '../templateparts/guts/Contact';
+import Modal from '../templateparts/utils/Modal';
 
 import H2 from '../templateparts/utils/H2'
 
@@ -40,6 +41,7 @@ class Guts extends Component {
               <Contact />
           </div>
 
+          <Modal />
         </div>
       )
   }
