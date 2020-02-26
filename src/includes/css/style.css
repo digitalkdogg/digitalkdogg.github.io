@@ -3,13 +3,13 @@
 /* come on over yellow : fee201  */
 
 body {
-    background: #e9e9e9;
+    background: #fff;
     font-size: 1.4em;
     font-family: sans-serif;
     line-height: 1.5;
-    color: #eee;
+    color: #333;
     margin:0;
-    background-image: url("https://digitalkdogg.github.io/src/includes/img/texture-bg.png");
+    /*background-image: url("https://digitalkdogg.github.io/src/includes/img/texture-bg.png"); */
 }
 
 .hidden {
@@ -18,6 +18,11 @@ body {
 
 .show {
 	display:block;
+}
+
+div#icon-container div.bottom img {
+    height: 30px;
+    width: 30px;
 }
 
 button {
@@ -48,6 +53,7 @@ div#header {
     padding-top:0;
     padding-bottom:0;
     overflow:hidden;
+    color:white;
 }
 
 div#header div#active-menu-item {
@@ -262,18 +268,16 @@ div#the-guts {
 }
 
 div#the-guts h2 {
-	color:white;
+	color:black;
 }
 
 div#the-guts .item {
-	background: #eee;
+	background: #fff;
 	color: #333;
 	padding: 5px 10px;
 	margin-bottom:20px;
-	-webkit-box-shadow: 0px 5px 15px 3px #333;
-    -moz-box-shadow: 0px 5px 15px 3px #333;
-    box-shadow: 0px 5px 15px 3px #333;
-    box-shadow: 0px 5px 15px 3px #333;
+	border: 1px solid #ecedef;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.08);
     position: relative;
     color:#555;
 }
@@ -497,6 +501,7 @@ div#the-guts div#skills {
 
 div#the-guts div#skills h2 {
 	border-bottom:1px solid #fff;
+    color:white;
 }
 
 
