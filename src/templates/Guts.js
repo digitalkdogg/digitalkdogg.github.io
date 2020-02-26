@@ -24,19 +24,19 @@ class Guts extends Component {
       return(
         <div id="the-guts">
         
-          <div id="about-section">
+          <div id="about-section" className="section">
             <H2 id="about" text="About Me" icon="far fa-user" />
             <About />
           </div>
-          <div id="projects-section">
+          <div id="projects-section" className="section">
              <H2 id="projects" text="My Projects" icon="fas fa-server" />
             <Projects />
           </div>
-          <div id="skills-section">
+          <div id="skills-section" className="section">
               <H2 id="skills" text="Skills" icon="fas fa-magic"/>
               <Skills />
           </div>
-          <div id="contact-section">
+          <div id="contact-section" className="section">
               <H2 id="contact" text="Contact Me" icon="fas fa-address-book"/>
               <Contact />
           </div>

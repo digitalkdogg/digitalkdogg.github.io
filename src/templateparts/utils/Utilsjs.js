@@ -82,6 +82,18 @@ class Utilsjs extends Component {
     if (section != null) {
       section.classList.add('active');
     }
+
+    //am i 500 from the bottom of the screen
+    if ((window.innerHeight + window.scrollY+100) >= document.body.offsetHeight) {
+      
+      let ele = document.querySelectorAll('#the-guts .section');
+     
+      ele[ele.length-1].classList.add('active');
+      
+    }
+
+
+
   }
 
 
@@ -228,8 +240,8 @@ getTopBotPosOfEle(obj, ele, nextele) {
     nexttop = top + 500;
   }
 
-  obj.start.desktop = top-50
-  obj.end.desktop = nexttop-50;
+  obj.start.desktop = top-90
+  obj.end.desktop = nexttop-90;
 
   return obj;
 }
