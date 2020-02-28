@@ -3,34 +3,45 @@ div#body {
 }
 
 div#header {
-		background-color: #27313e;
+	background-color: #27313e;
     position: fixed;
     top: 0;
     width: 100%;
     height: 40px;
     overflow: hidden;
-		z-index:10;
-		color:white;
-		overflow:hidden;
-		padding:0 5%;
+	z-index:10;
+	color:white;
+	overflow:hidden;
+	padding:0 5%;
+	display:flex;
+}
+
+div#header div#nine-box-section i.fas:hover {
+	cursor:pointer;
+	color:#fee201;
+	transform: scale(1.2);
 }
 
 div#header div#name-section {
-	flex-grow:5;
+	flex-basis:80%;
 }
 
 div#header div#menu-section {
-	display:none;
 	position: fixed;
 	height:100%;
 	float:right;
 	padding:10px;
 	background: white;
 	color:black;
+	width:100%;
+	left:100%;
+	top:40px;
 }
 
 div#header div#menu-section.show {
 	display:block;
+	left: 80%;
+	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
 div#header div#menu-section li {
