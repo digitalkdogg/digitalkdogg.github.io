@@ -1,4 +1,102 @@
+div#body {
+	overflow:hidden;
+}
+
 div#header {
+		background-color: #27313e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+		z-index:10;
+		color:white;
+		overflow:hidden;
+		padding:0 5%;
+}
+
+div#header div#name-section {
+	flex-grow:5;
+}
+
+div#header div#menu-section {
+	display:none;
+	position: fixed;
+	height:100%;
+	float:right;
+	padding:10px;
+	background: white;
+	color:black;
+}
+
+div#header div#menu-section.show {
+	display:block;
+}
+
+div#header div#menu-section li {
+	list-style-type: none;
+}
+
+div#banner {
+    top: 40px;
+    position: absolute;
+		height:120px;
+		color:white;
+		background-image: url('../img/meoej.jpg');
+		width:100%;
+		font-size:1.5em;
+		display:flex;
+		flex-direction: column;
+		text-align:center;
+    background-size: initial;
+		overflow:hidden;
+}
+
+div#banner p {
+	margin: 1vh;
+}
+
+div#banner p.tag {
+    font-size:.75em;
+    color:#ccc;
+}
+
+
+
+div#the-guts {
+    position: absolute;
+    top: 25%;
+		width:100%;
+		margin-bottom:5%;
+}
+
+div#the-guts div.section {
+    padding: 10px 5%;
+}
+
+div#the-guts div#projects.section, div#the-guts div#contact.section {
+	background:#e9e9e9;
+}
+
+div#footer {
+	background-color: #27313e;
+	position: fixed;
+	bottom:0;
+	width:100%;
+	z-index:10;
+	color:white;
+	font-size: .5em;
+
+}
+
+@media only screen and (min-width: 768px) {
+	div#header {
+		background-size:contain;
+	}
+}
+
+
+/*div#header {
 	background-color: #27313e;
 	color:white;
 	padding: 5px 5%;
@@ -37,7 +135,7 @@ div#banner {
     background-image: url('../img/meoej.jpg');
     font-size:1.5em;
     display:flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 div#banner p.tag {
@@ -57,4 +155,4 @@ div#the-guts div#projects.section, div#the-guts div#contact.section {
 	div#header {
 		background-size:contain;
 	}
-}
+} */
