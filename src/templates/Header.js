@@ -1,187 +1,29 @@
 import React, { Component } from 'react';
 
-import Title from '../templateparts/header/Title';
-import Phone from '../templateparts/header/Phone';
-import Email from '../templateparts/header/Email'
-import Desktopmenu from '../templateparts/header/Desktopmenu';
-import Mobilemenu from '../templateparts/header/Mobilemenu';
-import Utilsjs from '../templateparts/utils/Utilsjs';
-import Icons from '../templateparts/header/Icons';
-
-import Titlecontainer from '../JSON/Title.json';
-import menujson from '../JSON/Menu.json';
-
 
 class Header extends Component {
 
 	constructor() {
       	super();
       	this.state = {
-  			'classList': [],
-    		'classListStr': '',
-    		'scrollstate': 'init',
-  			'title_container' : {},
-        'rotating': '',
-    		'scrollpos': {
-          		'this': 'about',
-          		 'about': {
-              		'this': 'About Me',
-              		'start': {'desktop': 50, 'mobile': 50},
-              		'end': {'desktop':200, 'mobile':300},          
-        		},
-          		'projects' : {
-            		'this': 'My Projects',
-            		'start': {'desktop': 201, 'mobile':301},
-            		'end': {'desktop': 400, 'mobile': 1000}
-            	},
-        		'skillsection' : {
-           			'this': 'Skills',
-            		'start': {'desktop': 401, 'mobile':1001},
-            		'end': {'desktop': 700, 'mobile': 1400}
-          		},
-        		'contact' : {
-           			'this': 'Contact Me',
-            		'start': {'desktop': 701, 'mobile':1401},
-            		'end': {'desktop': 1000, 'mobile': 1800}
-          		}
-    		}
+  			
      	}
  	}
 
-
-
- componentDidMount = () => {
-	const Utils = new Utilsjs();
-
-  let scrollpos = this.state.scrollpos
-    
-  scrollpos.about = Utils.getTopBotPosOfEle(scrollpos.about, 'about', 'projects'); 
-	scrollpos.projects = Utils.getTopBotPosOfEle(scrollpos.projects, 'projects', 'skills');
-  scrollpos.skillsection = Utils.getTopBotPosOfEle(scrollpos.skillsection, 'skills', 'contact');
-  scrollpos.contact = Utils.getTopBotPosOfEle(scrollpos.contact, 'contact', '');
-
-  this.checkscreensize();
-  window.addEventListener("resize", this.checkscreensize.bind(this));
-  window.addEventListener('scroll', this.handleScroll.bind(this));
-
-  let mobileordesktop = 'isdesktop';
-  if (Utils.isMobileDevice() === true) {
-    mobileordesktop = 'ismobile';
-
-  } else {
-    mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																																		
-  }
-  this.setState({
-    'ismobile': mobileordesktop,
-    'title_container': Titlecontainer
-  });
-
-
- }
-
- themenu = () => {
-  return (
-      menujson
-    )
- }
-
-    handleScroll = (event) => {
-    	const Utils = new Utilsjs();
-
-    	let classList = this.state.classList;
-     	let scrollpos = this.state.scrollpos;
-     	let thestate = '';
-      let rotating = '';
-
-      	if (window.scrollY>100) {
-
-      		scrollpos['this'] = Utils.getscrollpos(window.scrollY, this.state.scrollpos);
-
-      		classList = Utils.removefromarray(classList, 'init');
-    		  if (Utils.hasValue(classList, 'scrolled')===false) {
-          		classList.push('scrolled')
-        	}
-        	thestate='scrolled';
-          rotating='rotating';
-    	   } else {
-        	classList = Utils.removefromarray(classList, 'scrolled');
-    	
-        	if (Utils.hasValue(classList, 'init')===false) {
-          		classList.push('init')
-        	}
-        	thestate = 'init'
-          rotating = '';
-    	  }
-
-
-    	 this.setState({'scrollstate': thestate, 
-                    'classList': classList,
-                    'classListStr': Utils.convertarraytostr(classList),
-                    'scrollpos' : scrollpos,
-                    'rotating': rotating
-                });
-      
-    }
-
-
-    checkscreensize = () => {
-    	const Utils = new Utilsjs();
-      	let classList = this.state.classList;
-      	if (Utils.isMobileDevice() === true) {
-        	classList = Utils.removefromarray(classList, 'isdesktop');
-      
-        	if (Utils.hasValue(classList, 'ismobile') ===false) {
-          		classList.push('ismobile')
-        	}
-      	} else {
-         
-         	classList = Utils.removefromarray(classList, 'ismobile');
-      
-        	if (Utils.hasValue(classList, 'isdesktop')===false) {
-          		classList.push('isdesktop');
-        	}
-      	}
-      	
-      	let mobileordesktop = 'isdesktop';
-      	 if (Utils.isMobileDevice() === true) {
-    		  mobileordesktop = 'ismobile';
-         } else {
-    		  mobileordesktop = 'isdesktop';																																																																																																																																																																																																																																																																															
-    	 }
-
-      	this.setState({
-          ismobile: mobileordesktop, 
-          classList: classList, 
-          classListStr: Utils.convertarraytostr(classList)
-        })
-
-    }
-
-
 	render(){ 
 		return (
-			<div id="header" className={this.state.scrollstate + ' ' + this.state.ismobile} >
-				<div id="menu-container" className={this.state.scrollstate} >
-          <Desktopmenu id="desktop-menu" classList={this.state.classListStr}  menu={this.themenu()} />
-          <Mobilemenu id="mobile-menu" classList={this.state.classListStr} menu={this.themenu()} scrollpos={this.state.scrollpos} />
-        </div>
-        <div id="title-container">
-          <div id="logo-container"><i className="fa fa-chevron-left" />KB /<i className="fa fa-chevron-right"></i></div>
-          <div id="text-container">
-            <Title title={this.state.title_container.title} />
-            <Phone phone={this.state.title_container.phone} />
-            <Email email={this.state.title_container.email} />
-          </div>
-           <div id="float-container">
-            <i id="starti1" className={'fa fa-cogs float '+  this.state.rotating} data-hstart="1" data-step="5" data-end="18" ></i>
-          </div>
-        </div>
-
-         
-               
-          <Icons />
-			
-      </div>
+			<div id="header" >
+				<div id = "name-section">Kevin Bollman</div>
+				<div id = "nine-box-section">
+					<i className="fas fa-th-large"></i>
+					<div id = "menu-section">
+						<li>About Me</li>
+						<li>Projects</li>
+						<li>Skills</li>
+						<li>Contact</li>
+					</div>
+				</div>
+			</div>
 		)
 	}
 }//end class
