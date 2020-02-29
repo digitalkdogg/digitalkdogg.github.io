@@ -18,6 +18,22 @@ class Header extends Component {
  		}
  	}
 
+ 	gotosection (section) {
+ 		var others = document.querySelectorAll('.section');
+ 		for (let i = 0; i<others.length; i++) {
+ 			others[i].classList.remove('show');
+ 			others[i].classList.add('hidden');
+ 		}
+
+ 		var ele = document.getElementById(section)
+ 		
+ 		ele.classList.remove('hidden');
+ 		ele.classList.add('show');
+
+ 		this.setState({'showclass': ''})
+ 	
+ 	}
+
 	render(){ 
 		return (
 			<div id="header" >
@@ -25,8 +41,8 @@ class Header extends Component {
 				<div id = "nine-box-section">
 					<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
 					<div id = "menu-section" className={this.state.showclass}>
-						<li>About Me</li>
-						<li>Projects</li>
+						<li onClick={this.gotosection.bind(this, 'about')}>About Me</li>
+						<li onClick={this.gotosection.bind(this, 'projects')}>Projects</li>
 						<li>Skills</li>
 						<li>Contact</li>
 					</div>

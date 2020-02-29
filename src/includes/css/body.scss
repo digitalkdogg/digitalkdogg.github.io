@@ -46,21 +46,27 @@ div#header div#menu-section.show {
 
 div#header div#menu-section li {
 	list-style-type: none;
+	font-weight: bold;
+}
+
+div#header div#menu-section li:hover {
+    cursor: pointer;
+    color: #fee201;
 }
 
 div#banner {
     top: 40px;
     position: absolute;
-		height:120px;
-		color:white;
-		background-image: url('../img/meoej.jpg');
-		width:100%;
-		font-size:1.5em;
-		display:flex;
-		flex-direction: column;
-		text-align:center;
+	height:120px;
+	color:white;
+	background-image: url('../img/meoej.jpg');
+	width:100%;
+	font-size:1.5em;
+	display:flex;
+	flex-direction: column;
+	text-align:center;
     background-size: initial;
-		overflow:hidden;
+	overflow:hidden;
 }
 
 div#banner p {
@@ -77,13 +83,26 @@ div#banner p.tag {
 div#the-guts {
     position: absolute;
     top: 25%;
-		width:100%;
-		margin-bottom:5%;
+	width:100%;
+	margin-bottom:5%;
 }
 
 div#the-guts div.section {
     padding: 10px 5%;
+
 }
+
+
+div#the-guts div.section.show {
+animation : flip 1s  ease-out;
+}
+
+@keyframes flip {
+	from { transform: rotateX(0); }
+	50% { transform:rotateX(180deg); }
+	100% { transform: rotateX(360deg) } 
+}
+
 
 div#the-guts div#projects.section, div#the-guts div#contact.section {
 	background:#e9e9e9;
@@ -99,6 +118,8 @@ div#footer {
 	font-size: .5em;
 
 }
+
+
 
 @media only screen and (min-width: 768px) {
 	div#header {
