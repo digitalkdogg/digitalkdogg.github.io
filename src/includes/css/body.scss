@@ -2,8 +2,17 @@ div#body {
 	overflow:hidden;
 }
 
+div#cover {
+    position: absolute;
+    height: 30vh;
+    width: 100%;
+    background: rgba(1,116,203,0.5);
+    top: 40px;
+    z-index: 10;
+}
+
 div#header {
-	background-color: #27313e;
+	background-color: #163a57;
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,18 +21,39 @@ div#header {
 	z-index:10;
 	color:white;
 	overflow:hidden;
-	padding:0 5%;
+	padding:0 3%;
 	display:flex;
+}
+
+div#header div#logo-section {
+    margin: 5px 5px 0 0 ;
+  	border-right: 3px solid #fff;
+    padding: 0 5px 0 0;
+    max-width:70px;
+    font-size:.8em;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+}
+
+div#header div#nine-box-section {
+    flex-grow: 1;
+}
+
+div#header span#kb {
+    font-weight: bold;
 }
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
-	color:#fee201;
+	color:#fff466;
 	transform: scale(1.2);
 }
 
 div#header div#name-section {
-	flex-basis:80%;
+	margin-top:5px;
+	font-weight: bold;
+	font-size: .8em;
+	flex-grow: 5;
 }
 
 div#header div#menu-section {
@@ -40,7 +70,7 @@ div#header div#menu-section {
 
 div#header div#menu-section.show {
 	display:block;
-	left: 80%;
+	left: 0;
 	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
@@ -51,20 +81,23 @@ div#header div#menu-section li {
 
 div#header div#menu-section li:hover {
     cursor: pointer;
-    color: #fee201;
+    color: #fff466;
 }
 
 div#banner {
     position: absolute;
-	height:120px;
-	color:white;
-	background-image: url('../img/meoej.jpg');
+	height:30vh;
+	color:black;
+	background-image: url('../img/web-city.jpg');
+	background-position: center;
+    background-repeat: repeat-x;
 	width:100%;
 	font-size:1.5em;
 	display:flex;
 	flex-direction: column;
 	text-align:center;
     background-size: initial;
+    font-weight: bold;
 }
 
 div#banner p {
@@ -73,19 +106,21 @@ div#banner p {
 
 div#banner p.tag {
     font-size:.75em;
-    color:#ccc;
+    color:#333;
+    font-weight: normal;
 }
 
 
 div#guts-section {
     position: absolute;
-    top: 40px; 
+    top: 40px;
 	width:100%;
 	margin-bottom:5%;
 }
 
 div#guts-section div.section {
-    padding: 10px 5%;
+    padding: 40px 5%;
+    min-height: 100vh;
 
 }
 
@@ -100,26 +135,41 @@ div#guts-section div#projects.section, div#the-guts div#contact.section {
 
 div#guts-section div#the-guts {
     position: relative;
-    padding: 120px 0 10px 0;
+    padding-top:calc(30vh);
+    padding-bottom: 10px;
 }
 
 div#footer {
-	background-color: #27313e;
+	background-color: #163a57;
 	position: fixed;
 	bottom:0;
 	width:100%;
 	z-index:10;
 	color:white;
 	font-size: .5em;
+	text-align:center;
 
 }
-
-
 
 @media only screen and (min-width: 768px) {
 	div#header {
 		background-size:contain;
 	}
+
+	div#header div#logo-section {
+		max-width:90px;
+		font-size:1em;
+	}
+
+	div#header div#name-section {
+		font-size:1em;
+		flex-grow:8;
+	}
+
+	div#header div#menu-section.show {
+		left:70%;
+	}
+
 }
 
 @keyframes flip {
@@ -127,65 +177,3 @@ div#footer {
 	50% { transform:rotateX(180deg); }
 	100% { transform: rotateX(360deg) } 
 }
-
-
-/*div#header {
-	background-color: #27313e;
-	color:white;
-	padding: 5px 5%;
-	display:flex;
-	border-bottom:3px solid white;
-}
-
-div#header div#name-section {
-	flex-grow:5;
-}
-
-div#header div#menu-section {
-	display:none;
-	position: fixed;
-	height:100%;
-	float:right;
-	padding:10px;
-	background: white;
-	color:black;
-}
-
-div#header div#menu-section.show {
-	display:block;
-}
-
-div#header div#menu-section li {
-	list-style-type: none;
-}
-
-div#banner {
-    min-height: 200px;
-    background-size: initial;
-    color: white;
-    text-align: center;
-    padding: 5%;
-    background-image: url('../img/meoej.jpg');
-    font-size:1.5em;
-    display:flex;
-    flex-direction: column;
-}
-
-div#banner p.tag {
-    font-size:.75em;
-    color:#ccc;
-}
-
-div#the-guts div.section {
-    padding: 10px 5%;
-}
-
-div#the-guts div#projects.section, div#the-guts div#contact.section {
-	background:#e9e9e9;
-}
-
-@media only screen and (min-width: 768px) {
-	div#header {
-		background-size:contain;
-	}
-} */
