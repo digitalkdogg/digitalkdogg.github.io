@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class Header extends Component {
 
 	constructor() {
@@ -48,6 +47,8 @@ class Header extends Component {
 					</div>
 				</div>
 			</div>
+			
+			
 		)
 	}
 }//end class
