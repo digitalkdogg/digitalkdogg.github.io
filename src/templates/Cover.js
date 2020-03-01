@@ -11,7 +11,7 @@ class Cover extends Component {
 
     render() {
       return(
-        <div id = "cover"></div>
+        <div id = "cover">Hello I am Kevin Bollman<br />A Full Stack Developer</div>
       )
   }
 }

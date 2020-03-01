@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Banner from './Banner.js';
 import Theguts from './Theguts.js';
+import Banner from './Banner.js';
 
 class Guts extends Component {
 

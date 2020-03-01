@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Aboutme from '../JSON/About.json';
 import P from '../templateparts/utils/P';
 
+import Cover from './Cover.js';
+
 class Theguts extends Component {
 
   constructor() {
@@ -23,20 +25,21 @@ class Theguts extends Component {
     render() {
     	return(
     		 <div id="the-guts">
-              <div id = "about" className = "section show">
-              {this.parseAbout()}
-
-              </div>
-              <div id = "projects" className = "section hidden">
-                The Projects section
-              </div>
-              <div id = "skills" className = "section hidden">
-                Skills
-              </div>
-              <div id = "contact" className = "section hidden">
-                Contact section
-              </div>
-
+    		 	<div id = "home" className = "section show">
+    		 		<Cover />
+    		 	</div>
+              	<div id = "about" className = "section hidden">
+              		{this.parseAbout()}
+              	</div>
+              	<div id = "projects" className = "section hidden">
+                	The Projects section
+              	</div>
+              	<div id = "skills" className = "section hidden">
+                	Skills
+              	</div>
+              	<div id = "contact" className = "section hidden">
+                	Contact section
+              	</div>
             </div>
     	)
     }

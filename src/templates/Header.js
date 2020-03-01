@@ -37,13 +37,14 @@ class Header extends Component {
 		return (
 			<div id="header" >
 				<div id = "logo-section">
-					<i class="fas fa-less-than"></i> 
+					<i className="fas fa-less-than"></i> 
 					<span id = "kb"> KB </span>
-					<i class="fas fa-greater-than"></i></div>
+					<i className="fas fa-greater-than"></i></div>
 				<div id = "name-section">Kevin Bollman</div>
 				<div id = "nine-box-section">
 					<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
 					<div id = "menu-section" className={this.state.showclass}>
+						<li onClick={this.gotosection.bind(this, 'home')}>Home</li>
 						<li onClick={this.gotosection.bind(this, 'about')}>About Me</li>
 						<li onClick={this.gotosection.bind(this, 'projects')}>Projects</li>
 						<li onClick={this.gotosection.bind(this, 'skills')}>Skills</li>
