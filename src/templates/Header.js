@@ -9,11 +9,30 @@ class Header extends Component {
      	}
  	}
 
+ 	componentDidMount() {
+ 		var self = this
+ 		window.addEventListener('scroll', function() {
+ 			if (self.state.showclass==='show') {
+ 			///	let ele = document.getElementById('the-guts');
+ 			//	ele.setAttribute('style', 'position:fixed;');
+ 			} else {
+ 			//	let ele = document.getElementById('the-guts');
+ 			//	ele.removeAttribute('style')
+ 			}
+ 		
+ 		});
+ 	}
+
+ 	
  	showhidemenu () {
  		if (this.state.showclass == '') {
  			this.setState({'showclass': 'show'})
+ 			let guts = document.getElementById('the-guts');
+ 			guts.setAttribute('style', 'position:fixed;');
  		} else {
  			this.setState({'showclass': ''})
+ 			let guts = document.getElementById('the-guts');
+ 			guts.removeAttribute('style')
  		}
  	}
 
@@ -30,6 +49,8 @@ class Header extends Component {
  		ele.classList.add('show');
 
  		this.setState({'showclass': ''})
+ 		let guts = document.getElementById('the-guts');
+ 		guts.removeAttribute('style')
  	
  	}
 

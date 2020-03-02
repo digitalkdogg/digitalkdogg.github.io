@@ -57,7 +57,7 @@ div#header span#kb {
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
-	color:#fff466;
+	color:#ccc;
 	transform: scale(1.2);
 }
 
@@ -73,11 +73,12 @@ div#header div#menu-section {
 	height:100%;
 	float:right;
 	padding:10px;
-	background: white;
-	color:black;
+	background: rgba(22,58,87,0.9);
+	color:white;
 	width:100%;
 	left:100%;
 	top:40px;
+	border-left: 3px solid #163a57;
 }
 
 div#header div#menu-section.show {
@@ -93,7 +94,7 @@ div#header div#menu-section li {
 
 div#header div#menu-section li:hover {
     cursor: pointer;
-    color: #fff466;
+    color: #ccc;
 }
 
 div#banner {
@@ -122,9 +123,6 @@ div#banner i {
 	font-size:.7em;
 }
 
-
-
-
 div#banner p {
 	margin: 1vh;
 }
@@ -145,12 +143,17 @@ div#guts-section {
 div#guts-section div.section {
     padding: 40px 5%;
     min-height: 100vh;
-
+    background-color: rgba(255,255,255,0.7);;
 }
 
 
 div#guts-section div.section.show {
-	animation : flip 1s  ease-out;
+	/*animation : flip 1s  ease-out;*/
+}
+
+div#guts-section div.section.show .box {
+	
+animation : flip 1s  ease-out;
 }
 
 div#guts-section div#projects.section, div#the-guts div#contact.section {
@@ -173,12 +176,25 @@ div#guts-section div#the-guts div#home {
     text-align:center;
 }
 
-div#guts-section div#home div.box {
-    background: rgba(54,72,90,0.9);
+div#guts-section div.box {
+    background: rgba(54,75,85,0.8);
     margin: 5%;
     border-radius: 10px;
     min-height: 40vh;
     color: white;
+}
+
+div#guts-section div.box.style2 {
+	/*background:#5b7689; */
+	background:#364b55;
+}
+
+div#guts-section div.box p {
+    padding: 2%;
+}
+
+div#guts-section div#home div.box p {
+    padding: initial;
 }
 
 div#guts-section div#home div.box p {
@@ -242,7 +258,10 @@ div#footer {
 }
 
 @keyframes flip {
-	from { transform: rotateX(0); }
+	/*from { transform: rotateX(0); }
 	50% { transform:rotateX(180deg); }
-	100% { transform: rotateX(360deg) } 
+	100% { transform: rotateX(360deg) } */
+	from {transform : scale(0);}
+	50% { transform: scale(1.2); }
+	100% { transform: scale(1); }
 }

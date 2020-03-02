@@ -10,44 +10,6 @@ class Banner extends Component {
      	}
  	}
 
-  componentDidMount() {
-
-    this.positionIcons();
-  }
-
-  positionIcons() {
-    var icons = document.querySelectorAll('#banner i');
-    var newpos = parseInt(this.state.iconpos);
-    var diff = (window.innerWidth - 40) / icons.length;
-
-    let banner = document.getElementById("banner");
-    var height = banner.offsetHeight - 40;
-    var top = 10;
-    var toparr = new Array();
-
-
-    for (let x=0; x<icons.length; x++) {
-      newpos = parseInt(newpos) + parseInt(diff)+100;
-      if (newpos > window.innerWidth) {
-        newpos = 10;
-      }
-
-      top = top + 20;
-      if (top>height) {
-        top = 10
-      }
-
-      //height = Math.random(height);
-     // top = Math.floor(Math.random() * height) + 1
-     // if (toparr.indexOf(top) !== -1) {
-     //    top = Math.floor(Math.random() * height) + 1
-     // }
-     // toparr.pop(top);
-    //  icons[x].setAttribute('style', 'left:' + newpos + 'px;' + ' top:'+top +'%;');
-      this.setState({'iconpos': newpos})
-
-    }
-  }
 
 	render(){ 
 		return (

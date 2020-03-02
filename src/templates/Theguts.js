@@ -29,7 +29,9 @@ class Theguts extends Component {
     		 		<Cover />
     		 	</div>
               	<div id = "about" className = "section hidden">
-              		{this.parseAbout()}
+              		<div className="box style2">
+              			{this.parseAbout()}
+              		</div>
               	</div>
               	<div id = "projects" className = "section hidden">
                 	The Projects section
