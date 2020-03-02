@@ -2,11 +2,20 @@ div#body {
 	overflow:hidden;
 }
 
+p.tag {
+	font-size:1em;
+}
+
+p.sub {
+	font-style: italic;
+	opacity: .8;
+}
+
 div#the-guts div#home div#cover {
     position: absolute;
-    height: 110vh;
+    height: 105vh;
     width: 100%;
-    background: rgba(256,256,256,0.7);
+    background: rgba(144,198,255,0.7);
     top: calc(40px+21vh);
     z-index: 10;
 }
@@ -89,14 +98,12 @@ div#header div#menu-section li:hover {
 
 div#banner {
     position: absolute;
-	height:20vh;
+	height:15vh;
 	color:black;
-	/*background-image: url('../img/web-city.jpg');
-	background-position: center;
-    background-repeat: repeat-x; 
-    background-color:#eee; */
+	/*background-image: url('../img/web-city.jpg'); */
+	
     background: rgb(221,221,221);
-background: linear-gradient(141deg, rgba(221,221,221,1) 1%, rgba(242,242,242,1) 100%);
+	background: linear-gradient(141deg, rgba(221,221,221,1) 1%, rgba(242,242,242,1) 100%);
 	width:100%;
 	font-size:1.5em;
 	display:flex;
@@ -105,6 +112,7 @@ background: linear-gradient(141deg, rgba(221,221,221,1) 1%, rgba(242,242,242,1) 
     background-size: initial;
     font-weight: bold;
     padding:20px 0;
+    border-bottom: 3px solid #163a57;
 }
 
 div#banner i {
@@ -114,185 +122,7 @@ div#banner i {
 	font-size:.7em;
 }
 
-div#banner i.i-1 {
-	top:2vh;
-	left:5vw;
-}
 
-div#banner i.i-2 {
-	top:14vh;
-	left:10vw;
-}
-
-div#banner i.i-3 {
-	top:7vh;
-	left:15vw;
-}
-
-div#banner i.i-4 {
-	top:3vh;
-	left:20vw;
-}
-
-div#banner i.i-5 {
-	top:10vh;
-	left:25vw;
-}
-
-div#banner i.i-6 {
-	top:3vh;
-	left:33vw;
-}
-
-div#banner i.i-7 {
-	top:2vh;
-	left:54vw;
-}
-
-div#banner i.i-8 {
-	top:15vh;
-	left:40vw;
-}
-
-div#banner i.i-9 {
-	top:8vh;
-	left:39vw;
-}
-
-div#banner i.i-10 {
-	top:14vh;
-	right:8vw;
-}
-
-div#banner i.i-11 {
-	top:14vh;
-	right:40vw;
-}
-
-div#banner i.i-12 {
-	top:8vh;
-	right:35vw;
-}
-
-div#banner i.i-13 {
-	top:12vh;
-	right:30vw;
-}
-
-div#banner i.i-14 {
-	top:4vh;
-	right:25vw;
-}
-
-div#banner i.i-15 {
-	top:9vh;
-	right:20vw;
-}
-
-div#banner i.i-16 {
-	top:2vh;
-	right:15vw;
-}
-
-div#banner i.i-17 {
-	top:9vh;
-	left:3vw;
-}
-
-div#banner i.i-18 {
-	top:4vh;
-	right:5vw;
-}
-
-/*div#banner i.i-1 {
-	top:10px;
-	left:10%;
-}
-
-div#banner i.i-2 {
-	top:40px;
-	left:15%;
-}
-
-div#banner i.i-3 {
-	top:35px;
-	left:20%;
-}
-
-div#banner i.i-4 {
-	top:15px;
-	left:25%;
-}
-
-div#banner i.i-5 {
-	top:45px;
-	left:5%;
-}
-
-div#banner i.i-6 {
-	top:49px;
-	left:30%;
-}
-
-div#banner i.i-7 {
-	top:9px;
-	left:35%;
-}
-
-div#banner i.i-8 {
-	top:29px;
-	left:40%;
-}
-
-div#banner i.i-9 {
-	top:39px;
-	left:45%;
-}
-
-div#banner i.i-10 {
-	top:9px;
-	right:45%;
-}
-
-div#banner i.i-11 {
-	top:54px;
-	right:40%;
-}
-
-div#banner i.i-12 {
-	top:24px;
-	right:35%;
-}
-
-div#banner i.i-13 {
-	top:34px;
-	right:30%;
-}
-
-div#banner i.i-14 {
-	top:14px;
-	right:25%;
-}
-
-div#banner i.i-15 {
-	top:59px;
-	right:20%;
-}
-
-div#banner i.i-16 {
-	top:24px;
-	right:15%;
-}
-
-div#banner i.i-17 {
-	top:34px;
-	right:10%;
-}
-
-div#banner i.i-18 {
-	top:24px;
-	right:5%;
-} */
 
 
 div#banner p {
@@ -301,8 +131,8 @@ div#banner p {
 
 div#banner p.tag {
     font-size:.75em;
-    color:#333;
-    font-weight: normal;
+    color:#163a57;
+    font-weight: bold;
 }
 
 
@@ -310,7 +140,6 @@ div#guts-section {
     position: absolute;
     top: 40px;
 	width:100%;
-	margin-bottom:5%;
 }
 
 div#guts-section div.section {
@@ -330,16 +159,46 @@ div#guts-section div#projects.section, div#the-guts div#contact.section {
 
 div#guts-section div#the-guts {
     position: relative;
-    padding-top:calc(20vh);
+    padding-top:calc(15vh + 43px);
     padding-bottom: 10px;
 }
 
 div#guts-section div#the-guts div#home {
     padding: 0;
-    background: url(/static/media/code_bg.698d738c.jpeg);
-    height: 105vh;
+    background-image: url('../img/code_bg.jpeg');
+    /*background: url(https://miro.medium.com/max/6000/1*swwpxGUcEj2B7Q9Mcb6Dig.jpeg); */
     width: 100vw;
-    background-size: contain;
+    background-size: cover;
+    position: relative;
+    text-align:center;
+}
+
+div#guts-section div#home div.box {
+    background: rgba(54,72,90,0.9);
+    margin: 5%;
+    border-radius: 10px;
+    min-height: 40vh;
+    color: white;
+}
+
+div#guts-section div#home div.box p {
+	margin:15px;
+}
+
+div#guts-section div#home div.box div.attr {
+    position: relative;
+    background: rgba(255,255,255,0.7);
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    opacity: .5;
+    width: 30%;
+    display :none;
+}
+
+div#guts-section div#home div.box div.attr.innovative {
+    top: -20vh;
+    left: -10vw;
 }
 
 div#footer {
@@ -373,6 +232,13 @@ div#footer {
 		left:70%;
 	}
 
+	div#the-guts #home .box {
+		padding:1% 5%;
+	}
+
+	div#guts-section div#the-guts div#home {
+		position:fixed;
+	}
 }
 
 @keyframes flip {
