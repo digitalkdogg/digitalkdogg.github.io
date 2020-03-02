@@ -10,7 +10,7 @@ class Theguts extends Component {
   constructor() {
       super();
       this.state = {
-        
+
       }
     }
 
@@ -26,7 +26,16 @@ class Theguts extends Component {
     	return(
     		 <div id="the-guts">
     		 	<div id = "home" className = "section show">
-    		 		<Cover />
+          <div className = "box">
+            <p className="tag"> Hello I am Kevin Bollman</p>
+             <hr />
+            <p className = "sub">I build cool things and I love what I do</p>
+
+            <p>Since I began my web design journey over 10 years, I have help many people / organization with their web design needs.
+            I enjoy helping people with connect with their technology.  I am innovative, forward thinking and I am passionate about the
+            work I do.  I challenge my self to learn new technologies to advance my skills and provide value to what ever team I am on.
+            </p>
+          </div>
     		 	</div>
               	<div id = "about" className = "section hidden">
               		<div className="box style2">
@@ -40,7 +49,23 @@ class Theguts extends Component {
                 	Skills
               	</div>
               	<div id = "contact" className = "section hidden">
-                	Contact section
+                	<div className = "row-wrap">
+                    <div className = "block c33">
+                    <i class="fas fa-phone"></i>
+                    <b>Phone </b>
+                    <p><a href = "tel://814-777-1196">814-777-1196</a></p>
+                    </div>
+                    <div className = "block c33">
+                      <i class="fas fa-envelope-open"></i>
+                      <b>Email</b>
+                      <p><a href = "mailto://KevinBollman@gmail.com">KevinBollman@gmail.com</a></p>
+                    </div>
+                    <div className = "block c33">
+                      <i class="fab fa-github-alt"></i>
+                      <b>Github</b>
+                      <p><a href = "https://github.com/digitalkdogg">Digitalkdogg On Github</a></p>
+                    </div>
+                  </div>
               	</div>
             </div>
     	)

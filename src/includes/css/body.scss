@@ -15,26 +15,23 @@ div#the-guts div#home div#cover {
     position: absolute;
     height: 105vh;
     width: 100%;
-    background: rgba(144,198,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     top: calc(40px+21vh);
     z-index: 10;
 }
 
 div#header {
 	background-color: #163a57;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 40px; 
-    overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
 	z-index:11;
 	color:white;
 	overflow:hidden;
 	padding:0 3%;
 	display:flex;
-	-webkit-box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.75);
-	box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.75);
 }
 
 div#header div#logo-section {
@@ -57,7 +54,7 @@ div#header span#kb {
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
-	color:#ccc;
+	color: #84a393;
 	transform: scale(1.2);
 }
 
@@ -94,26 +91,28 @@ div#header div#menu-section li {
 
 div#header div#menu-section li:hover {
     cursor: pointer;
-    color: #ccc;
+    color: #84a393;
 }
 
 div#banner {
-    position: absolute;
-	height:15vh;
+  position: absolute;
+	height:12vh;
 	color:black;
-	/*background-image: url('../img/web-city.jpg'); */
-	
+	/*background-image: url('../img/web-city.jpg');
+
     background: rgb(221,221,221);
-	background: linear-gradient(141deg, rgba(221,221,221,1) 1%, rgba(242,242,242,1) 100%);
+	background: linear-gradient(141deg, rgba(221,221,221,1) 1%, rgba(242,242,242,1) 100%); */
+  z-index: 1;
 	width:100%;
 	font-size:1.5em;
 	display:flex;
 	flex-direction: column;
 	text-align:center;
-    background-size: initial;
-    font-weight: bold;
-    padding:20px 0;
-    border-bottom: 3px solid #163a57;
+  background-size: initial;
+  font-weight: bold;
+  padding:20px 0;
+	background: rgba(22, 58, 87, .5);
+	/*box-shadow: 0px 0px 15px 7px rgba(104, 104, 104, 0.75); */
 }
 
 div#banner i {
@@ -129,7 +128,7 @@ div#banner p {
 
 div#banner p.tag {
     font-size:.75em;
-    color:#163a57;
+    color:white;
     font-weight: bold;
 }
 
@@ -143,7 +142,7 @@ div#guts-section {
 div#guts-section div.section {
     padding: 40px 5%;
     min-height: 100vh;
-    background-color: rgba(255,255,255,0.7);;
+    background-color: #eee;
 }
 
 
@@ -152,7 +151,7 @@ div#guts-section div.section.show {
 }
 
 div#guts-section div.section.show .box {
-	
+
 animation : flip 1s  ease-out;
 }
 
@@ -162,13 +161,13 @@ div#guts-section div#projects.section, div#the-guts div#contact.section {
 
 div#guts-section div#the-guts {
     position: relative;
-    padding-top:calc(15vh + 43px);
+    padding-top:calc(12vh + 43px);
     padding-bottom: 10px;
 }
 
 div#guts-section div#the-guts div#home {
     padding: 0;
-    background-image: url('../img/code_bg.jpeg');
+  /*  background-image: url('../img/code_bg.jpeg');
     /*background: url(https://miro.medium.com/max/6000/1*swwpxGUcEj2B7Q9Mcb6Dig.jpeg); */
     width: 100vw;
     background-size: cover;
@@ -177,16 +176,17 @@ div#guts-section div#the-guts div#home {
 }
 
 div#guts-section div.box {
-    background: rgba(54,75,85,0.8);
+    background: white;
     margin: 5%;
     border-radius: 10px;
     min-height: 40vh;
-    color: white;
+    color: black;
+		box-shadow: 0px 3px 11px 3px rgba(202,202,202,0.75);
 }
 
 div#guts-section div.box.style2 {
-	/*background:#5b7689; */
-	background:#364b55;
+    background: #eee;
+    color: black;
 }
 
 div#guts-section div.box p {
@@ -217,6 +217,12 @@ div#guts-section div#home div.box div.attr.innovative {
     left: -10vw;
 }
 
+div#guts-section #contact .block.c33 {
+    background: white;
+    margin: 10px;
+    text-align: center;
+}
+
 div#footer {
 	background-color: #163a57;
 	position: fixed;
@@ -230,9 +236,6 @@ div#footer {
 }
 
 @media only screen and (min-width: 768px) {
-	div#header {
-		background-size:contain;
-	}
 
 	div#header div#logo-section {
 		max-width:90px;
@@ -252,9 +255,7 @@ div#footer {
 		padding:1% 5%;
 	}
 
-	div#guts-section div#the-guts div#home {
-		position:fixed;
-	}
+
 }
 
 @keyframes flip {

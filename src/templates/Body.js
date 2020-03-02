@@ -15,9 +15,9 @@ class Body extends Component {
       }
   }
 
-  render(){ 
+  render(){
     return (
-      <div id="body" className={this.state.scrollstate==='init' ? 'init': 'scrolled'}>
+      <div id="body" className="home">
         <Header />
         <Guts />
         <Footer />

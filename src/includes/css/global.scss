@@ -1,11 +1,28 @@
 body {
-    background: white;
+    background: #eee;
     font-size: 1.4em;
     font-family: "Proxima Nova",Arial,sans-serif;
     line-height: 1.5;
     color: #333;
-    margin:0;    
+    margin:0;
 }
+
+body.overflowhidden {
+  overflow:hidden;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+  /*color: #8494a3; */
+  color: #84a393;
+  text-decoration: underline;
+}
+
 
 .hidden {
 	display:none;
@@ -13,4 +30,26 @@ body {
 
 .show {
 	display:block;
+}
+
+#the-guts i {
+    margin: 0 5px;
+}
+
+.row-wrap {
+  display:block;
+}
+
+.row-wrap .c33 {
+  width: 100%
+}
+
+@media only screen and (min-width: 768px) {
+  .row-wrap {
+    display:flex
+  }
+
+  .row-wrap .c33 {
+    width:33%;
+  }
 }
