@@ -35,7 +35,37 @@ class Theguts extends Component {
             I enjoy helping people with connect with their technology.  I am innovative, forward thinking and I am passionate about the
             work I do.  I challenge my self to learn new technologies to advance my skills and provide value to what ever team I am on.
             </p>
+
+
+
           </div>
+          <br />
+          <br />
+          <div className = "row-wrap">
+            <div className = "block c33">
+              <div className="circle-wrap">
+                <i class="fas fa-phone"></i> <br />
+                <b>Phone </b>
+              </div>
+              <p><a href = "tel://814-777-1196">814-777-1196</a></p>
+            </div>
+            <div className = "block c33">
+              <div className="circle-wrap">
+                <i class="fas fa-envelope-open"></i> <br/>
+                <b>Email</b>
+              </div>
+              <p><a href = "mailto://KevinBollman@gmail.com">KevinBollman@gmail.com</a></p>
+            </div>
+            <div className = "block c33">
+              <div className="circle-wrap">
+                <i class="fab fa-github-alt"></i> <br />
+                <b>Github</b>
+              </div>
+              <p><a href = "https://github.com/digitalkdogg">Digitalkdogg On Github</a></p>
+            </div>
+          </div>
+          <br />
+          <br />
     		 	</div>
               	<div id = "about" className = "section hidden">
               		<div className="box style2">
