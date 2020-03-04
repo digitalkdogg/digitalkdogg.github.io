@@ -39,10 +39,20 @@ a:hover {
   display:block;
 }
 
-.row-wrap .c33 {
+.row-wrap .c33, .row-wrap .c5 {
   width: 85%;
-  margin: 0 5%; 
+  margin: 5%;
   padding: 0 10px;
+  min-height:200px;
+}
+
+.title {
+    border-bottom: 1px solid #ccc;
+    font-size:1.2em;
+}
+
+li.nobullet {
+  list-style-type:none;
 }
 
 .box-shadow {
@@ -56,5 +66,11 @@ a:hover {
 
   .row-wrap .c33 {
     width:33%;
+    margin: 1% 5%;
+  }
+
+  .row-wrap .c5 {
+    width:55%;
+    margin: 1% 5%;
   }
 }

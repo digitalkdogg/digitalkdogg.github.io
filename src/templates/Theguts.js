@@ -44,7 +44,7 @@ class Theguts extends Component {
           		</div>
           		<br />
           		<br />
-    		 
+
               	<div id = "about" className="section hidden">
               		<div className="box style2">
               			{this.parseAbout()}
@@ -54,7 +54,42 @@ class Theguts extends Component {
                 	The Projects section
               	</div>
               	<div id="skills" className="section hidden">
-                	Skills
+                  <div className="row-wrap skills-wrap">
+                    <div className="block c5 box-shadow">
+                      <div className="title">Front End</div>
+                        <li className="nobullet">HTML 5</li>
+                        <li className="nobullet">CSS3</li>
+                        <li className="nobullet">Javascript</li>
+                        <li className="nobullet">Jquery / React JS / Angular</li>
+                        <li className="nobullet">Wordpress</li>
+                        <li className="nobullet">Drupal</li>
+                    </div>
+                    <div className="block c5 box-shadow">
+                      <div className="title">Back End</div>
+                        <li className="nobullet">PHP</li>
+                        <li className="nobullet">Codeigniter</li>
+                        <li className="nobullet">Laravel</li>
+                        <li className="nobullet">MySQL</li>
+                    </div>
+                  </div>
+
+                  <div className="row-wrap skills-wrap">
+                    <div className="block c5 box-shadow">
+                      <div className="title">Server</div>
+                        <li className="nobullet">Git Version Contral</li>
+                        <li className="nobullet">Node JS</li>
+                        <li className="nobullet">Composer</li>
+                        <li className="nobullet">LAMP Stack</li>
+                    </div>
+                    <div className="block c5 box-shadow">
+                      <div className="title">Other Skills</div>
+                        <li className="nobullet">MVC Frameworks</li>
+                        <li className="nobullet">  REST API's</li>
+                        <li className="nobullet">Agile Methodoloy</li>
+                        <li className="nobullet">Object Oriented Programming</li>
+                    </div>
+                  </div>
+
               	</div>
               	<div id="contact" className="section hidden">
                 	<Contactblock />
