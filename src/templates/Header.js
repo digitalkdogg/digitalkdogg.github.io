@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Utilsjs from './Utils/Utilsjs';
 
 class Header extends Component {
 
@@ -11,20 +12,14 @@ class Header extends Component {
 
 
  	showhidemenu () {
-			var body = document.querySelector('body');
+		var body = document.querySelector('body');
 
  		if (this.state.showclass == '') {
- 			this.setState({'showclass': 'show'})
-		//	let body = document.querySelector('body');
+ 			this.setState({'showclass': 'show'});
 			body.classList.add('overflowhidden');
- 			//let guts = document.getElementById('the-guts');
- 			//guts.setAttribute('style', 'position:fixed;');
  		} else {
  			this.setState({'showclass': ''})
-		//	let body = document.querySelector('body');
 			body.classList.remove('overflowhidden');
- 		//	let guts = document.getElementById('the-guts');
- 	//		guts.removeAttribute('style')
  		}
  	}
 
@@ -45,10 +40,7 @@ class Header extends Component {
 
 		let body = document.querySelector('body');
 		body.classList.remove('overflowhidden')
- //		let guts = document.getElementById('the-guts');
- //		guts.removeAttribute('style')
-
-		//let body = document.getElementById('body');
+ 
 		if (section === 'home') {
 			body.classList.remove('nothome')
 			body.classList.add('home')
@@ -56,6 +48,9 @@ class Header extends Component {
 			body.classList.remove('home');
 			body.classList.add('nothome');
 		}
+
+		const Utils = new Utilsjs();
+       	Utils.adjustcontactcircles();
 
  	}
 
