@@ -61,9 +61,10 @@ class Header extends Component {
 		return (
 			<div id="header" >
 				<div id="logo-section">
-					<i className="fas fa-less-than"></i>
-					<span id="kb"> KB </span>
-					<i className="fas fa-greater-than"></i></div>
+					<div className="menu-logo-wrap green-grandient">
+						<div className="text">KB</div>
+					</div>	
+				</div>
 				<div id="name-section">Kevin Bollman</div>
 				<div id="nine-box-section">
 					<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
