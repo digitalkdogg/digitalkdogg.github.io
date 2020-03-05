@@ -17,15 +17,9 @@ class Guts extends Component {
 
     render() {
       return(
-        <div id = "guts-section">
+        <div id="guts-section">
             <Banner />
-          
             <Theguts />
-
-           
-
-     
-
         </div>
       )
   }

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 import Aboutme from '../JSON/About.json';
-import P from '../templateparts/utils/P';
+import P from './Utils/P';
 import Contactblock from './Contactblock';
-
-import Cover from './Cover.js';
+import Li from './Utils/Li';
 
 class Theguts extends Component {
 
@@ -27,16 +26,16 @@ class Theguts extends Component {
     render() {
     	return(
     		<div id="the-guts">
-    		 	<div id="home" className = "section show">
+    		 	<div id="home" className="section show">
           			<div className="box box-shadow">
-            			<p className="tag"> Hello I am Kevin Bollman</p>
+          				<P class="tag" text="Hello I am Kevin Bollman" />
              			<hr />
-            			<p className="sub">I build cool things and I love what I do</p>
+            			<P class="sub" text="I build cool things and make them work" />
 
-            			<p>Since I began my web design journey over 10 years, I have help many people / organization with their web design needs.
+            			<P text="Since I began my web design journey over 10 years, I have help many people / organization with their web design needs.
             				I enjoy helping people with connect with their technology.  I am innovative, forward thinking and I am passionate about the
-            				work I do.  I challenge my self to learn new technologies to advance my skills and provide value to what ever team I am on.
-            			</p>
+            				work I do.  I challenge my self to learn new technologies to advance my skills and provide value to what ever team I am on." />
+            			
           			</div>
           			<br />
           			<br />
@@ -45,7 +44,7 @@ class Theguts extends Component {
           		<br />
           		<br />
 
-              	<div id = "about" className="section hidden">
+              	<div id="about" className="section hidden">
               		<div className="box style2">
               			{this.parseAbout()}
               		</div>
@@ -57,36 +56,36 @@ class Theguts extends Component {
                   <div className="row-wrap skills-wrap">
                     <div className="block c5 box-shadow">
                       <div className="title">Front End</div>
-                        <li className="nobullet">HTML 5</li>
-                        <li className="nobullet">CSS3</li>
-                        <li className="nobullet">Javascript</li>
-                        <li className="nobullet">Jquery / React JS / Angular</li>
-                        <li className="nobullet">Wordpress</li>
-                        <li className="nobullet">Drupal</li>
+                        <Li class="nobullet" text="HTML 5" />
+                        <Li class="nobullet" text="CSS3" />
+                        <Li class="nobullet" text="Javascript" />
+                        <Li class="nobullet" text="Jquery / React JS / Angular" />
+                        <Li class="nobullet" text="Wordpress" />
+                        <Li class="nobullet" text="Drupal" />
                     </div>
                     <div className="block c5 box-shadow">
                       <div className="title">Back End</div>
-                        <li className="nobullet">PHP</li>
-                        <li className="nobullet">Codeigniter</li>
-                        <li className="nobullet">Laravel</li>
-                        <li className="nobullet">MySQL</li>
+                        <Li class="nobullet" text="PHP" />
+                        <Li class="nobullet" text="Codeigniter" />
+                        <Li class="nobullet" text="Laravel" />
+                        <Li class="nobullet" text="MySQL" />
                     </div>
                   </div>
 
                   <div className="row-wrap skills-wrap">
                     <div className="block c5 box-shadow">
                       <div className="title">Server</div>
-                        <li className="nobullet">Git Version Contral</li>
-                        <li className="nobullet">Node JS</li>
-                        <li className="nobullet">Composer</li>
-                        <li className="nobullet">LAMP Stack</li>
+                        <Li class="nobullet" text="Git Version Contral" />
+                        <Li class="nobullet" text="Node JS" />
+                        <Li class="nobullet" text="Composer" />
+                        <Li class="nobullet" text="LAMP Stack" />
                     </div>
                     <div className="block c5 box-shadow">
                       <div className="title">Other Skills</div>
-                        <li className="nobullet">MVC Frameworks</li>
-                        <li className="nobullet">  REST API's</li>
-                        <li className="nobullet">Agile Methodoloy</li>
-                        <li className="nobullet">Object Oriented Programming</li>
+                        <Li class="nobullet" text="MVC Frameworks" />
+                        <Li class="nobullet" text="REST API's" />
+                        <Li class="nobullet" text="Agile Methodoloy" />
+                        <Li class="nobullet" text="Object Oriented Programming" />
                     </div>
                   </div>
 

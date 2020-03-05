@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Utilsjs from './Utils/Utilsjs';
+import Li from './Utils/Li';
 
 class Header extends Component {
 
@@ -14,7 +15,7 @@ class Header extends Component {
  	showhidemenu () {
 		var body = document.querySelector('body');
 
- 		if (this.state.showclass == '') {
+ 		if (this.state.showclass === '') {
  			this.setState({'showclass': 'show'});
 			body.classList.add('overflowhidden');
  		} else {
@@ -24,6 +25,7 @@ class Header extends Component {
  	}
 
  	gotosection (section) {
+ 		const Utils = new Utilsjs();
  		var others = document.querySelectorAll('.section');
 
  		for (let i = 0; i<others.length; i++) {
@@ -49,7 +51,7 @@ class Header extends Component {
 			body.classList.add('nothome');
 		}
 
-		const Utils = new Utilsjs();
+		
        	Utils.adjustcontactcircles();
 
  	}
@@ -57,19 +59,19 @@ class Header extends Component {
 	render(){
 		return (
 			<div id="header" >
-				<div id = "logo-section">
+				<div id="logo-section">
 					<i className="fas fa-less-than"></i>
-					<span id = "kb"> KB </span>
+					<span id="kb"> KB </span>
 					<i className="fas fa-greater-than"></i></div>
-				<div id = "name-section">Kevin Bollman</div>
-				<div id = "nine-box-section">
+				<div id="name-section">Kevin Bollman</div>
+				<div id="nine-box-section">
 					<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
-					<div id = "menu-section" className={this.state.showclass}>
-						<li onClick={this.gotosection.bind(this, 'home')}>Home</li>
-						<li onClick={this.gotosection.bind(this, 'about')}>About Me</li>
-						<li onClick={this.gotosection.bind(this, 'projects')}>Projects</li>
-						<li onClick={this.gotosection.bind(this, 'skills')}>Skills</li>
-						<li onClick={this.gotosection.bind(this, 'contact')}>Contact</li>
+					<div id="menu-section" className={this.state.showclass}>
+						<Li onclick={this.gotosection.bind(this, 'home')} text="Home" />
+						<Li onclick={this.gotosection.bind(this, 'about')} text="About Me" />
+						<Li onclick={this.gotosection.bind(this, 'projects')} text="Projects" />
+						<Li onclick={this.gotosection.bind(this, 'skills')} text="Skills" />
+						<Li onclick={this.gotosection.bind(this, 'contact')} text="Contact" />
 					</div>
 				</div>
 			</div>
