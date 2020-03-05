@@ -82,7 +82,7 @@ div#header div#menu-section.hide {
 	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
-div#header .menu-logo-wrap {
+div.menu-logo-wrap {
     border: 3px solid #0a6f0a;
     width: 45px;
     text-align: center;
@@ -92,7 +92,7 @@ div#header .menu-logo-wrap {
     margin: 20px 10%;
 }
 
-div#header .menu-logo-wrap div.text { 
+div.menu-logo-wrap div.text { 
 	transform: rotate(-45deg);
 	font-weight:bold;
 } 
@@ -217,19 +217,28 @@ div#guts-section .block.c33 {
     border-radius: 10px;
 }
 
+
 div#guts-section #the-guts .block .circle-wrap {
     position: relative;
-    border-radius: 100%;
-  /*  background: #0a6f0a;
-    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%); */
-    color: white;
-    padding: 25px;
+    border-radius: 10%;
+    background: #0a6f0a;
+    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%); 
+    color: white; 
+    padding: 25px; 
     top: -10vh;
-    width: 80px;
-    height:80px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    color:white;
+    height:70px;
+    width:70px;
+    transform:rotate(45deg);
+}
+
+div#guts-section #the-guts .block .circle-wrap .text {
+	height:100%;
+	transform: rotate(-45deg);
+	padding:5%;
 }
 
 div#guts-section #the-guts .info-wrap {

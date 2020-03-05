@@ -75,7 +75,7 @@ class Header extends Component {
 						<Hr class="color-white" />
 						<Li onclick={this.gotosection.bind(this, 'home')} text="Home" />
 						<Li onclick={this.gotosection.bind(this, 'about')} text="About Me" />
-						<Li onclick={this.gotosection.bind(this, 'projects')} text="Projects" />
+						<Li onclick={this.gotosection.bind(this, 'projects')} text="Projects" class = "hidden" />
 						<Li onclick={this.gotosection.bind(this, 'skills')} text="Skills" />
 						<Li onclick={this.gotosection.bind(this, 'contact')} text="Contact" />
 					</div>

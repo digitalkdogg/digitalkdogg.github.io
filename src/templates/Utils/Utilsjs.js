@@ -13,10 +13,14 @@ class Utilsjs extends Component {
       var block = document.querySelectorAll('#the-guts .section.show .block.c33');
       if (block.length > 0) {
         for (let i=0;i<block.length;i++) {
-          let width = block[i].offsetWidth / 2 - 75
+          let width = block[i].offsetWidth / 2 - 65
           let circle=block[i].querySelector('.circle-wrap')
-          circle.setAttribute('style', 'left:'+width+'px;')
-        
+
+          if (circle != null) {
+       
+              circle.setAttribute('style', 'left:'+width+'px;')
+    
+          }
         }
 
       }

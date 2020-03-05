@@ -21,29 +21,40 @@ class Contactblock extends Component {
     	return(
     		   <div className="row-wrap contact-wrap">
             <div className="block c33 box-shadow">
+
               <div className="circle-wrap box-shadow green-grandient">
-                <i className="fas fa-phone"></i>
-                <b>Phone</b>
-              </div>
+                <div className="text"> 
+                  <i className="fas fa-phone"></i>
+                  <div><b>Phone</b></div>
+                </div>
+              </div>  
+
+              
           
               <div className="info-wrap">
                 <a href="tel://814-777-1196">814-777-1196</a>
               </div>
             </div>
             <div className="block c33 box-shadow">
-              <div className="circle-wrap box-shadow green-grandient">
-                <i className="fas fa-envelope-open"></i>
-                <b>Email</b>
-              </div>
+             <div className="circle-wrap box-shadow green-grandient">
+                <div className="text"> 
+                  <i className="fas fa-envelope-open"></i>
+                  <div><b>Email</b></div>
+                </div>
+              </div>  
+             
               <div className="info-wrap">
                 <a href="mailto://KevinBollman@gmail.com">KevinBollman@gmail.com</a>
               </div>
             </div>
             <div className="block c33 box-shadow">
-              <div className="circle-wrap box-shadow green-grandient">
-                <i className="fab fa-github-alt"></i>
-                <b>Github</b>
-              </div>
+             <div className="circle-wrap box-shadow green-grandient">
+                <div className="text"> 
+                  <i className="fab fa-github-alt"></i>
+                  <div><b>Github</b></div>
+                </div>
+              </div>  
+              
                <div className="info-wrap">
                   <a href="https://github.com/digitalkdogg">Digitalkdogg On Github</a>
                </div>
