@@ -47,16 +47,18 @@ div#header span#kb {
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
-	/*color: #0a6f0a; */
-	color: #04a704;
+	/*color: #0a6f0a; */ 
+	color: #5f9a29;
 	transform: scale(1.2);
+	transition: 1s rotate;
+
 }
 
 div#header div#name-section {
 	margin-top:5px;
 	font-weight: bold;
 	font-size: .8em;
-	flex-grow: 5;
+	flex-grow: 4;
 }
 
 div#header div#menu-section {
@@ -64,7 +66,7 @@ div#header div#menu-section {
 	height:100%;
 	float:right;
 	padding:10px;
-	background: rgba(22,58,87,0.9);
+	background: rgba(22,58,87,0.8);
 	color:white;
 	width:100%;
 	left:100%;
@@ -78,6 +80,25 @@ div#header div#menu-section.show {
 	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
+div#header div#menu-section.hide {
+	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
+}
+
+div#menu-section .menu-logo-wrap {
+    border: 3px solid #0a6f0a;
+    width: 45px;
+    text-align: center;
+    transform: rotate(45deg);
+    position: relative;
+    padding: 10px;
+    margin: 20px 10%;
+}
+
+div#menu-section .menu-logo-wrap div.text { 
+	transform: rotate(-45deg);
+	font-weight:bold;
+} 
+
 div#header div#menu-section li {
 	list-style-type: none;
 	font-weight: bold;
@@ -89,9 +110,11 @@ div#header div#menu-section li {
 
 div#header div#menu-section li:hover {
     cursor: pointer;
-    color: #04a704; 
-   	/*border-left: 3px solid #1ebd1d; */
-   	border-left: 3px solid #04a704;  
+    color: #0a6f0a; 
+    background:white;
+    width:250px;
+   	/*border-left: 3px solid #1ebd1d; 
+   	border-left: 3px solid #04a704;  */
   
 }
 
@@ -107,13 +130,12 @@ div#banner {
  	background-size: initial;
   	font-weight: bold;
   	padding:25px 0;
-	background: rgba(22, 58, 87, .5);
 }
 
 div#banner i {
 	position:absolute;
-	opacity: .2;
-	color: #044b80;
+	opacity: .3;
+	color: white;
 	font-size:.7em;
 }
 
@@ -157,17 +179,19 @@ div#guts-section div#the-guts div#home {
     text-align:center;
 }
 
+div#guts-section div#home.section div.box {
+	margin:5%;
+}
+
 div#guts-section div.box {
     background: white;
-    margin: 5%;
     border-radius: 10px;
     min-height: 40vh;
     color: black;
 }
 
-div#guts-section div.box.style2 {
-    background: #eee;
-    color: black;
+div#guts-section div.box.mini {
+	min-height: 10vh;
 }
 
 div#guts-section div.box p {
@@ -189,8 +213,8 @@ div#guts-section .block.c33 {
 div#guts-section #the-guts .block .circle-wrap {
     position: relative;
     border-radius: 100%;
-    background: #0a6f0a;
-    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%);
+  /*  background: #0a6f0a;
+    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%); */
     color: white;
     padding: 25px;
     top: -10vh;
@@ -206,6 +230,8 @@ div#guts-section #the-guts .info-wrap {
 	top: -5vh;
 	overflow:hidden;
 }
+
+
 
 div#footer {
 	background-color: #163a57;

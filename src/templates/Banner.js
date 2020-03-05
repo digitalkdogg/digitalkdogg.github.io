@@ -13,7 +13,7 @@ class Banner extends Component {
 
 	render(){ 
 		return (
-			<div id="banner" >
+			<div id="banner" className="blue-grandient" >
 			   <i className="fab fa-react i-1"></i>
          <i className="fab fa-node-js i-2"></i>
          <i className="fab fa-jsfiddle i-3"></i>

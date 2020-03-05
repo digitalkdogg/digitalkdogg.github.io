@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Utilsjs from './Utils/Utilsjs';
 import Li from './Utils/Li';
+import Hr from './Utils/Hr';
 
 class Header extends Component {
 
 	constructor() {
       	super();
       	this.state = {
-  			'showclass': ''
+  			'showclass': 'hide'
      	}
  	}
 
@@ -15,11 +16,11 @@ class Header extends Component {
  	showhidemenu () {
 		var body = document.querySelector('body');
 
- 		if (this.state.showclass === '') {
+ 		if (this.state.showclass === 'hide') {
  			this.setState({'showclass': 'show'});
 			body.classList.add('overflowhidden');
  		} else {
- 			this.setState({'showclass': ''})
+ 			this.setState({'showclass': 'hide'})
 			body.classList.remove('overflowhidden');
  		}
  	}
@@ -67,6 +68,10 @@ class Header extends Component {
 				<div id="nine-box-section">
 					<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
 					<div id="menu-section" className={this.state.showclass}>
+						<div className="menu-logo-wrap green-grandient">
+								<div className="text">KB</div>
+						</div>
+						<Hr class="color-white" />
 						<Li onclick={this.gotosection.bind(this, 'home')} text="Home" />
 						<Li onclick={this.gotosection.bind(this, 'about')} text="About Me" />
 						<Li onclick={this.gotosection.bind(this, 'projects')} text="Projects" />

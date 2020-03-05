@@ -21,7 +21,7 @@ class Contactblock extends Component {
     	return(
     		   <div className="row-wrap contact-wrap">
             <div className="block c33 box-shadow">
-              <div className="circle-wrap box-shadow">
+              <div className="circle-wrap box-shadow green-grandient">
                 <i className="fas fa-phone"></i>
                 <b>Phone</b>
               </div>
@@ -31,7 +31,7 @@ class Contactblock extends Component {
               </div>
             </div>
             <div className="block c33 box-shadow">
-              <div className="circle-wrap box-shadow">
+              <div className="circle-wrap box-shadow green-grandient">
                 <i className="fas fa-envelope-open"></i>
                 <b>Email</b>
               </div>
@@ -40,7 +40,7 @@ class Contactblock extends Component {
               </div>
             </div>
             <div className="block c33 box-shadow">
-              <div className="circle-wrap box-shadow">
+              <div className="circle-wrap box-shadow green-grandient">
                 <i className="fab fa-github-alt"></i>
                 <b>Github</b>
               </div>
