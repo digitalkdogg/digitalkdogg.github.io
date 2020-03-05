@@ -41,8 +41,6 @@ class Theguts extends Component {
           			<br />
           			<Contactblock />
           		</div>
-          		<br />
-          		<br />
 
               	<div id="about" className="section hidden">
               		<div className="box style2">
@@ -91,6 +89,8 @@ class Theguts extends Component {
 
               	</div>
               	<div id="contact" className="section hidden">
+              		<br />
+              		<br />
                 	<Contactblock />
               	</div>
             </div>

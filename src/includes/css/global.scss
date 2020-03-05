@@ -44,6 +44,8 @@ a:hover {
   margin: 5%;
   padding: 0 10px;
   min-height:200px;
+  background: white;
+  font-size: 0.8em;
 }
 
 .title {
@@ -61,16 +63,19 @@ li.nobullet {
 
 @media only screen and (min-width: 768px) {
   .row-wrap {
-    display:flex
+    display:flex;
+    margin: 5% 0;
   }
 
   .row-wrap .c33 {
     width:33%;
     margin: 1% 5%;
+    font-size:1em;
   }
 
   .row-wrap .c5 {
     width:55%;
     margin: 1% 5%;
+    font-size:1em;
   }
 }
