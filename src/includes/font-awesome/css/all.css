@@ -4433,7 +4433,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   font-display: auto;
   src: url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/fa-brands-400.eot");
-  src: url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/fa-brands-400.woff") format("woff"), url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/fa-brands-400.woff2") format("woff2"), url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/fa-brands-400.woff") format("woff"), url("https://digitalkdogg.github.io/src/includes/font-awesome/webfonts/webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
