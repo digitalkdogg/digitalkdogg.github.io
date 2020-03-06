@@ -27,33 +27,18 @@ class Header extends Component {
 
  	gotosection (section) {
  		const Utils = new Utilsjs();
- 		var others = document.querySelectorAll('.section');
-
- 		for (let i = 0; i<others.length; i++) {
- 			others[i].classList.remove('show');
- 			others[i].classList.add('hidden');
- 		}
-
- 		var ele = document.getElementById(section)
-
- 		ele.classList.remove('hidden');
- 		ele.classList.add('show');
 
  		this.setState({'showclass': ''})
 
+		//removes the overflow hidden so we can scroll again
 		let body = document.querySelector('body');
 		body.classList.remove('overflowhidden')
- 
-		if (section === 'home') {
-			body.classList.remove('nothome')
-			body.classList.add('home')
-		} else {
-			body.classList.remove('home');
-			body.classList.add('nothome');
-		}
 
-		
-       	Utils.adjustcontactcircles();
+		//show desire section and hide every other section
+		Utils.gotosection(section);
+
+		//perfectly center diamons for contact
+	 	Utils.adjustcontactcircles();
 
  	}
 
@@ -63,7 +48,7 @@ class Header extends Component {
 				<div id="logo-section">
 					<div className="menu-logo-wrap green-grandient">
 						<div className="text">KB</div>
-					</div>	
+					</div>
 				</div>
 				<div id="name-section">Kevin Bollman</div>
 				<div id="nine-box-section">
