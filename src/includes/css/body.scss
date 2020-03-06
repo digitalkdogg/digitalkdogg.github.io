@@ -68,7 +68,7 @@ div#header div#menu-section {
 	color:white;
 	width:100%;
 	left:100%;
-	top:40px;
+	top:50px;
 	border-left: 3px solid #163a57;
 }
 
@@ -85,6 +85,8 @@ div#header div#menu-section.hide {
 div.menu-logo-wrap {
     border: 3px solid #0a6f0a;
     width: 45px;
+    height:45px;
+    border-radius:10%;
     text-align: center;
     transform: rotate(45deg);
     position: relative;
@@ -102,6 +104,7 @@ div#header div#logo-section div.menu-logo-wrap {
 	padding:3px;
 	width:20px;
 	font-size:.65em;
+	height:20px;
 }
 
 
@@ -177,6 +180,8 @@ div#guts-section div#the-guts {
     position: relative;
     padding-top:calc(12vh + 43px);
     padding-bottom: 10px;
+    width:100%;
+    overflow:hidden;
 }
 
 div#guts-section div#the-guts div#home {
