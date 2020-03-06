@@ -5,17 +5,13 @@ import Contactblock from '../templates/Contactblock';
 
 class Contact extends Component {
 
-	constructor() {
-      super();
- }
-
 	render(props){
 		 return (
        <div id="contact" className="section hidden">
 
          <div className="row-wrap">
            <div className="block c100 box mini box-shadow">
-             <P text = "Do you think I can help you add value to your next project?" />
+             <P text="Do you think I can help you add value to your next project?" />
            </div>
          </div>
 

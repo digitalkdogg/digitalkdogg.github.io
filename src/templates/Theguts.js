@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import Aboutme from '../JSON/About.json';
 import P from './Utils/P';
-import Contactblock from './Contactblock';
-import Li from './Utils/Li';
-import Div from './Utils/Div';
 
 import Skills from '../JSON/Skills';
 import Projects from '../JSON/Projects';

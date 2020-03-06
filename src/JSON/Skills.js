@@ -3,10 +3,6 @@ import Li from '../templates/Utils/Li';
 
 class Skills extends Component {
 
-	constructor() {
-      super();
- }
-
 	render(props){
 		 return (
 			 <div id="skills" className='section hidden'>

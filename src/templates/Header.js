@@ -9,40 +9,74 @@ class Header extends Component {
       	super();
       	this.state = {
   			'showclass': 'hide',
-				'activesection': 'home'
+				'activesection': 'home',
+				'menuarray' : {}
      	}
  	}
 
 	componentDidMount() {
 		var _self = this;
 
-		this.setState({'activesection': this.getActiveSection(this)})
-	//	var activesection = document.querySelectorAll('.section.show');
+		this.setState({
+			'activesection': this.getActiveSection(),
+			'menuarray': this.getMenuArray()
+		})
 
 
-//		if (activesection.length===1) {
-//			_self.setState({'activesection': activesection[0].getAttribute('id')})//
-//		}
 
-		//for (let i = 0; i<sections.length; i++) {
-		//		console.log(sections[i].classList)
-	//	}
+		//this.setState({'menuarray': menuarray})
 
 
 		 document.addEventListener('scroll', function (event) {
+			 	console.log(_self.findNextSection())
 			 if (window.scrollY > window.innerHeight ) {
-					_self.gotosection('about');
+
+					//_self.gotosection(_self.state.menuarray[_self.findNextSection()].name);
 			 }
 		 });
 	}
 
-	getActiveSection (_self) {
-		var activesection = document.querySelectorAll('.section.show');
+	getMenuArray() {
+		let sections = document.querySelectorAll('.section');
+		let menuarray = {}
+		for (var i=0; i<sections.length; i++ ) {
+			let isactive = false;
 
+			if (this.state.activesection == sections[i].getAttribute('id')) {
+				isactive = true;
+			} else {
+				isactive = false;
+			}
+
+			menuarray[i] = {
+				'name': sections[i].getAttribute('id'),
+				'isactive': isactive
+			}
+		}
+
+		return menuarray;
+	}
+
+	findNextSection() {
+		let sections = document.querySelectorAll('.section');
+
+		for (let i = 0; i<sections.length; i++ ) {
+			if (sections[i].getAttribute('id') == this.state.activesection) {
+				if ((i+1) > sections.length) {
+					return sections.length
+				} else {
+					return i+1;
+				}
+			}
+		}
+		return 0;
+	}
+
+	getActiveSection () {
+		var activesection = document.querySelectorAll('.section.show');
 
 		if (activesection.length===1) {
 			  return activesection[0].getAttribute('id')
-		//	_self.setState({'activesection': activesection[0].getAttribute('id')})
 		}
 		return null;
 	}
@@ -69,10 +103,9 @@ class Header extends Component {
 		//show desire section and hide every other section
 		Utils.gotosection(section);
 
-		console.log(this.getActiveSection(this))
 		this.setState({
 			'showclass': '',
-			'activesection': this.getActiveSection(this)
+			'activesection': this.getActiveSection()
 		})
 
 		//perfectly center diamons for contact
@@ -97,15 +130,15 @@ class Header extends Component {
 						</div>
 						<Hr class="color-white" />
 						<Li onclick={this.gotosection.bind(this, 'home')}
-								text="Home" class = {this.state.activesection =='home' ? 'active': ''} />
+								text="Home" class={this.state.activesection==='home' ? 'active': ''} />
 						<Li onclick={this.gotosection.bind(this, 'about')}
-								text="About Me" class = {this.state.activesection =='about'? 'active': ''} />
+								text="About Me" class={this.state.activesection==='about'? 'active': ''} />
 						<Li onclick={this.gotosection.bind(this, 'projects')}
-								text="Projects" class = "hidden" />
+								text="Projects" class="hidden" />
 						<Li onclick={this.gotosection.bind(this, 'skills')}
-								text="Skills" class = {this.state.activesection == 'skills'? 'active' : ''}  />
+								text="Skills" class={this.state.activesection==='skills'? 'active' : ''}  />
 						<Li onclick={this.gotosection.bind(this, 'contact')}
-							text="Contact" class = {this.state.activesection == 'contact'? 'active' : ''}  />
+							text="Contact" class={this.state.activesection==='contact'? 'active' : ''}  />
 					</div>
 				</div>
 			</div>

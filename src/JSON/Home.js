@@ -5,10 +5,6 @@ import Contactblock from '../templates/Contactblock';
 
 class Home extends Component {
 
-	constructor() {
-      super();
- }
-
 	render(props){
 		 return (
        <div id="home" className="section show">
