@@ -8,10 +8,44 @@ class Header extends Component {
 	constructor() {
       	super();
       	this.state = {
-  			'showclass': 'hide'
+  			'showclass': 'hide',
+				'activesection': 'home'
      	}
  	}
 
+	componentDidMount() {
+		var _self = this;
+
+		this.setState({'activesection': this.getActiveSection(this)})
+	//	var activesection = document.querySelectorAll('.section.show');
+
+
+//		if (activesection.length===1) {
+//			_self.setState({'activesection': activesection[0].getAttribute('id')})//
+//		}
+
+		//for (let i = 0; i<sections.length; i++) {
+		//		console.log(sections[i].classList)
+	//	}
+
+
+		 document.addEventListener('scroll', function (event) {
+			 if (window.scrollY > window.innerHeight ) {
+					_self.gotosection('about');
+			 }
+		 });
+	}
+
+	getActiveSection (_self) {
+		var activesection = document.querySelectorAll('.section.show');
+
+
+		if (activesection.length===1) {
+			  return activesection[0].getAttribute('id')
+		//	_self.setState({'activesection': activesection[0].getAttribute('id')})
+		}
+		return null;
+	}
 
  	showhidemenu () {
 		var body = document.querySelector('body');
@@ -28,14 +62,18 @@ class Header extends Component {
  	gotosection (section) {
  		const Utils = new Utilsjs();
 
- 		this.setState({'showclass': ''})
-
 		//removes the overflow hidden so we can scroll again
 		let body = document.querySelector('body');
 		body.classList.remove('overflowhidden')
 
 		//show desire section and hide every other section
 		Utils.gotosection(section);
+
+		console.log(this.getActiveSection(this))
+		this.setState({
+			'showclass': '',
+			'activesection': this.getActiveSection(this)
+		})
 
 		//perfectly center diamons for contact
 	 	Utils.adjustcontactcircles();
@@ -58,11 +96,16 @@ class Header extends Component {
 								<div className="text">KB</div>
 						</div>
 						<Hr class="color-white" />
-						<Li onclick={this.gotosection.bind(this, 'home')} text="Home" />
-						<Li onclick={this.gotosection.bind(this, 'about')} text="About Me" />
-						<Li onclick={this.gotosection.bind(this, 'projects')} text="Projects" class = "hidden" />
-						<Li onclick={this.gotosection.bind(this, 'skills')} text="Skills" />
-						<Li onclick={this.gotosection.bind(this, 'contact')} text="Contact" />
+						<Li onclick={this.gotosection.bind(this, 'home')}
+								text="Home" class = {this.state.activesection =='home' ? 'active': ''} />
+						<Li onclick={this.gotosection.bind(this, 'about')}
+								text="About Me" class = {this.state.activesection =='about'? 'active': ''} />
+						<Li onclick={this.gotosection.bind(this, 'projects')}
+								text="Projects" class = "hidden" />
+						<Li onclick={this.gotosection.bind(this, 'skills')}
+								text="Skills" class = {this.state.activesection == 'skills'? 'active' : ''}  />
+						<Li onclick={this.gotosection.bind(this, 'contact')}
+							text="Contact" class = {this.state.activesection == 'contact'? 'active' : ''}  />
 					</div>
 				</div>
 			</div>

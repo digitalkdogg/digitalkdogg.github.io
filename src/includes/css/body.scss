@@ -44,11 +44,10 @@ div#header div#nine-box-section {
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
-	/*color: #0a6f0a; */ 
+	/*color: #0a6f0a; */
 	color: #5f9a29;
 	transform: scale(1.2);
 	transition: 1s rotate;
-
 }
 
 div#header div#name-section {
@@ -92,10 +91,10 @@ div.menu-logo-wrap {
     margin: 20px 10%;
 }
 
-div.menu-logo-wrap div.text { 
+div.menu-logo-wrap div.text {
 	transform: rotate(-45deg);
 	font-weight:bold;
-} 
+}
 
 div#header div#logo-section div.menu-logo-wrap {
 	margin: 10px 20%;
@@ -117,12 +116,14 @@ div#header div#menu-section li {
 
 div#header div#menu-section li:hover {
     cursor: pointer;
-    color: #0a6f0a; 
+    color: #55ab07;
     background:white;
     width:250px;
-   	/*border-left: 3px solid #1ebd1d; 
-   	border-left: 3px solid #04a704;  */
-  
+		border-left: 3px solid #55ab07;
+}
+
+div#header div#menu-section li.active {
+    border-left: 3px solid #55ab07;
 }
 
 div#banner {
@@ -222,9 +223,9 @@ div#guts-section #the-guts .block .circle-wrap {
     position: relative;
     border-radius: 10%;
     background: #0a6f0a;
-    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%); 
-    color: white; 
-    padding: 25px; 
+    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%);
+    color: white;
+    padding: 25px;
     top: -10vh;
     display:flex;
     flex-direction: column;
