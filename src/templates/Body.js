@@ -4,6 +4,7 @@ import Header from './Header.js';
 import Guts from './Guts.js';
 import Footer from './Footer.js';
 
+
 class Body extends Component {
 
   constructor() {
