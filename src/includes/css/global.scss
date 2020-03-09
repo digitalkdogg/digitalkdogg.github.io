@@ -49,6 +49,7 @@ hr {
   min-height:200px;
   background: white;
   font-size: 0.8em;
+  overflow:hidden;
 }
 
 .desktop-space {
@@ -86,16 +87,16 @@ li.nobullet {
 }
 
 .blue-grandient {
-    background: rgba(22, 58, 87, .5);   
-    background: -moz-linear-gradient(51deg, rgba(22,58,87,0.6) 1%, rgba(22,58,87,0.4) 100%); 
-    background: -webkit-linear-gradient(51deg, rgba(22,58,87,0.6) 1%, rgba(22,58,87,0.4) 100%); 
-    background: linear-gradient(51deg, rgba(22,58,87,0.6) 1%, rgba(22,58,87,0.4) 100%); 
+    background: rgba(22, 58, 87, .5);
+    background: -moz-linear-gradient(51deg, rgba(22,58,87,0.6) 1%, rgba(22,58,87,0.4) 100%);
+    background: -webkit-linear-gradient(51deg, rgba(22,58,87,0.6) 1%, rgba(22,58,87,0.4) 100%);
+    background: linear-gradient(51deg, rgba(22,58,87,0.6) 1%, rgba(22,58,87,0.4) 100%);
 
 }
 
 .green-grandient {
   background: #0a6f0a;
-  background: -moz-radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%); 
+  background: -moz-radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%);
   background: -webkit-radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%);
   background: radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%);
 }

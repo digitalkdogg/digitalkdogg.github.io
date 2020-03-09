@@ -56,7 +56,7 @@ class Header extends Component {
 
 	render(){
 		return (
-			
+
 			<div id="header" >
 				<div id="logo-section">
 					<div className="menu-logo-wrap green-grandient">
@@ -83,7 +83,7 @@ class Header extends Component {
 							text="Contact" class={this.state.activesection==='contact'? 'active' : ''}  />
 					</div>
 				</div>
-				
+
 			</div>
 
 
