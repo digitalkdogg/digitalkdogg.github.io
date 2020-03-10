@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
-import millwood from '../includes/img/millwood.png';
+import millwood from '../includes/img/millwood_thumb.jpg';
 
 class Projects extends Component {
 
+
+
 	render(props){
+		const millwoodstyle = {
+	'background': 'url(' + millwood + ')',
+	'background-size': 'cover'
+}
 		 return (
      <div id="projects" className="section hidden">
 			 <div className="row-wrap skills-wrap">
@@ -11,8 +17,8 @@ class Projects extends Component {
 
 						 <div class="flip-card-inner">
 
-							 <div class="flip-card-front">
-								 <img src={millwood} alt="Avatar" />
+							 <div class="flip-card-front" style = {millwoodstyle}>
+								
 							 </div>
 
 							 <div class="flip-card-back">
@@ -22,6 +28,7 @@ class Projects extends Component {
 							 </div>
 
 						 </div>
+						 <div class = "project-footer">Millwood Christian Church</div>
 
 					 </div>
 				 
