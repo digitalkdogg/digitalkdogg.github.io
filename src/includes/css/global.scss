@@ -55,13 +55,14 @@ hr {
 }
 
 .row-wrap .c33, .row-wrap .c5, .row-wrap .c100 {
-  width: 93%;
+  width: auto;
   margin: 2% 0;
   padding: 0 10px;
   min-height:200px;
   background: white;
   font-size: 0.8em;
   overflow:hidden;
+  min-width:95%;
 }
 
 .row {
@@ -159,9 +160,15 @@ li.nobullet {
 
   .row-wrap .c33 {
     width:33%;
+    min-width:25%;
   }
 
   .row-wrap .c5 {
     width:55%;
+    min-width:25%;
+  }
+
+  div#guts-section div.box {
+    border-radius: 5px;
   }
 }

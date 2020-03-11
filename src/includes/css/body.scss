@@ -194,15 +194,11 @@ div#guts-section div#the-guts div#home {
     text-align:center;
 }
 
-div#guts-section div#home.section div.box {
-	margin:5%;
-}
-
 div#guts-section div.box {
     background: white;
-    border-radius: 10px;
     min-height: 40vh;
     color: black;
+		border-radius: 0;
 }
 
 div#guts-section div.box.mini {
@@ -220,9 +216,9 @@ div#guts-section div#home div.box p {
 
 div#guts-section .block.c33 {
     background: white;
-    margin: 5vh 5% 15vh 5%;
+    margin: 5vh 0% 15vh 0%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 0;
 }
 
 #the-guts .contact-wrap .block {
@@ -257,10 +253,12 @@ div#guts-section #the-guts .info-wrap {
 	position: relative;
 	top: -5vh;
 	overflow:hidden;
+	word-break: break-all;
 }
 
 #the-guts #projects .block {
-    height: 600px;
+    height: auto;
+		min-height: 500px;
 }
 
 #the-guts #projects .block.c5 {
@@ -268,13 +266,13 @@ div#guts-section #the-guts .info-wrap {
 }
 
 div#guts-section .flip-card {
-  background-color: transparent; 
-  perspective: 1000px; 
+  background-color: transparent;
+  perspective: 1000px;
 }
 
 div#guts-section .flip-card-inner {
   position: relative;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -298,6 +296,7 @@ div#guts-section div.flip-card div.flip-card-title {
     color: white;
     padding-top:1%;
     font-weight: bold;
+		backface-visibility: hidden;
 }
 
 div#guts-section div.flip-card .title {
@@ -363,7 +362,19 @@ div#footer {
 	}
 
 	div#the-guts #home .box {
+
+	}
+
+	div#guts-section div.section div.box {
+		margin:5%;
+		border-radius:5px;
 		padding:1% 5%;
+	}
+	div#guts-section .block.c33 {
+	    background: white;
+	    margin: 5vh 1% 15vh 1%;
+	    text-align: center;
+	    border-radius: 5px;
 	}
 
 	div#guts-section div#banner {

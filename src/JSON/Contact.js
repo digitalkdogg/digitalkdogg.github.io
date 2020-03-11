@@ -10,11 +10,11 @@ class Contact extends Component {
 		 return (
        <div id="contact" className="section hidden">
 
-         <div className="row-wrap">
+
            <div className="block c100 box mini box-shadow">
              <P text="Do you think I can help you add value to your next project?" />
            </div>
-         </div>
+    
 
          <Div class="mobile-space mobile-space-large" />
          <Div class="desktop-space desktop-space-normal" />
