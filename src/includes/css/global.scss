@@ -34,6 +34,18 @@ hr {
 	display:block;
 }
 
+.align-left {
+  text-align:left;
+}
+
+.align-center {
+  text-align:center;
+}
+
+.align-right {
+  text-align:right;
+}
+
 #the-guts i {
     margin: 0 5px;
 }
@@ -43,13 +55,32 @@ hr {
 }
 
 .row-wrap .c33, .row-wrap .c5, .row-wrap .c100 {
-  width: 85%;
-  margin: 5%;
+  width: 95%;
+  margin: 2%;
   padding: 0 10px;
   min-height:200px;
   background: white;
   font-size: 0.8em;
   overflow:hidden;
+}
+
+.row {
+    width: 95%;
+    position: relative;
+    left:3%;
+}
+
+.row .col.name {
+    width: 90%;
+    float: left;
+    margin: 10px 20px;
+}
+
+.row .col.value {
+    width: 90%;
+    margin: 10px 30px 10px 20px;
+    text-align: left;
+    float:left;
 }
 
 .desktop-space {
