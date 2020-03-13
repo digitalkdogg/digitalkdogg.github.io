@@ -256,9 +256,18 @@ div#guts-section #the-guts .info-wrap {
 	word-break: break-all;
 }
 
-#the-guts #projects .block {
+/*#the-guts #projects .block {
     height: auto;
-		min-height: 500px;
+	min-height: 500px;
+} */
+
+#the-guts #projects .block .row {
+	display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 20px;
+    margin: 10px 0;
+    width : 85%;
 }
 
 #the-guts #projects .block.c5 {
@@ -272,7 +281,7 @@ div#guts-section .flip-card {
 
 div#guts-section .flip-card-inner {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -318,8 +327,10 @@ div#guts-section .flip-card-back {
 	background-color: #163a57;
   	color: white;
   	transform: rotateY(180deg);
-  	width:105%;
-	left: -2%;
+}
+
+div#guts-section .flip-card-back .name {
+	font-weight: bold;
 }
 
 div#bottom {
