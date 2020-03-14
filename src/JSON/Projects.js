@@ -27,26 +27,31 @@ return (
 							 </div>
 
 							 <div class="flip-card-back">
+								
 								 <h1 className="title">Millwood Christian Church</h1>
-								 <div class = "row">
-								 	<div className = "name ">Project Brief : </div>
-								 	<div className = "value">I did this project for my church to give back to my community.  We migrated the domain from existing drupal site and manage the new site from wire frame to completion</div>
-								 </div>
-								  <div class = "row">
-								 	<div className = "name">Features : </div>
-								 	<div className = "value">
-								 		<li className = "nobullet">Customized Theme</li>
-								 		<li className = "nobullet">Dynamic Restful API Feed</li>
-								 		<li className = "nobullet">Online Donation Portal</li>
-								 	</div>
-								 </div>
-								 <div class = "row">
-								 	<div className = "name">Technologies : </div>
-								 	<div className = "value">PHP, UX Design, Word Press, CSS, REST API</div>
-								 </div>
+								 <div className = "content-wrap">
+									 <div class = "row">
+									 	<div className = "name ">Project Brief : </div>
+									 	<div className = "value">I did this project for my church to give back to my community.  We migrated the domain from existing drupal site and manage the new site from wire frame to completion</div>
+									 </div>
+									  <div class = "row">
+									 	<div className = "name">Features : </div>
+									 	<div className = "value">
+									 		<li className = "nobullet">Customized Theme</li>
+									 		<li className = "nobullet">Dynamic Restful API Feed</li>
+									 		<li className = "nobullet">Online Donation Portal</li>
+									 	</div>
+									 </div>
+									 <div class = "row">
+									 	<div className = "name">Technologies : </div>
+									 	<div className = "value">PHP, UX Design, Word Press, CSS, REST API</div>
+									 </div>
+								</div>
 
-								 <div className ="row footer" >
-									<button>View Site</button>	
+								 <div className ="row footer align-center" >
+									<button className = "green-grandient">
+										<a href = "https://www.millwoodchurchnwa.com" target="_blank">View Site</a>
+									</button>	
 								</div>
 
 							 </div>
@@ -66,24 +71,31 @@ return (
 							 </div>
 
 							 <div class="flip-card-back">
-								 <h1 className="title">Millwood Christian Church</h1>
-								<div className ="row" >
-									<div className = "name">Project Brief : </div>
-									<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+								<h1 className="title">Millwood Christian Church</h1>
+								<div className = "content-wrap">
+									<div className ="row" >
+										<div className = "name">Project Brief : </div>
+										<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+									</div>
+
+									<div className ="row">
+										<div className = "name">Features : </div>
+										<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+									</div>
+									<div className ="row" >
+										<div className = "name">Technologies : </div>
+										<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+									</div>
 								</div>
 
-								<div className ="row">
-									<div className = "name">Features : </div>
-									<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
-								</div>
-								<div className ="row" >
-									<div className = "name">Technologies : </div>
-									<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+								 <div className ="row footer align-center" >
+									<button className = "green-grandient">
+										<a href = "http://www.googel.com" target= "_blank">View Site</a>
+									</button>	
 								</div>
 
-								<div className ="row" >
-									<button>View Site</button>	
-								</div>
+								
+
 
 							 </div>
 

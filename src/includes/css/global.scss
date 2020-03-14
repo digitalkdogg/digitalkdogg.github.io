@@ -22,6 +22,18 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  border-radius: 10px;
+  width: 10em;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
 hr {
   margin:30px 0;
 }
@@ -127,11 +139,12 @@ li.nobullet {
 }
 
 .green-grandient {
-  background: #0a6f0a;
-  background: -moz-radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%);
-  background: -webkit-radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%);
-  background: radial-gradient(center, ellipse cover, #5f9a29 0%,#006d00 100%);
+  background: #4D7F1F;
+background: -webkit-radial-gradient(center, #4D7F1F, #015901);
+background: -moz-radial-gradient(center, #4D7F1F, #015901);
+background: radial-gradient(ellipse at center, #4D7F1F, #015901);
 }
+
 
 .box-shadow {
   box-shadow: 0px 3px 11px 3px rgba(202,202,202,0.75);

@@ -228,9 +228,7 @@ div#guts-section .block.c33 {
 
 div#guts-section #the-guts .block .circle-wrap {
     position: relative;
-    border-radius: 20%;
-    background: #0a6f0a;
-    background: -webkit-radial-gradient(center, ellipse cover, #548725 0%,#006d00 100%);
+    border-radius: 20%;s
     color: white;
     padding: 25px;
     top: -10vh;
@@ -324,13 +322,45 @@ div#guts-section .flip-card-front, .flip-card-back {
 }
 
 div#guts-section .flip-card-back {
-	background-color: #163a57;
-  	color: white;
+	background-color: #eee;
+  	color: black;
   	transform: rotateY(180deg);
 }
 
 div#guts-section .flip-card-back .name {
 	font-weight: bold;
+}
+
+div#guts-section .flip-card-back .content-wrap {
+	height:75%;
+	overflow: auto;
+}
+
+div#guts-section .flip-card-back .footer {
+	align-items: center;
+}
+
+div#guts-section .flip-card-back .footer a {
+	color: white;
+}
+
+div#guts-section .flip-card-back .footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+div#guts-section div.flip-card-back div.footer a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div#guts-section .flip-card-back button {
+	color: white;
+	font-size: 1.2em;
 }
 
 div#bottom {
