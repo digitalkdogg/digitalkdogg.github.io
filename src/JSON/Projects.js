@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import millwood from '../includes/img/millwood_thumb.jpg';
 import olympic from '../includes/img/olympic_inspection.png';
-//import checkbook from '../includes/img/checkbook_scaled.png';
-import checkbook from '../../public/img/checkbook_scaled.png';
+import checkbook from '../includes/img/checkbook_scaled.png';
 import plex from '../includes/img/plex_admin.png';
 
 
