@@ -8,6 +8,7 @@ class Skills extends Component {
 	render(props){
 		 return (
 			 <div id="skills" className='section hidden'>
+			        <div className="mobile-space-normal"></div>
 				 <div className="row-wrap skills-wrap">
 					 <div className="block c5 box-shadow box">
 						 <div className="title">Front End</div>

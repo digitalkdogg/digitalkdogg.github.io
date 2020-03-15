@@ -39,7 +39,11 @@ hr {
 }
 
 .hidden {
-	display:none;
+	display: none;
+}
+
+.mobile-hidden {
+  display:none !important;
 }
 
 .show {
@@ -156,6 +160,10 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
     display:none;
   }
 
+  .mobile-hidden {
+    display:block !important;
+  }
+
   .desktop-space {
     display: block;
     clear:both;
@@ -163,7 +171,7 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
 
   .row-wrap {
     display:flex;
-    margin: 5% 0;
+    margin: 2% 0;
   }
 
   .row-wrap .c33, .row-wrap .c5, .row-wrap .c100 {

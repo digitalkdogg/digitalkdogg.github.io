@@ -141,14 +141,16 @@ div#banner {
 	text-align:center;
  	background-size: initial;
   	font-weight: bold;
-  	padding:25px 0;
+  	padding:45px 0 25px 0;
+  	background:white;
+  	overflow:hidden;
 }
 
 div#banner i {
 	position:absolute;
-	opacity: .3;
-	color: white;
-	font-size:.7em;
+	opacity: 0.1;
+	color: #004c8a;
+	font-size:1em;
 }
 
 div#banner p {
@@ -157,7 +159,7 @@ div#banner p {
 
 div#banner p.tag {
     font-size:1em;
-    color:white;
+    color:black;
     font-weight: bold;
 }
 

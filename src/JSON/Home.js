@@ -10,6 +10,7 @@ class Home extends Component {
 	render(props){
 		 return (
        <div id="home" className="section show">
+             <div className="mobile-space-normal"></div>
 
             <div className="box box-shadow">
               <P class="tag" text="Hello I am Kevin Bollman" />

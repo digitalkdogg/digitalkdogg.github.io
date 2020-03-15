@@ -9,7 +9,7 @@ class Contact extends Component {
 	render(props){
 		 return (
        <div id="contact" className="section hidden">
-
+                   <div className="mobile-space-normal"></div>
 
            <div className="block c100 box mini box-shadow">
              <P text="Do you think I can help you add value to your next project?" />
