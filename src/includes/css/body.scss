@@ -301,7 +301,7 @@ div#guts-section div.flip-card div.flip-card-title {
     background: rgba(0,0,0,0.8);
     width: 100%;
     color: white;
-    padding-top:1%;
+    padding-top:1rem;
     font-weight: bold;
 		backface-visibility: hidden;
 }
@@ -407,7 +407,7 @@ div#footer {
 	}
 
 	div#guts-section div.section div.box {
-		margin:5%;
+		margin:3%;
 		border-radius:5px;
 		padding:1% 5%;
 	}
@@ -426,6 +426,14 @@ div#footer {
 	div#guts-section div.section {
 		margin: 0;
 		padding: 0;
+	}
+
+	div#guts-section div#projects div.row-wrap {
+		margin: 0;
+	}
+
+	div#guts-section div#projects div.block.flip-card {
+    	margin: 1.5em 3%;
 	}
 
 }

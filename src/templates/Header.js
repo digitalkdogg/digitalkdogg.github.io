@@ -76,7 +76,7 @@ class Header extends Component {
 						<Li onclick={this.gotosection.bind(this, 'about')}
 								text="About Me" class={this.state.activesection==='about'? 'active': ''} />
 						<Li onclick={this.gotosection.bind(this, 'projects')}
-								text="Projects" class="hidden" />
+								text="Projects" class="hidden2" />
 						<Li onclick={this.gotosection.bind(this, 'skills')}
 								text="Skills" class={this.state.activesection==='skills'? 'active' : ''}  />
 						<Li onclick={this.gotosection.bind(this, 'contact')}

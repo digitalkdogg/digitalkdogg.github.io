@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import millwood from '../includes/img/millwood_thumb.jpg';
+import olympic from '../includes/img/olympic_inspection.png';
+import checkbook from '../includes/img/checkbook_scaled.png';
+import plex from '../includes/img/plex_admin.png';
+
 
 class Projects extends Component {
 
@@ -7,21 +11,30 @@ class Projects extends Component {
 
 	render(props){
 		const millwoodstyle = {
-	'background': 'url(' + millwood + ')',
-	'background-size': 'contain',
-	'background-repeat': 'no-repeat',
-	'background-position':'center'
-}
+			'background': 'url(' + millwood + ') center center / contain no-repeat',
+		}
 
+		const olympicstyle = {
+			'background': 'url(' + olympic + ') center center / contain no-repeat',
+		}
+
+		const checkbookstyle = {
+			'background': 'url(' + checkbook + ') center center / contain no-repeat',
+		}
+
+		const plexstyle = {
+			'background': 'url(' + plex + ') center center / contain no-repeat',
+		}
 
 return (
      <div id="projects" className="section hidden">
-			 <div className="row-wrap skills-wrap">
+			 <div className="row-wrap">
+			 <div class="mobile-space-small"></div>
 				 <div className="block c5 box-shadow box flip-card">
 
 						 <div class="flip-card-inner">
 
-							 <div class="flip-card-front" style = {millwoodstyle}>
+							 <div class="flip-card-front bg-img" style = {millwoodstyle}>
 							 	<div class="flip-card-cover"></div>
 							 	<div class="flip-card-title">Millwood Christian Church</div>
 							 </div>
@@ -50,7 +63,7 @@ return (
 
 								 <div className ="row footer align-center" >
 									<button className = "green-grandient">
-										<a href = "https://www.millwoodchurchnwa.com" target="_blank">View Site</a>
+										<a href = "https://olympicinspection.com/" target="_blank">View Site</a>
 									</button>	
 								</div>
 
@@ -60,31 +73,35 @@ return (
 				
 
 					 </div>
-
+					 <div class="mobile-space-small"></div>
 					 <div className="block c5 box-shadow box flip-card">
 
 						 <div class="flip-card-inner">
 
-							 <div class="flip-card-front" style = {millwoodstyle}>
+							 <div class="flip-card-front bg-img" style = {olympicstyle}>
 							 	<div class="flip-card-cover"></div>
-							 	<div class="flip-card-title">Millwood Christian Church</div>
+							 	<div class="flip-card-title">Olympic Home Inspections</div>
 							 </div>
 
 							 <div class="flip-card-back">
-								<h1 className="title">Millwood Christian Church</h1>
+								<h1 className="title">Olympic Home Inspections</h1>
 								<div className = "content-wrap">
 									<div className ="row" >
 										<div className = "name">Project Brief : </div>
-										<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+										<div className = "value">I did this project for a small business to help get their business off the ground.  I work directly with the customer and help purchase a domain, reviewed mockups and developed the site in support of their business.</div> 
 									</div>
 
 									<div className ="row">
 										<div className = "name">Features : </div>
-										<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+										<div className = "value">
+											<li className = "nobullet">Customized Theme</li>
+											<li className = "nobullet">UX Design</li>
+									 		<li className = "nobullet">Online Contact Form</li>
+										</div> 
 									</div>
 									<div className ="row" >
 										<div className = "name">Technologies : </div>
-										<div className = "value">really fun project description would go here and be as long as I think it should be to fill this wonderfull space to my liking.</div> 
+										<div className = "value">UX Design, Word Press, CSS</div> 
 									</div>
 								</div>
 
@@ -93,10 +110,6 @@ return (
 										<a href = "http://www.googel.com" target= "_blank">View Site</a>
 									</button>	
 								</div>
-
-								
-
-
 							 </div>
 
 						 </div>
@@ -106,27 +119,91 @@ return (
 
 				 </div>
 		 
+			 <div className="row-wrap">
+			 <div class="mobile-space-small"></div>
+				 <div className="block c5 box-shadow box flip-card">
 
-		 <div className="row-wrap skills-wrap">
-			 <div className="block c5 box-shadow box">
-				 <div className="title">Checkbook</div>
+						 <div class="flip-card-inner">
 
-			 </div>
-			 <div className="block c5 box-shadow box">
-				 <div className="title">Checkbox.js</div>
+							 <div class="flip-card-front bg-img" style = {checkbookstyle}>
+							 	<div class="flip-card-cover"></div>
+							 	<div class="flip-card-title">Checkbook</div>
+							 </div>
 
-			 </div>
-		 </div>
-		 <div className="row-wrap skills-wrap">
-			<div className="block c5 box-shadow box">
-				<div className="title">Checkbook</div>
+							 <div class="flip-card-back">
+								
+								 <h1 className="title">Checkbook</h1>
+								 <div className = "content-wrap">
+									 <div class = "row">
+									 	<div className = "name ">Project Brief : </div>
+									 	<div className = "value">
+									 		This was a personal project that I did in php codeigniter.  I needed a way to keep track of my bills and I wasn't too happy with any of the apps out there so I made my own.
+									 	</div>
+									 </div>
+									  <div class = "row">
+									 	<div className = "name">Features : </div>
+									 	<div className = "value">
+									 		<li className = "nobullet">Complete Dynamic Dashboard</li>
+									 		<li className = "nobullet">Full Reporting Suite</li>
+									 	</div>
+									 </div>
+									 <div class = "row">
+									 	<div className = "name">Technologies : </div>
+									 	<div className = "value">PHP, Codeigniter, REST API</div>
+									 </div>
+								</div>
 
-			</div>
-			<div className="block c5 box-shadow box">
-				<div className="title">Checkbox.js</div>
+								 
 
-			</div>
-		</div>
+							 </div>
+
+						 </div>
+				
+
+					 </div>
+					 <div class="mobile-space-small"></div>
+					 <div className="block c5 box-shadow box flip-card">
+
+						 <div class="flip-card-inner">
+
+							 <div class="flip-card-front bg-img" style = {plexstyle}>
+							 	<div class="flip-card-cover"></div>
+							 	<div class="flip-card-title">Plex Movie Manager</div>
+							 </div>
+
+							 <div class="flip-card-back">
+								<h1 className="title">Plex Movie Manager</h1>
+								<div className = "content-wrap">
+									<div className ="row" >
+										<div className = "name">Project Brief : </div>
+										<div className = "value">
+											Another personal project that I did.  The goal was to optimize my plex movie library.  I wrote this in laravel and it uses the plex api to tab into my library and allow me to see the details of eash of my movies
+										</div> 
+									</div>
+
+									<div className ="row">
+										<div className = "name">Features : </div>
+										<div className = "value">
+											<li className = "nobullet">Third Party API Integration</li>
+											<li className = "nobullet">Reporting Dashobard</li>
+										</div> 
+									</div>
+									<div className ="row" >
+										<div className = "name">Technologies : </div>
+										<div className = "value">PHP, Laravel, Third party API</div> 
+									</div>
+								</div>
+
+								
+							 </div>
+
+						 </div>
+				
+
+					 </div>
+
+				 </div>
+			 <div class="mobile-space-large desktop-space-large"></div>
      </div>
       )
 	}
