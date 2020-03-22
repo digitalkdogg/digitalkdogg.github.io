@@ -15,7 +15,7 @@ class Home extends Component {
             <div className="box box-shadow">
               <P class="tag" text="Hello I am Kevin Bollman" />
               <hr />
-              <P class="sub" text="I build cool things and make them work" />
+              <P class="sub" text="I develop code and build cool things!" />
 
               <P text="Since I began my web design journey over 10 years, I have help many people / organization with their web design needs.
                 I enjoy helping people with connect with their technology.  I am innovative, forward thinking and I am passionate about the

@@ -24,6 +24,8 @@ class Skills extends Component {
 							 <Li class="nobullet" text="PHP" />
 							 <Li class="nobullet" text="Codeigniter" />
 							 <Li class="nobullet" text="Laravel" />
+							 <Li class="nobullet" text="Salesforce CRM" />
+							 <Li class="nobullet" text="Java" />
 							 <Li class="nobullet" text="MySQL" />
 					 </div>
 				 </div>
@@ -41,7 +43,10 @@ class Skills extends Component {
 							 <Li class="nobullet" text="MVC Frameworks" />
 							 <Li class="nobullet" text="REST API's" />
 							 <Li class="nobullet" text="Agile Methodoloy" />
-							 <Li class="nobullet" text="Object Oriented Programming" />
+							 <Li class="nobullet" text="Material Design" />
+							 <Li class="nobullet" text="Grid And Flex Layouts" />
+							 <Li class="nobullet" text="Accessibility Standards" />
+							 
 					 </div>
 				 </div>
 
