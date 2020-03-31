@@ -5,6 +5,7 @@ import Skills from '../JSON/Skills';
 import Projects from '../JSON/Projects';
 import Home from '../JSON/Home';
 import Contact from '../JSON/Contact';
+import Snippets from '../JSON/Snippets';
 
 class Theguts extends Component {
 
@@ -21,6 +22,7 @@ class Theguts extends Component {
     	    <Home />
           <Aboutme />
         	<Projects />
+          <Snippets />
           <Skills />
           <Contact />
         </div>

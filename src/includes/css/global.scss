@@ -1,6 +1,6 @@
 body {
     background: #eee;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: "Proxima Nova",Arial,sans-serif;
     line-height: 1.5;
     color: #333;
@@ -32,6 +32,38 @@ button {
 button:hover {
   cursor: pointer;
   opacity: .8;
+}
+
+pre {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size:0.7em;
+}
+
+
+pre code:before {
+    
+    font-variant: small-caps;
+    background: #aaa;
+    color: white;
+    padding: 0 5px;
+    border-radius: 15%;
+}
+
+pre.html code:before {
+  content: "html\A";
+}
+
+pre.css code:before {
+  content: "css\A";
+}
+
+pre.js code:before {
+  content: "js\A";
+}
+
+.min-height-50 {
+  min-height:50px !important;
 }
 
 hr {

@@ -22,6 +22,8 @@ class Header extends Component {
 		if (activesection.length===1) {
 			  return activesection[0].getAttribute('id')
 		}
+
+
 		return null;
 	}
 
@@ -76,7 +78,9 @@ class Header extends Component {
 						<Li onclick={this.gotosection.bind(this, 'about')}
 								text="About Me" class={this.state.activesection==='about'? 'active': ''} />
 						<Li onclick={this.gotosection.bind(this, 'projects')}
-								text="Projects" class="hidden2" />
+								text="Projects" />
+						<Li onclick={this.gotosection.bind(this, 'snippets')}
+								text="Code Snippets" />
 						<Li onclick={this.gotosection.bind(this, 'skills')}
 								text="Skills" class={this.state.activesection==='skills'? 'active' : ''}  />
 						<Li onclick={this.gotosection.bind(this, 'contact')}
