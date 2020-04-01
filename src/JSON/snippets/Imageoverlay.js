@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import P from '../templates/Utils/P';
-import Div from '../templates/Utils/Div';
-import Bottom from '../templates/Bottom';
+import P from '../../templates/Utils/P';
+import Div from '../../templates/Utils/Div';
+import Bottom from '../../templates/Bottom';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
@@ -33,7 +33,7 @@ class Imageoverlay extends Component {
      
 
           <div className="block c100 box mini box-shadow">
-             <P className = "title" text="Cover mask on images" />
+             <P class = "title" text="Cover mask on images" />
              <P text="Sometimes you need to put text on a background image only to find that the text doen't pop enough Here is a trick you can do to get around that." />
          
              <div className="row-wrap">
