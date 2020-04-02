@@ -37,7 +37,7 @@ button:hover {
 pre {
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size:0.7em;
+    font-size:1em;
 }
 
 
@@ -223,5 +223,9 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
 
   div#guts-section div.box {
     border-radius: 5px;
+  }
+
+  pre {
+    font-size:0.7em;
   }
 }
