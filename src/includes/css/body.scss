@@ -195,22 +195,26 @@ div#guts-section div#the-guts div#home {
     text-align:center;
 }
 
-div#guts-section div.box {
+div#guts-section div.box, div#guts-section div.box-no-animate {
     background: white;
     min-height: 40vh;
     color: black;
-		border-radius: 0;
+	border-radius: 0;
 }
 
 div#guts-section div.box.mini {
 	min-height: 10vh;
 }
 
-div#guts-section div.box p {
+div#guts-section div.box p, div#guts-section div.box-no-animate {
     padding: 2%;
 }
 
-div#guts-section div#home div.box p {
+div#guts-section div.box-no-animate {
+	margin-bottom:5%;
+}
+
+div#guts-section div#home div.box {
     padding: initial;
     margin:15px;
 }
@@ -403,11 +407,8 @@ div#footer {
 		left:70%;
 	}
 
-	div#the-guts #home .box {
 
-	}
-
-	div#guts-section div.section div.box {
+	div#guts-section div.section div.box, div#guts-section div.box-no-animate {
 		margin:3%;
 		border-radius:5px;
 		padding:1% 5%;
