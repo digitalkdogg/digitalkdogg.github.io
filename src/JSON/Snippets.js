@@ -16,6 +16,7 @@ class Snippets extends Component {
             <Div class="mobile-space-small desktop-space-large" />
             <Imageoverlay />
             <Growhover />
+            <Flexlayout />
             <Div class="mobile-space-large desktop-space-large" />
        </div>
       )
