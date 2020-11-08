@@ -192,10 +192,15 @@ div#guts-section div.section.show .box {
 
 div#guts-section div#the-guts {
     position: relative;
-    padding-top:calc(12vh + 43px);
+    padding-top:calc(5vh + 40px);
     padding-bottom: 10px;
     width:100%;
     overflow:hidden;
+}
+@media only screen and (min-width: 768px) {
+	div#guts-section div#the-guts {
+		padding-top:calc(11vh + 40px);
+	}
 }
 
 div#guts-section div#the-guts div#home {
