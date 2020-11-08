@@ -166,8 +166,8 @@ div#banner p {
 
 div#banner h3.tag {
     font-size:1.2em;
-    color:#333;
-	font-weight: 100;
+	color:#000;
+	font-weight: 300;
 	margin-top:-5px;
 }
 
@@ -175,6 +175,7 @@ div#banner h3.tag {
 	div#banner h3.tag {
 		font-size:1em;
 		color:#555;
+		font-weight: 100;
 		text-shadow:2px 2px #ccc;
 	}
 }
@@ -204,6 +205,7 @@ div#guts-section div#the-guts {
     width:100%;
     overflow:hidden;
 }
+
 @media only screen and (min-width: 768px) {
 	div#guts-section div#the-guts {
 		padding-top:calc(11vh + 40px);
@@ -287,7 +289,13 @@ div#guts-section #the-guts .info-wrap {
 }
 
 div#guts-section #the-guts .info-wrap a {
-	font-weight: 100;
+	font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+	div#guts-section #the-guts .info-wrap a {
+		font-weight: 100;
+	}
 }
 
 #the-guts #projects .block .row {
