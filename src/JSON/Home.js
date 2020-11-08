@@ -13,7 +13,7 @@ class Home extends Component {
              <div className="mobile-space-normal"></div>
 
             <div className="box-no-animate box-shadow">
-              <P class="tag" text="Hello I am Kevin Bollman" />
+              <P class="tag" text="Hello! I am Kevin Bollman" />
               <hr />
               <P class="sub" text="I develop code and build cool things!" />
 
