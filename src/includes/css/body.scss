@@ -166,10 +166,18 @@ div#banner p {
 
 div#banner h3.tag {
     font-size:1.2em;
-    color:#555;
+    color:#333;
 	font-weight: 100;
-	text-shadow:2px 2px #ccc;
+	text-shadow:2px 2px #999;
 	margin-top:-5px;
+}
+
+@media only screen and (min-width: 768px) {
+	div#banner h3.tag {
+		font-size:1em;
+		color:#555;
+		text-shadow:2px 2px #ccc;
+	}
 }
 
 
