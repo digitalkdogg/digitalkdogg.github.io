@@ -61,15 +61,15 @@ class Header extends Component {
 
 			<div id="header" >
 				<div id="logo-section">
-					<div className="menu-logo-wrap green-grandient">
+					<div className="menu-logo-wrap">
 						<div className="text">KB</div>
 					</div>
 				</div>
-				<div id="name-section">Kevin Bollman</div>
+				<div id="name-section"><h2>Kevin Bollman</h2></div>
 				<div id="nine-box-section">
 					<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
 					<div id="menu-section" className={this.state.showclass}>
-						<div className="menu-logo-wrap green-grandient">
+						<div className="menu-logo-wrap">
 								<div className="text">KB</div>
 						</div>
 						<Hr class="color-white" />

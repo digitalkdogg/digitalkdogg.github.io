@@ -25,7 +25,7 @@ class Contactblock extends Component {
               <div className="circle-wrap box-shadow green-grandient">
                 <div className="text"> 
                   <i className="fas fa-phone"></i>
-                  <div><b>Phone</b></div>
+                  <h4>Phone</h4>
                 </div>
               </div>  
 
@@ -39,7 +39,7 @@ class Contactblock extends Component {
              <div className="circle-wrap box-shadow green-grandient">
                 <div className="text"> 
                   <i className="fas fa-envelope-open"></i>
-                  <div><b>Email</b></div>
+                  <h4>Email</h4>
                 </div>
               </div>  
              
@@ -51,7 +51,7 @@ class Contactblock extends Component {
              <div className="circle-wrap box-shadow green-grandient">
                 <div className="text"> 
                   <i className="fab fa-github-alt"></i>
-                  <div><b>Github</b></div>
+                  <h4>Github</h4>
                 </div>
               </div>  
               

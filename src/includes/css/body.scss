@@ -2,7 +2,7 @@ div#body {
 	overflow:hidden;
 }
 
-p.tag {
+p.tag, h3.tag {
 	font-size:1em;
 }
 
@@ -16,7 +16,7 @@ div#header {
   	position: fixed;
   	top: 0;
   	width: 100%;
-  	height: 55px;
+  	height: 60px;
   	overflow: hidden;
 	z-index:11;
 	color: white;
@@ -26,7 +26,6 @@ div#header {
 }
 
 div#header div#logo-section {
-  /*  margin: 5px 5px 0 0 ; */
   	border-right: 3px solid white;
     padding: 0 5px 0 0;
     max-width:70px;
@@ -44,14 +43,11 @@ div#header div#nine-box-section {
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
-	/*color: #0a6f0a; */
-	color: #5f9a29;
-	transform: scale(1.2);
+	color: #17ad17;
 	transition: 1s rotate;
 }
 
 div#header div#name-section {
-	margin-top:10px;
 	margin-left:10px;
 	font-weight: bold;
 	font-size: .8em;
@@ -74,15 +70,15 @@ div#header div#menu-section {
 div#header div#menu-section.show {
 	display:block;
 	left: 0;
-	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
+	transition: left .5s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
 div#header div#menu-section.hide {
-	transition: left 1s cubic-bezier(0.5, 0.2, 0.3, 1.0);
+	transition: left .5s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
 div.menu-logo-wrap {
-    border: 3px solid #0a6f0a;
+    border: 3px solid #17ad17;
     width: 45px;
     height:45px;
     border-radius:10%;
@@ -91,7 +87,9 @@ div.menu-logo-wrap {
     position: relative;
     padding: 10px;
     margin: 20px 10%;
-    border-radius:20%;
+	border-radius:20%;
+	background:white;
+	color:#17ad17;
 }
 
 div.menu-logo-wrap div.text {
@@ -101,17 +99,19 @@ div.menu-logo-wrap div.text {
 
 div#header div#logo-section div.menu-logo-wrap {
 	margin: 10px 20%;
-	padding:3px;
+	padding:5px;
 	width:20px;
-	font-size:.65em;
+	font-size:.85em;
 	height:20px;
+	background:white;
+	color:#17ad17;
 }
 
 
 
 div#header div#menu-section li {
 	list-style-type: none;
-	font-weight: bold;
+	font-weight: 100;
 	line-height:2;
 	border-left: 3px solid rgba(22,58,87,0);
 	padding:0 5px;
@@ -132,7 +132,7 @@ div#header div#menu-section li.active {
 
 div#banner {
   	position: absolute;
-	height:12vh;
+	height:7vh;
   	z-index: 1;
 	width:100%;
 	font-size:1em;
@@ -141,7 +141,7 @@ div#banner {
 	text-align:center;
  	background-size: initial;
   	font-weight: bold;
-  	padding:45px 0 25px 0;
+  	padding:45px 0 15px 0;
   	background:white;
   	overflow:hidden;
 }
@@ -150,17 +150,20 @@ div#banner i {
 	position:absolute;
 	opacity: 0.1;
 	color: #004c8a;
-	font-size:1em;
+	font-size:1.15em;
+	text-shadow: 1px 2px #999;
 }
 
 div#banner p {
 	margin: 1vh;
 }
 
-div#banner p.tag {
+div#banner h3.tag {
     font-size:1em;
-    color:black;
-    font-weight: bold;
+    color:#555;
+	font-weight: 100;
+	text-shadow:2px 2px #ccc;
+	margin-top:-5px;
 }
 
 
@@ -246,6 +249,12 @@ div#guts-section #the-guts .block .circle-wrap {
     transform:rotate(45deg);
 }
 
+div#guts-section #the-guts .block .circle-wrap h4 {
+	font-size:1em;
+	font-weight: 100;
+	margin-top:0;
+}	
+
 div#guts-section #the-guts .block .circle-wrap .text {
 	height:100%;
 	transform: rotate(-45deg);
@@ -259,10 +268,9 @@ div#guts-section #the-guts .info-wrap {
 	word-break: break-all;
 }
 
-/*#the-guts #projects .block {
-    height: auto;
-	min-height: 500px;
-} */
+div#guts-section #the-guts .info-wrap a {
+	font-weight: 100;
+}
 
 #the-guts #projects .block .row {
 	display: flex;
@@ -391,6 +399,12 @@ div#footer {
 
 }
 
+div#header div#name-section h2 {
+	font-size:24px;
+	line-height:1;
+	font-weight:100;
+}
+
 @media only screen and (min-width: 768px) {
 
 	div#header div#logo-section {
@@ -399,7 +413,6 @@ div#footer {
 	}
 
 	div#header div#name-section {
-		font-size:1em;
 		flex-grow:8;
 	}
 
