@@ -132,7 +132,7 @@ div#header div#menu-section li.active {
 
 div#banner {
   	position: absolute;
-	height:7vh;
+	height:5vh;
   	z-index: 1;
 	width:100%;
 	font-size:1em;
@@ -144,6 +144,12 @@ div#banner {
   	padding:45px 0 15px 0;
   	background:white;
   	overflow:hidden;
+}
+
+@media only screen and (min-width: 768px) {
+	div#banner {
+		height:11vh;
+	}
 }
 
 div#banner i {
