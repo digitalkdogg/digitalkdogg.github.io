@@ -194,9 +194,9 @@ div#guts-section div.section {
     background-color: #eee;
 }
 
-div#guts-section div.section.show .box {
-	animation : flip 1.5s  ease-out;
-}
+/*div#guts-section div.section.show .box {
+	animation : flip 0.5s  ease-out;
+} */
 
 div#guts-section div#the-guts {
     position: relative;
@@ -221,7 +221,7 @@ div#guts-section div#the-guts div#home {
 div#guts-section div.box, div#guts-section div.box-no-animate {
     background: white;
     min-height: 40vh;
-    color: black;
+    color: #333;
 	border-radius: 0;
 }
 
@@ -362,7 +362,7 @@ div#guts-section .flip-card-front, .flip-card-back {
 
 div#guts-section .flip-card-back {
 	background-color: #eee;
-  	color: black;
+  	color: #333;
   	transform: rotateY(180deg);
 }
 
