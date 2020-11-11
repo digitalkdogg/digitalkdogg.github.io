@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Li from '../templates/Utils/Li';
 
-import Bottom from '../templates/Bottom';
-
 class Skills extends Component {
 
 	render(props){
@@ -49,8 +47,6 @@ class Skills extends Component {
 							 
 					 </div>
 				 </div>
-
-				 <Bottom nextsection="contact" />
 
 			 </div>
       )

@@ -3,8 +3,6 @@ import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
 
-//import Bottom from '../templates/Bottom';
-
 class Home extends Component {
 
 	render(props){

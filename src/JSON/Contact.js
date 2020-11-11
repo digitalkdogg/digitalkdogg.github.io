@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
-import Bottom from '../templates/Bottom';
 
 class Contact extends Component {
 
@@ -20,7 +19,7 @@ class Contact extends Component {
          <Div class="desktop-space desktop-space-normal" />
          <Contactblock />
 
-         <Bottom/>
+        
        </div>
       )
 	}

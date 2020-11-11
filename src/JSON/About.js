@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import P from '../templates/Utils/P';
 
-import Bottom from '../templates/Bottom';
 
 class About extends Component {
 
@@ -16,7 +15,6 @@ class About extends Component {
           	</div>
 
       			<div className="desktop-space-large" />
-	            <Bottom nextsection="skills" />
 	         </div>
       )
 	}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
-import Bottom from '../../templates/Bottom';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Div from '../templates/Utils/Div';
-import Bottom from '../templates/Bottom';
 
 
 import Imageoverlay from './snippets/Imageoverlay';
