@@ -3,7 +3,7 @@ import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
 
-import Bottom from '../templates/Bottom';
+//import Bottom from '../templates/Bottom';
 
 class Home extends Component {
 
@@ -25,7 +25,7 @@ class Home extends Component {
             <Div class="mobile-space mobile-space-large" />
             <Div class="desktop-space desktop-space-small" />
             <Contactblock />
-             <Bottom nextsection="about" />
+            
           </div>
       )
 	}
