@@ -1,5 +1,5 @@
 body {
-    background: #eee;
+    background: white;
     font-size: 1.2em;
     font-family: "Proxima Nova",Arial,sans-serif;
     line-height: 1.5;
@@ -32,6 +32,10 @@ button {
 button:hover {
   cursor: pointer;
   opacity: .8;
+}
+
+.v-text-top {
+  vertical-align: text-top;
 }
 
 pre {

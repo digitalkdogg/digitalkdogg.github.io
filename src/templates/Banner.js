@@ -13,15 +13,15 @@ class Banner extends Component {
 
    render(){ 
       return (
-         <div id="banner" className="box-shadow" >
-         <h3 className="tag">Full Stack Web Developer</h3>
+         <div id="banner" className="bottom" >
+        
          <i className="fab fa-react i-1 "></i>
          <i className="fab fa-node-js i-2"></i>
          <i className="fab fa-jsfiddle i-3 mobile-hidden"></i>
          <i className="fab fa-php i-4"></i>
          <i className="fas fa-code i-5 mobile-hidden"></i>
          <i className="fas fa-laptop-code i-6 mobile-hidden"></i>
-         <i className="fab fa-github i-7"></i>
+         <i className="fas fa-file i-7"></i>
          <i className="fab fa-gratipay i-8"></i>
          <i className="fab fa-mobile-alt i-9 mobile-hidden"></i>
          <i className="fas fa-database i-10"></i>

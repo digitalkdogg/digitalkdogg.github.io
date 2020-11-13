@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
+import Banner from '../templates//Banner.js';
+import Topbanner from '../templates/Topbanner.js';
 
 class Home extends Component {
 
@@ -13,8 +15,7 @@ class Home extends Component {
             <div className="box-no-animate box-shadow">
               <P class="tag" text="Hello I am Kevin Bollman" />
               <hr />
-              <P class="sub" text="I design and develop digital solutions for everyday people" />
-
+             
               <P text="Since I began my web design journey over 10 years ago, I have helped many people / organization with their web design needs.
                 I enjoy helping people connect with their technology.  I am innovative, forward thinking and I am passionate about the
                 work I do.  I challenge my self every day to learn new technologies and to advance my skills.  I feel it is important to provide value to what ever team I am on." />

@@ -64,7 +64,7 @@ return (
 
 								 <div className="row footer align-center" >
 									<button className="green-grandient">
-										<a href = "https://olympicinspection.com/" target="_blank">View Site</a>
+										<a href="https://olympicinspection.com/" target="_blank">View Site</a>
 									</button>	
 								</div>
 
@@ -108,7 +108,7 @@ return (
 
 								 <div className="row footer align-center" >
 									<button className="green-grandient">
-										<a href="http://www.googel.com" target= "_blank">View Site</a>
+										<a href="http://www.googel.com" target="_blank">View Site</a>
 									</button>	
 								</div>
 							 </div>
@@ -182,14 +182,14 @@ return (
 										</div> 
 									</div>
 
-									<div className ="row">
+									<div className="row">
 										<div className="name">Features : </div>
 										<div className="value">
 											<li className="nobullet">Third Party API Integration</li>
 											<li className="nobullet">Reporting Dashobard</li>
 										</div> 
 									</div>
-									<div className ="row" >
+									<div className="row" >
 										<div className="name">Technologies : </div>
 										<div className="value">PHP, Laravel, Third party API</div> 
 									</div>

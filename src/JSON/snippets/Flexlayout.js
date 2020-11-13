@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
-import Div from '../../templates/Utils/Div';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
@@ -75,10 +74,10 @@ class Flexlayout extends Component {
      
 
           <div className="block c100 box mini box-shadow">
-              <P class = "title" text = "Flex Box Layout" />
-              <P text = "Flex Box Layout can be an important tool in your web design arsonel but if you are not familar with it than it could tricky getting it to work right.  Here is how you can make it work." />
+              <P class="title" text="Flex Box Layout" />
+              <P text="Flex Box Layout can be an important tool in your web design arsonel but if you are not familar with it than it could tricky getting it to work right.  Here is how you can make it work." />
 
-              <P text = "First we need to set display: flex and the flex direction on the parent element" />
+              <P text="First we need to set display: flex and the flex direction on the parent element" />
 
                 <div className="row-wrap">
                   <div className="c5 min-height-50">
@@ -95,14 +94,14 @@ class Flexlayout extends Component {
                 </div>
 
                 <div className="row-wrap">
-                  <div id = "parent" style={simplestyle}>
-                    <div class = "child">child1</div>
-                    <div class = "child" style={borderstyle}>child2</div>
-                    <div class = "child">child3</div>
+                  <div id="parent" style={simplestyle}>
+                    <div className="child">child1</div>
+                    <div className="child" style={borderstyle}>child2</div>
+                    <div className="child">child3</div>
                   </div>
                 </div>
 
-                 <P text = "Now you can set the size of child or the columns.  By default all of your childern will be evenly sized.  You can override this by using the flexGrow property to set how much you want a column to grow." />
+                 <P text="Now you can set the size of child or the columns.  By default all of your childern will be evenly sized.  You can override this by using the flexGrow property to set how much you want a column to grow." />
 
 
 
@@ -121,15 +120,15 @@ class Flexlayout extends Component {
                 </div>
 
                  <div className="row-wrap">
-                  <div id = "parent" style={simplestyle}>
-                    <div class = "child" style={grow1}>flex-grow : 1</div>
-                    <div class = "child" style={grow2}>flex-grow : 2</div>
-                    <div class = "child" style={grow1}>flex-grow : 1</div>
+                  <div id="parent" style={simplestyle}>
+                    <div className="child" style={grow1}>flex-grow : 1</div>
+                    <div className="child" style={grow2}>flex-grow : 2</div>
+                    <div className="child" style={grow1}>flex-grow : 1</div>
                   </div>
                 </div>
 
 
-                 <P text = "You can use the same concept to do a vertical layout by setting the flex-direction property to column instead of row" />
+                 <P text="You can use the same concept to do a vertical layout by setting the flex-direction property to column instead of row" />
 
                  <div className="row-wrap">
                   <div className="c5 min-height-50">
@@ -146,10 +145,10 @@ class Flexlayout extends Component {
                 </div>
 
                   <div className="row-wrap">
-                  <div id = "parent" style={columnStyle}>
-                    <div class = "child" style={borderStyleVert}>Row 1</div>
-                    <div class = "child" style={borderStyleVert}>Row 2</div>
-                    <div class = "child"> Row  3</div>
+                  <div id="parent" style={columnStyle}>
+                    <div className="child" style={borderStyleVert}>Row 1</div>
+                    <div className="child" style={borderStyleVert}>Row 2</div>
+                    <div className="child"> Row  3</div>
                   </div>
                 </div>
 

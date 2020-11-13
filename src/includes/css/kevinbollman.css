@@ -4,6 +4,6 @@
 /* header grey : 27313e */
 
 @import './global.scss';
-@import './banneri.scss';
+/*@import './banneri.scss'; */
 @import './body.scss';
 @import './modal.scss';

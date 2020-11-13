@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Theguts from './Theguts.js';
-import Banner from './Banner.js';
 
 class Guts extends Component {
 
@@ -18,7 +17,6 @@ class Guts extends Component {
     render() {
       return(
         <div id="guts-section">
-            <Banner />
             <Theguts />
         </div>
       )

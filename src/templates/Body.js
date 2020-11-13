@@ -10,13 +10,29 @@ class Body extends Component {
   constructor() {
       super();
       this.state = {
-        scrollstate: 'init'
+        scrollstate: 'init',
+        scrollClass: 'home notscrolled'
       }
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll.bind(this));
+   
+  }
+
+  handleScroll() {
+    if (window.scrollY >0) {
+      this.setState({'scrollClass': 'home scrolled'});
+    } else {
+      this.setState({'scrollClass': 'home notscrolled'});
+    }
+  }
+
+  
+
   render(){
     return (
-      <div id="body" className="home">
+      <div id="body" className={this.state.scrollClass}>
         <Header />
         <Guts />
         <Footer />

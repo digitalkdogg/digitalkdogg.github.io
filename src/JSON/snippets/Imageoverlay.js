@@ -32,14 +32,13 @@ class Imageoverlay extends Component {
      
 
           <div className="block c100 box mini box-shadow">
-             <P class = "title" text="Cover mask on images" />
+             <P class="title" text="Cover mask on images" />
              <P text="Sometimes you need to put text on a background image only to find that the text doen't pop enough Here is a trick you can do to get around that." />
          
              <div className="row-wrap">
                 <div className="c5 min-height-50">
 
                   <SyntaxHighlighter language="html" className="html" >
-
                     {htmlString}
                   </SyntaxHighlighter>
                 </div>
@@ -85,7 +84,7 @@ class Imageoverlay extends Component {
                   </div>
               </div>
 
-              <Div class="row-wrap" text= "Notice that there is no a dark overlay ontop of the image that doesn't affect the text ontop of the image" />
+              <Div class="row-wrap" text="Notice that there is no a dark overlay ontop of the image that doesn't affect the text ontop of the image" />
 
             </div>
 
