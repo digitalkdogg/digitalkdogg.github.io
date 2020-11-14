@@ -10,40 +10,43 @@ class Skills extends Component {
 				 <div className="row-wrap skills-wrap">
 					 <div className="block c5 box-shadow box">
 						 <div className="title">Front End</div>
-							 <Li class="nobullet" text="HTML 5" />
-							 <Li class="nobullet" text="CSS3" />
-							 <Li class="nobullet" text="Javascript" />
-							 <Li class="nobullet" text="Jquery / React JS / Angular" />
-							 <Li class="nobullet" text="Wordpress" />
-							 <Li class="nobullet" text="Drupal" />
+							 <Li class="bullet" text="HTML 5" />
+							 <Li class="bullet" text="CSS3" />
+							 <Li class="bullet" text="Javascript" />
+							 <Li class="bullet" text="Jquery / React JS / Angular" />
+							 <Li class="bullet" text="Wordpress" />
+							 <Li class="bullet" text="Drupal" />
 					 </div>
+					 <div className="mobile-space-normal "></div>
 					 <div className="block c5 box-shadow box">
 						 <div className="title">Back End</div>
-							 <Li class="nobullet" text="PHP" />
-							 <Li class="nobullet" text="Codeigniter" />
-							 <Li class="nobullet" text="Laravel" />
-							 <Li class="nobullet" text="Salesforce CRM" />
-							 <Li class="nobullet" text="Java" />
-							 <Li class="nobullet" text="MySQL" />
+							 <Li class="bullet" text="PHP" />
+							 <Li class="bullet" text="Codeigniter" />
+							 <Li class="bullet" text="Laravel" />
+							 <Li class="bullet" text="Salesforce CRM" />
+							 <Li class="bullet" text="Java" />
+							 <Li class="bullet" text="MySQL" />
 					 </div>
 				 </div>
 
 				 <div className="row-wrap skills-wrap">
+				 <div className="mobile-space-normal "></div>
 					 <div className="block c5 box-shadow box">
 						 <div className="title">Server</div>
-							 <Li class="nobullet" text="Git Version Contral" />
-							 <Li class="nobullet" text="Node JS" />
-							 <Li class="nobullet" text="Composer" />
-							 <Li class="nobullet" text="LAMP Stack" />
+							 <Li class="bullet" text="Git Version Contral" />
+							 <Li class="bullet" text="Node JS" />
+							 <Li class="bullet" text="Composer" />
+							 <Li class="bullet" text="LAMP Stack" />
 					 </div>
+					 <div className="mobile-space-normal "></div>
 					 <div className="block c5 box-shadow box">
 						 <div className="title">Other Skills</div>
-							 <Li class="nobullet" text="MVC Frameworks" />
-							 <Li class="nobullet" text="REST API's" />
-							 <Li class="nobullet" text="Agile Methodoloy" />
-							 <Li class="nobullet" text="Material Design" />
-							 <Li class="nobullet" text="Grid And Flex Layouts" />
-							 <Li class="nobullet" text="Accessibility Standards" />
+							 <Li class="bullet" text="MVC Frameworks" />
+							 <Li class="bullet" text="REST API's" />
+							 <Li class="bullet" text="Agile Methodoloy" />
+							 <Li class="bullet" text="Material Design" />
+							 <Li class="bullet" text="Grid And Flex Layouts" />
+							 <Li class="bullet" text="Accessibility Standards" />
 							 
 					 </div>
 				 </div>

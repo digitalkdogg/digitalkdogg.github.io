@@ -66,7 +66,7 @@ class Flexlayout extends Component {
     const htmlString='<div id = "parent">\n   <div class = "child">child1</div>\n   <div class = "child">child2</div>\n   <div class = "child">child3</div>\n</div>' 
     const htmlString2='<div id = "parent">\n   <div class = "child one">child1</div>\n   <div class = "child two">child2</div>\n   <div class = "child three">child3</div>\n</div>' 
     const cssString='div#parent {\n   display:flex; flex-direction: row;\n}';
-    const cssString2='div#parent {\n   display:flex; flex-direction: row;\n} div.child.two {flex-bias: 2;}';
+    const cssString2='div#parent {\n   display:flex;\n   flex-direction: row;\n} \ndiv.child.two {flex: 2;}';
 	 const columnString='<div id = "parent"\n  <div class = "child one">Child 1</div>\n  <div class = "child two">Child 2</div>\n  <div class = "child tow">Child 3</div>\n</div>'
      const columnCssString='div#parent {\n   display:flex; flex-direction: column;\n}'
 
