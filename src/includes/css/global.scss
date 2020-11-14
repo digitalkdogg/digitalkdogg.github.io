@@ -98,9 +98,9 @@ hr {
   text-align:right;
 }
 
-#the-guts i {
+/*#the-guts i {
     margin: 0 5px;
-}
+} */
 
 .row-wrap {
   display:block;
@@ -136,6 +136,51 @@ hr {
     float:left;
 }
 
+.flex {
+  display:block;
+  width:100%;
+  flex-wrap:wrap;
+}
+
+
+.flex-half {
+  flex:.5;
+}
+
+.flex-one {
+  flex:1;
+}
+
+.flex-two {
+  flex:2;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex {
+    display:flex;
+  }
+}
+
+.full-width {
+  width:100%;
+  padding: 1% 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  padding:1%;
+}
+
+.half-width {
+  width:100%;
+  padding: 1%;
+}
+
+@media only screen and (min-width: 768px) {
+  .half-width {
+    width:50%;
+  }
+}
+
 .desktop-space {
   display:none;
 }
@@ -168,6 +213,11 @@ hr {
 
 li.nobullet {
   list-style-type:none;
+  margin-left:-20%;
+}
+
+.m-left-50 {
+  margin-left:-50%;
 }
 
 .blue-grandient {

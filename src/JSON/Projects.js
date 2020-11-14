@@ -10,201 +10,243 @@ class Projects extends Component {
 
 
 	render(props){
-		const millwoodstyle = {
-			'background': 'url(' + millwood + ') center center / contain no-repeat',
-		}
-
-		const olympicstyle = {
-			'background': 'url(' + olympic + ') center center / contain no-repeat',
-		}
-
-		const checkbookstyle = {
-			'background': 'url(' + checkbook + ') center center / contain no-repeat',
-		}
-
-		const plexstyle = {
-			'background': 'url(' + plex + ') center center / contain no-repeat',
-		}
 
 return (
      <div id="projects" className="section hidden">
-     			 <div className="mobile-space-small desktop-space-large"></div>
-			 <div className="row-wrap">
-			 <div className="mobile-space-small"></div>
-				 <div className="block c5 box-shadow box flip-card">
+		<div className="mobile-space-small desktop-space-large"></div>
 
-						 <div className="flip-card-inner">
+		<div clasName = "row-wrap">
+		
+			<div className ="c100 block full-width box-shadow">
+			
+			<div className ="flex">
+				<div className="half-width flex-half">
+					<h3 className="titleh3">Millwood Christian Church</h3>
+				</div>
+				<div className="half-width flex-half checkout">
+					<a href="https://millwoodchurchnwa.com/" target="_blank">
+						<button class="checkout green-grandient">
+							View This Site
+						</button>
+					</a>
+				</div>
+			</div>
+			<div className="tags">
+				<div className="tag">
+					<div className="md-chip-icon">
+						<i className="fab fa-php"></i>
+					</div>
+					PHP 7
+				</div>
+				<div className="tag">
+					<div className="md-chip-icon">
+						<i className="far fa-object-group"></i>
+					</div>
+					UX Design
+				</div>
+				<div className ="tag">
+					<div className="md-chip-icon">
+						<i className="fab fa-wordpress"></i>
+					</div>
+					Wordpress
+				</div>
+				<div className ="tag">
+					<div className="md-chip-icon">
+						<i className="fas fa-stream"></i>
+					</div>
+					REST API
+				</div>
+			</div>
+			<div className = "flex">
+				<div className="half-width flex-two">
 
-							 <div className="flip-card-front bg-img" style={millwoodstyle}>
-							 	<div className="flip-card-cover"></div>
-							 	<div className="flip-card-title">Millwood Christian Church</div>
-							 </div>
-
-							 <div className="flip-card-back">
-								
-								 <h1 className="title">Millwood Christian Church</h1>
-								 <div className="content-wrap">
-									 <div className="row">
-									 	<div className="name ">Project Brief : </div>
-									 	<div className="value">I did this project for my church to give back to my community.  We migrated the domain from existing drupal site and manage the new site from wire frame to completion</div>
-									 </div>
-									  <div className="row">
-									 	<div className="name">Features : </div>
-									 	<div className="value">
-									 		<li className="nobullet">Customized Theme</li>
-									 		<li className="nobullet">Dynamic Restful API Feed</li>
-									 		<li className="nobullet">Online Donation Portal</li>
-									 	</div>
-									 </div>
-									 <div className="row">
-									 	<div className="name">Technologies : </div>
-									 	<div className="value">PHP, UX Design, Word Press, CSS, REST API</div>
-									 </div>
-								</div>
-
-								 <div className="row footer align-center" >
-									<button className="green-grandient">
-										<a href="https://olympicinspection.com/" target="_blank">View Site</a>
-									</button>	
-								</div>
-
-							 </div>
-
-						 </div>
+					<div className="flex">
+						<div className="name flex-half"><b>Project Brief : </b></div>
+						<div className="value flex-one">A website I desing and maintain for my church. I enjoy giving back to my community</div>
+					</div>
+					<div className="flex">
+						<div className="name flex-half"><b>Features : </b></div>
+						<div className="value flex-one">
+							<li>Customized Theme</li>
+							<li>Dynamic Restful API Feed</li>
+							<li>Online Donation Portal</li>
+						</div>
+					</div>
+					
+				</div>
+				<div className="half-width flex-one">
+					<img className="thumb" src = {millwood} />
+				</div>
 				
+			</div>
+		</div>
+		<div className="mobile-space-small desktop-space-large"></div>
+		<div clasName = "row-wrap">
+		
+			<div className ="c100 block full-width box-shadow">
+				<div className ="flex">
+					<div className="half-width flex-half">
+						<h3 className="titleh3">Olympic Home Inspections</h3>
+					</div>
+					<div className="half-width flex-half checkout">
+						<a href="http://olympicinspection.com" target="_blank">
+							<button class="checkout green-grandient">
+								View This Site
+							</button>
+						</a>
+					</div>
+				</div>
+				<div className="tags">
+					<div class ="tag">
+						<div class="md-chip-icon">
+							<i class="far fa-object-group"></i>
+						</div>
+						UX Design
+					</div>
+					<div class ="tag">
+					<div class="md-chip-icon">
+						<i class="fab fa-wordpress"></i>
+					</div>
+					Wordpress
+				</div>
+					<div className="tag">
+						<div class ="md-chip-icon">
+							<i class="fas fa-box"></i>
+						</div>
+						Material Design
+					</div>
+				</div>
+				<div class = "flex">
+					<div className="half-width flex-two">
 
-					 </div>
-					 <div className="mobile-space-small"></div>
-					 <div className="block c5 box-shadow box flip-card">
-
-						 <div className="flip-card-inner">
-
-							 <div className="flip-card-front bg-img" style={olympicstyle}>
-							 	<div className="flip-card-cover"></div>
-							 	<div className="flip-card-title">Olympic Home Inspections</div>
-							 </div>
-
-							 <div className="flip-card-back">
-								<h1 className="title">Olympic Home Inspections</h1>
-								<div className="content-wrap">
-									<div className="row" >
-										<div className="name">Project Brief : </div>
-										<div className="value">I did this project for a small business to help get their business off the ground.  I work directly with the customer and help purchase a domain, reviewed mockups and developed the site in support of their business.</div> 
-									</div>
-
-									<div className="row">
-										<div className="name">Features : </div>
-										<div className="value">
-											<li className="nobullet">Customized Theme</li>
-											<li className="nobullet">UX Design</li>
-									 		<li className="nobullet">Online Contact Form</li>
-										</div> 
-									</div>
-									<div className="row" >
-										<div className="name">Technologies : </div>
-										<div className="value">UX Design, Word Press, CSS</div> 
-									</div>
-								</div>
-
-								 <div className="row footer align-center" >
-									<button className="green-grandient">
-										<a href="http://www.googel.com" target="_blank">View Site</a>
-									</button>	
-								</div>
-							 </div>
-
-						 </div>
+						<div className="flex">
+							<div className="name flex-half"><b>Project Brief :</b> </div>
+							<div className="value flex-one">I did this project for a small business to help get their business off the ground.  I work directly with the customer and help purchase a domain, reviewed mockups and developed the site in support of their business.</div>
+						</div>
+						<div className="flex">
+							<div className="name flex-half"><b>Features : </b></div>
+							<div className="value flex-one">
+								<li>Customized Theme</li>
+								<li>UX Design </li>
+								<li>Custom Contact Form</li>
+							</div>
+						</div>
+						
+					</div>
+					<div className="half-width flex-one">
+						<img className="thumb" src = {olympic} />
+					</div>
 				
+				</div>
+			</div>
+		</div>
+		<div className="mobile-space-small desktop-space-large"></div>
+		<div clasName = "row-wrap">
+		
+			<div className ="c100 block full-width box-shadow">
+				<div className ="flex">
+					<div className="half-width flex-half">
+						<h3 className="titleh3">Checkbook</h3>
+					</div>
+					
+				</div>
+				<div className="tags">
+					<div class = "tag">
+						<div class="md-chip-icon">
+							<i class="fab fa-php"></i>
+						</div>
+						PHP 5
+					</div>
+					<div className="tag">
+						<div class ="md-chip-icon">
+							<i class="fas fa-fire-alt"></i>
+						</div>
+						Codeigniter
+					</div>
+					<div class ="tag">
+					<div class="md-chip-icon">
+						<i class="fas fa-stream"></i>
+					</div>
+					REST API
+				</div>
+				</div>
+				<div class = "flex">
+					<div className="half-width flex-two">
 
-					 </div>
+						<div className="flex">
+							<div className="name flex-half"><b>Project Brief : </b></div>
+							<div className="value flex-one">This was a personal project that I did in php codeigniter.  I needed a way to keep track of my bills and I wasn't too happy with any of the apps out there so I made my own.</div>
+						</div>
+						<div className="flex">
+							<div className="name flex-half"><b>Features : </b></div>
+							<div className="value flex-one">
+								<li>Customized Theme</li>
+								<li>UX Design </li>
+								<li>Custom Contact Form</li>
+							</div>
+						</div>
+					</div>
+					<div className="half-width flex-one">
+						<img className="thumb" src = {checkbook} />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div className="mobile-space-small desktop-space-large"></div>
+		<div clasName = "row-wrap">
+		
+			<div className ="c100 block full-width box-shadow">
+				<div className ="flex">
+					<div className="half-width flex-half">
+						<h3 className="titleh3">Plex Movie Manager</h3>
+					</div>
+					
+				</div>
+				<div className="tags">
+					<div className="tag">
+						<div class="md-chip-icon">
+							<i class="fab fa-php"></i>
+						</div>
+						PHP 7
+					</div>
+					<div className="tag">
+						<div class="md-chip-icon">
+							<i class="fab fa-laravel"></i>
+						</div>
+						Laravel
+					</div>
+					<div className="tag">
+						<div class="md-chip-icon">
+							<i class="fas fa-expand-alt"></i>
+						</div>
+						Third party API
+					</div>
+				</div>
+				<div class = "flex">
+					<div className="half-width flex-two">
 
-				 </div>
-		 
-			 <div className="row-wrap">
-			 <div className="mobile-space-small"></div>
-				 <div className="block c5 box-shadow box flip-card">
+						<div className="flex">
+							<div className="name flex-half"><b>Project Brief : </b></div>
+							<div className="value flex-one">Another personal project that I did.  The goal was to optimize my plex movie library.  I wrote this in laravel and it uses the plex api to tab into my library and allow me to see the details of eash of my movies</div>
+						</div>
+						<div className="flex">
+							<div className="name flex-half"><b>Features :</b> </div>
+							<div className="value flex-one">
+								<li>Third Party API Integration</li>
+								<li>Reporting Dashboard</li>
+							</div>
+						</div>
+					
 
-						 <div className="flip-card-inner">
-
-							 <div className="flip-card-front bg-img" style={checkbookstyle}>
-							 	<div className="flip-card-cover"></div>
-							 	<div className="flip-card-title">Checkbook</div>
-							 </div>
-
-							 <div className="flip-card-back">
-								
-								 <h1 className="title">Checkbook</h1>
-								 <div className="content-wrap">
-									 <div className="row">
-									 	<div className="name ">Project Brief : </div>
-									 	<div className="value">
-									 		This was a personal project that I did in php codeigniter.  I needed a way to keep track of my bills and I wasn't too happy with any of the apps out there so I made my own.
-									 	</div>
-									 </div>
-									  <div className="row">
-									 	<div className="name">Features : </div>
-									 	<div className="value">
-									 		<li className="nobullet">Complete Dynamic Dashboard</li>
-									 		<li className="nobullet">Full Reporting Suite</li>
-									 	</div>
-									 </div>
-									 <div className="row">
-									 	<div className="name">Technologies : </div>
-									 	<div className="value">PHP, Codeigniter, REST API</div>
-									 </div>
-								</div>
-
-								 
-
-							 </div>
-
-						 </div>
-				
-
-					 </div>
-					 <div className="mobile-space-small"></div>
-					 <div className="block c5 box-shadow box flip-card">
-
-						 <div className="flip-card-inner">
-
-							 <div className="flip-card-front bg-img" style={plexstyle}>
-							 	<div className="flip-card-cover"></div>
-							 	<div className="flip-card-title">Plex Movie Manager</div>
-							 </div>
-
-							 <div className="flip-card-back">
-								<h1 className="title">Plex Movie Manager</h1>
-								<div className="content-wrap">
-									<div className="row" >
-										<div className="name">Project Brief : </div>
-										<div className="value">
-											Another personal project that I did.  The goal was to optimize my plex movie library.  I wrote this in laravel and it uses the plex api to tab into my library and allow me to see the details of eash of my movies
-										</div> 
-									</div>
-
-									<div className="row">
-										<div className="name">Features : </div>
-										<div className="value">
-											<li className="nobullet">Third Party API Integration</li>
-											<li className="nobullet">Reporting Dashobard</li>
-										</div> 
-									</div>
-									<div className="row" >
-										<div className="name">Technologies : </div>
-										<div className="value">PHP, Laravel, Third party API</div> 
-									</div>
-								</div>
-
-								
-							 </div>
-
-						 </div>
-				
-
-					 </div>
-
-				 </div>
-			 <div className="mobile-space-large desktop-space-large"></div>
+					</div>
+					<div className="half-width flex-one">
+						<img className="thumb" src = {plex} />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			
      </div>
       )
 	}
