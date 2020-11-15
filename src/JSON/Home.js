@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
+import Topskills from '../templates/Topskills';
 import Banner from '../templates//Banner.js';
 import Topbanner from '../templates/Topbanner.js';
 
@@ -12,7 +13,7 @@ class Home extends Component {
        <div id="home" className="section show">
              <div className="mobile-space-normal"></div>
 
-            <div className="box-no-animate box-shadow">
+            <div className="box-no-animate box-shadow full-width about">
               <P class="tag" text="Hello I am Kevin Bollman" />
               <hr />
              
@@ -23,6 +24,11 @@ class Home extends Component {
             </div>
             <Div class="mobile-space mobile-space-large" />
             <Div class="desktop-space desktop-space-small" />
+            <Topskills />
+            <Div class="mobile-space mobile-space-large" />
+            <Div class="desktop-space desktop-space-small" />
+            <Div class="mobile-space mobile-space-large" />
+            <Div class="desktop-space desktop-space-large" />
             <Contactblock />
             
           </div>

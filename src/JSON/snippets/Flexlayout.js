@@ -73,7 +73,7 @@ class Flexlayout extends Component {
      return (
      
 
-          <div className="block c100 box mini box-shadow">
+          <div className="block c100 box mini box-shadow full-width">
               <P class="title" text="Flex Box Layout" />
               <P text="Flex Box Layout can be an important tool in your web design arsonel but if you are not familar with it than it could tricky getting it to work right.  Here is how you can make it work." />
 

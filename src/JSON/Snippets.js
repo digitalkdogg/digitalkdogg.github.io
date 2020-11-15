@@ -14,7 +14,9 @@ class Snippets extends Component {
        <div id="snippets" className="section hidden">
             <Div class="mobile-space-small desktop-space-large" />
             <Imageoverlay />
+            <Div class="mobile-space-small desktop-space-large" />
             <Growhover />
+            <Div class="mobile-space-small desktop-space-large" />
             <Flexlayout />
             <Div class="mobile-space-large desktop-space-large" />
        </div>

@@ -10,12 +10,15 @@ class Contact extends Component {
        <div id="contact" className="section hidden">
                    <div className="mobile-space-normal"></div>
 
-           <div className="block c100 box mini box-shadow">
+           <div className="block c100 box mini box-shadow full-width">
              <P text="Do you think I can help you add value to your next project?" />
            </div>
     
 
          <Div class="mobile-space mobile-space-large" />
+         <Div class="desktop-space desktop-space-normal" />
+         <Div class="mobile-space mobile-space-large" />
+         <Div class="desktop-space desktop-space-normal" />
          <Div class="desktop-space desktop-space-normal" />
          <Contactblock />
 

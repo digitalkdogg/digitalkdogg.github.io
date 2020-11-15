@@ -37,7 +37,7 @@ class Growhover extends Component {
 		 return (
      
 
-          <div className="block c100 box mini box-shadow">
+          <div className="block c100 box mini box-shadow full-width">
               <P class="title" text="Scale Hover Effect" />
               <P text="The grow hover effect is a cool little trick that I see alot of developers not utilizing.  Instead they try to accomplish this with animating the height and width when in reality can be done some much simplier" />
 

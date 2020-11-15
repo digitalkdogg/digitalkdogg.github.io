@@ -31,7 +31,7 @@ class Imageoverlay extends Component {
 		 return (
      
 
-          <div className="block c100 box mini box-shadow">
+          <div className="block c100 box mini box-shadow full-width">
              <P class="title" text="Cover mask on images" />
              <P text="Sometimes you need to put text on a background image only to find that the text doen't pop enough Here is a trick you can do to get around that." />
          
