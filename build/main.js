@@ -67,7 +67,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(521);
+	__webpack_require__(523);
 	module.exports = __webpack_require__(481);
 
 
@@ -78,7 +78,7 @@
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(534);
+	  module.exports = __webpack_require__(536);
 	} else {
 	  module.exports = require('./cjs/react.development.js');
 	}
@@ -310,58 +310,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Div = function (_Component) {
-	     _inherits(Div, _Component);
-	
-	     function Div() {
-	          _classCallCheck(this, Div);
-	
-	          var _this = _possibleConstructorReturn(this, (Div.__proto__ || Object.getPrototypeOf(Div)).call(this));
-	
-	          _this.state = {};
-	          return _this;
-	     }
-	
-	     _createClass(Div, [{
-	          key: 'render',
-	          value: function render(props) {
-	               return _react2.default.createElement(
-	                    'div',
-	                    { className: this.props.class },
-	                    this.props.text
-	               );
-	          }
-	     }]);
-	
-	     return Div;
-	}(_react.Component);
-	
-	exports.default = Div;
-
-/***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	     value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
 	var P = function (_Component) {
 	     _inherits(P, _Component);
 	
@@ -391,7 +339,7 @@
 	exports.default = P;
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
@@ -436,7 +384,7 @@
 
 
 /***/ },
-/* 8 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -867,7 +815,7 @@
 	}
 
 /***/ },
-/* 9 */
+/* 8 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -961,7 +909,7 @@
 
 
 /***/ },
-/* 10 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
@@ -1094,7 +1042,7 @@
 
 
 /***/ },
-/* 11 */
+/* 10 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -1214,6 +1162,58 @@
 	  })(Prism)
 	}
 
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	     value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Div = function (_Component) {
+	     _inherits(Div, _Component);
+	
+	     function Div() {
+	          _classCallCheck(this, Div);
+	
+	          var _this = _possibleConstructorReturn(this, (Div.__proto__ || Object.getPrototypeOf(Div)).call(this));
+	
+	          _this.state = {};
+	          return _this;
+	     }
+	
+	     _createClass(Div, [{
+	          key: 'render',
+	          value: function render(props) {
+	               return _react2.default.createElement(
+	                    'div',
+	                    { className: this.props.class },
+	                    this.props.text
+	               );
+	          }
+	     }]);
+	
+	     return Div;
+	}(_react.Component);
+	
+	exports.default = Div;
 
 /***/ },
 /* 12 */
@@ -1988,8 +1988,8 @@
 
 	'use strict'
 	
-	var high = __webpack_require__(498)
-	var fault = __webpack_require__(492)
+	var high = __webpack_require__(500)
+	var fault = __webpack_require__(494)
 	
 	exports.highlight = highlight
 	exports.highlightAuto = highlightAuto
@@ -2358,7 +2358,7 @@
 	
 	var _react = _interopRequireDefault(__webpack_require__(1));
 	
-	var _highlight = _interopRequireDefault(__webpack_require__(8));
+	var _highlight = _interopRequireDefault(__webpack_require__(7));
 	
 	var _default = function _default(options) {
 	  var loader = options.loader,
@@ -2591,19 +2591,19 @@
 	  }
 	});
 	
-	var _defaultHighlight = _interopRequireDefault(__webpack_require__(524));
+	var _defaultHighlight = _interopRequireDefault(__webpack_require__(526));
 	
-	var _lightAsync = _interopRequireDefault(__webpack_require__(526));
+	var _lightAsync = _interopRequireDefault(__webpack_require__(528));
 	
-	var _light = _interopRequireDefault(__webpack_require__(527));
+	var _light = _interopRequireDefault(__webpack_require__(529));
 	
-	var _prismAsyncLight = _interopRequireDefault(__webpack_require__(528));
+	var _prismAsyncLight = _interopRequireDefault(__webpack_require__(530));
 	
-	var _prismAsync = _interopRequireDefault(__webpack_require__(529));
+	var _prismAsync = _interopRequireDefault(__webpack_require__(531));
 	
-	var _prismLight = _interopRequireDefault(__webpack_require__(530));
+	var _prismLight = _interopRequireDefault(__webpack_require__(532));
 	
-	var _prism = _interopRequireDefault(__webpack_require__(531));
+	var _prism = _interopRequireDefault(__webpack_require__(533));
 	
 	var _createElement = _interopRequireDefault(__webpack_require__(240));
 
@@ -2630,9 +2630,9 @@
 	
 	// Load all stuff in `prism.js` itself, except for `prism-file-highlight.js`.
 	// The wrapped non-leaky grammars are loaded instead of Prism’s originals.
-	var h = __webpack_require__(497)
-	var decode = __webpack_require__(506)
-	var Prism = __webpack_require__(507)
+	var h = __webpack_require__(499)
+	var decode = __webpack_require__(508)
+	var Prism = __webpack_require__(509)
 	var markup = __webpack_require__(356)
 	var css = __webpack_require__(279)
 	var clike = __webpack_require__(271)
@@ -32437,7 +32437,7 @@
 
 	'use strict'
 	
-	var caseSensitiveTransform = __webpack_require__(514)
+	var caseSensitiveTransform = __webpack_require__(516)
 	
 	module.exports = caseInsensitiveTransform
 	
@@ -32868,7 +32868,7 @@
 	refractor.register(__webpack_require__(330))
 	refractor.register(__webpack_require__(13))
 	refractor.register(__webpack_require__(331))
-	refractor.register(__webpack_require__(9))
+	refractor.register(__webpack_require__(8))
 	refractor.register(__webpack_require__(333))
 	refractor.register(__webpack_require__(334))
 	refractor.register(__webpack_require__(335))
@@ -32924,7 +32924,7 @@
 	refractor.register(__webpack_require__(382))
 	refractor.register(__webpack_require__(383))
 	refractor.register(__webpack_require__(384))
-	refractor.register(__webpack_require__(10))
+	refractor.register(__webpack_require__(9))
 	refractor.register(__webpack_require__(385))
 	refractor.register(__webpack_require__(386))
 	refractor.register(__webpack_require__(387))
@@ -32951,7 +32951,7 @@
 	refractor.register(__webpack_require__(408))
 	refractor.register(__webpack_require__(409))
 	refractor.register(__webpack_require__(410))
-	refractor.register(__webpack_require__(11))
+	refractor.register(__webpack_require__(10))
 	refractor.register(__webpack_require__(411))
 	refractor.register(__webpack_require__(412))
 	refractor.register(__webpack_require__(413))
@@ -34789,7 +34789,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
-	var refractorRuby = __webpack_require__(11)
+	var refractorRuby = __webpack_require__(10)
 	module.exports = crystal
 	crystal.displayName = 'crystal'
 	crystal.aliases = []
@@ -35905,7 +35905,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
-	var refractorRuby = __webpack_require__(11)
+	var refractorRuby = __webpack_require__(10)
 	var refractorMarkupTemplating = __webpack_require__(3)
 	module.exports = erb
 	erb.displayName = 'erb'
@@ -37871,7 +37871,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
-	var refractorRuby = __webpack_require__(11)
+	var refractorRuby = __webpack_require__(10)
 	module.exports = haml
 	haml.displayName = 'haml'
 	haml.aliases = []
@@ -38716,7 +38716,7 @@
 
 	'use strict'
 	var refractorJava = __webpack_require__(13)
-	var refractorJavadoclike = __webpack_require__(9)
+	var refractorJavadoclike = __webpack_require__(8)
 	module.exports = javadoc
 	javadoc.displayName = 'javadoc'
 	javadoc.aliases = []
@@ -39659,7 +39659,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
-	var refractorJavadoclike = __webpack_require__(9)
+	var refractorJavadoclike = __webpack_require__(8)
 	var refractorTypescript = __webpack_require__(17)
 	module.exports = jsdoc
 	jsdoc.displayName = 'jsdoc'
@@ -40089,7 +40089,7 @@
 
 	'use strict'
 	var refractorMarkupTemplating = __webpack_require__(3)
-	var refractorPhp = __webpack_require__(10)
+	var refractorPhp = __webpack_require__(9)
 	module.exports = latte
 	latte.displayName = 'latte'
 	latte.aliases = []
@@ -43095,7 +43095,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
-	var refractorPhp = __webpack_require__(10)
+	var refractorPhp = __webpack_require__(9)
 	module.exports = phpExtras
 	phpExtras.displayName = 'phpExtras'
 	phpExtras.aliases = []
@@ -43120,8 +43120,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
-	var refractorPhp = __webpack_require__(10)
-	var refractorJavadoclike = __webpack_require__(9)
+	var refractorPhp = __webpack_require__(9)
+	var refractorJavadoclike = __webpack_require__(8)
 	module.exports = phpdoc
 	phpdoc.displayName = 'phpdoc'
 	phpdoc.aliases = []
@@ -49607,7 +49607,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _P = __webpack_require__(6);
+	var _P = __webpack_require__(5);
 	
 	var _P2 = _interopRequireDefault(_P);
 	
@@ -49637,12 +49637,22 @@
 	        _react2.default.createElement('div', { className: 'mobile-space-normal' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'block c100 box' },
-	          _react2.default.createElement(_P2.default, { text: 'I am a full stack web designer / developer.  I design websites both professionally and on the side.  My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people with technology and in my spare time you will often find me coding or learning a new development stack just for fun.' }),
-	          _react2.default.createElement(_P2.default, { text: 'While I do enjoy connecting people with technology, I  think that my best strength is my ingenuity. My career has led me down many different paths and have given me the opportunity to leverage many different skill sets. In doing, so I have come to learn to leveage my skill set to best fit the project I am working on. Take this website for example.  I started this project as a way for me to learn react js and I have now turn into a full portfolio site.' }),
+	          { className: 'block c100 box box-shadow full-width about' },
+	          _react2.default.createElement(_P2.default, { text: 'I am a full stack web designer / developer.  I design websites both professionally and on the side.  My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people with technology and in my spare time you will often find me coding or learning a new development stack just for fun.' })
+	        ),
+	        _react2.default.createElement('div', { className: 'mobile-space-normal' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'block c100 box box-shadow full-width' },
+	          _react2.default.createElement(_P2.default, { text: 'While I do enjoy connecting people with technology, I  think that my best strength is my ingenuity. My career has led me down many different paths and have given me the opportunity to leverage many different skill sets. In doing, so I have come to learn to leveage my skill set to best fit the project I am working on. Take this website for example.  I started this project as a way for me to learn react js and I have now turn into a full portfolio site.' })
+	        ),
+	        _react2.default.createElement('div', { className: 'mobile-space-normal' }),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'block c100 box box-shadow full-width' },
 	          _react2.default.createElement(_P2.default, { text: 'Currently I am working for Walmart as the Tech Lead for the team that manages the US Intranet .  I am proud of the fact that I get to empower my teammates to manage a great intranet system, I am even prouder of the solutions that I have developed here in my 7 year career at Walmart.' })
 	        ),
-	        _react2.default.createElement('div', { className: 'desktop-space-large' })
+	        _react2.default.createElement('div', { className: 'mobile-space-normal desktop-space-large' })
 	      );
 	    }
 	  }]);
@@ -49668,11 +49678,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _P = __webpack_require__(6);
+	var _P = __webpack_require__(5);
 	
 	var _P2 = _interopRequireDefault(_P);
 	
-	var _Div = __webpack_require__(5);
+	var _Div = __webpack_require__(11);
 	
 	var _Div2 = _interopRequireDefault(_Div);
 	
@@ -49706,10 +49716,13 @@
 	        _react2.default.createElement('div', { className: 'mobile-space-normal' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'block c100 box mini box-shadow' },
+	          { className: 'block c100 box mini box-shadow full-width' },
 	          _react2.default.createElement(_P2.default, { text: 'Do you think I can help you add value to your next project?' })
 	        ),
 	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-normal' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-normal' }),
 	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-normal' }),
 	        _react2.default.createElement(_Contactblock2.default, null)
 	      );
@@ -49737,17 +49750,29 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _P = __webpack_require__(6);
+	var _P = __webpack_require__(5);
 	
 	var _P2 = _interopRequireDefault(_P);
 	
-	var _Div = __webpack_require__(5);
+	var _Div = __webpack_require__(11);
 	
 	var _Div2 = _interopRequireDefault(_Div);
 	
 	var _Contactblock = __webpack_require__(40);
 	
 	var _Contactblock2 = _interopRequireDefault(_Contactblock);
+	
+	var _Topskills = __webpack_require__(489);
+	
+	var _Topskills2 = _interopRequireDefault(_Topskills);
+	
+	var _Banner = __webpack_require__(482);
+	
+	var _Banner2 = _interopRequireDefault(_Banner);
+	
+	var _Topbanner = __webpack_require__(488);
+	
+	var _Topbanner2 = _interopRequireDefault(_Topbanner);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -49775,14 +49800,18 @@
 	        _react2.default.createElement('div', { className: 'mobile-space-normal' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'box-no-animate box-shadow' },
+	          { className: 'box-no-animate box-shadow full-width about' },
 	          _react2.default.createElement(_P2.default, { 'class': 'tag', text: 'Hello I am Kevin Bollman' }),
 	          _react2.default.createElement('hr', null),
-	          _react2.default.createElement(_P2.default, { 'class': 'sub', text: 'I design and develop digital solutions for everyday people' }),
 	          _react2.default.createElement(_P2.default, { text: 'Since I began my web design journey over 10 years ago, I have helped many people / organization with their web design needs. I enjoy helping people connect with their technology.  I am innovative, forward thinking and I am passionate about the work I do.  I challenge my self every day to learn new technologies and to advance my skills.  I feel it is important to provide value to what ever team I am on.' })
 	        ),
 	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
 	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-small' }),
+	        _react2.default.createElement(_Topskills2.default, null),
+	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-small' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-large' }),
 	        _react2.default.createElement(_Contactblock2.default, null)
 	      );
 	    }
@@ -49809,19 +49838,19 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _millwood_thumb = __webpack_require__(539);
+	var _millwood_thumb = __webpack_require__(541);
 	
 	var _millwood_thumb2 = _interopRequireDefault(_millwood_thumb);
 	
-	var _olympic_inspection = __webpack_require__(540);
+	var _olympic_inspection = __webpack_require__(542);
 	
 	var _olympic_inspection2 = _interopRequireDefault(_olympic_inspection);
 	
-	var _checkbook_scaled = __webpack_require__(538);
+	var _checkbook_scaled = __webpack_require__(540);
 	
 	var _checkbook_scaled2 = _interopRequireDefault(_checkbook_scaled);
 	
-	var _plex_admin = __webpack_require__(541);
+	var _plex_admin = __webpack_require__(543);
 	
 	var _plex_admin2 = _interopRequireDefault(_plex_admin);
 	
@@ -49845,21 +49874,6 @@
 		_createClass(Projects, [{
 			key: 'render',
 			value: function render(props) {
-				var millwoodstyle = {
-					'background': 'url(' + _millwood_thumb2.default + ') center center / contain no-repeat'
-				};
-	
-				var olympicstyle = {
-					'background': 'url(' + _olympic_inspection2.default + ') center center / contain no-repeat'
-				};
-	
-				var checkbookstyle = {
-					'background': 'url(' + _checkbook_scaled2.default + ') center center / contain no-repeat'
-				};
-	
-				var plexstyle = {
-					'background': 'url(' + _plex_admin2.default + ') center center / contain no-repeat'
-				};
 	
 				return _react2.default.createElement(
 					'div',
@@ -49867,381 +49881,515 @@
 					_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
 					_react2.default.createElement(
 						'div',
-						{ className: 'row-wrap' },
-						_react2.default.createElement('div', { className: 'mobile-space-small' }),
+						{ clasName: 'row-wrap' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box flip-card' },
+							{ className: 'c100 block full-width box-shadow' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flip-card-inner' },
+								{ className: 'flex' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-front bg-img', style: millwoodstyle },
-									_react2.default.createElement('div', { className: 'flip-card-cover' }),
+									{ className: 'half-width flex-half' },
 									_react2.default.createElement(
-										'div',
-										{ className: 'flip-card-title' },
+										'h3',
+										{ className: 'titleh3' },
 										'Millwood Christian Church'
 									)
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-back' },
+									{ className: 'half-width flex-half checkout' },
 									_react2.default.createElement(
-										'h1',
-										{ className: 'title' },
-										'Millwood Christian Church'
-									),
-									_react2.default.createElement(
-										'div',
-										{ className: 'content-wrap' },
-										_react2.default.createElement(
-											'div',
-											{ className: 'row' },
-											_react2.default.createElement(
-												'div',
-												{ className: 'name ' },
-												'Project Brief : '
-											),
-											_react2.default.createElement(
-												'div',
-												{ className: 'value' },
-												'I did this project for my church to give back to my community.  We migrated the domain from existing drupal site and manage the new site from wire frame to completion'
-											)
-										),
-										_react2.default.createElement(
-											'div',
-											{ className: 'row' },
-											_react2.default.createElement(
-												'div',
-												{ className: 'name' },
-												'Features : '
-											),
-											_react2.default.createElement(
-												'div',
-												{ className: 'value' },
-												_react2.default.createElement(
-													'li',
-													{ className: 'nobullet' },
-													'Customized Theme'
-												),
-												_react2.default.createElement(
-													'li',
-													{ className: 'nobullet' },
-													'Dynamic Restful API Feed'
-												),
-												_react2.default.createElement(
-													'li',
-													{ className: 'nobullet' },
-													'Online Donation Portal'
-												)
-											)
-										),
-										_react2.default.createElement(
-											'div',
-											{ className: 'row' },
-											_react2.default.createElement(
-												'div',
-												{ className: 'name' },
-												'Technologies : '
-											),
-											_react2.default.createElement(
-												'div',
-												{ className: 'value' },
-												'PHP, UX Design, Word Press, CSS, REST API'
-											)
-										)
-									),
-									_react2.default.createElement(
-										'div',
-										{ className: 'row footer align-center' },
+										'a',
+										{ href: 'https://millwoodchurchnwa.com/', target: '_blank' },
 										_react2.default.createElement(
 											'button',
-											{ className: 'green-grandient' },
-											_react2.default.createElement(
-												'a',
-												{ href: 'https://olympicinspection.com/', target: '_blank' },
-												'View Site'
-											)
+											{ 'class': 'checkout green-grandient' },
+											'View This Site'
 										)
 									)
 								)
-							)
-						),
-						_react2.default.createElement('div', { className: 'mobile-space-small' }),
-						_react2.default.createElement(
-							'div',
-							{ className: 'block c5 box-shadow box flip-card' },
+							),
 							_react2.default.createElement(
 								'div',
-								{ className: 'flip-card-inner' },
+								{ className: 'tags' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-front bg-img', style: olympicstyle },
-									_react2.default.createElement('div', { className: 'flip-card-cover' }),
+									{ className: 'tag' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'flip-card-title' },
-										'Olympic Home Inspections'
+										{ className: 'md-chip-icon' },
+										_react2.default.createElement('i', { className: 'fab fa-php' })
+									),
+									'PHP 7'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'tag' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'md-chip-icon' },
+										_react2.default.createElement('i', { className: 'far fa-object-group' })
+									),
+									'UX Design'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'tag' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'md-chip-icon' },
+										_react2.default.createElement('i', { className: 'fab fa-wordpress' })
+									),
+									'Wordpress'
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'tag' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'md-chip-icon' },
+										_react2.default.createElement('i', { className: 'fas fa-stream' })
+									),
+									'REST API'
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'flex' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'half-width flex-two' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'flex' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'name flex-half' },
+											_react2.default.createElement(
+												'b',
+												null,
+												'Project Brief : '
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'value flex-one' },
+											'A website I desing and maintain for my church. I enjoy giving back to my community'
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'flex' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'name flex-half' },
+											_react2.default.createElement(
+												'b',
+												null,
+												'Features : '
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'value flex-one' },
+											_react2.default.createElement(
+												'li',
+												null,
+												'Customized Theme'
+											),
+											_react2.default.createElement(
+												'li',
+												null,
+												'Dynamic Restful API Feed'
+											),
+											_react2.default.createElement(
+												'li',
+												null,
+												'Online Donation Portal'
+											)
+										)
 									)
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-back' },
+									{ className: 'half-width flex-one' },
+									_react2.default.createElement('img', { className: 'thumb', src: _millwood_thumb2.default })
+								)
+							)
+						),
+						_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
+						_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
+						_react2.default.createElement(
+							'div',
+							{ clasName: 'row-wrap' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'c100 block full-width box-shadow' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'flex' },
 									_react2.default.createElement(
-										'h1',
-										{ className: 'title' },
-										'Olympic Home Inspections'
+										'div',
+										{ className: 'half-width flex-half' },
+										_react2.default.createElement(
+											'h3',
+											{ className: 'titleh3' },
+											'Olympic Home Inspections'
+										)
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'content-wrap' },
+										{ className: 'half-width flex-half checkout' },
+										_react2.default.createElement(
+											'a',
+											{ href: 'http://olympicinspection.com', target: '_blank' },
+											_react2.default.createElement(
+												'button',
+												{ 'class': 'checkout green-grandient' },
+												'View This Site'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'tags' },
+									_react2.default.createElement(
+										'div',
+										{ 'class': 'tag' },
 										_react2.default.createElement(
 											'div',
-											{ className: 'row' },
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'far fa-object-group' })
+										),
+										'UX Design'
+									),
+									_react2.default.createElement(
+										'div',
+										{ 'class': 'tag' },
+										_react2.default.createElement(
+											'div',
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fab fa-wordpress' })
+										),
+										'Wordpress'
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'tag' },
+										_react2.default.createElement(
+											'div',
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fas fa-box' })
+										),
+										'Material Design'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'flex' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'half-width flex-two' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'flex' },
 											_react2.default.createElement(
 												'div',
-												{ className: 'name' },
-												'Project Brief : '
+												{ className: 'name flex-half' },
+												_react2.default.createElement(
+													'b',
+													null,
+													'Project Brief :'
+												),
+												' '
 											),
 											_react2.default.createElement(
 												'div',
-												{ className: 'value' },
+												{ className: 'value flex-one' },
 												'I did this project for a small business to help get their business off the ground.  I work directly with the customer and help purchase a domain, reviewed mockups and developed the site in support of their business.'
 											)
 										),
 										_react2.default.createElement(
 											'div',
-											{ className: 'row' },
+											{ className: 'flex' },
 											_react2.default.createElement(
 												'div',
-												{ className: 'name' },
-												'Features : '
+												{ className: 'name flex-half' },
+												_react2.default.createElement(
+													'b',
+													null,
+													'Features : '
+												)
 											),
 											_react2.default.createElement(
 												'div',
-												{ className: 'value' },
+												{ className: 'value flex-one' },
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
+													null,
 													'Customized Theme'
 												),
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
-													'UX Design'
+													null,
+													'UX Design '
 												),
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
-													'Online Contact Form'
+													null,
+													'Custom Contact Form'
 												)
-											)
-										),
-										_react2.default.createElement(
-											'div',
-											{ className: 'row' },
-											_react2.default.createElement(
-												'div',
-												{ className: 'name' },
-												'Technologies : '
-											),
-											_react2.default.createElement(
-												'div',
-												{ className: 'value' },
-												'UX Design, Word Press, CSS'
 											)
 										)
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'row footer align-center' },
-										_react2.default.createElement(
-											'button',
-											{ className: 'green-grandient' },
-											_react2.default.createElement(
-												'a',
-												{ href: 'http://www.googel.com', target: '_blank' },
-												'View Site'
-											)
-										)
+										{ className: 'half-width flex-one' },
+										_react2.default.createElement('img', { className: 'thumb', src: _olympic_inspection2.default })
 									)
 								)
 							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ className: 'row-wrap' },
-						_react2.default.createElement('div', { className: 'mobile-space-small' }),
+						),
+						_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
+						_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box flip-card' },
+							{ clasName: 'row-wrap' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flip-card-inner' },
+								{ className: 'c100 block full-width box-shadow' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-front bg-img', style: checkbookstyle },
-									_react2.default.createElement('div', { className: 'flip-card-cover' }),
+									{ className: 'flex' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'flip-card-title' },
-										'Checkbook'
+										{ className: 'half-width flex-half' },
+										_react2.default.createElement(
+											'h3',
+											{ className: 'titleh3' },
+											'Checkbook'
+										)
 									)
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-back' },
+									{ className: 'tags' },
 									_react2.default.createElement(
-										'h1',
-										{ className: 'title' },
-										'Checkbook'
+										'div',
+										{ 'class': 'tag' },
+										_react2.default.createElement(
+											'div',
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fab fa-php' })
+										),
+										'PHP 5'
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'content-wrap' },
+										{ className: 'tag' },
 										_react2.default.createElement(
 											'div',
-											{ className: 'row' },
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fas fa-fire-alt' })
+										),
+										'Codeigniter'
+									),
+									_react2.default.createElement(
+										'div',
+										{ 'class': 'tag' },
+										_react2.default.createElement(
+											'div',
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fas fa-stream' })
+										),
+										'REST API'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'flex' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'half-width flex-two' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'flex' },
 											_react2.default.createElement(
 												'div',
-												{ className: 'name ' },
-												'Project Brief : '
+												{ className: 'name flex-half' },
+												_react2.default.createElement(
+													'b',
+													null,
+													'Project Brief : '
+												)
 											),
 											_react2.default.createElement(
 												'div',
-												{ className: 'value' },
+												{ className: 'value flex-one' },
 												'This was a personal project that I did in php codeigniter.  I needed a way to keep track of my bills and I wasn\'t too happy with any of the apps out there so I made my own.'
 											)
 										),
 										_react2.default.createElement(
 											'div',
-											{ className: 'row' },
+											{ className: 'flex' },
 											_react2.default.createElement(
 												'div',
-												{ className: 'name' },
-												'Features : '
+												{ className: 'name flex-half' },
+												_react2.default.createElement(
+													'b',
+													null,
+													'Features : '
+												)
 											),
 											_react2.default.createElement(
 												'div',
-												{ className: 'value' },
+												{ className: 'value flex-one' },
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
-													'Complete Dynamic Dashboard'
+													null,
+													'Customized Theme'
 												),
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
-													'Full Reporting Suite'
+													null,
+													'UX Design '
+												),
+												_react2.default.createElement(
+													'li',
+													null,
+													'Custom Contact Form'
 												)
 											)
-										),
-										_react2.default.createElement(
-											'div',
-											{ className: 'row' },
-											_react2.default.createElement(
-												'div',
-												{ className: 'name' },
-												'Technologies : '
-											),
-											_react2.default.createElement(
-												'div',
-												{ className: 'value' },
-												'PHP, Codeigniter, REST API'
-											)
 										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'half-width flex-one' },
+										_react2.default.createElement('img', { className: 'thumb', src: _checkbook_scaled2.default })
 									)
 								)
 							)
 						),
-						_react2.default.createElement('div', { className: 'mobile-space-small' }),
+						_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
+						_react2.default.createElement('div', { className: 'mobile-space-small desktop-space-large' }),
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box flip-card' },
+							{ clasName: 'row-wrap' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flip-card-inner' },
+								{ className: 'c100 block full-width box-shadow' },
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-front bg-img', style: plexstyle },
-									_react2.default.createElement('div', { className: 'flip-card-cover' }),
+									{ className: 'flex' },
 									_react2.default.createElement(
 										'div',
-										{ className: 'flip-card-title' },
-										'Plex Movie Manager'
+										{ className: 'half-width flex-half' },
+										_react2.default.createElement(
+											'h3',
+											{ className: 'titleh3' },
+											'Plex Movie Manager'
+										)
 									)
 								),
 								_react2.default.createElement(
 									'div',
-									{ className: 'flip-card-back' },
+									{ className: 'tags' },
 									_react2.default.createElement(
-										'h1',
-										{ className: 'title' },
-										'Plex Movie Manager'
+										'div',
+										{ className: 'tag' },
+										_react2.default.createElement(
+											'div',
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fab fa-php' })
+										),
+										'PHP 7'
 									),
 									_react2.default.createElement(
 										'div',
-										{ className: 'content-wrap' },
+										{ className: 'tag' },
 										_react2.default.createElement(
 											'div',
-											{ className: 'row' },
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fab fa-laravel' })
+										),
+										'Laravel'
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'tag' },
+										_react2.default.createElement(
+											'div',
+											{ 'class': 'md-chip-icon' },
+											_react2.default.createElement('i', { 'class': 'fas fa-expand-alt' })
+										),
+										'Third party API'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ 'class': 'flex' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'half-width flex-two' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'flex' },
 											_react2.default.createElement(
 												'div',
-												{ className: 'name' },
-												'Project Brief : '
+												{ className: 'name flex-half' },
+												_react2.default.createElement(
+													'b',
+													null,
+													'Project Brief : '
+												)
 											),
 											_react2.default.createElement(
 												'div',
-												{ className: 'value' },
+												{ className: 'value flex-one' },
 												'Another personal project that I did.  The goal was to optimize my plex movie library.  I wrote this in laravel and it uses the plex api to tab into my library and allow me to see the details of eash of my movies'
 											)
 										),
 										_react2.default.createElement(
 											'div',
-											{ className: 'row' },
+											{ className: 'flex' },
 											_react2.default.createElement(
 												'div',
-												{ className: 'name' },
-												'Features : '
+												{ className: 'name flex-half' },
+												_react2.default.createElement(
+													'b',
+													null,
+													'Features :'
+												),
+												' '
 											),
 											_react2.default.createElement(
 												'div',
-												{ className: 'value' },
+												{ className: 'value flex-one' },
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
+													null,
 													'Third Party API Integration'
 												),
 												_react2.default.createElement(
 													'li',
-													{ className: 'nobullet' },
-													'Reporting Dashobard'
+													null,
+													'Reporting Dashboard'
 												)
 											)
-										),
-										_react2.default.createElement(
-											'div',
-											{ className: 'row' },
-											_react2.default.createElement(
-												'div',
-												{ className: 'name' },
-												'Technologies : '
-											),
-											_react2.default.createElement(
-												'div',
-												{ className: 'value' },
-												'PHP, Laravel, Third party API'
-											)
 										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'half-width flex-one' },
+										_react2.default.createElement('img', { className: 'thumb', src: _plex_admin2.default })
 									)
 								)
 							)
 						)
-					),
-					_react2.default.createElement('div', { className: 'mobile-space-large desktop-space-large' })
+					)
 				);
 			}
 		}]);
@@ -50300,65 +50448,73 @@
 						{ className: 'row-wrap skills-wrap' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box' },
+							{ className: 'block c5 box-shadow box border-radius-5' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'title' },
-								'Front End'
+								' ',
+								_react2.default.createElement('i', { 'class': 'fas fa-fill-drip' }),
+								'\xA0Front End'
 							),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'HTML 5' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'CSS3' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Javascript' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Jquery / React JS / Angular' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Wordpress' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Drupal' })
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'HTML 5' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'CSS3' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Javascript' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Jquery / React JS / Angular' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Wordpress' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Drupal' })
 						),
+						_react2.default.createElement('div', { className: 'mobile-space-normal ' }),
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box' },
+							{ className: 'block c5 box-shadow box border-radius-5' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'title' },
-								'Back End'
+								_react2.default.createElement('i', { 'class': 'fas fa-terminal rotate-180' }),
+								' Back End'
 							),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'PHP' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Codeigniter' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Laravel' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Salesforce CRM' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Java' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'MySQL' })
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'PHP' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Codeigniter' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Laravel' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Salesforce CRM' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Java' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'MySQL' })
 						)
 					),
 					_react2.default.createElement(
 						'div',
 						{ className: 'row-wrap skills-wrap' },
+						_react2.default.createElement('div', { className: 'mobile-space-normal ' }),
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box' },
+							{ className: 'block c5 box-shadow box border-radius-5' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'title' },
-								'Server'
+								_react2.default.createElement('i', { 'class': 'fas fa-server' }),
+								' Server'
 							),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Git Version Contral' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Node JS' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Composer' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'LAMP Stack' })
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Git Version Contral' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Node JS' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Composer' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'LAMP Stack' })
 						),
+						_react2.default.createElement('div', { className: 'mobile-space-normal ' }),
 						_react2.default.createElement(
 							'div',
-							{ className: 'block c5 box-shadow box' },
+							{ className: 'block c5 box-shadow box border-radius-5' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'title' },
+								_react2.default.createElement('i', { 'class': 'fas fa-box-open' }),
 								'Other Skills'
 							),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'MVC Frameworks' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'REST API\'s' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Agile Methodoloy' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Material Design' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Grid And Flex Layouts' }),
-							_react2.default.createElement(_Li2.default, { 'class': 'nobullet', text: 'Accessibility Standards' })
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'MVC Frameworks' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'REST API\'s' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Agile Methodoloy' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Material Design' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Grid And Flex Layouts' }),
+							_react2.default.createElement(_Li2.default, { 'class': 'bullet', text: 'Accessibility Standards' })
 						)
 					)
 				);
@@ -50386,7 +50542,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Div = __webpack_require__(5);
+	var _Div = __webpack_require__(11);
 	
 	var _Div2 = _interopRequireDefault(_Div);
 	
@@ -50427,7 +50583,9 @@
 	                    { id: 'snippets', className: 'section hidden' },
 	                    _react2.default.createElement(_Div2.default, { 'class': 'mobile-space-small desktop-space-large' }),
 	                    _react2.default.createElement(_Imageoverlay2.default, null),
+	                    _react2.default.createElement(_Div2.default, { 'class': 'mobile-space-small desktop-space-large' }),
 	                    _react2.default.createElement(_Growhover2.default, null),
+	                    _react2.default.createElement(_Div2.default, { 'class': 'mobile-space-small desktop-space-large' }),
 	                    _react2.default.createElement(_Flexlayout2.default, null),
 	                    _react2.default.createElement(_Div2.default, { 'class': 'mobile-space-large desktop-space-large' })
 	               );
@@ -50455,13 +50613,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _P = __webpack_require__(6);
+	var _P = __webpack_require__(5);
 	
 	var _P2 = _interopRequireDefault(_P);
-	
-	var _Div = __webpack_require__(5);
-	
-	var _Div2 = _interopRequireDefault(_Div);
 	
 	var _reactSyntaxHighlighter = __webpack_require__(23);
 	
@@ -50546,13 +50700,13 @@
 	      var htmlString = '<div id = "parent">\n   <div class = "child">child1</div>\n   <div class = "child">child2</div>\n   <div class = "child">child3</div>\n</div>';
 	      var htmlString2 = '<div id = "parent">\n   <div class = "child one">child1</div>\n   <div class = "child two">child2</div>\n   <div class = "child three">child3</div>\n</div>';
 	      var cssString = 'div#parent {\n   display:flex; flex-direction: row;\n}';
-	      var cssString2 = 'div#parent {\n   display:flex; flex-direction: row;\n} div.child.two {flex-bias: 2;}';
+	      var cssString2 = 'div#parent {\n   display:flex;\n   flex-direction: row;\n} \ndiv.child.two {flex: 2;}';
 	      var columnString = '<div id = "parent"\n  <div class = "child one">Child 1</div>\n  <div class = "child two">Child 2</div>\n  <div class = "child tow">Child 3</div>\n</div>';
 	      var columnCssString = 'div#parent {\n   display:flex; flex-direction: column;\n}';
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'block c100 box mini box-shadow' },
+	        { className: 'block c100 box mini box-shadow full-width' },
 	        _react2.default.createElement(_P2.default, { 'class': 'title', text: 'Flex Box Layout' }),
 	        _react2.default.createElement(_P2.default, { text: 'Flex Box Layout can be an important tool in your web design arsonel but if you are not familar with it than it could tricky getting it to work right.  Here is how you can make it work.' }),
 	        _react2.default.createElement(_P2.default, { text: 'First we need to set display: flex and the flex direction on the parent element' }),
@@ -50586,17 +50740,17 @@
 	            { id: 'parent', style: simplestyle },
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child' },
+	              { className: 'child' },
 	              'child1'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child', style: borderstyle },
+	              { className: 'child', style: borderstyle },
 	              'child2'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child' },
+	              { className: 'child' },
 	              'child3'
 	            )
 	          )
@@ -50632,17 +50786,17 @@
 	            { id: 'parent', style: simplestyle },
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child', style: grow1 },
+	              { className: 'child', style: grow1 },
 	              'flex-grow : 1'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child', style: grow2 },
+	              { className: 'child', style: grow2 },
 	              'flex-grow : 2'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child', style: grow1 },
+	              { className: 'child', style: grow1 },
 	              'flex-grow : 1'
 	            )
 	          )
@@ -50678,17 +50832,17 @@
 	            { id: 'parent', style: columnStyle },
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child', style: borderStyleVert },
+	              { className: 'child', style: borderStyleVert },
 	              'Row 1'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child', style: borderStyleVert },
+	              { className: 'child', style: borderStyleVert },
 	              'Row 2'
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { 'class': 'child' },
+	              { className: 'child' },
 	              ' Row  3'
 	            )
 	          )
@@ -50718,13 +50872,9 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _P = __webpack_require__(6);
+	var _P = __webpack_require__(5);
 	
 	var _P2 = _interopRequireDefault(_P);
-	
-	var _Div = __webpack_require__(5);
-	
-	var _Div2 = _interopRequireDefault(_Div);
 	
 	var _reactSyntaxHighlighter = __webpack_require__(23);
 	
@@ -50779,7 +50929,7 @@
 	      var cssString = 'div#hover-me:hover {\n   transform:scale(1.5); \n   transition: 2s transform;\n}';
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'block c100 box mini box-shadow' },
+	        { className: 'block c100 box mini box-shadow full-width' },
 	        _react2.default.createElement(_P2.default, { 'class': 'title', text: 'Scale Hover Effect' }),
 	        _react2.default.createElement(_P2.default, { text: 'The grow hover effect is a cool little trick that I see alot of developers not utilizing.  Instead they try to accomplish this with animating the height and width when in reality can be done some much simplier' }),
 	        _react2.default.createElement(_P2.default, { text: 'Just set the transform effect to scale(1.5) on the hover sudo element on your hover element.  Next set the transition to transform in order to animate the effect.' }),
@@ -50855,11 +51005,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _P = __webpack_require__(6);
+	var _P = __webpack_require__(5);
 	
 	var _P2 = _interopRequireDefault(_P);
 	
-	var _Div = __webpack_require__(5);
+	var _Div = __webpack_require__(11);
 	
 	var _Div2 = _interopRequireDefault(_Div);
 	
@@ -50909,7 +51059,7 @@
 	      var cssString2 = 'div#parent {\n   background: url("cool.jpg");\n} \n div#child {\n    background:rgba(0,0,0,0.5);\n}';
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'block c100 box mini box-shadow' },
+	        { className: 'block c100 box mini box-shadow full-width' },
 	        _react2.default.createElement(_P2.default, { 'class': 'title', text: 'Cover mask on images' }),
 	        _react2.default.createElement(_P2.default, { text: 'Sometimes you need to put text on a background image only to find that the text doen\'t pop enough Here is a trick you can do to get around that.' }),
 	        _react2.default.createElement(
@@ -51003,7 +51153,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(520);
+	var _reactDom = __webpack_require__(522);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
@@ -51011,9 +51161,9 @@
 	
 	var _Body2 = _interopRequireDefault(_Body);
 	
-	__webpack_require__(490);
+	__webpack_require__(492);
 	
-	__webpack_require__(491);
+	__webpack_require__(493);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -51063,19 +51213,14 @@
 	      value: function render() {
 	         return _react2.default.createElement(
 	            'div',
-	            { id: 'banner', className: 'box-shadow' },
-	            _react2.default.createElement(
-	               'h3',
-	               { className: 'tag' },
-	               'Full Stack Web Developer'
-	            ),
+	            { id: 'banner', className: 'bottom' },
 	            _react2.default.createElement('i', { className: 'fab fa-react i-1 ' }),
 	            _react2.default.createElement('i', { className: 'fab fa-node-js i-2' }),
 	            _react2.default.createElement('i', { className: 'fab fa-jsfiddle i-3 mobile-hidden' }),
 	            _react2.default.createElement('i', { className: 'fab fa-php i-4' }),
 	            _react2.default.createElement('i', { className: 'fas fa-code i-5 mobile-hidden' }),
 	            _react2.default.createElement('i', { className: 'fas fa-laptop-code i-6 mobile-hidden' }),
-	            _react2.default.createElement('i', { className: 'fab fa-github i-7' }),
+	            _react2.default.createElement('i', { className: 'fas fa-file i-7' }),
 	            _react2.default.createElement('i', { className: 'fab fa-gratipay i-8' }),
 	            _react2.default.createElement('i', { className: 'fab fa-mobile-alt i-9 mobile-hidden' }),
 	            _react2.default.createElement('i', { className: 'fas fa-database i-10' }),
@@ -51141,17 +51286,32 @@
 	    var _this = _possibleConstructorReturn(this, (Body.__proto__ || Object.getPrototypeOf(Body)).call(this));
 	
 	    _this.state = {
-	      scrollstate: 'init'
+	      scrollstate: 'init',
+	      scrollClass: 'home notscrolled'
 	    };
 	    return _this;
 	  }
 	
 	  _createClass(Body, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      window.addEventListener('scroll', this.handleScroll.bind(this));
+	    }
+	  }, {
+	    key: 'handleScroll',
+	    value: function handleScroll() {
+	      if (window.scrollY > 0) {
+	        this.setState({ 'scrollClass': 'home scrolled' });
+	      } else {
+	        this.setState({ 'scrollClass': 'home notscrolled' });
+	      }
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { id: 'body', className: 'home' },
+	        { id: 'body', className: this.state.scrollClass },
 	        _react2.default.createElement(_Header2.default, null),
 	        _react2.default.createElement(_Guts2.default, null),
 	        _react2.default.createElement(_Footer2.default, null)
@@ -51240,10 +51400,6 @@
 	
 	var _Theguts2 = _interopRequireDefault(_Theguts);
 	
-	var _Banner = __webpack_require__(482);
-	
-	var _Banner2 = _interopRequireDefault(_Banner);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -51275,7 +51431,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'guts-section' },
-	        _react2.default.createElement(_Banner2.default, null),
 	        _react2.default.createElement(_Theguts2.default, null)
 	      );
 	    }
@@ -51310,9 +51465,13 @@
 	
 	var _Li2 = _interopRequireDefault(_Li);
 	
-	var _Hr = __webpack_require__(488);
+	var _Hr = __webpack_require__(490);
 	
 	var _Hr2 = _interopRequireDefault(_Hr);
+	
+	var _P = __webpack_require__(5);
+	
+	var _P2 = _interopRequireDefault(_P);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -51386,33 +51545,10 @@
 					{ id: 'header' },
 					_react2.default.createElement(
 						'div',
-						{ id: 'logo-section' },
+						{ id: 'header-wrap' },
 						_react2.default.createElement(
 							'div',
-							{ className: 'menu-logo-wrap' },
-							_react2.default.createElement(
-								'div',
-								{ className: 'text' },
-								'KB'
-							)
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ id: 'name-section' },
-						_react2.default.createElement(
-							'h2',
-							null,
-							'Kevin Bollman'
-						)
-					),
-					_react2.default.createElement(
-						'div',
-						{ id: 'nine-box-section' },
-						_react2.default.createElement('i', { className: 'fas fa-th-large', onClick: this.showhidemenu.bind(this) }),
-						_react2.default.createElement(
-							'div',
-							{ id: 'menu-section', className: this.state.showclass },
+							{ id: 'logo-section' },
 							_react2.default.createElement(
 								'div',
 								{ className: 'menu-logo-wrap' },
@@ -51421,21 +51557,49 @@
 									{ className: 'text' },
 									'KB'
 								)
-							),
-							_react2.default.createElement(_Hr2.default, { 'class': 'color-white' }),
-							_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'home'),
-								text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }),
-							_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'about'),
-								text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }),
-							_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'projects'),
-								text: 'Projects' }),
-							_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'snippets'),
-								text: 'Code Snippets' }),
-							_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'skills'),
-								text: 'Skills', 'class': this.state.activesection === 'skills' ? 'active' : '' }),
-							_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'contact'),
-								text: 'Contact', 'class': this.state.activesection === 'contact' ? 'active' : '' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ id: 'name-section' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Kevin Bollman'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ id: 'nine-box-section' },
+							_react2.default.createElement('i', { className: 'fas fa-th-large', onClick: this.showhidemenu.bind(this) }),
+							_react2.default.createElement(
+								'div',
+								{ id: 'menu-section', className: this.state.showclass },
+								_react2.default.createElement(_Hr2.default, { 'class': 'color-white' }),
+								_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'home'),
+									text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }),
+								_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'about'),
+									text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }),
+								_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'projects'),
+									text: 'Projects' }),
+								_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'snippets'),
+									text: 'Code Snippets' }),
+								_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'skills'),
+									text: 'Skills', 'class': this.state.activesection === 'skills' ? 'active' : '' }),
+								_react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'contact'),
+									text: 'Contact', 'class': this.state.activesection === 'contact' ? 'active' : '' })
+							)
 						)
+					),
+					_react2.default.createElement(
+						'div',
+						{ id: 'sub-header-wrap' },
+						_react2.default.createElement(
+							'h3',
+							null,
+							'Full Stack Developer'
+						),
+						_react2.default.createElement(_P2.default, { 'class': 'sub', text: 'I design and develop digital solutions for everyday people' })
 					)
 				);
 			}
@@ -51534,6 +51698,213 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
+	   value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Topbanner = function (_Component) {
+	   _inherits(Topbanner, _Component);
+	
+	   function Topbanner() {
+	      _classCallCheck(this, Topbanner);
+	
+	      var _this = _possibleConstructorReturn(this, (Topbanner.__proto__ || Object.getPrototypeOf(Topbanner)).call(this));
+	
+	      _this.state = {
+	         'iconpos': 10
+	      };
+	      return _this;
+	   }
+	
+	   _createClass(Topbanner, [{
+	      key: 'render',
+	      value: function render() {
+	         return _react2.default.createElement(
+	            'div',
+	            { id: 'banner', className: 'num_' + this.props.num },
+	            _react2.default.createElement('i', { className: 'fas fa-file-code i-2 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-project-diagram i-4' }),
+	            _react2.default.createElement('i', { className: 'fab fa-github i-7 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-desktop i-10' }),
+	            _react2.default.createElement('i', { className: 'fas fa-cogs i-14 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-js-square i-16' }),
+	            _react2.default.createElement('i', { className: 'fab fa-html5 i-17 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-react i-1 ' }),
+	            _react2.default.createElement('i', { className: 'fab fa-node-js i-2 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-jsfiddle i-3' }),
+	            _react2.default.createElement('i', { className: 'fab fa-php i-4 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-code i-5' }),
+	            _react2.default.createElement('i', { className: 'fas fa-laptop-code i-6 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-file i-7' }),
+	            _react2.default.createElement('i', { className: 'fab fa-gratipay i-8 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-mobile-alt i-9' }),
+	            _react2.default.createElement('i', { className: 'fas fa-database i-10 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-sliders-h i-11 ' }),
+	            _react2.default.createElement('i', { className: 'fab fa-git i-12 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-angular i-13' }),
+	            _react2.default.createElement('i', { className: 'fas fa-code-branch i-14 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-css3-alt i-15' }),
+	            _react2.default.createElement('i', { className: 'fab fa-codepen i-16 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fab fa-html5 i-17' }),
+	            _react2.default.createElement('i', { className: 'fas fa-terminal i-18 v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-search' }),
+	            _react2.default.createElement('i', { className: 'fas fa-search-plus v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-mouse-pointer' }),
+	            _react2.default.createElement('i', { className: 'fas fa-i-cursor v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-mouse' }),
+	            _react2.default.createElement('i', { className: 'fas fa-warehouse v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-plug' }),
+	            _react2.default.createElement('i', { className: 'fas fa-lightbulb v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-tachometer-alt' }),
+	            _react2.default.createElement('i', { className: 'fas fa-twitch v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-circle-notch ' }),
+	            _react2.default.createElement('i', { className: 'fas fa-wrench v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-weixin' }),
+	            _react2.default.createElement('i', { className: 'fas fa-free-code-camp v-text-top' }),
+	            _react2.default.createElement('i', { className: 'fas fa-shield-alt' })
+	         );
+	      }
+	   }]);
+	
+	   return Topbanner;
+	}(_react.Component); //end class
+	
+	exports.default = Topbanner;
+
+/***/ },
+/* 489 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Topskills = function (_Component) {
+	    _inherits(Topskills, _Component);
+	
+	    function Topskills() {
+	        _classCallCheck(this, Topskills);
+	
+	        return _possibleConstructorReturn(this, (Topskills.__proto__ || Object.getPrototypeOf(Topskills)).apply(this, arguments));
+	    }
+	
+	    _createClass(Topskills, [{
+	        key: "render",
+	        value: function render(props) {
+	            return _react2.default.createElement(
+	                "div",
+	                { id: "top-skills", className: "full-width" },
+	                _react2.default.createElement(
+	                    "h3",
+	                    null,
+	                    "Look what I can do"
+	                ),
+	                _react2.default.createElement("hr", null),
+	                _react2.default.createElement(
+	                    "div",
+	                    { "class": "flex" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "icon-wrap" },
+	                        _react2.default.createElement("i", { "class": "fas fa-terminal" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-keyboard" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-css3" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-laptop-code" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-node" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-coffee" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-connectdevelop" }),
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement("i", { "class": "fas fa-server" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-jsfiddle" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-database" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-table" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-hourglass-start" }),
+	                        _react2.default.createElement("i", { "class": "fas fa-ruler-combined" }),
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement("i", { "class": "fas fa-globe-americas" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-react" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-wordpress" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-angular" }),
+	                        _react2.default.createElement("br", null),
+	                        _react2.default.createElement("i", { "class": "fab fa-dev" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-js" }),
+	                        _react2.default.createElement("i", { "class": "fab fa-chrome" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "details-wrap" },
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            "Design complete website from begining to end"
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            "Material design UX specialist"
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            "WCAG accessibilty compliant"
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            "Mobile first responsive design princibles"
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            "Experties in multiple content management platforms"
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Topskills;
+	}(_react.Component);
+	
+	exports.default = Topskills;
+
+/***/ },
+/* 490 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
 	     value: true
 	});
 	
@@ -51576,7 +51947,7 @@
 	exports.default = Hr;
 
 /***/ },
-/* 489 */
+/* 491 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -51634,20 +52005,20 @@
 
 
 /***/ },
-/* 490 */
+/* 492 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 491 */
-490,
-/* 492 */
+/* 493 */
+492,
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var formatter = __webpack_require__(493)
+	var formatter = __webpack_require__(495)
 	
 	var fault = create(Error)
 	
@@ -51679,7 +52050,7 @@
 
 
 /***/ },
-/* 493 */
+/* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
 	//
@@ -51813,7 +52184,7 @@
 
 
 /***/ },
-/* 494 */
+/* 496 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -51862,16 +52233,16 @@
 
 
 /***/ },
-/* 495 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var find = __webpack_require__(510)
+	var find = __webpack_require__(512)
 	var normalize = __webpack_require__(21)
-	var parseSelector = __webpack_require__(494)
-	var spaces = __webpack_require__(537).parse
-	var commas = __webpack_require__(489).parse
+	var parseSelector = __webpack_require__(496)
+	var spaces = __webpack_require__(539).parse
+	var commas = __webpack_require__(491).parse
 	
 	module.exports = factory
 	
@@ -52080,13 +52451,13 @@
 
 
 /***/ },
-/* 496 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var schema = __webpack_require__(511)
-	var factory = __webpack_require__(495)
+	var schema = __webpack_require__(513)
+	var factory = __webpack_require__(497)
 	
 	var html = factory(schema, 'div')
 	html.displayName = 'html'
@@ -52095,16 +52466,16 @@
 
 
 /***/ },
-/* 497 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	module.exports = __webpack_require__(496)
+	module.exports = __webpack_require__(498)
 
 
 /***/ },
-/* 498 */
+/* 500 */
 /***/ function(module, exports) {
 
 	// https://github.com/substack/deep-freeze/blob/master/index.js
@@ -54317,7 +54688,7 @@
 
 
 /***/ },
-/* 499 */
+/* 501 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -54337,12 +54708,12 @@
 
 
 /***/ },
-/* 500 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var alphabetical = __webpack_require__(499)
+	var alphabetical = __webpack_require__(501)
 	var decimal = __webpack_require__(232)
 	
 	module.exports = alphanumerical
@@ -54355,7 +54726,7 @@
 
 
 /***/ },
-/* 501 */
+/* 503 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -54376,7 +54747,7 @@
 
 
 /***/ },
-/* 502 */
+/* 504 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -54489,7 +54860,7 @@
 	};
 
 /***/ },
-/* 503 */
+/* 505 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -54524,7 +54895,7 @@
 	};
 
 /***/ },
-/* 504 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
@@ -54824,7 +55195,7 @@
 
 
 /***/ },
-/* 505 */
+/* 507 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -54860,17 +55231,17 @@
 
 
 /***/ },
-/* 506 */
+/* 508 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var legacy = __webpack_require__(502)
-	var invalid = __webpack_require__(503)
+	var legacy = __webpack_require__(504)
+	var invalid = __webpack_require__(505)
 	var decimal = __webpack_require__(232)
-	var hexadecimal = __webpack_require__(501)
-	var alphanumerical = __webpack_require__(500)
-	var decodeEntity = __webpack_require__(505)
+	var hexadecimal = __webpack_require__(503)
+	var alphanumerical = __webpack_require__(502)
+	var decodeEntity = __webpack_require__(507)
 	
 	module.exports = parseEntities
 	
@@ -55317,7 +55688,7 @@
 
 
 /***/ },
-/* 507 */
+/* 509 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/// <reference lib="WebWorker"/>
@@ -56509,7 +56880,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 508 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56622,7 +56993,7 @@
 
 
 /***/ },
-/* 509 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56740,7 +57111,7 @@
 	}
 
 /***/ },
-/* 510 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
@@ -56811,29 +57182,29 @@
 
 
 /***/ },
-/* 511 */
+/* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var merge = __webpack_require__(515)
-	var xlink = __webpack_require__(516)
-	var xml = __webpack_require__(517)
-	var xmlns = __webpack_require__(518)
-	var aria = __webpack_require__(512)
-	var html = __webpack_require__(513)
+	var merge = __webpack_require__(517)
+	var xlink = __webpack_require__(518)
+	var xml = __webpack_require__(519)
+	var xmlns = __webpack_require__(520)
+	var aria = __webpack_require__(514)
+	var html = __webpack_require__(515)
 	
 	module.exports = merge([xml, xlink, xmlns, aria, html])
 
 
 /***/ },
-/* 512 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
 	var types = __webpack_require__(20)
-	var create = __webpack_require__(7)
+	var create = __webpack_require__(6)
 	
 	var booleanish = types.booleanish
 	var number = types.number
@@ -56900,13 +57271,13 @@
 
 
 /***/ },
-/* 513 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
 	var types = __webpack_require__(20)
-	var create = __webpack_require__(7)
+	var create = __webpack_require__(6)
 	var caseInsensitiveTransform = __webpack_require__(234)
 	
 	var boolean = types.boolean
@@ -57215,7 +57586,7 @@
 
 
 /***/ },
-/* 514 */
+/* 516 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -57228,12 +57599,12 @@
 
 
 /***/ },
-/* 515 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var xtend = __webpack_require__(543)
+	var xtend = __webpack_require__(545)
 	var Schema = __webpack_require__(237)
 	
 	module.exports = merge
@@ -57262,12 +57633,12 @@
 
 
 /***/ },
-/* 516 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var create = __webpack_require__(7)
+	var create = __webpack_require__(6)
 	
 	module.exports = create({
 	  space: 'xlink',
@@ -57289,12 +57660,12 @@
 
 
 /***/ },
-/* 517 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var create = __webpack_require__(7)
+	var create = __webpack_require__(6)
 	
 	module.exports = create({
 	  space: 'xml',
@@ -57312,12 +57683,12 @@
 
 
 /***/ },
-/* 518 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict'
 	
-	var create = __webpack_require__(7)
+	var create = __webpack_require__(6)
 	var caseInsensitiveTransform = __webpack_require__(234)
 	
 	module.exports = create({
@@ -57334,7 +57705,7 @@
 
 
 /***/ },
-/* 519 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @license React v16.14.0
@@ -57349,7 +57720,7 @@
 	/*
 	 Modernizr 3.0.0pre (Custom Build) | MIT
 	*/
-	'use strict';var aa=__webpack_require__(1),n=__webpack_require__(19),r=__webpack_require__(536);function u(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(u(227));
+	'use strict';var aa=__webpack_require__(1),n=__webpack_require__(19),r=__webpack_require__(538);function u(a){for(var b="https://reactjs.org/docs/error-decoder.html?invariant="+a,c=1;c<arguments.length;c++)b+="&args[]="+encodeURIComponent(arguments[c]);return"Minified React error #"+a+"; visit "+b+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings."}if(!aa)throw Error(u(227));
 	function ba(a,b,c,d,e,f,g,h,k){var l=Array.prototype.slice.call(arguments,3);try{b.apply(c,l)}catch(m){this.onError(m)}}var da=!1,ea=null,fa=!1,ha=null,ia={onError:function(a){da=!0;ea=a}};function ja(a,b,c,d,e,f,g,h,k){da=!1;ea=null;ba.apply(ia,arguments)}function ka(a,b,c,d,e,f,g,h,k){ja.apply(this,arguments);if(da){if(da){var l=ea;da=!1;ea=null}else throw Error(u(198));fa||(fa=!0,ha=l)}}var la=null,ma=null,na=null;
 	function oa(a,b,c){var d=a.type||"unknown-event";a.currentTarget=na(c);ka(d,b,void 0,a);a.currentTarget=null}var pa=null,qa={};
 	function ra(){if(pa)for(var a in qa){var b=qa[a],c=pa.indexOf(a);if(!(-1<c))throw Error(u(96,a));if(!sa[c]){if(!b.extractEvents)throw Error(u(97,a));sa[c]=b;c=b.eventTypes;for(var d in c){var e=void 0;var f=c[d],g=b,h=d;if(ta.hasOwnProperty(h))throw Error(u(99,h));ta[h]=f;var k=f.phasedRegistrationNames;if(k){for(e in k)k.hasOwnProperty(e)&&ua(k[e],g,h);e=!0}else f.registrationName?(ua(f.registrationName,g,h),e=!0):e=!1;if(!e)throw Error(u(98,d,a));}}}}
@@ -57632,7 +58003,7 @@
 
 
 /***/ },
-/* 520 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57669,14 +58040,14 @@
 	  // DCE check should happen before ReactDOM bundle executes so that
 	  // DevTools can report bad minification during injection.
 	  checkDCE();
-	  module.exports = __webpack_require__(519);
+	  module.exports = __webpack_require__(521);
 	} else {
 	  module.exports = require('./cjs/react-dom.development.js');
 	}
 
 
 /***/ },
-/* 521 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// @remove-on-eject-begin
@@ -57695,12 +58066,12 @@
 	  // Rejection tracking prevents a common issue where React gets into an
 	  // inconsistent state due to an error, but it gets swallowed by a Promise,
 	  // and the user has no idea what causes React's erratic future behavior.
-	  __webpack_require__(509).enable();
-	  window.Promise = __webpack_require__(508);
+	  __webpack_require__(511).enable();
+	  window.Promise = __webpack_require__(510);
 	}
 	
 	// fetch() polyfill for making API calls.
-	__webpack_require__(542);
+	__webpack_require__(544);
 	
 	// Object.assign() is commonly used with React.
 	// It will use the native implementation if it's present and isn't buggy.
@@ -57708,7 +58079,7 @@
 
 
 /***/ },
-/* 522 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -58672,7 +59043,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 523 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59169,7 +59540,7 @@
 	  }),
 	  javadoclike: (0, _createLanguageAsyncLoader.default)("javadoclike", function () {
 	    return Promise.resolve().then(function () {
-	      return __webpack_require__(9);
+	      return __webpack_require__(8);
 	    });
 	  }),
 	  javascript: (0, _createLanguageAsyncLoader.default)("javascript", function () {
@@ -59459,7 +59830,7 @@
 	  }),
 	  php: (0, _createLanguageAsyncLoader.default)("php", function () {
 	    return Promise.resolve().then(function () {
-	      return __webpack_require__(10);
+	      return __webpack_require__(9);
 	    });
 	  }),
 	  phpdoc: (0, _createLanguageAsyncLoader.default)("phpdoc", function () {
@@ -59594,7 +59965,7 @@
 	  }),
 	  ruby: (0, _createLanguageAsyncLoader.default)("ruby", function () {
 	    return Promise.resolve().then(function () {
-	      return __webpack_require__(11);
+	      return __webpack_require__(10);
 	    });
 	  }),
 	  rust: (0, _createLanguageAsyncLoader.default)("rust", function () {
@@ -59861,7 +60232,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 524 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59873,13 +60244,13 @@
 	});
 	exports.default = void 0;
 	
-	var _highlight = _interopRequireDefault(__webpack_require__(8));
+	var _highlight = _interopRequireDefault(__webpack_require__(7));
 	
-	var _defaultStyle = _interopRequireDefault(__webpack_require__(532));
+	var _defaultStyle = _interopRequireDefault(__webpack_require__(534));
 	
-	var _lowlight = _interopRequireDefault(__webpack_require__(504));
+	var _lowlight = _interopRequireDefault(__webpack_require__(506));
 	
-	var _supportedLanguages = _interopRequireDefault(__webpack_require__(525));
+	var _supportedLanguages = _interopRequireDefault(__webpack_require__(527));
 	
 	var highlighter = (0, _highlight.default)(_lowlight.default, _defaultStyle.default);
 	highlighter.supportedLanguages = _supportedLanguages.default;
@@ -59887,7 +60258,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 525 */
+/* 527 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -59903,7 +60274,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 526 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59917,7 +60288,7 @@
 	
 	var _asyncSyntaxHighlighter = _interopRequireDefault(__webpack_require__(22));
 	
-	var _hljs = _interopRequireDefault(__webpack_require__(522));
+	var _hljs = _interopRequireDefault(__webpack_require__(524));
 	
 	var _checkForListedLanguage = _interopRequireDefault(__webpack_require__(239));
 	
@@ -59942,7 +60313,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 527 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59954,7 +60325,7 @@
 	});
 	exports.default = void 0;
 	
-	var _highlight = _interopRequireDefault(__webpack_require__(8));
+	var _highlight = _interopRequireDefault(__webpack_require__(7));
 	
 	var _core = _interopRequireDefault(__webpack_require__(18));
 	
@@ -59964,7 +60335,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 528 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -59978,7 +60349,7 @@
 	
 	var _asyncSyntaxHighlighter = _interopRequireDefault(__webpack_require__(22));
 	
-	var _prism = _interopRequireDefault(__webpack_require__(523));
+	var _prism = _interopRequireDefault(__webpack_require__(525));
 	
 	var _default = (0, _asyncSyntaxHighlighter.default)({
 	  loader: function loader() {
@@ -60001,7 +60372,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 529 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -60033,7 +60404,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 530 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -60045,7 +60416,7 @@
 	});
 	exports.default = void 0;
 	
-	var _highlight = _interopRequireDefault(__webpack_require__(8));
+	var _highlight = _interopRequireDefault(__webpack_require__(7));
 	
 	var _core = _interopRequireDefault(__webpack_require__(24));
 	
@@ -60059,7 +60430,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 531 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -60071,9 +60442,9 @@
 	});
 	exports.default = void 0;
 	
-	var _highlight = _interopRequireDefault(__webpack_require__(8));
+	var _highlight = _interopRequireDefault(__webpack_require__(7));
 	
-	var _prism = _interopRequireDefault(__webpack_require__(533));
+	var _prism = _interopRequireDefault(__webpack_require__(535));
 	
 	var _refractor = _interopRequireDefault(__webpack_require__(242));
 	
@@ -60085,7 +60456,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 532 */
+/* 534 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -60210,7 +60581,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 533 */
+/* 535 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -60414,7 +60785,7 @@
 	exports.default = _default;
 
 /***/ },
-/* 534 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @license React v16.14.0
@@ -60445,7 +60816,7 @@
 
 
 /***/ },
-/* 535 */
+/* 537 */
 /***/ function(module, exports) {
 
 	/** @license React v0.19.1
@@ -60472,20 +60843,20 @@
 
 
 /***/ },
-/* 536 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	if (true) {
-	  module.exports = __webpack_require__(535);
+	  module.exports = __webpack_require__(537);
 	} else {
 	  module.exports = require('./cjs/scheduler.development.js');
 	}
 
 
 /***/ },
-/* 537 */
+/* 539 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -60508,31 +60879,31 @@
 
 
 /***/ },
-/* 538 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/checkbook_scaled.5b48e589.png";
 
 /***/ },
-/* 539 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/millwood_thumb.0df1ed9d.jpg";
 
 /***/ },
-/* 540 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/olympic_inspection.476e8199.png";
 
 /***/ },
-/* 541 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "static/media/plex_admin.13e86d94.png";
 
 /***/ },
-/* 542 */
+/* 544 */
 /***/ function(module, exports) {
 
 	(function(self) {
@@ -60996,7 +61367,7 @@
 
 
 /***/ },
-/* 543 */
+/* 545 */
 /***/ function(module, exports) {
 
 	module.exports = extend
@@ -61022,4 +61393,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.2c3f30ff.js.map
+//# sourceMappingURL=main.342e2152.js.map
