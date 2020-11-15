@@ -6,7 +6,7 @@ class Topskills extends Component {
         <div id="top-skills" className="full-width">
             <h3>Look what I can do</h3>
             <hr />
-            <div class = "flex">
+            <div class = "flex max-width-1200">
                 <div className="icon-wrap">
                     <i class="fas fa-terminal"></i>
                     <i class="fas fa-keyboard"></i>

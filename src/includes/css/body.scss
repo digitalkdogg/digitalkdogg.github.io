@@ -20,7 +20,7 @@ div#header {
   	height: 170px;
 	color: white;
 	overflow:hidden;
-	background: url(https://images.idgesg.net/images/article/2019/02/binary_code_matrix_by_suebsiri_gettyimages-972557398_2400x1600-100788493-large.jpg);
+	background: url(../img/binary-bg.jpg);
 	background-size:cover;	
 }
 
@@ -161,33 +161,7 @@ div#header div#menu-section li.active {
 	border-left: 5px solid #55ab07;
 }
 
-/*
-div#banner {
-  	position: absolute;
-  	z-index: 1;
-	width:100%;
-	font-size:1em;
-	text-align:center;
-  	padding:45px 0 15px 0;
-	overflow:hidden;
-	top:-50px;
-}
 
-@media only screen and (min-width: 768px) {
-
-}
-
-div#banner i {
-	opacity: 0.1;
-	color: rgba(22, 58,87, 1);
-	font-size:1em;
-	text-shadow: 1px 2px #999;
-	margin:2% 7%;
-}
-
-div#banner p {
-	margin: 1vh;
-} */
 
 div#header div#sub-header-wrap h3 {
     font-size:24px;
@@ -399,7 +373,6 @@ div#guts-section #the-guts .info-wrap a {
 #the-guts #top-skills {
 	width:unset;
 	background:rgba(231,231,231,.5);
-	/*background: linear-gradient(150deg, rgba(231, 231, 131, .5) 0%, rgba(168, 171, 7, .7) 60%, rgba(168,171, 7, 0.7));*/ 
 	background: linear-gradient(150deg, rgba(22,58,87,0.6) 0%, rgba(22, 58, 87, 1) 60%, rgba(22,58, 87, 1));
 	color:white;
 }
@@ -410,6 +383,7 @@ div#guts-section #the-guts .info-wrap a {
 	position: absolute;
 	opacity:.3;
 	text-align:center;
+	align-items: center;
 }
 
 #the-guts #top-skills .icon-wrap i {
@@ -451,113 +425,6 @@ div#guts-section #the-guts .info-wrap a {
 	margin:10px 0 20px 0;
 }
 
-/*
-#the-guts .box-no-animate.box-shadow.full-width.about {
-	width:96%;
-}
-
-@media only screen and (min-width: 768px) {
-	#the-guts .box-no-animate.box-shadow.full-width.about {
-		left: -5%;
-		position: relative;
-		width: 91%;
-	}
-}
-*/
-
-
-/*
-div#guts-section .flip-card {
-  background-color: transparent;
-  perspective: 1000px;
-}
-
-div#guts-section .flip-card-inner {
-  position: relative;
-  height: 60vh;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-div#guts-section .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-div#guts-section div.flip-card div.flip-card-cover {
-	height: 85%;
-	background: rgba(0,0,0,0.2);
-}
-
-div#guts-section div.flip-card div.flip-card-title {
-    top: 85%;
-    position: absolute;
-    height: 15%;
-    background: rgba(0,0,0,0.8);
-    width: 100%;
-    color: white;
-    padding-top:1rem;
-    font-weight: bold;
-		backface-visibility: hidden;
-}
-
-div#guts-section div.flip-card .title {
-	margin-bottom:0;
-}
-
-
-div#guts-section .flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-  background-size:cover;
-  overflow:hidden;
-}
-
-div#guts-section .flip-card-back {
-	background-color: #eee;
-  	color: #333;
-  	transform: rotateY(180deg);
-}
-
-div#guts-section .flip-card-back .name {
-	font-weight: bold;
-}
-
-div#guts-section .flip-card-back .content-wrap {
-	height:75%;
-	overflow: auto;
-}
-
-div#guts-section .flip-card-back .footer {
-	align-items: center;
-}
-
-div#guts-section .flip-card-back .footer a {
-	color: white;
-}
-
-div#guts-section .flip-card-back .footer a:hover {
-	color: white;
-	text-decoration: none;
-}
-
-div#guts-section div.flip-card-back div.footer a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-div#guts-section .flip-card-back button {
-	color: white;
-	font-size: 1.2em;
-}*/
-
 div#bottom {
     width: 60px;
     background: black;
@@ -595,7 +462,7 @@ div#header div#name-section h2 {
 	}
 
 	div#header div#name-section {
-		flex-grow:8;
+		flex-grow:14;
 	}
 
 	div#header div#menu-section.show {

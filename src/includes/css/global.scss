@@ -283,11 +283,10 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
     transform: rotate(180deg);
   }
 
-  /*
-  div#guts-section div.box {
-    border-radius: 5px;
-  } */
-
+  .flex.max-width-1200 {
+    max-width:1200px;
+  }
+  
   pre {
     font-size:0.7em;
   }
