@@ -51831,7 +51831,7 @@
 	                _react2.default.createElement("hr", null),
 	                _react2.default.createElement(
 	                    "div",
-	                    { "class": "flex" },
+	                    { "class": "flex max-width-1200" },
 	                    _react2.default.createElement(
 	                        "div",
 	                        { className: "icon-wrap" },
@@ -61393,4 +61393,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.342e2152.js.map
+//# sourceMappingURL=main.1a77d7ae.js.map
