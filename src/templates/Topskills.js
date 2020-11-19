@@ -6,31 +6,31 @@ class Topskills extends Component {
         <div id="top-skills" className="full-width">
             <h3>Look what I can do</h3>
             <hr />
-            <div class = "flex max-width-1200">
+            <div className = "flex max-width-1200">
                 <div className="icon-wrap">
-                    <i class="fas fa-terminal"></i>
-                    <i class="fas fa-keyboard"></i>
-                    <i class="fab fa-css3"></i>
-                    <i class="fas fa-laptop-code"></i>
-                    <i class="fab fa-node"></i>
-                    <i class="fas fa-coffee"></i>
-                    <i class="fab fa-connectdevelop"></i>
+                    <i className="fas fa-terminal"></i>
+                    <i className="fas fa-keyboard"></i>
+                    <i className="fab fa-css3"></i>
+                    <i className="fas fa-laptop-code"></i>
+                    <i className="fab fa-node"></i>
+                    <i className="fas fa-coffee"></i>
+                    <i className="fab fa-connectdevelop"></i>
                     <br />
-                    <i class="fas fa-server"></i>
-                    <i class="fab fa-jsfiddle"></i>
-                    <i class="fas fa-database"></i>
-                    <i class="fas fa-table"></i>
-                    <i class="fas fa-hourglass-start"></i>
-                    <i class="fas fa-ruler-combined"></i>
+                    <i className="fas fa-server"></i>
+                    <i className="fab fa-jsfiddle"></i>
+                    <i className="fas fa-database"></i>
+                    <i className="fas fa-table"></i>
+                    <i className="fas fa-hourglass-start"></i>
+                    <i className="fas fa-ruler-combined"></i>
                     <br />
-                    <i class="fas fa-globe-americas"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-wordpress"></i>
-                    <i class="fab fa-angular"></i>
+                    <i className="fas fa-globe-americas"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-wordpress"></i>
+                    <i className="fab fa-angular"></i>
                     <br />
-                    <i class="fab fa-dev"></i>
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-chrome"></i>
+                    <i className="fab fa-dev"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-chrome"></i>
 
                 </div>
                 <div className="details-wrap">

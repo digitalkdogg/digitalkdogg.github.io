@@ -15,17 +15,17 @@ return (
      <div id="projects" className="section hidden">
 		<div className="mobile-space-small desktop-space-large"></div>
 
-		<div clasName = "row-wrap">
+		<div className="row-wrap">
 		
-			<div className ="c100 block full-width box-shadow">
+			<div className="c100 block full-width box-shadow">
 			
-			<div className ="flex">
+			<div className="flex">
 				<div className="half-width flex-half">
 					<h3 className="titleh3">Millwood Christian Church</h3>
 				</div>
 				<div className="half-width flex-half checkout">
 					<a href="https://millwoodchurchnwa.com/" target="_blank">
-						<button class="checkout green-grandient">
+						<button className="checkout green-grandient">
 							View This Site
 						</button>
 					</a>
@@ -44,20 +44,20 @@ return (
 					</div>
 					UX Design
 				</div>
-				<div className ="tag">
+				<div className="tag">
 					<div className="md-chip-icon">
 						<i className="fab fa-wordpress"></i>
 					</div>
 					Wordpress
 				</div>
-				<div className ="tag">
+				<div className="tag">
 					<div className="md-chip-icon">
 						<i className="fas fa-stream"></i>
 					</div>
 					REST API
 				</div>
 			</div>
-			<div className = "flex">
+			<div className="flex">
 				<div className="half-width flex-two">
 
 					<div className="flex">
@@ -75,49 +75,49 @@ return (
 					
 				</div>
 				<div className="half-width flex-one">
-					<img className="thumb" src = {millwood} />
+					<img className="thumb" src={millwood} />
 				</div>
 				
 			</div>
 		</div>
 		<div className="mobile-space-small desktop-space-large"></div>
 		<div className="mobile-space-small desktop-space-large"></div>
-		<div clasName = "row-wrap">
+		<div className="row-wrap">
 		
-			<div className ="c100 block full-width box-shadow">
-				<div className ="flex">
+			<div className="c100 block full-width box-shadow">
+				<div className="flex">
 					<div className="half-width flex-half">
 						<h3 className="titleh3">Olympic Home Inspections</h3>
 					</div>
 					<div className="half-width flex-half checkout">
 						<a href="http://olympicinspection.com" target="_blank">
-							<button class="checkout green-grandient">
+							<button className="checkout green-grandient">
 								View This Site
 							</button>
 						</a>
 					</div>
 				</div>
 				<div className="tags">
-					<div class ="tag">
-						<div class="md-chip-icon">
-							<i class="far fa-object-group"></i>
+					<div className="tag">
+						<div className="md-chip-icon">
+							<i className="far fa-object-group"></i>
 						</div>
 						UX Design
 					</div>
-					<div class ="tag">
-					<div class="md-chip-icon">
-						<i class="fab fa-wordpress"></i>
+					<div className="tag">
+					<div className="md-chip-icon">
+						<i className="fab fa-wordpress"></i>
 					</div>
 					Wordpress
 				</div>
 					<div className="tag">
-						<div class ="md-chip-icon">
-							<i class="fas fa-box"></i>
+						<div className="md-chip-icon">
+							<i className="fas fa-box"></i>
 						</div>
 						Material Design
 					</div>
 				</div>
-				<div class = "flex">
+				<div className="flex">
 					<div className="half-width flex-two">
 
 						<div className="flex">
@@ -135,7 +135,7 @@ return (
 						
 					</div>
 					<div className="half-width flex-one">
-						<img className="thumb" src = {olympic} />
+						<img className="thumb" src={olympic} />
 					</div>
 				
 				</div>
@@ -143,36 +143,36 @@ return (
 		</div>
 		<div className="mobile-space-small desktop-space-large"></div>
 		<div className="mobile-space-small desktop-space-large"></div>
-		<div clasName = "row-wrap">
+		<div className="row-wrap">
 		
-			<div className ="c100 block full-width box-shadow">
-				<div className ="flex">
+			<div className="c100 block full-width box-shadow">
+				<div className="flex">
 					<div className="half-width flex-half">
 						<h3 className="titleh3">Checkbook</h3>
 					</div>
 					
 				</div>
 				<div className="tags">
-					<div class = "tag">
-						<div class="md-chip-icon">
-							<i class="fab fa-php"></i>
+					<div className="tag">
+						<div className="md-chip-icon">
+							<i className="fab fa-php"></i>
 						</div>
 						PHP 5
 					</div>
 					<div className="tag">
-						<div class ="md-chip-icon">
-							<i class="fas fa-fire-alt"></i>
+						<div className="md-chip-icon">
+							<i className="fas fa-fire-alt"></i>
 						</div>
 						Codeigniter
 					</div>
-					<div class ="tag">
-					<div class="md-chip-icon">
-						<i class="fas fa-stream"></i>
+					<div className="tag">
+					<div className="md-chip-icon">
+						<i className="fas fa-stream"></i>
 					</div>
 					REST API
 				</div>
 				</div>
-				<div class = "flex">
+				<div className="flex">
 					<div className="half-width flex-two">
 
 						<div className="flex">
@@ -189,17 +189,17 @@ return (
 						</div>
 					</div>
 					<div className="half-width flex-one">
-						<img className="thumb" src = {checkbook} />
+						<img className="thumb" src={checkbook} />
 					</div>
 				</div>
 			</div>
 		</div>
 		<div className="mobile-space-small desktop-space-large"></div>
 		<div className="mobile-space-small desktop-space-large"></div>
-		<div clasName = "row-wrap">
+		<div className="row-wrap">
 		
-			<div className ="c100 block full-width box-shadow">
-				<div className ="flex">
+			<div className="c100 block full-width box-shadow">
+				<div className="flex">
 					<div className="half-width flex-half">
 						<h3 className="titleh3">Plex Movie Manager</h3>
 					</div>
@@ -207,25 +207,25 @@ return (
 				</div>
 				<div className="tags">
 					<div className="tag">
-						<div class="md-chip-icon">
-							<i class="fab fa-php"></i>
+						<div className="md-chip-icon">
+							<i className="fab fa-php"></i>
 						</div>
 						PHP 7
 					</div>
 					<div className="tag">
-						<div class="md-chip-icon">
-							<i class="fab fa-laravel"></i>
+						<div className="md-chip-icon">
+							<i className="fab fa-laravel"></i>
 						</div>
 						Laravel
 					</div>
 					<div className="tag">
-						<div class="md-chip-icon">
-							<i class="fas fa-expand-alt"></i>
+						<div className="md-chip-icon">
+							<i className="fas fa-expand-alt"></i>
 						</div>
 						Third party API
 					</div>
 				</div>
-				<div class = "flex">
+				<div className="flex">
 					<div className="half-width flex-two">
 
 						<div className="flex">
@@ -243,7 +243,7 @@ return (
 
 					</div>
 					<div className="half-width flex-one">
-						<img className="thumb" src = {plex} />
+						<img className="thumb" src={plex} />
 					</div>
 				</div>
 			</div>

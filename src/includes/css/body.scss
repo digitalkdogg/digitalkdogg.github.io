@@ -40,22 +40,26 @@ div#header div#logo-section {
     padding: 0 5px 0 0;
     max-width:70px;
     font-size:.8em;
-    flex-grow: 1;
+    flex:1;
     flex-wrap: nowrap;
 }
 
 div#header div#nine-box-section {
-    flex-grow: 1;
-    align-self: center;
 	font-size:1.4em;
 	z-index:2;
+	flex:1;
+	margin-top:10px;
 }
-
 
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
 	color: #17ad17;
-	transition: 1s rotate;
+}
+
+@media only screen and (min-width: 768px) {
+	div#header div#nine-box-section.show {
+		transform: translateX(-12px);
+	}
 }
 
 div#header div#sub-header-wrap {
@@ -69,35 +73,8 @@ div#header div#sub-header-wrap {
 div#header div#name-section {
 	font-weight: bold;
 	font-size: .8em;
-	flex-grow: 4;
+	flex:9;
 	text-align:center;
-}
-
-div#header div#menu-section {
-	position: fixed;
-	height:100%;
-	float:right;
-	padding:10px;
-	background: rgba(22,58,87,0.8);
-	color:white;
-	width:100%;
-	left:100%;
-	top:50px;
-	border-left: 3px solid #163a57;
-}
-
-div#body.notscrolled div#header div#menu-section {
-	top:160px;
-}
-
-div#header div#menu-section.show {
-	display:block;
-	left: 0;
-	transition: left .5s cubic-bezier(0.5, 0.2, 0.3, 1.0);
-}
-
-div#header div#menu-section.hide {
-	transition: left .5s cubic-bezier(0.5, 0.2, 0.3, 1.0);
 }
 
 div.menu-logo-wrap {
@@ -130,38 +107,63 @@ div#header div#logo-section div.menu-logo-wrap {
 	color:#17ad17;
 }
 
-
-
-div#header div#menu-section li {
-	list-style-type: none;
-	font-weight: 100;
-	line-height:2;
-	border-left: 3px solid rgba(22,58,87,0);
-	padding:0 5px;
-	font-size:0.8em;
-	text-shadow: 0.01em 0.01em #fff;
-
+div#header div#menu-section.show {
+	transform: translateX(-90%);	
 }
 
 @media only screen and (min-width: 768px) {
-	div#header div#menu-section li {
-		text-shadow: 0 0 #fff;
+	div#header div#menu-section.show {
+    	transform: translateX(-165px);	
 	}
 }
 
-div#header div#menu-section li:hover {
-    cursor: pointer;
-    color: #55ab07;
-    background:white;
-    width:250px;
-	border-left: 5px solid #55ab07;
+div#header div#menu-section {
+    float: right;
+    width: 100%;
+    transform: translateX(300px);
+	transition: transform .7s;
+	height: 2000px;
+	border-left: 3px solid white;
+	background: rgba(69,93,113,0.9);
+	position:absolute;
+	padding:0 1%;
+	margin-top:10px;
 }
 
-div#header div#menu-section li.active {
-	border-left: 5px solid #55ab07;
+@media only screen and (min-width: 768px) {
+	div#header div#menu-section {
+		width: 300px;
+		border-top: 1px solid #999;
+	}
 }
 
+div#header #menu-section li {
+    font-size: 18px;
+	list-style-type: none;
+	margin:0 10px;
+	padding: 0 5px;
+	line-height: 1.5;
+}
 
+body.small-menu div#header #menu-section li {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+div#header #menu-section li.active {
+    border-left: 3px solid #17ad17;
+}
+
+div#header #menu-section li.active:hover {
+	padding:0 5px;
+}
+
+div#header #menu-section li:hover {
+	border-left: 3px solid #17ad17;
+	padding: 0 2px;
+	cursor:pointer;
+	background:rgba(255,255,255,0.2);
+}
 
 div#header div#sub-header-wrap h3 {
     font-size:24px;
@@ -188,10 +190,6 @@ div#guts-section div.section {
     min-height: 100vh;
 }
 
-/*div#guts-section div.section.show .box {
-	animation : flip 0.5s  ease-out;
-} */
-
 div#guts-section div#the-guts {
     position: relative;
     padding-bottom: 10px;
@@ -213,16 +211,12 @@ div#guts-section div.box, div#guts-section div.box-no-animate {
     min-height: 30vh;
     color: #333;
 	border: 1px solid #ddd;
-	/*padding:0 10px; */
 }
 
 div#guts-section div.box.mini {
 	min-height: 10vh;
 }
 
-div#guts-section div.box p, div#guts-section div.box-no-animate {
-  /*  padding: 2%; */
-}
 
 div#guts-section div.box-no-animate {
 	margin-bottom:5%;
@@ -297,7 +291,6 @@ div#guts-section #the-guts .info-wrap a {
 	display: flex;
     flex-direction: column;
     text-align: left;
-   /* padding: 0 20px; */
     margin: 10px 0;
     width : 85%;
 }
@@ -445,7 +438,7 @@ div#footer {
 	color:white;
 	font-size: .5em;
 	text-align:center;
-
+	border-top: 1px solid #999;
 }
 
 div#header div#name-section h2 {
@@ -461,31 +454,11 @@ div#header div#name-section h2 {
 		font-size:1em;
 	}
 
-	div#header div#name-section {
-		flex-grow:14;
-	}
-
-	div#header div#menu-section.show {
-		left:70%;
-	}
-
-
-	div#guts-section div.section div.box, div#guts-section div.box-no-animate {
-	/*	margin:3% 5% 5% 5%;
-		border-radius:5px;
-		padding:1% 5%; */
-	}
 	div#guts-section .block.c33 {
 	    margin: 5vh 1% 15vh 1%;
 	    text-align: center;
 	    border-radius: 5px;
 	}
-
-	/*
-	div#guts-section div#banner {
-		font-size:1.5em;
-	} */
-
 
 	div#guts-section div.section {
 		margin: 0;
@@ -503,9 +476,6 @@ div#header div#name-section h2 {
 }
 
 @keyframes flip {
-	/*from { transform: rotateX(0); }
-	50% { transform:rotateX(180deg); }
-	100% { transform: rotateX(360deg) } */
 	from {transform : scale(0);}
 	50% { transform: scale(1.2); }
 	100% { transform: scale(1); }

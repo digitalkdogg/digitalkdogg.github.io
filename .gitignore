@@ -15,7 +15,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/src/includes/font-awesome/*
+/src/includes/font-awesome/
 package.json
 package-lock.json
 

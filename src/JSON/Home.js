@@ -3,17 +3,13 @@ import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
 import Topskills from '../templates/Topskills';
-import Banner from '../templates//Banner.js';
-import Topbanner from '../templates/Topbanner.js';
 
 class Home extends Component {
 
 	render(props){
 		 return (
        <div id="home" className="section show">
-             <div className="mobile-space-normal"></div>
-
-            <div className="box-no-animate box-shadow full-width about">
+           <div className="box-no-animate box-shadow full-width about">
               <P class="tag" text="Hello I am Kevin Bollman" />
               <hr />
              
