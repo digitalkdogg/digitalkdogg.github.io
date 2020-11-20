@@ -51720,7 +51720,7 @@
 /* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -51750,74 +51750,98 @@
 	    }
 	
 	    _createClass(Topskills, [{
-	        key: "render",
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {}
+	    }, {
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	
+	            window.addEventListener('resize', this.handleResize.bind(this));
+	            this.setHeight();
+	        }
+	    }, {
+	        key: 'setHeight',
+	        value: function setHeight() {
+	            var topskills = document.getElementById('top-skills');
+	            var topskillswrap = document.getElementById('top-skills-wrap');
+	
+	            var height = topskills.offsetHeight;
+	            topskillswrap.setAttribute('Style', 'height:' + topskills.offsetHeight + 'px;');
+	        }
+	    }, {
+	        key: 'handleResize',
+	        value: function handleResize() {
+	            //  this.setHeight();
+	        }
+	    }, {
+	        key: 'render',
 	        value: function render(props) {
 	            return _react2.default.createElement(
-	                "div",
-	                { id: "top-skills", className: "full-width" },
+	                'div',
+	                { id: 'top-skills', className: 'full-width' },
 	                _react2.default.createElement(
-	                    "h3",
+	                    'h3',
 	                    null,
-	                    "Look what I can do"
+	                    'Look what I can do'
 	                ),
-	                _react2.default.createElement("hr", null),
+	                _react2.default.createElement('hr', null),
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "flex max-width-1200" },
+	                    'div',
+	                    { id: 'top-skills-wrap', className: 'flex max-width-1200' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "icon-wrap" },
-	                        _react2.default.createElement("i", { className: "fas fa-terminal" }),
-	                        _react2.default.createElement("i", { className: "fas fa-keyboard" }),
-	                        _react2.default.createElement("i", { className: "fab fa-css3" }),
-	                        _react2.default.createElement("i", { className: "fas fa-laptop-code" }),
-	                        _react2.default.createElement("i", { className: "fab fa-node" }),
-	                        _react2.default.createElement("i", { className: "fas fa-coffee" }),
-	                        _react2.default.createElement("i", { className: "fab fa-connectdevelop" }),
-	                        _react2.default.createElement("br", null),
-	                        _react2.default.createElement("i", { className: "fas fa-server" }),
-	                        _react2.default.createElement("i", { className: "fab fa-jsfiddle" }),
-	                        _react2.default.createElement("i", { className: "fas fa-database" }),
-	                        _react2.default.createElement("i", { className: "fas fa-table" }),
-	                        _react2.default.createElement("i", { className: "fas fa-hourglass-start" }),
-	                        _react2.default.createElement("i", { className: "fas fa-ruler-combined" }),
-	                        _react2.default.createElement("br", null),
-	                        _react2.default.createElement("i", { className: "fas fa-globe-americas" }),
-	                        _react2.default.createElement("i", { className: "fab fa-react" }),
-	                        _react2.default.createElement("i", { className: "fab fa-wordpress" }),
-	                        _react2.default.createElement("i", { className: "fab fa-angular" }),
-	                        _react2.default.createElement("br", null),
-	                        _react2.default.createElement("i", { className: "fab fa-dev" }),
-	                        _react2.default.createElement("i", { className: "fab fa-js" }),
-	                        _react2.default.createElement("i", { className: "fab fa-chrome" })
+	                        'div',
+	                        { className: 'icon-wrap' },
+	                        _react2.default.createElement('i', { className: 'fas fa-terminal' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-keyboard' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-css3' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-laptop-code' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-node' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-coffee' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-connectdevelop' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('i', { className: 'fas fa-server' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-jsfiddle' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-database' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-table' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-hourglass-start' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-ruler-combined' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('i', { className: 'fas fa-globe-americas' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-react' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-wordpress' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-angular' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('i', { className: 'fab fa-dev' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-js' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-chrome' })
 	                    ),
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "details-wrap" },
+	                        'div',
+	                        { className: 'details-wrap' },
 	                        _react2.default.createElement(
-	                            "li",
+	                            'li',
 	                            null,
-	                            "Design complete website from begining to end"
+	                            'Design complete website from begining to end'
 	                        ),
 	                        _react2.default.createElement(
-	                            "li",
+	                            'li',
 	                            null,
-	                            "Material design UX specialist"
+	                            'Material design UX specialist'
 	                        ),
 	                        _react2.default.createElement(
-	                            "li",
+	                            'li',
 	                            null,
-	                            "WCAG accessibilty compliant"
+	                            'WCAG accessibilty compliant'
 	                        ),
 	                        _react2.default.createElement(
-	                            "li",
+	                            'li',
 	                            null,
-	                            "Mobile first responsive design princibles"
+	                            'Mobile first responsive design princibles'
 	                        ),
 	                        _react2.default.createElement(
-	                            "li",
+	                            'li',
 	                            null,
-	                            "Experties in multiple content management platforms"
+	                            'Experties in multiple content management platforms'
 	                        )
 	                    )
 	                )
@@ -61325,4 +61349,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.985233f1.js.map
+//# sourceMappingURL=main.07617702.js.map
