@@ -6,7 +6,11 @@ import Utilsjs from './Utils/Utilsjs';
 import P from './Utils/P';
 import Ninebox from './Ninebox.js';
 
+import bgimg from '../includes/img/binary-bg.jpg';
 
+var imgstyle = {
+	backgroundImage: 'url(' + bgimg + ')'
+};
 
 class Header extends Component {
 
@@ -62,7 +66,7 @@ class Header extends Component {
 	render(){
 		return (
 
-			<div id="header" >
+			<div id="header" style = {imgstyle} >
 			
 				<div id="header-wrap">
 					<div id="logo-section">
