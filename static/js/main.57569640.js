@@ -51452,7 +51452,7 @@
 	        { id: 'guts-section' },
 	        _react2.default.createElement(
 	          _reactRouterDom.BrowserRouter,
-	          null,
+	          { basename: ("/digitalkdogg.github.io") },
 	          _react2.default.createElement(
 	            'div',
 	            { id: 'the-guts' },
@@ -62289,4 +62289,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.18de7bac.js.map
+//# sourceMappingURL=main.57569640.js.map
