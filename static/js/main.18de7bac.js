@@ -50087,7 +50087,7 @@
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-one' },
-									_react2.default.createElement('img', { className: 'thumb', src: _millwood_thumb2.default })
+									_react2.default.createElement('img', { alt: 'Millwood Church', className: 'thumb', src: _millwood_thumb2.default })
 								)
 							)
 						)
@@ -50221,7 +50221,7 @@
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-one' },
-									_react2.default.createElement('img', { className: 'thumb', src: _olympic_inspection2.default })
+									_react2.default.createElement('img', { alt: 'Olympic Home Inspections', className: 'thumb', src: _olympic_inspection2.default })
 								)
 							)
 						)
@@ -50341,7 +50341,7 @@
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-one' },
-									_react2.default.createElement('img', { className: 'thumb', src: _checkbook_scaled2.default })
+									_react2.default.createElement('img', { alt: 'Checkbook', className: 'thumb', src: _checkbook_scaled2.default })
 								)
 							)
 						)
@@ -50457,7 +50457,7 @@
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-one' },
-									_react2.default.createElement('img', { className: 'thumb', src: _plex_admin2.default })
+									_react2.default.createElement('img', { alt: 'Plex Media Manager', className: 'thumb', src: _plex_admin2.default })
 								)
 							)
 						)
@@ -50715,13 +50715,6 @@
 	  _createClass(Flexlayout, [{
 	    key: 'render',
 	    value: function render(props) {
-	      var simplestyle2 = {
-	        'display': 'flex',
-	        'flexDirection': 'row',
-	        'background': '#eee',
-	        'width': '100%',
-	        'lineHeight': 2
-	      };
 	
 	      var simplestyle = {
 	        'display': 'flex',
@@ -50762,13 +50755,6 @@
 	        'borderRight': '1px solid black',
 	        'padding': '0 10px',
 	        'margin': '0 20px'
-	      };
-	
-	      var coverstyle = {
-	        'background': 'rgba(0,0,0,0.5)',
-	        'height': '200px',
-	        'marginTop': '-20px',
-	        'color': 'white'
 	      };
 	
 	      var htmlString = '<div id = "parent">\n   <div class = "child">child1</div>\n   <div class = "child">child2</div>\n   <div class = "child">child3</div>\n</div>';
@@ -51455,10 +51441,7 @@
 	  function Guts() {
 	    _classCallCheck(this, Guts);
 	
-	    var _this = _possibleConstructorReturn(this, (Guts.__proto__ || Object.getPrototypeOf(Guts)).call(this));
-	
-	    _this.state = {};
-	    return _this;
+	    return _possibleConstructorReturn(this, (Guts.__proto__ || Object.getPrototypeOf(Guts)).apply(this, arguments));
 	  }
 	
 	  _createClass(Guts, [{
@@ -51687,7 +51670,7 @@
 	            var section = window.location.pathname.replace('/', '');
 	            this.setState({ 'activesection': section });
 	
-	            if (window.location.pathname == '/') {
+	            if (window.location.pathname === '/') {
 	                this.setState({ 'activesection': 'home' });
 	            }
 	        }
@@ -51787,27 +51770,11 @@
 	
 	    _createClass(Topskills, [{
 	        key: 'componentDidMount',
-	        value: function componentDidMount() {}
-	    }, {
-	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	
-	            window.addEventListener('resize', this.handleResize.bind(this));
-	            this.setHeight();
-	        }
-	    }, {
-	        key: 'setHeight',
-	        value: function setHeight() {
 	            var topskills = document.getElementById('top-skills');
 	            var topskillswrap = document.getElementById('top-skills-wrap');
 	
-	            var height = topskills.offsetHeight;
 	            topskillswrap.setAttribute('Style', 'height:' + topskills.offsetHeight + 'px;');
-	        }
-	    }, {
-	        key: 'handleResize',
-	        value: function handleResize() {
-	            //  this.setHeight();
 	        }
 	    }, {
 	        key: 'render',
@@ -62322,4 +62289,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.8b369f2c.js.map
+//# sourceMappingURL=main.18de7bac.js.map
