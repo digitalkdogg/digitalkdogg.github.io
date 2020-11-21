@@ -51451,8 +51451,8 @@
 	        'div',
 	        { id: 'guts-section' },
 	        _react2.default.createElement(
-	          _reactRouterDom.BrowserRouter,
-	          { basename: ("/digitalkdogg.github.io") },
+	          _reactRouterDom.HashRouter,
+	          null,
 	          _react2.default.createElement(
 	            'div',
 	            { id: 'the-guts' },
@@ -51667,10 +51667,10 @@
 	    _createClass(Ninebox, [{
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            var section = window.location.pathname.replace('/', '');
+	            var section = window.location.pathname.replace('/#/', '');
 	            this.setState({ 'activesection': section });
 	
-	            if (window.location.pathname === '/') {
+	            if (window.location.pathname === '/#/') {
 	                this.setState({ 'activesection': 'home' });
 	            }
 	        }
@@ -51696,7 +51696,7 @@
 	        key: 'gotosection',
 	        value: function gotosection(section) {
 	            var guts = document.getElementById('the-guts');
-	            guts.remove();
+	            //  guts.remove();
 	
 	            this.setState({
 	                'showclass': ''
@@ -51714,17 +51714,17 @@
 	                    { id: 'menu-section', className: this.state.showclass },
 	                    _react2.default.createElement('br', null),
 	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'home'),
-	                            text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }), href: '/' }),
+	                            text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }), href: '/#/' }),
 	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'about'),
-	                            text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }), href: '/about' }),
+	                            text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }), href: '/#/about' }),
 	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'projects'),
-	                            text: 'Projects', 'class': this.state.activesection === 'projects' ? 'active' : '' }), href: '/projects' }),
+	                            text: 'Projects', 'class': this.state.activesection === 'projects' ? 'active' : '' }), href: '/#/projects' }),
 	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'snippets'),
-	                            text: 'Snippets', 'class': this.state.activesection === 'snippets' ? 'active' : '' }), href: '/snippets' }),
+	                            text: 'Snippets', 'class': this.state.activesection === 'snippets' ? 'active' : '' }), href: '/#/snippets' }),
 	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'skills'),
-	                            text: 'Skills', 'class': this.state.activesection === 'skills' ? 'active' : '' }), href: '/skills' }),
+	                            text: 'Skills', 'class': this.state.activesection === 'skills' ? 'active' : '' }), href: '/#/skills' }),
 	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'contact'),
-	                            text: 'Contact', 'class': this.state.activesection === 'contact' ? 'active' : '' }), href: '/contact' })
+	                            text: 'Contact', 'class': this.state.activesection === 'contact' ? 'active' : '' }), href: '/#/contact' })
 	                )
 	            );
 	        }
@@ -62289,4 +62289,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.57569640.js.map
+//# sourceMappingURL=main.8769c3e9.js.map
