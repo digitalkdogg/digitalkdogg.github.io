@@ -51558,6 +51558,8 @@
 	                'showclass': 'hide',
 	                'activesection': section
 	            });
+	
+	            window.scrollTo(0, 0);
 	        }
 	    }, {
 	        key: 'render',
@@ -62208,4 +62210,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.5974c632.js.map
+//# sourceMappingURL=main.d0c2b64f.js.map
