@@ -42,7 +42,9 @@ class Ninebox extends Component {
      }
      
     gotosection (section) {
-        let guts = document.getElementById('the-guts');
+       // let guts = document.getElementById('the-guts');
+        var body = document.querySelector('body');
+        body.classList.remove('overflowhidden');
       //  guts.remove();
 
         this.setState({

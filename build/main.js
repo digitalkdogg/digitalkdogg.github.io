@@ -51695,7 +51695,9 @@
 	    }, {
 	        key: 'gotosection',
 	        value: function gotosection(section) {
-	            var guts = document.getElementById('the-guts');
+	            // let guts = document.getElementById('the-guts');
+	            var body = document.querySelector('body');
+	            body.classList.remove('overflowhidden');
 	            //  guts.remove();
 	
 	            this.setState({
@@ -62289,4 +62291,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.8769c3e9.js.map
+//# sourceMappingURL=main.154d873f.js.map
