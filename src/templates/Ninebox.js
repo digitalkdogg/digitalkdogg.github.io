@@ -13,10 +13,11 @@ class Ninebox extends Component {
       }
 
     componentDidMount() {
-        let section = window.location.pathname.replace('/#/','')
+
+        let section = window.location.hash.replace('#/','')
         this.setState({'activesection': section});
 
-        if (window.location.pathname === '/#/') {
+        if (window.location.hash === '#/') {
             this.setState({'activesection': 'home'})
         }
      
@@ -45,7 +46,10 @@ class Ninebox extends Component {
 
         this.setState({
            'showclass': 'hide',
+           'activesection': section
         })
+
+        window.scrollTo(0, 0);
      }
 
 
