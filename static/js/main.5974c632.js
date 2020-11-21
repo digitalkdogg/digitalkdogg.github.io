@@ -51524,10 +51524,11 @@
 	    _createClass(Ninebox, [{
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            var section = window.location.pathname.replace('/#/', '');
+	
+	            var section = window.location.hash.replace('#/', '');
 	            this.setState({ 'activesection': section });
 	
-	            if (window.location.pathname === '/#/') {
+	            if (window.location.hash === '#/') {
 	                this.setState({ 'activesection': 'home' });
 	            }
 	        }
@@ -51554,7 +51555,8 @@
 	            body.classList.remove('overflowhidden');
 	
 	            this.setState({
-	                'showclass': 'hide'
+	                'showclass': 'hide',
+	                'activesection': section
 	            });
 	        }
 	    }, {
@@ -62206,4 +62208,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.76fa9e3a.js.map
+//# sourceMappingURL=main.5974c632.js.map
