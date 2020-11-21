@@ -3932,6 +3932,10 @@
 	    value: function componentDidMount() {
 	      var Utils = new _Utilsjs2.default();
 	      Utils.adjustcontactcircles();
+	
+	      window.addEventListener('resize', function () {
+	        Utils.adjustcontactcircles();
+	      });
 	    }
 	  }, {
 	    key: 'render',
@@ -49829,19 +49833,19 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _millwood_thumb = __webpack_require__(541);
+	var _millwood_thumb = __webpack_require__(540);
 	
 	var _millwood_thumb2 = _interopRequireDefault(_millwood_thumb);
 	
-	var _olympic_inspection = __webpack_require__(542);
+	var _olympic_inspection = __webpack_require__(541);
 	
 	var _olympic_inspection2 = _interopRequireDefault(_olympic_inspection);
 	
-	var _checkbook_scaled = __webpack_require__(540);
+	var _checkbook_scaled = __webpack_require__(539);
 	
 	var _checkbook_scaled2 = _interopRequireDefault(_checkbook_scaled);
 	
-	var _plex_admin = __webpack_require__(543);
+	var _plex_admin = __webpack_require__(542);
 	
 	var _plex_admin2 = _interopRequireDefault(_plex_admin);
 	
@@ -51389,10 +51393,6 @@
 	
 	var _Ninebox2 = _interopRequireDefault(_Ninebox);
 	
-	var _binaryBg = __webpack_require__(539);
-	
-	var _binaryBg2 = _interopRequireDefault(_binaryBg);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -51400,10 +51400,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var imgstyle = {
-		backgroundImage: 'url(' + _binaryBg2.default + ')'
-	};
 	
 	var Header = function (_Component) {
 		_inherits(Header, _Component);
@@ -51466,7 +51462,7 @@
 			value: function render() {
 				return _react2.default.createElement(
 					'div',
-					{ id: 'header', style: imgstyle },
+					{ id: 'header' },
 					_react2.default.createElement(
 						'div',
 						{ id: 'header-wrap' },
@@ -57568,7 +57564,7 @@
 
 	'use strict'
 	
-	var xtend = __webpack_require__(545)
+	var xtend = __webpack_require__(544)
 	var Schema = __webpack_require__(237)
 	
 	module.exports = merge
@@ -58035,7 +58031,7 @@
 	}
 	
 	// fetch() polyfill for making API calls.
-	__webpack_require__(544);
+	__webpack_require__(543);
 	
 	// Object.assign() is commonly used with React.
 	// It will use the native implementation if it's present and isn't buggy.
@@ -60846,34 +60842,28 @@
 /* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/binary-bg.17a02945.jpg";
+	module.exports = __webpack_require__.p + "static/media/checkbook_scaled.5b48e589.png";
 
 /***/ },
 /* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/checkbook_scaled.5b48e589.png";
+	module.exports = __webpack_require__.p + "static/media/millwood_thumb.0df1ed9d.jpg";
 
 /***/ },
 /* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/millwood_thumb.0df1ed9d.jpg";
+	module.exports = __webpack_require__.p + "static/media/olympic_inspection.476e8199.png";
 
 /***/ },
 /* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "static/media/olympic_inspection.476e8199.png";
-
-/***/ },
-/* 543 */
-/***/ function(module, exports, __webpack_require__) {
-
 	module.exports = __webpack_require__.p + "static/media/plex_admin.13e86d94.png";
 
 /***/ },
-/* 544 */
+/* 543 */
 /***/ function(module, exports) {
 
 	(function(self) {
@@ -61337,7 +61327,7 @@
 
 
 /***/ },
-/* 545 */
+/* 544 */
 /***/ function(module, exports) {
 
 	module.exports = extend
@@ -61363,4 +61353,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.f8db5f06.js.map
+//# sourceMappingURL=main.61041091.js.map
