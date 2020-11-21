@@ -14,7 +14,7 @@ class Guts extends Component {
       return(
         <div id="guts-section">
 
-            <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <div id="the-guts">
               <Route exact path="/" component={Home} />
               <Route path="/about" component={Aboutme} />
