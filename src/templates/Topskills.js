@@ -3,26 +3,11 @@ import React, { Component } from 'react';
 class Topskills extends Component {
 
     componentDidMount() {
-     
-      }
-
-    componentDidMount() {
-
-        window.addEventListener('resize', this.handleResize.bind(this));
-        this.setHeight();
-      
-      }
-
-      setHeight() {
         let topskills = document.getElementById('top-skills');
         let topskillswrap = document.getElementById('top-skills-wrap');
 
-        let height = topskills.offsetHeight;
         topskillswrap.setAttribute('Style', 'height:'+topskills.offsetHeight+'px;');
-      }
-
-      handleResize() {
-      //  this.setHeight();
+     
       }
 
 	render(props){
@@ -30,7 +15,7 @@ class Topskills extends Component {
         <div id="top-skills" className="full-width">
             <h3>Look what I can do</h3>
             <hr />
-            <div id = "top-skills-wrap" className = "flex max-width-1200">
+            <div id="top-skills-wrap" className="flex max-width-1200">
                 <div className="icon-wrap">
                     <i className="fas fa-terminal"></i>
                     <i className="fas fa-keyboard"></i>

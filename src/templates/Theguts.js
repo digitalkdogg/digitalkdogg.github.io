@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+
 
 import Aboutme from '../JSON/About';
 import Skills from '../JSON/Skills';
@@ -16,15 +18,30 @@ class Theguts extends Component {
       }
     }
 
+
+    
+
     render() {
+      var routing = (
+        <Router>
+          <div>
+            <Route path="/projects" component={Projects} />
+          </div>
+        </Router>
+      )
     	return(
     		<div id="the-guts">
-    	    <Home />
+          <Router>
+            <div>
+              <Route path="/projects" component={Projects} />
+            </div>
+          </Router>
+    	    {/* <Home />
           <Aboutme />
         	<Projects />
           <Snippets />
           <Skills />
-          <Contact />
+          <Contact /> */}
         </div>
     	)
     }

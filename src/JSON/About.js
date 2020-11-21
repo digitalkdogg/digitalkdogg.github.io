@@ -6,7 +6,7 @@ class About extends Component {
 
 	render(props){
 		 return (
-			<div id="about" className="section hidden" >
+			<div id="about" className="section" >
              <div className="mobile-space-normal"></div>
     			<div className="block c100 box box-shadow full-width about">
     				<P text="I am a full stack web designer / developer.  I design websites both professionally and on the side.  My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people with technology and in my spare time you will often find me coding or learning a new development stack just for fun." />

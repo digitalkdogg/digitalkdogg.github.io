@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Hr from './Utils/Hr';
 import Li from './Utils/Li';
-import Utilsjs from './Utils/Utilsjs';
+import A from './Utils/A';
 
 class Ninebox extends Component {
 
@@ -13,16 +12,16 @@ class Ninebox extends Component {
        }
       }
 
+    componentDidMount() {
+        let section = window.location.pathname.replace('/','')
+        this.setState({'activesection': section});
 
-    getActiveSection () {
-		var activesection = document.querySelectorAll('.section.show');
-
-		if (activesection.length===1) {
-			  return activesection[0].getAttribute('id')
+        if (window.location.pathname === '/') {
+            this.setState({'activesection': 'home'})
         }
-        
-		return null;
-	}
+     
+      
+    }
 
     showhidemenu () {
 
@@ -43,19 +42,12 @@ class Ninebox extends Component {
      }
      
     gotosection (section) {
-        const Utils = new Utilsjs();
+        let guts = document.getElementById('the-guts');
+        guts.remove();
 
-       //removes the overflow hidden so we can scroll again
-       let body = document.querySelector('body');
-       body.classList.remove('overflowhidden')
-
-       //show desire section and hide every other section
-       Utils.gotosection(section);
-
-       this.setState({
+        this.setState({
            'showclass': '',
-           'activesection': this.getActiveSection()
-       })
+        })
      }
 
 
@@ -65,18 +57,19 @@ class Ninebox extends Component {
 				<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
                 <div id="menu-section" className={this.state.showclass}>		
                     <br />
-                    <Li onclick={this.gotosection.bind(this, 'home')}
-									text="Home" class={this.state.activesection==='home' ? 'active': ''} />
-                    <Li onclick={this.gotosection.bind(this, 'about')}
-									text="About Me" class={this.state.activesection==='about'? 'active': ''} />
-                    <Li onclick={this.gotosection.bind(this, 'projects')}
-                            text="Projects" />
-                    <Li onclick={this.gotosection.bind(this, 'snippets')}
-                            text="Code Snippets" />
-                    <Li onclick={this.gotosection.bind(this, 'skills')}
-                            text="Skills" class={this.state.activesection==='skills'? 'active' : ''}  />
-                    <Li onclick={this.gotosection.bind(this, 'contact')}
-                        text="Contact" class={this.state.activesection==='contact'? 'active' : ''}  />
+                    <A text={<Li onclick={this.gotosection.bind(this, 'home')}
+                        text="Home" class={this.state.activesection==='home' ? 'active': ''} />} href="/" />
+                    <A text={<Li onclick={this.gotosection.bind(this, 'about')}
+                        text="About Me" class={this.state.activesection==='about' ? 'active': ''} />} href="/about"  />
+                    <A text={<Li onclick={this.gotosection.bind(this, 'projects')}
+                        text="Projects" class={this.state.activesection==='projects' ? 'active': ''} />} href="/projects"  />
+                    <A text={<Li onclick={this.gotosection.bind(this, 'snippets')}
+                        text="Snippets" class={this.state.activesection==='snippets' ? 'active': ''} />} href="/snippets"  />
+                    <A text={<Li onclick={this.gotosection.bind(this, 'skills')}
+                        text="Skills" class={this.state.activesection==='skills' ? 'active': ''} />} href="/skills"  />
+                    <A text={<Li onclick={this.gotosection.bind(this, 'contact')}
+                        text="Contact" class={this.state.activesection==='contact' ? 'active': ''} />} href="/contact" />
+                            
                 </div>
             </div>
     	)

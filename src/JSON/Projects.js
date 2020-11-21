@@ -12,10 +12,10 @@ class Projects extends Component {
 	render(props){
 
 return (
-     <div id="projects" className="section hidden">
+     <div id="projects" className="section">
 		<div className="mobile-space-small desktop-space-large"></div>
 
-		<div className="row-wrap">
+		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
 			
@@ -75,14 +75,15 @@ return (
 					
 				</div>
 				<div className="half-width flex-one">
-					<img className="thumb" src={millwood} />
+					<img alt="Millwood Church" className="thumb" src={millwood} />
 				</div>
 				
 			</div>
 		</div>
+		</div>
 		<div className="mobile-space-small desktop-space-large"></div>
 		<div className="mobile-space-small desktop-space-large"></div>
-		<div className="row-wrap">
+		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
 				<div className="flex">
@@ -135,7 +136,7 @@ return (
 						
 					</div>
 					<div className="half-width flex-one">
-						<img className="thumb" src={olympic} />
+						<img alt="Olympic Home Inspections" className="thumb" src={olympic} />
 					</div>
 				
 				</div>
@@ -143,7 +144,7 @@ return (
 		</div>
 		<div className="mobile-space-small desktop-space-large"></div>
 		<div className="mobile-space-small desktop-space-large"></div>
-		<div className="row-wrap">
+		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
 				<div className="flex">
@@ -189,14 +190,14 @@ return (
 						</div>
 					</div>
 					<div className="half-width flex-one">
-						<img className="thumb" src={checkbook} />
+						<img alt="Checkbook" className="thumb" src={checkbook} />
 					</div>
 				</div>
 			</div>
 		</div>
 		<div className="mobile-space-small desktop-space-large"></div>
 		<div className="mobile-space-small desktop-space-large"></div>
-		<div className="row-wrap">
+		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
 				<div className="flex">
@@ -243,14 +244,15 @@ return (
 
 					</div>
 					<div className="half-width flex-one">
-						<img className="thumb" src={plex} />
+						<img alt="Plex Media Manager" className="thumb" src={plex} />
 					</div>
 				</div>
 			</div>
 		</div>
+		<div className="mobile-space-small desktop-space-large"></div>
+		<div className="mobile-space-small desktop-space-large"></div>
 	</div>
-			
-     </div>
+
       )
 	}
 }

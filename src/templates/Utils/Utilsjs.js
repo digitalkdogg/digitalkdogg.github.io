@@ -25,29 +25,7 @@ class Utilsjs extends Component {
 
       }
       return null;
-  }
-
-  /*********************************************************
-    *   *** go to section function                ****     *
-    ********************************************************
-    *  This function loops through all sections and first  *
-    *  hides the section and than shows the desire section *
-    *  @return : null                                      *
-    *******************************************************/
-  gotosection(section) {
-    var others = document.querySelectorAll('.section');
-
-    for (let i = 0; i<others.length; i++) {
-      others[i].classList.remove('show');
-      others[i].classList.add('hidden');
-      if (others[i].getAttribute('id')===section) {
-        others[i].classList.add('show');
-      }
-    }
-    this.adjustcontactcircles();
-  }
-
-  
+  }  
 
 }//end class
 export default Utilsjs;

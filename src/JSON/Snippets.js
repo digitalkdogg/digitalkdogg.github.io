@@ -11,7 +11,7 @@ class Snippets extends Component {
 
 	render(props){
 		 return (
-       <div id="snippets" className="section hidden">
+       <div id="snippets" className="section">
             <Div class="mobile-space-small desktop-space-large" />
             <Imageoverlay />
             <Div class="mobile-space-small desktop-space-large" />

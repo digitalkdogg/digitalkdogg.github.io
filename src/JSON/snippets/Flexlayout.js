@@ -7,13 +7,6 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 class Flexlayout extends Component {
 
 	render(props){
-    const simplestyle2={
-      'display':'flex',
-      'flexDirection': 'row',
-      'background': '#eee',
-      'width':'100%',
-      'lineHeight': 2,
-    }
 
     const simplestyle={
       'display':'flex',
@@ -56,18 +49,11 @@ class Flexlayout extends Component {
        'margin' : '0 20px'
     }
 
-    const coverstyle={
-    'background':'rgba(0,0,0,0.5)',
-    'height': '200px',
-    'marginTop' : '-20px',
-    'color': 'white'
-    }
-
     const htmlString='<div id = "parent">\n   <div class = "child">child1</div>\n   <div class = "child">child2</div>\n   <div class = "child">child3</div>\n</div>' 
     const htmlString2='<div id = "parent">\n   <div class = "child one">child1</div>\n   <div class = "child two">child2</div>\n   <div class = "child three">child3</div>\n</div>' 
     const cssString='div#parent {\n   display:flex; flex-direction: row;\n}';
     const cssString2='div#parent {\n   display:flex;\n   flex-direction: row;\n} \ndiv.child.two {flex: 2;}';
-	 const columnString='<div id = "parent"\n  <div class = "child one">Child 1</div>\n  <div class = "child two">Child 2</div>\n  <div class = "child tow">Child 3</div>\n</div>'
+	  const columnString='<div id = "parent"\n  <div class = "child one">Child 1</div>\n  <div class = "child two">Child 2</div>\n  <div class = "child tow">Child 3</div>\n</div>'
      const columnCssString='div#parent {\n   display:flex; flex-direction: column;\n}'
 
      return (

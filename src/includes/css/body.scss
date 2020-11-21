@@ -145,6 +145,15 @@ div#header #menu-section li {
 	line-height: 1.5;
 }
 
+div#header #menu-section a {
+	color:white;
+	font-weight:300;
+}
+
+div#header #menu-section a:hover {
+	text-decoration: none;
+}
+
 body.small-menu div#header #menu-section li {
 	font-size: 16px;
 	line-height: 1.4;
