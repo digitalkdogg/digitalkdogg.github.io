@@ -17,7 +17,6 @@ class Body extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
-   
   }
 
   handleScroll() {

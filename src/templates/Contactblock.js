@@ -13,6 +13,10 @@ class Contactblock extends Component {
     componentDidMount() {
     	 const Utils = new Utilsjs();
        Utils.adjustcontactcircles();
+
+       window.addEventListener('resize', function () {
+         Utils.adjustcontactcircles();
+       });
     }
 
     
