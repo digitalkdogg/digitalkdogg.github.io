@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter, Route, BrowserRouter as Router } from 'react-router-dom'
 
 
 import Home from '../JSON/Home';
@@ -14,7 +14,7 @@ class Guts extends Component {
       return(
         <div id="guts-section">
 
-        <Router basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <div id="the-guts">
               <Route exact path="/" component={Home} />
               <Route path="/about" component={Aboutme} />
@@ -23,7 +23,7 @@ class Guts extends Component {
               <Route path="/snippets" component={Snippets} />
               <Route path="/contact" component={Contact} />
             </div>
-          </Router>
+          </HashRouter>
 
         </div>
       )

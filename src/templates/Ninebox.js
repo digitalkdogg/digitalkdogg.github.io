@@ -13,10 +13,10 @@ class Ninebox extends Component {
       }
 
     componentDidMount() {
-        let section = window.location.pathname.replace('/','')
+        let section = window.location.pathname.replace('/#/','')
         this.setState({'activesection': section});
 
-        if (window.location.pathname === '/') {
+        if (window.location.pathname === '/#/') {
             this.setState({'activesection': 'home'})
         }
      
@@ -43,7 +43,7 @@ class Ninebox extends Component {
      
     gotosection (section) {
         let guts = document.getElementById('the-guts');
-        guts.remove();
+      //  guts.remove();
 
         this.setState({
            'showclass': '',
@@ -58,17 +58,17 @@ class Ninebox extends Component {
                 <div id="menu-section" className={this.state.showclass}>		
                     <br />
                     <A text={<Li onclick={this.gotosection.bind(this, 'home')}
-                        text="Home" class={this.state.activesection==='home' ? 'active': ''} />} href="/" />
+                        text="Home" class={this.state.activesection==='home' ? 'active': ''} />} href="/#/" />
                     <A text={<Li onclick={this.gotosection.bind(this, 'about')}
-                        text="About Me" class={this.state.activesection==='about' ? 'active': ''} />} href="/about"  />
+                        text="About Me" class={this.state.activesection==='about' ? 'active': ''} />} href="/#/about"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'projects')}
-                        text="Projects" class={this.state.activesection==='projects' ? 'active': ''} />} href="/projects"  />
+                        text="Projects" class={this.state.activesection==='projects' ? 'active': ''} />} href="/#/projects"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'snippets')}
-                        text="Snippets" class={this.state.activesection==='snippets' ? 'active': ''} />} href="/snippets"  />
+                        text="Snippets" class={this.state.activesection==='snippets' ? 'active': ''} />} href="/#/snippets"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'skills')}
-                        text="Skills" class={this.state.activesection==='skills' ? 'active': ''} />} href="/skills"  />
+                        text="Skills" class={this.state.activesection==='skills' ? 'active': ''} />} href="/#/skills"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'contact')}
-                        text="Contact" class={this.state.activesection==='contact' ? 'active': ''} />} href="/contact" />
+                        text="Contact" class={this.state.activesection==='contact' ? 'active': ''} />} href="/#/contact" />
                             
                 </div>
             </div>
