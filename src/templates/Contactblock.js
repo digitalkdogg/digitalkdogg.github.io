@@ -3,13 +3,6 @@ import Utilsjs from './Utils/Utilsjs';
 
 class Contactblock extends Component {
 
-  constructor() {
-      super();
-      this.state = {
-
-      }
-    }
-
     componentDidMount() {
     	 const Utils = new Utilsjs();
        Utils.adjustcontactcircles();

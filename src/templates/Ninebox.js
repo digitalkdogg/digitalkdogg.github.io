@@ -24,9 +24,7 @@ class Ninebox extends Component {
     }
 
     showhidemenu () {
-
-		var body = document.querySelector('body');
-
+        let body = document.querySelector('body');
  		if (this.state.showclass === 'hide') {
  			this.setState({'showclass': 'show'});
             body.classList.add('overflowhidden');
@@ -42,13 +40,11 @@ class Ninebox extends Component {
      }
      
     gotosection (section) {
-       // let guts = document.getElementById('the-guts');
-        var body = document.querySelector('body');
+        let body = document.querySelector('body');
         body.classList.remove('overflowhidden');
-      //  guts.remove();
 
         this.setState({
-           'showclass': '',
+           'showclass': 'hide',
         })
      }
 
@@ -57,7 +53,8 @@ class Ninebox extends Component {
     	return(
     		<div id="nine-box-section" className={this.state.showclass}>
 				<i className="fas fa-th-large" onClick={this.showhidemenu.bind(this)}></i>
-                <div id="menu-section" className={this.state.showclass}>		
+                <div id="menu-section" className={this.state.showclass}
+                    role="navigation" aria-label="main">		
                     <br />
                     <A text={<Li onclick={this.gotosection.bind(this, 'home')}
                         text="Home" class={this.state.activesection==='home' ? 'active': ''} />} href="/#/" />
