@@ -40,7 +40,7 @@ return (
 				</div>
 				<div className="tag">
 					<div className="md-chip-icon">
-						<i className="far fa-object-group"></i>
+						<i class="fas fa-drafting-compass"></i>
 					</div>
 					UX Design
 				</div>
@@ -101,7 +101,7 @@ return (
 				<div className="tags">
 					<div className="tag">
 						<div className="md-chip-icon">
-							<i className="far fa-object-group"></i>
+						<i class="fas fa-drafting-compass"></i>
 						</div>
 						UX Design
 					</div>
