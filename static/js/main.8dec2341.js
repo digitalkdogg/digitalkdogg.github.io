@@ -49929,7 +49929,7 @@
 									_react2.default.createElement(
 										'div',
 										{ className: 'md-chip-icon' },
-										_react2.default.createElement('i', { className: 'far fa-object-group' })
+										_react2.default.createElement('i', { 'class': 'fas fa-drafting-compass' })
 									),
 									'UX Design'
 								),
@@ -50062,7 +50062,7 @@
 									_react2.default.createElement(
 										'div',
 										{ className: 'md-chip-icon' },
-										_react2.default.createElement('i', { className: 'far fa-object-group' })
+										_react2.default.createElement('i', { 'class': 'fas fa-drafting-compass' })
 									),
 									'UX Design'
 								),
@@ -62211,4 +62211,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.f3f503b4.js.map
+//# sourceMappingURL=main.8dec2341.js.map
