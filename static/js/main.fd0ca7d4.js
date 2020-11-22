@@ -49887,7 +49887,7 @@
 							{ className: 'c100 block full-width box-shadow' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flex' },
+								{ className: 'flex checkout-row' },
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-half' },
@@ -50030,7 +50030,7 @@
 							{ className: 'c100 block full-width box-shadow' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flex' },
+								{ className: 'flex checkout-row' },
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-half' },
@@ -50164,7 +50164,7 @@
 							{ className: 'c100 block full-width box-shadow' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flex' },
+								{ className: 'flex checkout-row' },
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-half' },
@@ -50284,7 +50284,7 @@
 							{ className: 'c100 block full-width box-shadow' },
 							_react2.default.createElement(
 								'div',
-								{ className: 'flex' },
+								{ className: 'flex checkout-row' },
 								_react2.default.createElement(
 									'div',
 									{ className: 'half-width flex-half' },
@@ -62212,4 +62212,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.d444eb9b.js.map
+//# sourceMappingURL=main.fd0ca7d4.js.map
