@@ -49721,7 +49721,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'contact', className: 'section' },
-	        _react2.default.createElement('div', { className: 'mobile-space-normal' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'block c100 box mini box-shadow full-width' },
@@ -62212,4 +62211,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.fd0ca7d4.js.map
+//# sourceMappingURL=main.827644d5.js.map
