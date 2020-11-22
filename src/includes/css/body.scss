@@ -357,7 +357,8 @@ div#guts-section #the-guts .info-wrap a {
 	#the-guts #projects .half-width.checkout {
     	margin: 20px 0;
 		text-align:left;
-		margin-left:-70px;
+		position: absolute;
+		left: 30%;
 	}
 }
 
@@ -374,7 +375,25 @@ div#guts-section #the-guts .info-wrap a {
 
 #projects .block.c100.full-width {
     padding: 0 20px;
-    width: 100%;
+    width: 95%;
+}
+
+#projects .flex.checkout-row {
+    position: relative;
+    left: -15px;
+}
+
+@media only screen and (min-width: 768px) {
+	#projects .flex.checkout-row {
+		position:static;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#projects .block.c100.full-width {
+		width:100%;
+		padding:0 0 0 20px;
+	}
 }
 
 #the-guts #top-skills {

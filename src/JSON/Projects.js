@@ -19,7 +19,7 @@ return (
 		
 			<div className="c100 block full-width box-shadow">
 			
-			<div className="flex">
+			<div className="flex checkout-row">
 				<div className="half-width flex-half">
 					<h3 className="titleh3">Millwood Christian Church</h3>
 				</div>
@@ -86,7 +86,7 @@ return (
 		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
-				<div className="flex">
+				<div className="flex checkout-row">
 					<div className="half-width flex-half">
 						<h3 className="titleh3">Olympic Home Inspections</h3>
 					</div>
@@ -147,7 +147,7 @@ return (
 		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
-				<div className="flex">
+				<div className="flex checkout-row">
 					<div className="half-width flex-half">
 						<h3 className="titleh3">Checkbook</h3>
 					</div>
@@ -200,7 +200,7 @@ return (
 		<div className="row-wrap row">
 		
 			<div className="c100 block full-width box-shadow">
-				<div className="flex">
+				<div className="flex checkout-row">
 					<div className="half-width flex-half">
 						<h3 className="titleh3">Plex Movie Manager</h3>
 					</div>
