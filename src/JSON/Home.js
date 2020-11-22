@@ -9,6 +9,7 @@ class Home extends Component {
 	render(props){
 		 return (
        <div id="home" className="section show">
+          <Div class="desktop-space desktop-space-small" />
            <div className="box-no-animate box-shadow full-width about">
               <P class="tag" text="Hello I am Kevin Bollman" />
               <hr />
@@ -18,7 +19,7 @@ class Home extends Component {
                 work I do.  I challenge my self every day to learn new technologies and to advance my skills.  I feel it is important to provide value to what ever team I am on." />
 
             </div>
-            <Div class="mobile-space mobile-space-large" />
+            <Div class="mobile-space mobile-space-small" />
             <Div class="desktop-space desktop-space-small" />
             <Topskills />
             <Div class="mobile-space mobile-space-large" />

@@ -10,7 +10,7 @@ class Utilsjs extends Component {
   *  @return : null                                      *
   *******************************************************/
   adjustcontactcircles() {
-      var block = document.querySelectorAll('#the-guts .section.show .block.c33');
+      var block = document.querySelectorAll('#the-guts .section .block.c33');
       if (block.length > 0) {
         for (let i=0;i<block.length;i++) {
           let width = block[i].offsetWidth / 2 - 65

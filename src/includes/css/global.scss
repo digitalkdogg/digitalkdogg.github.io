@@ -98,10 +98,6 @@ hr {
   text-align:right;
 }
 
-/*#the-guts i {
-    margin: 0 5px;
-} */
-
 .row-wrap {
   display:block;
 }
@@ -110,19 +106,35 @@ hr {
   display: block;
 }
 
+.row-wrap .c100 {
+  padding:0;
+}
+
+@media only screen and (min-width: 768px) {
+  .row-wrap .c100 {
+    padding: 0 10px;
+  }
+}
+
 .row-wrap .c33, .row-wrap .c5, .row-wrap .c100 {
-  width: auto;
-  margin: 2% 0;
-  padding: 0 10px;
+ /* margin: 2% 0; 
+  padding: 0 20px; */
   min-height:200px;
   background: white;
   font-size: 0.8em;
   overflow:hidden;
-  min-width:95%;
+  /* min-width:95%; */
+  width:100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .row-wrap .c100 {
+    width:85%;
+  }
 }
 
 .row {
-    width: 95%;
+    width: 100%;
     position: relative;
  /*   left:3%; */
 }
@@ -261,7 +273,7 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
   }
 
   .row-wrap .c33, .row-wrap .c5, .row-wrap .c100 {
-    margin: 1% 5%;
+    margin: 1% 0;
     font-size:1em;
   }
 
@@ -273,6 +285,10 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
   .row-wrap .c5 {
     width:55%;
     min-width:25%;
+  }
+
+  .block.c5 {
+    margin:0 15px;
   }
 
   .border-radius-0 {
@@ -293,5 +309,6 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
 
   pre {
     font-size:0.7em;
+    margin:0 15px;
   }
 }

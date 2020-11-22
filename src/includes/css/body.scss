@@ -207,7 +207,7 @@ div#guts-section div#the-guts {
 }
 
 div#guts-section .title i {
-    margin: 0 10px 0 0;
+    margin: 0 10px;
 }
 
 
@@ -372,6 +372,18 @@ div#guts-section #the-guts .info-wrap a {
 	padding: 0;
 }
 
+#projects .block.c100.full-width {
+    padding: 0 20px;
+    width: 100%;
+}
+
+/*@media only screen and (min-width: 768px) {
+	#projects .block.c100.full-width {
+		padding: 0;
+		width: auto;
+	}
+} */
+
 #the-guts #top-skills {
 	width:unset;
 	background:rgba(231,231,231,.5);
@@ -425,6 +437,10 @@ div#guts-section #the-guts .info-wrap a {
 
 #the-guts #top-skills hr {
 	margin:10px 0 20px 0;
+}
+
+#the-guts #skills .block li {
+    margin: 0 15px;
 }
 
 div#bottom {
