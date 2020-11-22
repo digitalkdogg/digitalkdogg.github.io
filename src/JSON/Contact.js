@@ -8,8 +8,6 @@ class Contact extends Component {
 	render(props){
 		 return (
        <div id="contact" className="section">
-                   <div className="mobile-space-normal"></div>
-
            <div className="block c100 box mini box-shadow full-width">
              <P text="Do you think I can help you add value to your next project?" />
            </div>
