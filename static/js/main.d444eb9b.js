@@ -49797,6 +49797,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'home', className: 'section show' },
+	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-small' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'box-no-animate box-shadow full-width about' },
@@ -49804,7 +49805,7 @@
 	          _react2.default.createElement('hr', null),
 	          _react2.default.createElement(_P2.default, { text: 'Since I began my web design journey over 10 years ago, I have helped many people / organization with their web design needs. I enjoy helping people connect with their technology.  I am innovative, forward thinking and I am passionate about the work I do.  I challenge my self every day to learn new technologies and to advance my skills.  I feel it is important to provide value to what ever team I am on.' })
 	        ),
-	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-small' }),
 	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-small' }),
 	        _react2.default.createElement(_Topskills2.default, null),
 	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
@@ -50443,7 +50444,6 @@
 				return _react2.default.createElement(
 					'div',
 					{ id: 'skills', className: 'section' },
-					_react2.default.createElement('div', { className: 'mobile-space-normal' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'row-wrap skills-wrap' },
@@ -50517,7 +50517,9 @@
 							_react2.default.createElement(_Li2.default, { className: 'bullet', text: 'Grid And Flex Layouts' }),
 							_react2.default.createElement(_Li2.default, { className: 'bullet', text: 'Accessibility Standards' })
 						)
-					)
+					),
+					_react2.default.createElement('div', { className: 'mobile-space-normal ' }),
+					_react2.default.createElement('div', { className: 'mobile-space-normal ' })
 				);
 			}
 		}]);
@@ -51808,7 +51810,7 @@
 	      *  @return : null                                      *
 	      *******************************************************/
 	    value: function adjustcontactcircles() {
-	      var block = document.querySelectorAll('#the-guts .section.show .block.c33');
+	      var block = document.querySelectorAll('#the-guts .section .block.c33');
 	      if (block.length > 0) {
 	        for (var i = 0; i < block.length; i++) {
 	          var width = block[i].offsetWidth / 2 - 65;
@@ -62210,4 +62212,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.d0c2b64f.js.map
+//# sourceMappingURL=main.d444eb9b.js.map
