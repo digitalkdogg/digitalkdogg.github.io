@@ -17,10 +17,11 @@ class Body extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll.bind(this));
+  
   }
 
-  handleScroll() {
-    if (window.scrollY >0) {
+  handleScroll = () => { 
+  if (window.scrollY >0) {
       this.setState({'scrollClass': 'home scrolled'});
     } else {
       this.setState({'scrollClass': 'home notscrolled'});

@@ -1,6 +1,4 @@
-import { Component } from 'react';
-
-class Utilsjs extends Component {
+class Utilsjs {
 
 /*********************************************************
   *   *** Adjust contact circles                ****     *
@@ -9,7 +7,7 @@ class Utilsjs extends Component {
   *  circles left position to a perfect center           *
   *  @return : null                                      *
   *******************************************************/
-  adjustcontactcircles() {
+  adjustcontactcircles = () => {
       var block = document.querySelectorAll('#the-guts .section .block.c33');
       if (block.length > 0) {
         for (let i=0;i<block.length;i++) {

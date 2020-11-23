@@ -24,7 +24,7 @@ class Ninebox extends Component {
       
     }
 
-    showhidemenu () {
+    showhidemenu = () => {
         let body = document.querySelector('body');
  		if (this.state.showclass === 'hide') {
  			this.setState({'showclass': 'show'});
@@ -40,7 +40,7 @@ class Ninebox extends Component {
  		}
      }
      
-    gotosection (section) {
+    gotosection = (section) => {
         let body = document.querySelector('body');
         body.classList.remove('overflowhidden');
 
