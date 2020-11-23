@@ -51571,18 +51571,22 @@
 	                    { id: 'menu-section', className: this.state.showclass,
 	                        role: 'navigation', 'aria-label': 'main' },
 	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'home'),
-	                            text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }), href: '/#/' }),
-	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'about'),
-	                            text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }), href: '/#/about' }),
-	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'projects'),
-	                            text: 'Projects', 'class': this.state.activesection === 'projects' ? 'active' : '' }), href: '/#/projects' }),
-	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'snippets'),
-	                            text: 'Snippets', 'class': this.state.activesection === 'snippets' ? 'active' : '' }), href: '/#/snippets' }),
-	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'skills'),
-	                            text: 'Skills', 'class': this.state.activesection === 'skills' ? 'active' : '' }), href: '/#/skills' }),
-	                    _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'contact'),
-	                            text: 'Contact', 'class': this.state.activesection === 'contact' ? 'active' : '' }), href: '/#/contact' })
+	                    _react2.default.createElement(
+	                        'ul',
+	                        null,
+	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'home'),
+	                                text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }), href: '/#/' }),
+	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'about'),
+	                                text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }), href: '/#/about' }),
+	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'projects'),
+	                                text: 'Projects', 'class': this.state.activesection === 'projects' ? 'active' : '' }), href: '/#/projects' }),
+	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'snippets'),
+	                                text: 'Snippets', 'class': this.state.activesection === 'snippets' ? 'active' : '' }), href: '/#/snippets' }),
+	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'skills'),
+	                                text: 'Skills', 'class': this.state.activesection === 'skills' ? 'active' : '' }), href: '/#/skills' }),
+	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'contact'),
+	                                text: 'Contact', 'class': this.state.activesection === 'contact' ? 'active' : '' }), href: '/#/contact' })
+	                    )
 	                )
 	            );
 	        }
@@ -62189,4 +62193,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.04254b05.js.map
+//# sourceMappingURL=main.494dfc8c.js.map
