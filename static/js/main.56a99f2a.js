@@ -51202,6 +51202,14 @@
 	
 	    var _this = _possibleConstructorReturn(this, (Body.__proto__ || Object.getPrototypeOf(Body)).call(this));
 	
+	    _this.handleScroll = function () {
+	      if (window.scrollY > 0) {
+	        _this.setState({ 'scrollClass': 'home scrolled' });
+	      } else {
+	        _this.setState({ 'scrollClass': 'home notscrolled' });
+	      }
+	    };
+	
 	    _this.state = {
 	      scrollstate: 'init',
 	      scrollClass: 'home notscrolled'
@@ -51213,15 +51221,6 @@
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      window.addEventListener('scroll', this.handleScroll.bind(this));
-	    }
-	  }, {
-	    key: 'handleScroll',
-	    value: function handleScroll() {
-	      if (window.scrollY > 0) {
-	        this.setState({ 'scrollClass': 'home scrolled' });
-	      } else {
-	        this.setState({ 'scrollClass': 'home notscrolled' });
-	      }
 	    }
 	  }, {
 	    key: 'render',
@@ -51515,6 +51514,33 @@
 	
 	        var _this = _possibleConstructorReturn(this, (Ninebox.__proto__ || Object.getPrototypeOf(Ninebox)).call(this));
 	
+	        _this.showhidemenu = function () {
+	            var body = document.querySelector('body');
+	            if (_this.state.showclass === 'hide') {
+	                _this.setState({ 'showclass': 'show' });
+	                body.classList.add('overflowhidden');
+	
+	                if (window.innerHeight < 300) {
+	                    body.classList.add('small-menu');
+	                }
+	            } else {
+	                _this.setState({ 'showclass': 'hide' });
+	                body.classList.remove('overflowhidden');
+	            }
+	        };
+	
+	        _this.gotosection = function (section) {
+	            var body = document.querySelector('body');
+	            body.classList.remove('overflowhidden');
+	
+	            _this.setState({
+	                'showclass': 'hide',
+	                'activesection': section
+	            });
+	
+	            window.scrollTo(0, 0);
+	        };
+	
 	        _this.state = {
 	            'showclass': 'hide',
 	            'activesection': 'home'
@@ -51532,35 +51558,6 @@
 	            if (window.location.hash === '#/') {
 	                this.setState({ 'activesection': 'home' });
 	            }
-	        }
-	    }, {
-	        key: 'showhidemenu',
-	        value: function showhidemenu() {
-	            var body = document.querySelector('body');
-	            if (this.state.showclass === 'hide') {
-	                this.setState({ 'showclass': 'show' });
-	                body.classList.add('overflowhidden');
-	
-	                if (window.innerHeight < 300) {
-	                    body.classList.add('small-menu');
-	                }
-	            } else {
-	                this.setState({ 'showclass': 'hide' });
-	                body.classList.remove('overflowhidden');
-	            }
-	        }
-	    }, {
-	        key: 'gotosection',
-	        value: function gotosection(section) {
-	            var body = document.querySelector('body');
-	            body.classList.remove('overflowhidden');
-	
-	            this.setState({
-	                'showclass': 'hide',
-	                'activesection': section
-	            });
-	
-	            window.scrollTo(0, 0);
 	        }
 	    }, {
 	        key: 'render',
@@ -51770,7 +51767,7 @@
 
 /***/ },
 /* 493 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
@@ -51778,55 +51775,36 @@
 	  value: true
 	});
 	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	var Utilsjs = function Utilsjs() {
+	  _classCallCheck(this, Utilsjs);
 	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	  this.adjustcontactcircles = function () {
+	    var block = document.querySelectorAll('#the-guts .section .block.c33');
+	    if (block.length > 0) {
+	      for (var i = 0; i < block.length; i++) {
+	        var width = block[i].offsetWidth / 2 - 65;
+	        var circle = block[i].querySelector('.circle-wrap');
 	
-	var Utilsjs = function (_Component) {
-	  _inherits(Utilsjs, _Component);
+	        if (circle != null) {
 	
-	  function Utilsjs() {
-	    _classCallCheck(this, Utilsjs);
-	
-	    return _possibleConstructorReturn(this, (Utilsjs.__proto__ || Object.getPrototypeOf(Utilsjs)).apply(this, arguments));
-	  }
-	
-	  _createClass(Utilsjs, [{
-	    key: 'adjustcontactcircles',
-	
-	
-	    /*********************************************************
-	      *   *** Adjust contact circles                ****     *
-	      ********************************************************
-	      *  This function gets the width of the block and than  *
-	      *  circles left position to a perfect center           *
-	      *  @return : null                                      *
-	      *******************************************************/
-	    value: function adjustcontactcircles() {
-	      var block = document.querySelectorAll('#the-guts .section .block.c33');
-	      if (block.length > 0) {
-	        for (var i = 0; i < block.length; i++) {
-	          var width = block[i].offsetWidth / 2 - 65;
-	          var circle = block[i].querySelector('.circle-wrap');
-	
-	          if (circle != null) {
-	
-	            circle.setAttribute('style', 'left:' + width + 'px;');
-	          }
+	          circle.setAttribute('style', 'left:' + width + 'px;');
 	        }
 	      }
-	      return null;
 	    }
-	  }]);
+	    return null;
+	  };
+	}
 	
-	  return Utilsjs;
-	}(_react.Component); //end class
+	/*********************************************************
+	  *   *** Adjust contact circles                ****     *
+	  ********************************************************
+	  *  This function gets the width of the block and than  *
+	  *  circles left position to a perfect center           *
+	  *  @return : null                                      *
+	  *******************************************************/
+	; //end class
 	
 	
 	exports.default = Utilsjs;
@@ -62211,4 +62189,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.8dec2341.js.map
+//# sourceMappingURL=main.56a99f2a.js.map
