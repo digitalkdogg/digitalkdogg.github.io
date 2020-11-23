@@ -51,6 +51,11 @@ div#header div#nine-box-section {
 	margin-top:10px;
 }
 
+div#header div#nine-box-section ul {
+    padding-inline-start: 10px;
+    margin-block-start: 0;
+}
+
 div#header div#nine-box-section i.fas:hover {
 	cursor:pointer;
 	color: #17ad17;
