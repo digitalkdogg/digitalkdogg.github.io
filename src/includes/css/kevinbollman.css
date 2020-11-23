@@ -3,7 +3,6 @@
 /* come on over yellow : fee201  */
 /* header grey : 27313e */
 
-@import './global.scss';
-/*@import './banneri.scss'; */
-@import './body.scss';
-@import './modal.scss';
+@import './global.css';
+@import './body.css';
+
