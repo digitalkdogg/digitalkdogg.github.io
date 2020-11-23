@@ -60,6 +60,7 @@ class Ninebox extends Component {
                 <div id="menu-section" className={this.state.showclass}
                     role="navigation" aria-label="main">		
                     <br />
+                    <ul>
                     <A text={<Li onclick={this.gotosection.bind(this, 'home')}
                         text="Home" class={this.state.activesection==='home' ? 'active': ''} />} href="/#/" />
                     <A text={<Li onclick={this.gotosection.bind(this, 'about')}
@@ -72,7 +73,7 @@ class Ninebox extends Component {
                         text="Skills" class={this.state.activesection==='skills' ? 'active': ''} />} href="/#/skills"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'contact')}
                         text="Contact" class={this.state.activesection==='contact' ? 'active': ''} />} href="/#/contact" />
-                            
+                    </ul>        
                 </div>
             </div>
     	)
