@@ -7,9 +7,7 @@ import plex from '../includes/img/plex_admin.png';
 
 class Projects extends Component {
 
-
-
-	render(props){
+render(){
 
 return (
      <div id="projects" className="section">
@@ -40,7 +38,7 @@ return (
 				</div>
 				<div className="tag">
 					<div className="md-chip-icon">
-						<i class="fas fa-drafting-compass"></i>
+						<i className="fas fa-drafting-compass"></i>
 					</div>
 					UX Design
 				</div>
@@ -101,7 +99,7 @@ return (
 				<div className="tags">
 					<div className="tag">
 						<div className="md-chip-icon">
-						<i class="fas fa-drafting-compass"></i>
+						<i className="fas fa-drafting-compass"></i>
 						</div>
 						UX Design
 					</div>

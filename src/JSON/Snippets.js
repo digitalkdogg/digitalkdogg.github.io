@@ -9,7 +9,7 @@ import Growhover from './snippets/Growhover';
 
 class Snippets extends Component {
 
-	render(props){
+	render(){
 		 return (
        <div id="snippets" className="section">
             <Div class="mobile-space-small desktop-space-large" />

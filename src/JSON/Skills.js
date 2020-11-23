@@ -3,7 +3,7 @@ import Li from '../templates/Utils/Li';
 
 class Skills extends Component {
 
-	render(props){
+	render(){
 		 return (
 			 <div id="skills" className='section'>
 				 <div className="row-wrap skills-wrap">

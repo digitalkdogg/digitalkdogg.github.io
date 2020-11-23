@@ -49717,7 +49717,7 @@
 	
 	  _createClass(Contact, [{
 	    key: 'render',
-	    value: function render(props) {
+	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'contact', className: 'section' },
@@ -49792,7 +49792,7 @@
 	
 	  _createClass(Home, [{
 	    key: 'render',
-	    value: function render(props) {
+	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
 	        { id: 'home', className: 'section show' },
@@ -49872,7 +49872,7 @@
 	
 		_createClass(Projects, [{
 			key: 'render',
-			value: function render(props) {
+			value: function render() {
 	
 				return _react2.default.createElement(
 					'div',
@@ -49929,7 +49929,7 @@
 									_react2.default.createElement(
 										'div',
 										{ className: 'md-chip-icon' },
-										_react2.default.createElement('i', { 'class': 'fas fa-drafting-compass' })
+										_react2.default.createElement('i', { className: 'fas fa-drafting-compass' })
 									),
 									'UX Design'
 								),
@@ -50062,7 +50062,7 @@
 									_react2.default.createElement(
 										'div',
 										{ className: 'md-chip-icon' },
-										_react2.default.createElement('i', { 'class': 'fas fa-drafting-compass' })
+										_react2.default.createElement('i', { className: 'fas fa-drafting-compass' })
 									),
 									'UX Design'
 								),
@@ -50439,7 +50439,7 @@
 	
 		_createClass(Skills, [{
 			key: 'render',
-			value: function render(props) {
+			value: function render() {
 				return _react2.default.createElement(
 					'div',
 					{ id: 'skills', className: 'section' },
@@ -50579,7 +50579,7 @@
 	
 	     _createClass(Snippets, [{
 	          key: 'render',
-	          value: function render(props) {
+	          value: function render() {
 	               return _react2.default.createElement(
 	                    'div',
 	                    { id: 'snippets', className: 'section' },
@@ -62189,4 +62189,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.56a99f2a.js.map
+//# sourceMappingURL=main.b67407ce.js.map

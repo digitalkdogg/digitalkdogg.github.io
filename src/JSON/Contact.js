@@ -5,7 +5,7 @@ import Contactblock from '../templates/Contactblock';
 
 class Contact extends Component {
 
-	render(props){
+	render(){
 		 return (
        <div id="contact" className="section">
            <div className="block c100 box mini box-shadow full-width">

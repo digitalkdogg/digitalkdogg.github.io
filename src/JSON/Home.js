@@ -6,7 +6,7 @@ import Topskills from '../templates/Topskills';
 
 class Home extends Component {
 
-	render(props){
+	render(){
 		 return (
        <div id="home" className="section show">
           <Div class="desktop-space desktop-space-small" />
