@@ -1,0 +1,54 @@
+div#guts-section .block.c33 {
+    margin: 5vh 0% 15vh 0%;
+    text-align: center;
+    border-radius: 0;
+}
+
+#the-guts .contact-wrap .block {
+    overflow: visible;
+}
+
+
+div#guts-section #the-guts .block .circle-wrap {
+    position: relative;
+    border-radius: 20%;
+    color: white;
+    padding: 25px;
+    top: -10vh;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:white;
+    height:70px;
+    width:70px;
+    transform:rotate(45deg);
+}
+
+div#guts-section #the-guts .block .circle-wrap h4 {
+	font-size:1em;
+	font-weight: 100;
+	margin-top:0;
+}	
+
+div#guts-section #the-guts .block .circle-wrap .text {
+	height:100%;
+	transform: rotate(-45deg);
+	padding:5%;
+}
+
+div#guts-section #the-guts .info-wrap {
+	position: relative;
+	top: -5vh;
+	overflow:hidden;
+	word-break: break-all;
+}
+
+div#guts-section #the-guts .info-wrap a {
+	font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+	div#guts-section #the-guts .info-wrap a {
+		font-weight: 100;
+	}
+}

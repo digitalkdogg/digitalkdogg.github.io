@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../includes/css/topskills.css';
 
 class Topskills extends Component {
 

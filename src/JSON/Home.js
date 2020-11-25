@@ -11,7 +11,7 @@ class Home extends Component {
        <div id="home" className="section show">
           <Div class="desktop-space desktop-space-small" />
            <div className="box-no-animate box-shadow full-width about">
-              <P class="tag" text="Hello I am Kevin Bollman" />
+              <P class="tag text-align-center" text="Hello I am Kevin Bollman" />
               <hr />
              
               <P text="Since I began my web design journey over 10 years ago, I have helped many people / organization with their web design needs.

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Utilsjs from './Utils/Utilsjs';
 
+import '../includes/css/contactblock.css';
+
 class Contactblock extends Component {
 
     componentDidMount() {

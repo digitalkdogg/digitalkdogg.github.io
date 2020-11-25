@@ -11,6 +11,21 @@ body.overflowhidden {
   overflow:hidden;
 }
 
+div#body {
+	overflow:hidden;
+	background:#ddd;
+}
+
+p.tag, h3.tag {
+	font-size:1em;
+}
+
+p.sub {
+	font-style: italic;
+	opacity: .8;
+	margin:0;
+}
+
 a {
     color: #333;
     font-weight: bold;
@@ -20,6 +35,10 @@ a {
 a:hover {
   color: #0a6f0a;
   text-decoration: underline;
+}
+
+.text-align-center {
+  text-align:center;
 }
 
 button {

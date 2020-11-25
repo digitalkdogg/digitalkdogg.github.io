@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import '../includes/css/projects.css';
 import millwood from '../includes/img/millwood_thumb.jpg';
 import olympic from '../includes/img/olympic_inspection.png';
 import checkbook from '../includes/img/checkbook_scaled.png';

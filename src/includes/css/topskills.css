@@ -1,0 +1,56 @@
+#the-guts #top-skills {
+	width:unset;
+	background:rgba(231,231,231,.5);
+	background: linear-gradient(150deg, rgba(22,58,87,0.6) 0%, rgba(22, 58, 87, 1) 60%, rgba(22,58, 87, 1));
+	color:white;
+}
+
+#the-guts #top-skills .icon-wrap {
+	flex:2;
+	text-align:left;
+	position: absolute;
+	opacity:.3;
+	text-align:center;
+	align-items: center;
+}
+
+#the-guts #top-skills .icon-wrap i {
+	margin:12px 7px;
+	z-index:-1;
+	position: relative;
+	color:#999;
+	font-size:1.4em;
+}
+
+#the-guts #top-skills .details-wrap li {
+	text-align:left;
+	padding: 0px 0 0px 20px;
+    text-indent: -26px;
+    margin: 0 10px;
+}
+
+#the-guts #top-skills h3 {
+	margin:0;
+}
+
+#the-guts #top-skills hr {
+	margin:10px 0 20px 0;
+}
+
+#the-guts #skills .block li {
+    margin: 0 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    #the-guts #top-skills .icon-wrap {
+        position: static;
+        text-align:left;
+    }
+
+    #the-guts #top-skills .icon-wrap i {
+		font-size:1.2em;
+		margin:12px 10px;
+		display: inline-block !important;
+		color:white;
+	}
+}

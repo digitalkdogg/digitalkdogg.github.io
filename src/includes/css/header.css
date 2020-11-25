@@ -1,0 +1,189 @@
+div#header {
+	background-color:rgba(22, 58,87, 1);
+  	top: 0;
+  	width: 100%;
+  	height: 170px;
+	color: white;
+	overflow:hidden;
+	background: url(https://github.com/digitalkdogg/digitalkdogg.github.io/raw/master/src/includes/img/binary-bg2.jpg);
+	background-size:cover;	
+}
+
+div#header div#header-wrap {
+	display:flex;
+	background-color:rgba(22, 58,87, .8);
+	position: fixed;
+	width:100%;
+	z-index:2;
+}
+
+div#body.scrolled div#header div#header-wrap {
+	background-color:rgba(22, 58,87, 1);
+}
+
+div#header div#logo-section {
+    padding: 0 5px 0 0;
+    max-width:70px;
+    font-size:.8em;
+    flex:1;
+    flex-wrap: nowrap;
+}
+
+
+
+div#header div#sub-header-wrap {
+	text-align:center;
+	position: relative;
+	top:79px;
+	background-color:rgba(22, 58,87, .8);
+	height:100px;
+}
+
+div#header div#name-section {
+	font-weight: bold;
+	font-size: .8em;
+	flex:9;
+	text-align:center;
+}
+
+div#header div#name-section h2 {
+	font-size:28px;
+	line-height:1;
+	font-weight:100;
+}
+
+div.menu-logo-wrap {
+    border: 3px solid #17ad17;
+    width: 45px;
+    height:45px;
+    border-radius:10%;
+    text-align: center;
+    transform: rotate(45deg);
+    position: relative;
+    padding: 10px;
+    margin: 20px 10%;
+	border-radius:20%;
+	background:white;
+	color:#17ad17;
+}
+
+div.menu-logo-wrap div.text {
+	transform: rotate(-45deg);
+	font-weight:bold;
+}
+
+div#header div#logo-section div.menu-logo-wrap {
+	margin: 10px 20%;
+	padding:5px;
+	width:20px;
+	font-size:.85em;
+	height:20px;
+	background:white;
+	color:#17ad17;
+}
+
+
+
+div#header div#sub-header-wrap h3 {
+    font-size:24px;
+	font-weight: 300;
+	margin-top:-5px;
+	margin-bottom:0;
+}
+
+div#header div#nine-box-section {
+	font-size:1.4em;
+	z-index:2;
+	flex:1;
+	margin-top:10px;
+}
+
+div#header div#nine-box-section ul {
+    padding-inline-start: 10px;
+    margin-block-start: 0;
+}
+
+div#header div#nine-box-section i.fas:hover {
+	cursor:pointer;
+	color: #17ad17;
+}
+
+div#header div#menu-section.show {
+	transform: translateX(-90%);	
+}
+
+div#header div#menu-section {
+    float: right;
+    width: 100%;
+    transform: translateX(300px);
+	transition: transform .7s;
+	height: 2000px;
+	border-left: 3px solid white;
+	background: rgba(69,93,113,0.9);
+	position:absolute;
+	padding:0 1%;
+	margin-top:10px;
+}
+
+
+
+div#header #menu-section li {
+    font-size: 18px;
+	list-style-type: none;
+	margin:0 10px;
+	padding: 0 5px;
+	line-height: 1.5;
+}
+
+div#header #menu-section a {
+	color:white;
+	font-weight:300;
+}
+
+div#header #menu-section a:hover {
+	text-decoration: none;
+}
+
+body.small-menu div#header #menu-section li {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+div#header #menu-section li.active {
+    border-left: 3px solid #17ad17;
+}
+
+div#header #menu-section li.active:hover {
+	padding:0 5px;
+}
+
+div#header #menu-section li:hover {
+	border-left: 3px solid #17ad17;
+	padding: 0 2px;
+	cursor:pointer;
+	background:rgba(255,255,255,0.2);
+}
+
+@media only screen and (min-width: 768px) {
+	div#header div#logo-section {
+		max-width:90px;
+		font-size:1em;
+	}
+	
+	div#header div#sub-header-wrap h3 {
+		font-weight: 100;
+	}
+
+	div#header div#menu-section {
+		width: 300px;
+		border-top: 1px solid #999;
+    }
+    
+    div#header div#nine-box-section.show {
+		transform: translateX(-12px);
+    }
+    
+    div#header div#menu-section.show {
+    	transform: translateX(-165px);	
+	}
+}
