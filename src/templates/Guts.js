@@ -26,9 +26,9 @@ class Guts extends Component {
               <Route exact path="/snippets" component={Snippets} />
               <Route path="/contact" component={Contact} />
              
-              <Route exact path ="/snippets/grow-hover" component={Growhover} />
-              <Route exact path ="/snippets/image-overlay" component={Imageoverlay} />
-              <Route exact path ="/snippets/flex" component={Flex} />
+              <Route exact path="/snippets/grow-hover" component={Growhover} />
+              <Route exact path="/snippets/image-overlay" component={Imageoverlay} />
+              <Route exact path="/snippets/flex" component={Flex} />
             </div>
           </HashRouter>
 

@@ -14,6 +14,7 @@ div#guts-section div#snippets.section button:hover {
 div#guts-section div#snippets.section a:active {
     transform:scale(1.1);
     transition:.5s transform;
+    opacity:.7;
 }
 
 .card {
@@ -65,10 +66,25 @@ div#guts-section div#snippets.section a:active {
 .card button {
     margin:0 30%;
     border:1px solid #999;
-    background: rgba(22, 58,87, .8);
     color: white;
 }
 
+div#button-nav {
+    text-align: center;
+}
+
+div#button-nav a {
+    margin:0 10px;
+}
+
+div#button-nav button {
+    color:white;
+}
+
+div#button-nav button:hover {
+    transform:scale(1.2);
+    transition:.5s transform;
+}
 
 @media only screen and (min-width: 768px) {
     div#guts-section div#snippets.section {

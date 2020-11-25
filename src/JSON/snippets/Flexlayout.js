@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
+import Buttonnav from '../../templates/Buttonnav';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
@@ -62,6 +63,7 @@ class Flexlayout extends Component {
 
           <div className="block c100 box mini box-shadow full-width">
               <Div class="mobile-space-small desktop-space-large" />
+              
               <P class="title" text="Flex Box Layout" />
               <P text="Flex Box Layout can be an important tool in your web design arsonel but if you are not familar with it than it could tricky getting it to work right.  Here is how you can make it work." />
 
@@ -139,7 +141,9 @@ class Flexlayout extends Component {
                     <div className="child"> Row  3</div>
                   </div>
                 </div>
-                <Div class="mobile-space-small desktop-space-large" />
+                <Buttonnav href="/#/snippets/grow-hover" />
+                <Div className="mobile-space-small desktop-space-large" />
+                <Div className="mobile-space-small desktop-space-large" />
             </div>
 
       )

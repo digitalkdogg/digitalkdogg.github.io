@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
 
+import Buttonnav from '../../templates/Buttonnav';
+
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
 
@@ -72,7 +74,9 @@ class Growhover extends Component {
                       <br />Also you can do the same for just the x axis by setting scaleX and the same for the vertical axis by setting scaleY
                   </p>
                  </div>
-                 <Div class="mobile-space-small desktop-space-large" />
+                 <Buttonnav href="/#/snippets/image-overlay" />
+                <Div className="mobile-space-small desktop-space-large" />
+                <Div className="mobile-space-small desktop-space-large" />
             </div>
 
       )

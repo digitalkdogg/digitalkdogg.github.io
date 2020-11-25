@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
+import Buttonnav from '../../templates/Buttonnav';
+
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
@@ -86,7 +88,9 @@ class Imageoverlay extends Component {
               </div>
 
               <Div class="row-wrap" text="Notice that there is no a dark overlay ontop of the image that doesn't affect the text ontop of the image" />
-              <Div class="mobile-space-small desktop-space-large" />
+              <Buttonnav />
+              <Div className="mobile-space-small desktop-space-large" />
+              <Div className="mobile-space-small desktop-space-large" />
             </div>
 
       )

@@ -7,19 +7,18 @@
 
 #the-guts #top-skills .icon-wrap {
 	flex:2;
-	text-align:left;
 	position: absolute;
-	opacity:.3;
-	text-align:center;
+	opacity:.2;
 	align-items: center;
 }
 
 #the-guts #top-skills .icon-wrap i {
-	margin:12px 7px;
 	z-index:-1;
 	position: relative;
 	color:#999;
-	font-size:1.4em;
+    font-size:2em;
+    margin: 20px 30px;
+    transform: translateY(-40px);
 }
 
 #the-guts #top-skills .details-wrap li {
@@ -45,12 +44,15 @@
     #the-guts #top-skills .icon-wrap {
         position: static;
         text-align:left;
+        opacity:0.3;
     }
 
     #the-guts #top-skills .icon-wrap i {
 		font-size:1.2em;
 		margin:12px 10px;
 		display: inline-block !important;
-		color:white;
+        color:white;
+        font-size:1.4em;
+        transform:translateY(0);
 	}
 }
