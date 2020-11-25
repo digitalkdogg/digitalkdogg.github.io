@@ -1,0 +1,86 @@
+div#guts-section div#snippets.section {
+    padding:50px 0;
+    min-height:350px;
+    background:white;
+    display:flex;
+    flex-direction:column;
+}
+
+div#guts-section div#snippets.section button:hover {
+    transform:scale(1.25);
+    transition:.5s transform;
+}
+
+div#guts-section div#snippets.section a:active {
+    transform:scale(1.1);
+    transition:.5s transform;
+}
+
+.card {
+    margin:20px 0 40px 0;
+    color:#333;
+    min-height: 250px;
+    padding:10px;
+    width:100%;
+    border:1px solid #ccc;
+}
+
+.card .icon-circle {
+    text-align: center;
+    border-radius: 22%;
+    width: 70px;
+    height: 70px;
+    margin: 0 40%;
+    color:white;
+    font-size: 2em;
+    transform:rotate(45deg) translate(-50%, -40%);
+}
+
+.card .icon-circle i {
+    transform:rotate(-45deg) translateX(-5px)
+}
+
+.card .card-content {
+    transform:translateY(-20%);
+    height:120px;
+}
+
+.card .card-title {
+    border-bottom:3px solid #333;
+}
+
+.card .card-title h2 {
+    text-align:center;
+    margin-block-start: 20px;
+    margin-block-end: 5px;
+    font-size:1em;
+}
+
+.card .card-description {
+    padding:20px 5px;
+    font-size:.8em;
+    font-weight:500;
+}
+
+.card button {
+    margin:0 30%;
+    border:1px solid #999;
+    background: rgba(22, 58,87, .8);
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+    div#guts-section div#snippets.section {
+        flex-direction: row;
+    }
+    
+    .card {
+        width:30%;
+        margin:20px 10px;
+    }
+
+    .card .card-content {
+        height:160px;
+    }
+}

@@ -32,6 +32,7 @@ class Imageoverlay extends Component {
      
 
           <div className="block c100 box mini box-shadow full-width">
+             <Div class="mobile-space-small desktop-space-large" />
              <P class="title" text="Cover mask on images" />
              <P text="Sometimes you need to put text on a background image only to find that the text doen't pop enough Here is a trick you can do to get around that." />
          
@@ -85,7 +86,7 @@ class Imageoverlay extends Component {
               </div>
 
               <Div class="row-wrap" text="Notice that there is no a dark overlay ontop of the image that doesn't affect the text ontop of the image" />
-
+              <Div class="mobile-space-small desktop-space-large" />
             </div>
 
       )

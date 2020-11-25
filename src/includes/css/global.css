@@ -82,6 +82,10 @@ hr {
   display:none !important;
 }
 
+.desktop-hidden {
+  display:block !important;
+}
+
 .show {
 	display:block;
 }
@@ -247,6 +251,19 @@ background: -moz-radial-gradient(center, #4D7F1F, #015901);
 background: radial-gradient(ellipse at center, #4D7F1F, #015901);
 }
 
+.green-grandient-linear {
+  background: #4D7F1F;
+background: -webkit-linear-gradient(10deg, #4D7F1F, #015901);
+background: -moz-linear-gradient(10deg, #4D7F1F, #015901);
+background: linear-gradient(10deg, #4D7F1F, #015901);
+}
+
+.gray-grandient-linear {
+  background: #ccc;
+background: -webkit-linear-gradient(10deg, #ccc, #eee);
+background: -moz-linear-gradient(10deg, #ccc, #eee);
+background: linear-gradient(10deg, #ccc, #eee);
+}
 
 .box-shadow {
   box-shadow: 0px 3px 11px 3px rgba(202,202,202,0.75);
@@ -260,6 +277,10 @@ background: radial-gradient(ellipse at center, #4D7F1F, #015901);
 
   .mobile-hidden {
     display:block !important;
+  }
+
+  .desktop-hidden {
+    display:none !important;
   }
 
   .desktop-space {

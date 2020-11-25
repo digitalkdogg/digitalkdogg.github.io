@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
+import Div from '../../templates/Utils/Div';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 
@@ -38,6 +39,7 @@ class Growhover extends Component {
      
 
           <div className="block c100 box mini box-shadow full-width">
+              <Div class="mobile-space-small desktop-space-large" />
               <P class="title" text="Scale Hover Effect" />
               <P text="The grow hover effect is a cool little trick that I see alot of developers not utilizing.  Instead they try to accomplish this with animating the height and width when in reality can be done some much simplier" />
 
@@ -70,6 +72,7 @@ class Growhover extends Component {
                       <br />Also you can do the same for just the x axis by setting scaleX and the same for the vertical axis by setting scaleY
                   </p>
                  </div>
+                 <Div class="mobile-space-small desktop-space-large" />
             </div>
 
       )
