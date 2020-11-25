@@ -7,7 +7,6 @@ class Topskills extends Component {
         let topskillswrap = document.getElementById('top-skills-wrap');
 
         topskillswrap.setAttribute('Style', 'height:'+topskills.offsetHeight+'px;');
-     
       }
 
 	render(props){
@@ -17,36 +16,36 @@ class Topskills extends Component {
             <hr />
             <div id="top-skills-wrap" className="flex max-width-1200">
                 <div className="icon-wrap">
-                    <i className="fas fa-terminal"></i>
-                    <i className="fas fa-keyboard"></i>
-                    <i className="fab fa-css3"></i>
-                    <i className="fas fa-laptop-code"></i>
-                    <i className="fab fa-node"></i>
-                    <i className="fas fa-coffee"></i>
-                    <i className="fab fa-connectdevelop"></i>
+                    <i className="fas fa-terminal" aria-hidden="true"></i>
+                    <i className="fas fa-keyboard" aria-hidden="true"></i>
+                    <i className="fab fa-css3" aria-hidden="true"></i>
+                    <i className="fas fa-laptop-code" aria-hidden="true"></i>
+                    <i className="fab fa-node" aria-hidden="true"></i>
+                    <i className="fas fa-coffee" aria-hidden="true"></i>
+                    <i className="fab fa-connectdevelop" aria-hidden="true"></i>
                     <br />
-                    <i className="fas fa-server"></i>
-                    <i className="fab fa-jsfiddle"></i>
-                    <i className="fas fa-database"></i>
-                    <i className="fas fa-table"></i>
-                    <i className="fas fa-hourglass-start"></i>
-                    <i className="fas fa-ruler-combined"></i>
+                    <i className="fas fa-server" aria-hidden="true"></i>
+                    <i className="fab fa-jsfiddle" aria-hidden="true"></i>
+                    <i className="fas fa-database" aria-hidden="true"></i>
+                    <i className="fas fa-table" aria-hidden="true"></i>
+                    <i className="fas fa-hourglass-start" aria-hidden="true"></i>
+                    <i className="fas fa-ruler-combined" aria-hidden="true"></i>
                     <br />
-                    <i className="fas fa-globe-americas"></i>
-                    <i className="fab fa-react"></i>
-                    <i className="fab fa-wordpress"></i>
-                    <i className="fab fa-angular"></i>
+                    <i className="fas fa-globe-americas" aria-hidden="true"></i>
+                    <i className="fab fa-react" aria-hidden="true"></i>
+                    <i className="fab fa-wordpress" aria-hidden="true"></i>
+                    <i className="fab fa-angular" aria-hidden="true"></i>
                     <br />
-                    <i className="fab fa-dev"></i>
-                    <i className="fab fa-js"></i>
-                    <i className="fab fa-chrome"></i>
+                    <i className="fab fa-dev" aria-hidden="true"></i>
+                    <i className="fab fa-js" aria-hidden="true"></i>
+                    <i className="fab fa-chrome" aria-hidden="true"></i>
 
                 </div>
                 <div className="details-wrap">
-                    <li>Design complete website from begining to end</li>
+                    <li>Design complete website from desgin to code</li>
                     <li>Material design UX specialist</li>
                     <li>WCAG accessibilty compliant</li>
-                    <li>Mobile first responsive design princibles</li>
+                    <li>Full Stack Capabilities</li>
                     <li>Experties in multiple content management platforms</li>
                 </div>
             </div>
