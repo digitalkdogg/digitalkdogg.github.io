@@ -3,6 +3,7 @@ import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
 import Topskills from '../templates/Topskills';
+import Githubapi from '../templates/Githubapi';
 
 class Home extends Component {
 
@@ -21,11 +22,17 @@ class Home extends Component {
             </div>
             <Div class="mobile-space mobile-space-small" />
             <Div class="desktop-space desktop-space-small" />
+            
             <Topskills />
-            <Div class="mobile-space mobile-space-large" />
-            <Div class="desktop-space desktop-space-small" />
+            
             <Div class="mobile-space mobile-space-large" />
             <Div class="desktop-space desktop-space-large" />
+            
+            <Githubapi />
+            
+            <Div class="mobile-space mobile-space-large" />
+            <Div class="desktop-space desktop-space-large" />
+            
             <Contactblock />
             
           </div>

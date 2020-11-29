@@ -7,13 +7,13 @@ class Topskills extends Component {
         let topskills = document.getElementById('top-skills');
         let topskillswrap = document.getElementById('top-skills-wrap');
 
-        topskillswrap.setAttribute('Style', 'height:'+topskills.offsetHeight+'px;');
+        topskillswrap.setAttribute('Style', 'height:'+parseInt(topskills.offsetHeight+15) +'px;');
       }
 
 	render(props){
         return (
         <div id="top-skills" className="full-width">
-            <h3>Look what I can do</h3>
+            <h3>Some of my specialities</h3>
             <hr />
             <div id="top-skills-wrap" className="flex max-width-1200">
                 <div className="icon-wrap">
@@ -44,8 +44,8 @@ class Topskills extends Component {
       
                 </div>
                 <div className="details-wrap">
-                    <li>Design complete website from desgin to code</li>
-                    <li>Material design UX specialist</li>
+                    <li>Design complete websites from desgin to code to production</li>
+                    <li>Material design UX Expert</li>
                     <li>WCAG accessibilty compliant</li>
                     <li>Full Stack Capabilities</li>
                     <li>Experties in multiple content management platforms</li>

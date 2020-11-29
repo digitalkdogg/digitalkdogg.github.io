@@ -1,0 +1,94 @@
+.github-section {
+    background: white;
+    padding:10px 0;
+}
+
+.github-section header {
+    text-align:center;
+}
+
+.github-section header h2{
+    margin:0 10px;
+    font-size:1.2em;
+    
+}
+
+.github-section header h2 i {
+  margin-right:10px;
+}
+
+.github-section .card {
+    display: inline-flex;
+    height:275px;
+    background:white;
+    padding:20px 0px;
+}
+
+.github-section .card .card-content {
+    width:100%;
+}
+
+.github-section .card .card-description p {
+    min-height: 150px;
+}
+
+.github-section .card-description p.desc {
+    height:65px;
+}
+
+.github-section .card .card-description p {
+    min-height: 40px;
+}
+
+.github-section .card .card-title {
+    border-bottom:3px solid green;
+}
+
+.github-section .card .card-description, .github-section .card .card-data {
+    margin:0 10px;
+}
+
+.github-section .card .card-title h3 {
+    margin:20px 0 0 0;
+    font-size:1em;
+    text-align:center;
+}
+
+.inline-data {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.flex-data {
+    flex-direction:column;
+    align-items:center;
+}
+
+.flex-data * {
+    width:20%;
+}
+
+.flex-data .data{
+    background:green;
+    width:20px;
+    margin:0 35%;
+}
+
+@media only screen and (min-width: 768px) {
+    .github-section {
+        padding: 10px 5%;
+    }
+
+    .github-section header {
+        text-align:left;
+    }
+
+    .flex-data .data{ 
+        margin:0;
+    }
+
+    .github-section header h2 {
+        margin:0;
+    }
+
+}
