@@ -33,7 +33,7 @@ class Cardrepo extends Component {
           }
 
           let getStyle = function (issues) {
-               if (issues==0) {
+               if (issues===0) {
                     issues = 0.5;
                }
                return {height: issues + 'vh'}

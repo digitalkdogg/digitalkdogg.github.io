@@ -51674,7 +51674,7 @@
 	               };
 	
 	               var getStyle = function getStyle(issues) {
-	                    if (issues == 0) {
+	                    if (issues === 0) {
 	                         issues = 0.5;
 	                    }
 	                    return { height: issues + 'vh' };
@@ -62381,4 +62381,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.80993622.js.map
+//# sourceMappingURL=main.10dbd57a.js.map
