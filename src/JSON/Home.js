@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import P from '../templates/Utils/P';
 import Div from '../templates/Utils/Div';
 import Contactblock from '../templates/Contactblock';
-import Topskills from '../templates/Topskills';
+import Topskills from '../templates/Utils/Topskills';
 import Githubapi from '../templates/Githubapi';
 
 class Home extends Component {
