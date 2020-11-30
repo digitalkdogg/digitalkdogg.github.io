@@ -49862,7 +49862,7 @@
 	
 	var _Contactblock2 = _interopRequireDefault(_Contactblock);
 	
-	var _Topskills = __webpack_require__(495);
+	var _Topskills = __webpack_require__(498);
 	
 	var _Topskills2 = _interopRequireDefault(_Topskills);
 	
@@ -50179,7 +50179,7 @@
 	
 	__webpack_require__(46);
 	
-	var _Cardsnippet = __webpack_require__(498);
+	var _Cardsnippet = __webpack_require__(497);
 	
 	var _Cardsnippet2 = _interopRequireDefault(_Cardsnippet);
 	
@@ -51131,7 +51131,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Cardrepo = __webpack_require__(497);
+	var _Cardrepo = __webpack_require__(496);
 	
 	var _Cardrepo2 = _interopRequireDefault(_Cardrepo);
 	
@@ -51454,7 +51454,7 @@
 	
 	var _Li2 = _interopRequireDefault(_Li);
 	
-	var _A = __webpack_require__(496);
+	var _A = __webpack_require__(495);
 	
 	var _A2 = _interopRequireDefault(_A);
 	
@@ -51564,130 +51564,6 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(506);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Topskills = function (_Component) {
-	    _inherits(Topskills, _Component);
-	
-	    function Topskills() {
-	        _classCallCheck(this, Topskills);
-	
-	        return _possibleConstructorReturn(this, (Topskills.__proto__ || Object.getPrototypeOf(Topskills)).apply(this, arguments));
-	    }
-	
-	    _createClass(Topskills, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            var topskills = document.getElementById('top-skills');
-	            var topskillswrap = document.getElementById('top-skills-wrap');
-	
-	            topskillswrap.setAttribute('Style', 'height:' + parseInt(topskills.offsetHeight + 15) + 'px;');
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render(props) {
-	            return _react2.default.createElement(
-	                'div',
-	                { id: 'top-skills', className: 'full-width' },
-	                _react2.default.createElement(
-	                    'h3',
-	                    null,
-	                    'Some of my specialities'
-	                ),
-	                _react2.default.createElement('hr', null),
-	                _react2.default.createElement(
-	                    'div',
-	                    { id: 'top-skills-wrap', className: 'flex max-width-1200' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'icon-wrap' },
-	                        _react2.default.createElement('i', { className: 'fas fa-terminal', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-keyboard', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-css3', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-laptop-code', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-node', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-coffee', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-connectdevelop', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('i', { className: 'fas fa-server', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-jsfiddle', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-database', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-table', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-hourglass-start', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-ruler-combined', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('i', { className: 'fas fa-globe-americas', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-react', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-wordpress', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-angular', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('i', { className: 'fab fa-dev', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-js', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-chrome', 'aria-hidden': 'true' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'details-wrap' },
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            'Design complete websites from desgin to code to production'
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            'Material design UX Expert'
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            'WCAG accessibilty compliant'
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            'Full Stack Capabilities'
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
-	                            'Experties in multiple content management platforms'
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Topskills;
-	}(_react.Component);
-	
-	exports.default = Topskills;
-
-/***/ },
-/* 496 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
 	      value: true
 	});
 	
@@ -51732,7 +51608,7 @@
 	exports.default = A;
 
 /***/ },
-/* 497 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51870,7 +51746,7 @@
 	exports.default = Cardrepo;
 
 /***/ },
-/* 498 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -51950,6 +51826,130 @@
 	}(_react.Component);
 	
 	exports.default = Snippets;
+
+/***/ },
+/* 498 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(506);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Topskills = function (_Component) {
+	    _inherits(Topskills, _Component);
+	
+	    function Topskills() {
+	        _classCallCheck(this, Topskills);
+	
+	        return _possibleConstructorReturn(this, (Topskills.__proto__ || Object.getPrototypeOf(Topskills)).apply(this, arguments));
+	    }
+	
+	    _createClass(Topskills, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            var topskills = document.getElementById('top-skills');
+	            var topskillswrap = document.getElementById('top-skills-wrap');
+	
+	            topskillswrap.setAttribute('Style', 'height:' + parseInt(topskills.offsetHeight + 15) + 'px;');
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render(props) {
+	            return _react2.default.createElement(
+	                'div',
+	                { id: 'top-skills', className: 'full-width' },
+	                _react2.default.createElement(
+	                    'h3',
+	                    null,
+	                    'Some of my specialities'
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { id: 'top-skills-wrap', className: 'flex max-width-1200' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'icon-wrap' },
+	                        _react2.default.createElement('i', { className: 'fas fa-terminal', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-keyboard', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-css3', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-laptop-code', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-node', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-coffee', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-connectdevelop', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('i', { className: 'fas fa-server', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-jsfiddle', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-database', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-table', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-hourglass-start', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fas fa-ruler-combined', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('i', { className: 'fas fa-globe-americas', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-react', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-wordpress', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-angular', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('i', { className: 'fab fa-dev', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-js', 'aria-hidden': 'true' }),
+	                        _react2.default.createElement('i', { className: 'fab fa-chrome', 'aria-hidden': 'true' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'details-wrap' },
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'Design complete websites from desgin to code to production'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'Material design UX Expert'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'WCAG accessibilty compliant'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'Full Stack Capabilities'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            'Experties in multiple content management platforms'
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Topskills;
+	}(_react.Component);
+	
+	exports.default = Topskills;
 
 /***/ },
 /* 499 */
@@ -62381,4 +62381,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.49c16d6e.js.map
+//# sourceMappingURL=main.80993622.js.map
