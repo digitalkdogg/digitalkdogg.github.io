@@ -7,7 +7,7 @@ class Topskills extends Component {
         let topskills = document.getElementById('top-skills');
         let topskillswrap = document.getElementById('top-skills-wrap');
 
-        topskillswrap.setAttribute('Style', 'height:'+parseInt(topskills.offsetHeight+15) +'px;');
+        topskillswrap.setAttribute('Style', 'height:'+parseInt(topskills.offsetHeight+15,10) +'px;');
       }
 
 	render(props){
