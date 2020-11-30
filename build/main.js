@@ -49909,6 +49909,7 @@
 	        _react2.default.createElement(_Githubapi2.default, null),
 	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-large' }),
 	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-large' }),
+	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-small' }),
 	        _react2.default.createElement(_Contactblock2.default, null)
 	      );
 	    }
@@ -62380,4 +62381,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.ff3ed4ba.js.map
+//# sourceMappingURL=main.49c16d6e.js.map

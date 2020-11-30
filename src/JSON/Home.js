@@ -32,6 +32,7 @@ class Home extends Component {
             
             <Div class="mobile-space mobile-space-large" />
             <Div class="desktop-space desktop-space-large" />
+            <Div class="mobile-space mobile-space-small" />
             
             <Contactblock />
             
