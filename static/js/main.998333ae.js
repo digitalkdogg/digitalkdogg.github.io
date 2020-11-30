@@ -51868,7 +51868,7 @@
 	            var topskills = document.getElementById('top-skills');
 	            var topskillswrap = document.getElementById('top-skills-wrap');
 	
-	            topskillswrap.setAttribute('Style', 'height:' + parseInt(topskills.offsetHeight + 15) + 'px;');
+	            topskillswrap.setAttribute('Style', 'height:' + parseInt(topskills.offsetHeight + 15, 10) + 'px;');
 	        }
 	    }, {
 	        key: 'render',
@@ -62381,4 +62381,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.10dbd57a.js.map
+//# sourceMappingURL=main.998333ae.js.map
