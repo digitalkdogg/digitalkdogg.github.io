@@ -6,7 +6,8 @@ class Cardrepo extends Component {
           super(props);
            this.state = {
             issues: 0,
-            branches: 0
+            branches: 0,
+            repo: this.props.title
            };
         }
 
@@ -15,11 +16,25 @@ class Cardrepo extends Component {
      }
 
      getBranches() {
+          var local = null;
+          if (localStorage.getItem(this.state.repo)) {   
+               local = JSON.parse(localStorage.getItem(this.state.repo));
+                
+               if (new Date(local.date).toDateString() == new Date().toDateString()) {
+                    this.setState({'branches': local.val});
+                    return local.val;           
+               } else {
+                    localStorage.clear();
+               }        
+          }
+          
           return fetch(`https://api.github.com/repos/digitalkdogg/`+this.props.title+`/branches?per_page=10`)
           .then(response => response.json())
           .then(response => {
                this.setState({'branches': response.length})
-               return null
+               
+               local = {date: new Date().toDateString(), val:response.length}
+               localStorage.setItem(this.state.repo, JSON.stringify(local))
           })
          }
 
@@ -47,7 +62,6 @@ class Cardrepo extends Component {
                     </div>
                     <div className="card-description">
                          <p className="desc">{this.props.description}</p>
-                         <p>{'Last Pushed To : '+formatDate()}</p>
                     </div>
                     <div className="card-data">
                          <div className="inline-data">
@@ -68,6 +82,7 @@ class Cardrepo extends Component {
                          </div>
 
                     </div>
+                    <p className="publish">{'Last Pushed To : '+formatDate()}</p>
 
                </div>
 
