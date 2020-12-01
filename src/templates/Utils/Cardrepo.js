@@ -82,6 +82,7 @@ class Cardrepo extends Component {
                          </div>
 
                     </div>
+                    
                     <p className="publish">{'Last Pushed To : '+formatDate()}</p>
 
                </div>

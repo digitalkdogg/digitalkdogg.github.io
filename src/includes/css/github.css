@@ -22,26 +22,31 @@
     height:275px;
     background:white;
     padding:20px 0px;
+    overflow:hidden;
 }
 
 .github-section .card .card-content {
     width:100%;
 }
 
-.github-section .card .card-description p {
-    min-height: 150px;
-}
-
-.github-section .card-description p.desc {
-    height:65px;
-}
-
-.github-section .card .card-description p {
-    min-height: 40px;
-}
-
 .github-section .card .card-title {
     border-bottom:3px solid green;
+    height:35px;
+}
+
+.github-section .card .card-description {
+    height:130px;
+}
+
+.github-section .card .card-data {
+    height:45px;
+}
+
+.github-section .card p.publish {
+    font-size: .7em;
+    margin: 20px;
+    font-style: italic;
+    color: #777;
 }
 
 .github-section .card .card-description, .github-section .card .card-data {

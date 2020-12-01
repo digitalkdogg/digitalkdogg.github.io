@@ -19,17 +19,26 @@ class Githubapi extends Component {
     }
 
     getUser() {
-       return fetch(`https://api.github.com/users/digitalkdogg/repos?sort=pushed&per_page=3`)
+        let local = JSON.parse(localStorage.getItem('digitalkdogg'));
+        if (local !== null) {
+            if (new Date(local.date).toDateString() === new Date().toDateString()) {
+                this.setState(local);
+                return local;
+            }
+        }
+        return fetch(`https://api.github.com/users/digitalkdogg/repos?sort=pushed&per_page=3`)
         .then(response => response.json())
         .then(response => {
             if (response.message) {
                 this.setState({displayapi:false});
             } else {
-                this.setState(
-                    {   
-                        'userrepo': response,
+                local = {
+                        'date':new Date().toDateString(), 
+                        'userrepo': response, 
                         'displayapi': true
-                    })
+                        }
+                localStorage.setItem('digitalkdogg', JSON.stringify(local));
+                this.setState(local)
             }
         })
      
