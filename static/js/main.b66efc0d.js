@@ -61562,16 +61562,26 @@
 	        value: function getUser() {
 	            var _this2 = this;
 	
+	            var local = JSON.parse(localStorage.getItem('digitalkdogg'));
+	            if (local !== null) {
+	                if (new Date(local.date).toDateString() === new Date().toDateString()) {
+	                    this.setState(local);
+	                    return local;
+	                }
+	            }
 	            return fetch('https://api.github.com/users/digitalkdogg/repos?sort=pushed&per_page=3').then(function (response) {
 	                return response.json();
 	            }).then(function (response) {
 	                if (response.message) {
 	                    _this2.setState({ displayapi: false });
 	                } else {
-	                    _this2.setState({
+	                    local = {
+	                        'date': new Date().toDateString(),
 	                        'userrepo': response,
 	                        'displayapi': true
-	                    });
+	                    };
+	                    localStorage.setItem('digitalkdogg', JSON.stringify(local));
+	                    _this2.setState(local);
 	                }
 	            });
 	        }
@@ -62036,7 +62046,8 @@
 	
 	          _this.state = {
 	               issues: 0,
-	               branches: 0
+	               branches: 0,
+	               repo: _this.props.title
 	          };
 	          return _this;
 	     }
@@ -62046,11 +62057,25 @@
 	          value: function getBranches() {
 	               var _this2 = this;
 	
+	               var local = null;
+	               if (localStorage.getItem(this.state.repo)) {
+	                    local = JSON.parse(localStorage.getItem(this.state.repo));
+	
+	                    if (new Date(local.date).toDateString() == new Date().toDateString()) {
+	                         this.setState({ 'branches': local.val });
+	                         return local.val;
+	                    } else {
+	                         localStorage.clear();
+	                    }
+	               }
+	
 	               return fetch('https://api.github.com/repos/digitalkdogg/' + this.props.title + '/branches?per_page=10').then(function (response) {
 	                    return response.json();
 	               }).then(function (response) {
 	                    _this2.setState({ 'branches': response.length });
-	                    return null;
+	
+	                    local = { date: new Date().toDateString(), val: response.length };
+	                    localStorage.setItem(_this2.state.repo, JSON.stringify(local));
 	               });
 	          }
 	     }, {
@@ -62093,11 +62118,6 @@
 	                                   'p',
 	                                   { className: 'desc' },
 	                                   this.props.description
-	                              ),
-	                              _react2.default.createElement(
-	                                   'p',
-	                                   null,
-	                                   'Last Pushed To : ' + formatDate()
 	                              )
 	                         ),
 	                         _react2.default.createElement(
@@ -62125,6 +62145,11 @@
 	                                        'Issues'
 	                                   )
 	                              )
+	                         ),
+	                         _react2.default.createElement(
+	                              'p',
+	                              { className: 'publish' },
+	                              'Last Pushed To : ' + formatDate()
 	                         )
 	                    )
 	               );
@@ -72868,4 +72893,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.1df392ea.js.map
+//# sourceMappingURL=main.b66efc0d.js.map
