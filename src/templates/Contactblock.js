@@ -18,47 +18,43 @@ class Contactblock extends Component {
 
     render() {
     	return(
-    		   <div className="row-wrap contact-wrap">
-            <div className="block c33 box-shadow">
-
-              <div className="circle-wrap box-shadow green-grandient">
-                <div className="text"> 
-                  <i className="fas fa-phone"></i>
-                  <h4>Phone</h4>
-                </div>
-              </div>  
-
+    		<div className="row-wrap contact-wrap">
+            <a className="block c33 box-shadow" href="tel://814-777-1196" role="link">
               
-          
-              <div className="info-wrap">
-                <a href="tel://814-777-1196">814-777-1196</a>
-              </div>
-            </div>
-            <div className="block c33 box-shadow">
-             <div className="circle-wrap box-shadow green-grandient">
+                <div className="circle-wrap box-shadow green-grandient">
+                  <div className="text"> 
+                    <i className="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                  </div>
+                </div> 
+                <div className="info-wrap">
+                814-777-1196
+                </div>   
+            </a>
+            <a className="block c33 box-shadow" href="mailto://KevinBollman@gmail.com" role="link">
+              
+              <div className="circle-wrap box-shadow green-grandient">
                 <div className="text"> 
                   <i className="fas fa-envelope-open"></i>
                   <h4>Email</h4>
                 </div>
-              </div>  
-             
+              </div> 
               <div className="info-wrap">
-                <a href="mailto://KevinBollman@gmail.com">KevinBollman@gmail.com</a>
-              </div>
-            </div>
-            <div className="block c33 box-shadow">
-             <div className="circle-wrap box-shadow green-grandient">
+              KevinBollman@gmail.com
+              </div>           
+          </a>
+          <a className="block c33 box-shadow" href="https://github.com/digitalkdogg" role="link">             
+              <div className="circle-wrap box-shadow green-grandient">
                 <div className="text"> 
-                  <i className="fab fa-github-alt"></i>
+                  <i className="fas fa-github-alt"></i>
                   <h4>Github</h4>
                 </div>
-              </div>  
-              
-               <div className="info-wrap">
-                  <a href="https://github.com/digitalkdogg">Digitalkdogg On Github</a>
-               </div>
-            </div>
-          </div>
+              </div> 
+              <div className="info-wrap">
+              digitalkdogg on Github
+              </div>
+          </a>
+      </div>
     	)
     }
 

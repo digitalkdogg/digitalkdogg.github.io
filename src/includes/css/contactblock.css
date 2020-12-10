@@ -6,6 +6,7 @@ div#guts-section .block.c33 {
 
 #the-guts .contact-wrap .block {
     overflow: visible;
+    display:block;
 }
 
 
