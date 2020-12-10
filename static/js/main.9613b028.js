@@ -4011,8 +4011,8 @@
 	        'div',
 	        { className: 'row-wrap contact-wrap' },
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'block c33 box-shadow' },
+	          'a',
+	          { className: 'block c33 box-shadow', href: 'tel://814-777-1196', role: 'link' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'circle-wrap box-shadow green-grandient' },
@@ -4030,16 +4030,12 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'info-wrap' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'tel://814-777-1196' },
-	              '814-777-1196'
-	            )
+	            '814-777-1196'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'block c33 box-shadow' },
+	          'a',
+	          { className: 'block c33 box-shadow', href: 'mailto://KevinBollman@gmail.com', role: 'link' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'circle-wrap box-shadow green-grandient' },
@@ -4057,23 +4053,19 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'info-wrap' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'mailto://KevinBollman@gmail.com' },
-	              'KevinBollman@gmail.com'
-	            )
+	            'KevinBollman@gmail.com'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
-	          { className: 'block c33 box-shadow' },
+	          'a',
+	          { className: 'block c33 box-shadow', href: 'https://github.com/digitalkdogg', role: 'link' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'circle-wrap box-shadow green-grandient' },
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'text' },
-	              _react2.default.createElement('i', { className: 'fab fa-github-alt' }),
+	              _react2.default.createElement('i', { className: 'fas fa-github-alt' }),
 	              _react2.default.createElement(
 	                'h4',
 	                null,
@@ -4084,11 +4076,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'info-wrap' },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/digitalkdogg' },
-	              'Digitalkdogg On Github'
-	            )
+	            'digitalkdogg on Github'
 	          )
 	        )
 	      );
@@ -72893,4 +72881,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.b66efc0d.js.map
+//# sourceMappingURL=main.9613b028.js.map
