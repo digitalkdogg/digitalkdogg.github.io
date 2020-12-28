@@ -60278,7 +60278,7 @@
 	          { className: 'box-no-animate box-shadow full-width about' },
 	          _react2.default.createElement(_P2.default, { 'class': 'tag text-align-center', text: 'Hello I am Kevin Bollman' }),
 	          _react2.default.createElement('hr', null),
-	          _react2.default.createElement(_P2.default, { text: 'Since I began my web design journey over 10 years ago, I have helped many people / organization with their web design needs. I enjoy helping people connect with their technology.  I am innovative, forward thinking and I am passionate about the work I do.  I challenge my self every day to learn new technologies and to advance my skills.  I feel it is important to provide value to what ever team I am on.' })
+	          _react2.default.createElement(_P2.default, { text: 'Since I began my web design journey over 10 years ago, I have helped many people and organization with their web design needs. I enjoy helping people translate their business needs into an attractive usable website that both Google and people can love.  My web design philosophy is as follows, keep things simple and accessibile across all devices and your users will come back. ' })
 	        ),
 	        _react2.default.createElement(_Div2.default, { 'class': 'mobile-space mobile-space-small' }),
 	        _react2.default.createElement(_Div2.default, { 'class': 'desktop-space desktop-space-small' }),
@@ -62181,7 +62181,21 @@
 	     function Snippets() {
 	          _classCallCheck(this, Snippets);
 	
-	          return _possibleConstructorReturn(this, (Snippets.__proto__ || Object.getPrototypeOf(Snippets)).apply(this, arguments));
+	          var _this = _possibleConstructorReturn(this, (Snippets.__proto__ || Object.getPrototypeOf(Snippets)).call(this));
+	
+	          _this.gotohref = function (e) {
+	               e.preventDefault();
+	               _this.setState({ 'btnClass': 'active' });
+	               var href = _this.props.href;
+	               setTimeout(function () {
+	                    window.location = href;
+	               }, 1000);
+	          };
+	
+	          _this.state = {
+	               'btnClass': 'green-grandient'
+	          };
+	          return _this;
 	     }
 	
 	     _createClass(Snippets, [{
@@ -62218,7 +62232,7 @@
 	                         { href: this.props.href },
 	                         _react2.default.createElement(
 	                              'button',
-	                              { className: 'green-grandient' },
+	                              { className: this.state.btnClass, onClick: this.gotohref.bind(this) },
 	                              'View Code'
 	                         )
 	                    )
@@ -62322,7 +62336,7 @@
 	                        _react2.default.createElement(
 	                            'li',
 	                            null,
-	                            'Design complete websites from desgin to code to production'
+	                            'Build complete websites from desgin to code to production'
 	                        ),
 	                        _react2.default.createElement(
 	                            'li',
@@ -62332,12 +62346,17 @@
 	                        _react2.default.createElement(
 	                            'li',
 	                            null,
+	                            'A believer in flex css layouts'
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
 	                            'WCAG accessibilty compliant'
 	                        ),
 	                        _react2.default.createElement(
 	                            'li',
 	                            null,
-	                            'Full Stack Capabilities'
+	                            'Full Stack Server Administration'
 	                        ),
 	                        _react2.default.createElement(
 	                            'li',
@@ -72881,4 +72900,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.9613b028.js.map
+//# sourceMappingURL=main.5e60a683.js.map
