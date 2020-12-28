@@ -18,6 +18,7 @@
 }
 
 .github-section .card {
+    width:100%;
     display: inline-flex;
     height:275px;
     background:white;
@@ -94,6 +95,12 @@
 
     .github-section header h2 {
         margin:0;
+    }
+
+    @media only screen and (min-width: 968px) { 
+        .github-section .card {
+            width:27%;
+        }    
     }
 
 }

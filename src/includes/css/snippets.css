@@ -67,7 +67,20 @@ div#guts-section div#snippets.section a:active {
     margin:0 30%;
     border:1px solid #999;
     color: white;
+    background:#4D7F1F;
+    border-radius:10px;
 }
+
+.card button.green-gradient.active {
+    background:unset;
+}
+
+.card button.active {
+    background-color:white;
+    color:black;
+    transition:background-color .5s !important;
+}
+
 
 div#button-nav {
     text-align: center;

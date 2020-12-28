@@ -44,10 +44,11 @@ class Topskills extends Component {
       
                 </div>
                 <div className="details-wrap">
-                    <li>Design complete websites from desgin to code to production</li>
+                    <li>Build complete websites from desgin to code to production</li>
                     <li>Material design UX Expert</li>
+                    <li>A believer in flex css layouts</li>
                     <li>WCAG accessibilty compliant</li>
-                    <li>Full Stack Capabilities</li>
+                    <li>Full Stack Server Administration</li>
                     <li>Experties in multiple content management platforms</li>
                 </div>
             </div>

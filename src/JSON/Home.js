@@ -15,9 +15,9 @@ class Home extends Component {
               <P class="tag text-align-center" text="Hello I am Kevin Bollman" />
               <hr />
              
-              <P text="Since I began my web design journey over 10 years ago, I have helped many people / organization with their web design needs.
-                I enjoy helping people connect with their technology.  I am innovative, forward thinking and I am passionate about the
-                work I do.  I challenge my self every day to learn new technologies and to advance my skills.  I feel it is important to provide value to what ever team I am on." />
+              <P text="Since I began my web design journey over 10 years ago, I have helped many people and organization with their web design needs.
+                I enjoy helping people translate their business needs into an attractive usable website that both Google and people can love. 
+                My web design philosophy is as follows, keep things simple and accessibile across all devices and your users will come back. "/>
 
             </div>
             <Div class="mobile-space mobile-space-small" />

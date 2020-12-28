@@ -3,6 +3,23 @@ import '../../includes/css/snippets.css';
 
 class Snippets extends Component {
 
+     constructor() {
+          super();
+          this.state = {
+              'btnClass': 'green-grandient'
+         }
+     }
+
+     gotohref = (e) => {
+          e.preventDefault(); 
+          this.setState({'btnClass': 'active'});
+          let href = this.props.href;
+          setTimeout(function () {
+               window.location = href
+          }, 1000)
+     }
+
+
 	render(){
 		 return (
             <div href={this.props.href} className="card gray-grandient-linear box-shadow border-radius-5">
@@ -18,8 +35,8 @@ class Snippets extends Component {
                     </div>
                    
                </div>
-               <a href={this.props.href}>
-                    <button className="green-grandient">View Code</button>
+               <a href={this.props.href} >
+                    <button className={this.state.btnClass} onClick={this.gotohref.bind(this)} >View Code</button>
                </a>
           </div>
       )
