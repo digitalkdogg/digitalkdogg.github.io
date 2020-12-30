@@ -1,7 +1,7 @@
 #the-guts #top-skills {
 	width:unset;
 	background:rgba(231,231,231,.5);
-	background: linear-gradient(150deg, rgba(22,58,87,0.6) 0%, rgba(22, 58, 87, 1) 60%, rgba(22,58, 87, 1));
+	background: linear-gradient(150deg, rgba(22,58,87,0.5) 0%, rgba(22, 58, 87, .7) 30%, rgba(22,58,87,1) 65%, rgba(22,58, 87, 1));
 	color:white;
 	overflow:hidden;
 }
@@ -19,7 +19,7 @@
 #the-guts #top-skills .icon-wrap i {
 	z-index:-1;
 	position: relative;
-	color:#999;
+	color: rgba(255, 255, 255, .5);
     margin: 15px 2vw;
     transform: translateY(-40px);
 }
@@ -54,9 +54,28 @@
     #the-guts #top-skills .icon-wrap i {
 		font-size:1.2em;
 		margin:12px 1vw;
-		display: inline-block !important;
-        color:white;
         font-size:1.4em;
-        transform:translateY(0);
+		transform:translateY(0);
+		color: rgba(255, 255, 255, 1);
+	}
+
+	#the-guts #top-skills .icon-wrap .row i:nth-child(7) {
+		opacity: .8;
+	}
+	
+	#the-guts #top-skills .icon-wrap .row i:nth-child(6) {
+		opacity: .4;
+	}
+	
+	#the-guts #top-skills .icon-wrap .row i:nth-child(5) {
+		opacity:.5;
+	}
+	
+	#the-guts #top-skills .icon-wrap .row i:nth-child(4) {
+		opacity:.6;
+	}
+	
+	#the-guts #top-skills .icon-wrap .row i:nth-child(3) {
+		opacity:.8;
 	}
 }
