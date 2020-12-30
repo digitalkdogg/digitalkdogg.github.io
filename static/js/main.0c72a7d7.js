@@ -62306,29 +62306,42 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'icon-wrap' },
-	                        _react2.default.createElement('i', { className: 'fas fa-terminal', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-keyboard', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-css3', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-laptop-code', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-node', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-coffee', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-connectdevelop', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('i', { className: 'fas fa-server', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-jsfiddle', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-database', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-table', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-hourglass-start', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fas fa-ruler-combined', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('i', { className: 'fas fa-globe-americas', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-react', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-wordpress', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-angular', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement('i', { className: 'fab fa-dev', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-js', 'aria-hidden': 'true' }),
-	                        _react2.default.createElement('i', { className: 'fab fa-chrome', 'aria-hidden': 'true' })
+	                        _react2.default.createElement(
+	                            'div',
+	                            { 'class': 'row' },
+	                            _react2.default.createElement('i', { className: 'fas fa-terminal', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-keyboard', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-css3', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-laptop-code', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-js', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-coffee', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-jsfiddle', 'aria-hidden': 'true' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { 'class': 'row' },
+	                            _react2.default.createElement('i', { className: 'fas fa-server', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-connectdevelop', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-database', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-table', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-hourglass-start', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fas fa-ruler-combined', 'aria-hidden': 'true' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { 'class': 'row' },
+	                            _react2.default.createElement('i', { className: 'fas fa-globe-americas', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-react', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-wordpress', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-angular', 'aria-hidden': 'true' })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { 'class': 'row' },
+	                            _react2.default.createElement('i', { className: 'fab fa-dev', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-node', 'aria-hidden': 'true' }),
+	                            _react2.default.createElement('i', { className: 'fab fa-chrome', 'aria-hidden': 'true' })
+	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
@@ -72900,4 +72913,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.5e60a683.js.map
+//# sourceMappingURL=main.0c72a7d7.js.map
