@@ -36,6 +36,7 @@ div#about div.dets-wraper {
         font-size:1em;
         transform: translateY(0);
         height:auto;
+        flex:1;
     }
     
 
@@ -44,7 +45,8 @@ div#about div.dets-wraper {
     }
 
     div#about div.dets-wraper {
-        padding: 0 15vw 0 0;
+        padding: 0 10vw 0 0;
+        flex:1;
     }
 
     div#about div.block.about.reverse div.dets-wraper {
