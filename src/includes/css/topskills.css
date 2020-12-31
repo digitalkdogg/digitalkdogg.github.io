@@ -21,7 +21,8 @@
 	position: relative;
 	color: rgba(255, 255, 255, .5);
     margin: 15px 2vw;
-    transform: translateY(-40px);
+	transform: translateY(-40px);
+	filter: drop-shadow(2px 4px 6px black);
 }
 
 #the-guts #top-skills .details-wrap li {

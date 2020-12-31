@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import P from '../templates/Utils/P';
+import '../includes/css/about.css';
 
 
 class About extends Component {
@@ -7,21 +8,73 @@ class About extends Component {
 	render(props){
 		 return (
 			<div id="about" className="section" >
+			 <div className="mobile-space-normal"></div>
              <div className="mobile-space-normal"></div>
-    			<div className="block c100 box box-shadow full-width about">
-    				<P text="I am a full stack web designer / developer.  I design websites both professionally and on the side.  My biggest thrill is when I can empower customer to manage their own technology.  Why give someone a fish everyday when you can give them a fishing pole, and they are set for the rest of their life.  I enjoy connecting people with technology and in my spare time you will often find me coding or learning a new development stack just for fun." />
-          	</div>
-			  <div className="mobile-space-normal"></div>
-				  <div className="block c100 box box-shadow full-width">
-    				
-    			  	<P text="While I do enjoy connecting people with technology, I  think that my best strength is my ingenuity. My career has led me down many different paths and have given me the opportunity to leverage many different skill sets. In doing, so I have come to learn to leveage my skill set to best fit the project I am working on. Take this website for example.  I started this project as a way for me to learn react js and I have now turn into a full portfolio site." />
-            		
-          		</div>
-				  <div className="mobile-space-normal"></div>
-				  <div className="block c100 box box-shadow full-width">
-            		<P text="Currently I am working for Walmart as the Tech Lead for the team that manages the US Intranet .  I am proud of the fact that I get to empower my teammates to manage a great intranet system, I am even prouder of the solutions that I have developed here in my 7 year career at Walmart." />
-          			</div>
-					  <div className="mobile-space-normal desktop-space-large"></div>
+			 <div className="block c100 box box-shadow full-width about">
+				<div class = "icon-wraper">
+				<i class="far fa-id-card"></i>
+				</div>
+				<div class = "dets-wraper">
+					<p>My name is Kevin Bollman a full stack developer located in North West Arkansas.  Curenlty I
+						work on the worlds largest retail intranet developing components for our content management system.  
+						On the side I enjoy building websites for individuals and other small businesses.  Please checkout my 
+						projects page for more on that.  In my spare time I like to learn new technologies and design principles
+						that help me to expand my mind.
+					</p>
+				</div>
+			</div>
+			<div className="mobile-space-normal"></div>
+			<div className="mobile-space-normal"></div>
+			<div className="mobile-space-small"></div>
+			<div className="block c100 box box-shadow full-width about reverse">
+				<div class = "icon-wraper">
+				<i class="fas fa-crop"></i>
+				</div>
+				<div class = "dets-wraper">
+					<h2>Favorite Design Principles</h2>
+					<p>Learning new design principles can be fun but I do like to keep things simple.  I believe that you 
+						can still build great aesthetically pleasing websites while keep your code simple and clean.  Not only does
+						this allow for you to maintain your code easier but also makes it easy to interate and enhance your code 
+						in the future.  Some of my favorite principles
+						<ul>
+							<li>Flex Box CSS Layouts</li>
+							<li>Mobile First Adaptive Design</li>
+							<li>Visual Hierarchy</li>
+							<li>Occam's Razor</li>
+							<li>Law Of Consistency</li>
+
+						</ul>
+					</p>
+				</div>
+				
+			</div>
+			<div className="mobile-space-normal"></div>
+			<div className="mobile-space-normal"></div>
+			<div className="mobile-space-small"></div>
+			<div className="block c100 box box-shadow full-width about">
+				<div class = "icon-wraper">
+				<i class="fas fa-code"></i>
+				</div>
+				<div class = "dets-wraper">
+					<h2>Favorite Code Frameworks</h2>
+					<p>I really enjoy learning new skills.  One of the best ways I found to do this is by 
+						explorer new frameworks.  I think it is remarkable how far some of these frameworks 
+						have push the coding community over the years.
+						<ul>
+							<li>React</li>
+							<li>Laravel PHP</li>
+							<li>jQuery</li>
+							<li>Angular</li>
+							<li>Foundation</li>
+
+						</ul>
+					</p>
+				</div>
+				
+			</div>
+
+
+    	
 	         </div>
       )
 	}

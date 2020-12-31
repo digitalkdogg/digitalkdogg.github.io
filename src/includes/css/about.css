@@ -1,0 +1,53 @@
+div#about div.block.about {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div#about div.block.about.reverse {
+    flex-direction: column;
+}
+
+div#about div.icon-wraper {
+    text-align: center;
+    width:100%;
+    font-size:5em;
+    transform: translateY(-11vh);
+    height:7vh;
+}
+
+
+div#about div.dets-wraper {
+    line-height: 1.7;
+} 
+
+
+@media only screen and (min-width: 769px) {
+    div#about div.block.about {
+        align-items:center;
+        flex-direction:row;
+    }
+
+    div#about div.block.about.reverse {
+        flex-direction:row-reverse;
+    }
+
+    div#about div.icon-wraper {
+        font-size:1em;
+        transform: translateY(0);
+        height:auto;
+    }
+    
+
+    div#about .icon-wraper i {
+        font-size:11em;
+    }
+
+    div#about div.dets-wraper {
+        padding: 0 15vw 0 0;
+    }
+
+    div#about div.block.about.reverse div.dets-wraper {
+        padding:0 0 0 5vw;
+    }
+}
