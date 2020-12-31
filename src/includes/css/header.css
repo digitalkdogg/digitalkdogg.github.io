@@ -42,7 +42,7 @@ div#header div#sub-header-wrap {
 div#header div#name-section {
 	font-weight: bold;
 	font-size: .8em;
-	flex:9;
+	flex:11;
 	text-align:center;
 }
 
@@ -89,6 +89,12 @@ div#header div#sub-header-wrap h3 {
 	font-weight: 300;
 	margin-top:-5px;
 	margin-bottom:0;
+	transform:translateY(-10px);
+}
+
+
+div#header div#sub-header-wrap p.sub{
+	transform:translateY(-10px);
 }
 
 div#header div#nine-box-section {
@@ -185,5 +191,17 @@ div#header #menu-section li:hover {
     
     div#header div#menu-section.show {
     	transform: translateX(-165px);	
+	}
+}
+
+@media only screen and (min-width: 1668px) {
+	div#header div#name-section {
+		flex:15;
+	}
+}
+
+@media only screen and (min-width: 1868px) {
+	div#header div#name-section {
+		flex:20;
 	}
 }
