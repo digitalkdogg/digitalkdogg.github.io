@@ -1,7 +1,13 @@
+div#about.section {
+    background:white;
+}
+
 div#about div.block.about {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    background:white;
+    background:linear-gradient(0deg, rgba(202, 202, 202, 0.3) 0%, rgba(235,235,235,.5) 15%, rgba(255, 255,255,1) 35%, rgba(255,255,255,1) 100%);
 }
 
 div#about div.block.about.reverse {
@@ -21,6 +27,9 @@ div#about div.dets-wraper {
     line-height: 1.7;
 } 
 
+div#about div.dets-wraper h2 {
+    text-align:center;
+}
 
 @media only screen and (min-width: 769px) {
     div#about div.block.about {
@@ -47,6 +56,10 @@ div#about div.dets-wraper {
     div#about div.dets-wraper {
         padding: 0 10vw 0 0;
         flex:1;
+    }
+
+    div#about div.dets-wraper h2 {
+        text-align:left;
     }
 
     div#about div.block.about.reverse div.dets-wraper {

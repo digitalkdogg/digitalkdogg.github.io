@@ -12,7 +12,7 @@ class About extends Component {
              <div className="mobile-space-normal"></div>
 			 <div className="block c100 box box-shadow full-width about">
 				<div class = "icon-wraper">
-				<i class="far fa-id-card"></i>
+				<i class="fas fa-id-card"></i>
 				</div>
 				<div class = "dets-wraper">
 					<p>My name is Kevin Bollman a full stack developer located in North West Arkansas.  Curenlty I

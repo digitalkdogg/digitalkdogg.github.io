@@ -60124,7 +60124,7 @@
 						_react2.default.createElement(
 							'div',
 							{ 'class': 'icon-wraper' },
-							_react2.default.createElement('i', { 'class': 'far fa-id-card' })
+							_react2.default.createElement('i', { 'class': 'fas fa-id-card' })
 						),
 						_react2.default.createElement(
 							'div',
@@ -73028,4 +73028,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.8bed7791.js.map
+//# sourceMappingURL=main.b27dd708.js.map
