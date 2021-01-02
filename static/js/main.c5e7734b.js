@@ -60116,6 +60116,234 @@
 				return _react2.default.createElement(
 					'div',
 					{ id: 'about', className: 'section' },
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'overlay' },
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row one' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row two' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row three' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row four' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row five' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row six' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row seven' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row eight' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row nine' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row ten' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'row eleven' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'drop' },
+								_react2.default.createElement('i', { 'class': 'fas fa-dna' })
+							)
+						)
+					),
 					_react2.default.createElement('div', { className: 'mobile-space-normal' }),
 					_react2.default.createElement('div', { className: 'mobile-space-normal' }),
 					_react2.default.createElement(
@@ -60245,7 +60473,9 @@
 								)
 							)
 						)
-					)
+					),
+					_react2.default.createElement('div', { className: 'mobile-space-normal' }),
+					_react2.default.createElement('div', { className: 'mobile-space-normal' })
 				);
 			}
 		}]);
@@ -62039,7 +62269,7 @@
 	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'home'),
 	                                text: 'Home', 'class': this.state.activesection === 'home' ? 'active' : '' }), href: '/#/' }),
 	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'about'),
-	                                text: 'About Me', 'class': this.state.activesection === 'about' ? 'active' : '' }), href: '/#/about' }),
+	                                text: 'Who Am I', 'class': this.state.activesection === 'about' ? 'active' : '' }), href: '/#/about' }),
 	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'projects'),
 	                                text: 'Projects', 'class': this.state.activesection === 'projects' ? 'active' : '' }), href: '/#/projects' }),
 	                        _react2.default.createElement(_A2.default, { text: _react2.default.createElement(_Li2.default, { onclick: this.gotosection.bind(this, 'snippets'),
@@ -73028,4 +73258,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.b27dd708.js.map
+//# sourceMappingURL=main.c5e7734b.js.map
