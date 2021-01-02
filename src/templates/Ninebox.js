@@ -65,7 +65,7 @@ class Ninebox extends Component {
                     <A text={<Li onclick={this.gotosection.bind(this, 'home')}
                         text="Home" class={this.state.activesection==='home' ? 'active': ''} />} href="/#/" />
                     <A text={<Li onclick={this.gotosection.bind(this, 'about')}
-                        text="About Me" class={this.state.activesection==='about' ? 'active': ''} />} href="/#/about"  />
+                        text="Who Am I" class={this.state.activesection==='about' ? 'active': ''} />} href="/#/about"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'projects')}
                         text="Projects" class={this.state.activesection==='projects' ? 'active': ''} />} href="/#/projects"  />
                     <A text={<Li onclick={this.gotosection.bind(this, 'snippets')}

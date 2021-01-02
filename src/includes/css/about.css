@@ -1,3 +1,5 @@
+@import './animation.css';
+
 div#about.section {
     background:white;
 }
@@ -7,12 +9,132 @@ div#about div.block.about {
     flex-direction: column;
     align-items: flex-start;
     background:white;
-    background:linear-gradient(0deg, rgba(202, 202, 202, 0.3) 0%, rgba(235,235,235,.5) 15%, rgba(255, 255,255,1) 35%, rgba(255,255,255,1) 100%);
+    position:relative;
+    /*background:linear-gradient(0deg, rgba(202, 202, 202, 0.3) 0%, rgba(235,235,235,.5) 15%, rgba(255, 255,255,.8) 35%, rgba(255,255,255,.9) 100%); 
+    */
+    background:rgba(255,255,255,0.75);
 }
 
 div#about div.block.about.reverse {
     flex-direction: column;
 }
+
+div#about div.overlay {
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+div#about div.overlay div.row {
+    display:flex;
+    margin:100px 0;
+}
+
+div#about div.overlay div.row:nth-child(1) {
+    margin-top:-15px;
+}
+
+div#about div.overlay div.row.six div.drop {
+    margin: 0 5%;
+}
+
+div#about div.overlay div.row:nth-child(2), 
+ div#about div.overlay div.row:nth-child(8){
+    margin:130px -5%;
+}
+
+div#about div.overlay div.drop {
+    margin:0 15%;
+    font-size:2em;
+    color:rgba(22,58,87,0.7);
+    transform-origin: center center;
+    position:relative;
+    filter:blur(1px);
+    opacity:.5;
+}
+
+div#about div.overlay div.drop:nth-child(1) {
+    animation: rotate 15s linear infinite;
+    animation-delay: 1s; 
+    font-size:4em;
+
+}
+
+div#about div.overlay div.drop:nth-child(3) {
+    animation: rotate-back 40s linear infinite;
+    animation-delay: 2s; 
+    font-size:5em;
+    top:30px;
+    left:-20px;
+
+}
+
+div#about div.overlay div.drop:nth-child(2) {
+    animation: rotate-reverse 28s linear infinite;
+    animation-delay: 3s; 
+    font-size:2em;
+    top:50px;
+    left:-10px;
+    margin:0 10%;
+
+}
+
+div#about div.overlay div.drop:nth-child(4) {
+    animation: rotate-back-reverse 22s linear infinite;
+    animation-delay: 1s; 
+    font-size:4em;
+
+}
+
+div#about div.overlay div.drop:nth-child(5) {
+    animation: colorize 22s linear infinite;
+    animation-delay: 1s; 
+    font-size:4em;
+    color:rgba(125,48,53,0.7);
+
+}
+
+div#about div.overlay div.row.three div.drop:nth-child(2), 
+div#about div.overlay div.row.one div.drop:nth-child(3),
+div#about div.overlay div.row.nine div.drop:nth-child(2),
+div#about div.overlay div.row.eight div.drop:nth-child(4),
+div#about div.overlay div.row.six div.drop:nth-child(3)
+ {
+    animation: scale 20s linear infinite;
+    animation-delay: 2s;
+    color:rgba(5,58,43,0.7);
+}
+
+div#about div.overlay div.row.one div.drop:nth-child(1),
+div#about div.overlay div.row.four div.drop:nth-child(3),
+div#about div.overlay div.row.eleven div.drop:nth-child(3),
+div#about div.overlay div.row.six div.drop:nth-child(2),
+div#about div.overlay div.row.six div.drop:nth-child(5),  {
+    animation: left-right 30s linear infinite;
+    animation-delay: 0s; 
+
+    color:rgba(5,58,43,0.7);
+}
+
+div#about div.overlay div.row.three div.drop:nth-child(1),
+ div#about div.overlay div.row.seven div.drop:nth-child(2),
+ div#about div.overlay div.row.ten div.drop:nth-child(1),
+ div#about div.overlay div.row.siz div.drop:nth-child(4) 
+ {
+    animation: up-down 7s linear infinite;
+    animation-delay: 1s; 
+}
+
+
+div#about div.overlay div.row.two div.drop:nth-child(1),
+div#about div.overlay div.row.four div.drop:nth-child(2) 
+{
+    color: rgba(97,80,20,0.7);
+    animation:colorize 10s linear infinite;
+    animation-delay:0s;
+}
+
+
 
 div#about div.icon-wraper {
     text-align: center;

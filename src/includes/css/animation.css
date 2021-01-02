@@ -1,0 +1,148 @@
+@keyframes rotate-back-reverse {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:rotate(0deg); 
+     
+    }
+    50% {
+        transform:rotate(180deg); 
+       
+    }
+}
+
+@keyframes rotate-back {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:rotate(0deg); 
+     
+    }
+    50% {
+        transform:rotate(-180deg); 
+       
+    }
+}
+
+
+@keyframes rotate-reverse {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:rotate(0deg); 
+     
+    }
+    50% {
+        transform:rotate(-180deg); 
+        filter:blur(2px);
+       
+    }
+    100% {
+        transform:rotate(-359deg); 
+        
+    }
+}
+
+@keyframes rotate {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:rotate(0deg); 
+     
+    }
+    50% {
+        transform:rotate(180deg); 
+       
+    }
+    100% {
+        transform:rotate(359deg); 
+        
+    }
+}
+
+@keyframes up-down {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:translate(0, 0); 
+     
+    }
+    50% {
+        transform:translate(50px, -50px);
+    }
+    100% {
+        transform:translate(0, 0);
+    }
+}
+
+@keyframes scale {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:scale(1); 
+     
+    }
+    50% {
+        transform:scale(3); 
+        filter:blur(3px);
+    }
+    100% {
+        transform:scale(1); 
+        
+    }
+}
+
+@keyframes left-right {
+    0% {
+       /* transform:rotateY(0deg) scale(3);*/
+       transform:translate(0px, 0px); 
+     
+    }
+    50% {
+        filter:blur(1px);
+        transform:translate(-25vw, 5vw); 
+    }
+    100% {
+        transform:translate(0px, 0px);  
+        
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter:initial;
+        transform:scale(1);
+    }
+    50% { 
+        filter:invert();
+     transform:scale(1.5);
+    }
+    100% {
+        transform:scale(1);
+        filter:initial;
+    }
+}
+
+
+
+@keyframes drop2 {
+    0% {
+       position: relative;
+       top:0;
+    }
+    80% {
+        position:relative;
+        top:50px;
+    }
+  
+  }
+
+@keyframes drop {
+    0% {
+      transform:translateY(0);
+    }
+    50% {
+       transform:translateY(2000px);
+    }
+    80% {
+        transform: translateY(3000px);
+        filter:blur(20px);
+    }
+   /* 80.1% {
+      transform:translateY(0);
+    } */
+  }
