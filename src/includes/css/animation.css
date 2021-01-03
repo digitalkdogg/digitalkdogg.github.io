@@ -140,27 +140,6 @@
     }
 }
 
-@keyframes highlight-green-mobile {
-    0% {
-        color:white;
-        opacity:initial;
-    }
-    40% { 
-        color:#ecdd08;
-        opacity: 1;
-    }
-    60% {
-        color:#ecdd08;
-        opacity: 1;
-    }
-    100% {
-        color:white;
-        opacity:initial;
-    }
-}
-
-
-
 @keyframes drop2 {
     0% {
        position: relative;

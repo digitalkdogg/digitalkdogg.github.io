@@ -22,8 +22,6 @@
 	color: rgba(255, 255, 255, .5);
     margin: 15px 2vw;
 	transform: translateY(-40px);
-
-	animation: highlight-green-mobile 10s linear 1;
 	/*filter: drop-shadow(2px 4px 6px black); */
 }
 
