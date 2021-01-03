@@ -8,7 +8,7 @@ class About extends Component {
 	render(props){
 		 return (
 			<div id="about" className="section" >
-				<div class = "overlay">
+				{/*<div class = "overlay">
 					<div class = "row one">
 					 <div class = "drop"><i class="fas fa-dna"></i></div>
 					 <div class = "drop"><i class="fas fa-dna"></i></div>
@@ -68,11 +68,11 @@ class About extends Component {
 					 <div class = "drop"><i class="fas fa-dna"></i></div>
 					 </div>
 				
-				 </div>
+		 </div> */ }
 			 <div className="mobile-space-normal"></div>
              <div className="mobile-space-normal"></div>
 			 <div className="block c100 box box-shadow full-width about">
-				 
+				
 				<div class = "icon-wraper">
 				<i class="fas fa-id-card"></i>
 				</div>

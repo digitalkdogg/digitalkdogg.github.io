@@ -23,36 +23,32 @@ div#about div.overlay {
     position:absolute;
     height:100%;
     width:100%;
+    overflow:hidden;
+    transform: translate(-3vw, -2vh);
 }
 
 div#about div.overlay div.row {
     display:flex;
-    margin:100px 0;
 }
 
-div#about div.overlay div.row:nth-child(1) {
-    margin-top:-15px;
-}
-
-div#about div.overlay div.row.six div.drop {
-    margin: 0 5%;
-}
-
-div#about div.overlay div.row:nth-child(2), 
- div#about div.overlay div.row:nth-child(8){
-    margin:130px -5%;
-}
 
 div#about div.overlay div.drop {
-    margin:0 15%;
-    font-size:2em;
-    color:rgba(22,58,87,0.7);
+    margin:10px 0;
+    font-size:4em;
+    color:rgba(22,58,87,0.2);
     transform-origin: center center;
     position:relative;
     filter:blur(1px);
     opacity:.5;
 }
 
+
+div#about div.overlay div.drop:nth-child(2n+2) {
+   transform:translateY(.8em);
+}
+
+
+/*
 div#about div.overlay div.drop:nth-child(1) {
     animation: rotate 15s linear infinite;
     animation-delay: 1s; 
@@ -132,7 +128,7 @@ div#about div.overlay div.row.four div.drop:nth-child(2)
     color: rgba(97,80,20,0.7);
     animation:colorize 10s linear infinite;
     animation-delay:0s;
-}
+}  */
 
 
 
