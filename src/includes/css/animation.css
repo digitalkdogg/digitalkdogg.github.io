@@ -117,6 +117,48 @@
     }
 }
 
+@keyframes highlight-green {
+    0% {
+        color:white;
+        transform:scale(1);
+        opacity:initial;
+    }
+    40% { 
+        color:#ecdd08;
+        transform:scale(2.5);
+        opacity: 1;
+    }
+    60% {
+        color:#ecdd08;
+        transform:scale(2.5);
+        opacity: 1;
+    }
+    100% {
+        transform:scale(1);
+        color:white;
+        opacity:initial;
+    }
+}
+
+@keyframes highlight-green-mobile {
+    0% {
+        color:white;
+        opacity:initial;
+    }
+    40% { 
+        color:#ecdd08;
+        opacity: 1;
+    }
+    60% {
+        color:#ecdd08;
+        opacity: 1;
+    }
+    100% {
+        color:white;
+        opacity:initial;
+    }
+}
+
 
 
 @keyframes drop2 {

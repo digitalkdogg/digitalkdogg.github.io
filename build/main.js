@@ -62423,7 +62423,7 @@
 	                        { className: 'icon-wrap' },
 	                        _react2.default.createElement(
 	                            'div',
-	                            { 'class': 'row' },
+	                            { 'class': 'row one' },
 	                            _react2.default.createElement('i', { className: 'fas fa-terminal', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fas fa-keyboard', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fab fa-css3', 'aria-hidden': 'true' }),
@@ -62434,7 +62434,7 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { 'class': 'row' },
+	                            { 'class': 'row two' },
 	                            _react2.default.createElement('i', { className: 'fas fa-server', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fab fa-connectdevelop', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fas fa-database', 'aria-hidden': 'true' }),
@@ -62444,7 +62444,7 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { 'class': 'row' },
+	                            { 'class': 'row three' },
 	                            _react2.default.createElement('i', { className: 'fas fa-globe-americas', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fab fa-react', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fab fa-wordpress', 'aria-hidden': 'true' }),
@@ -62452,7 +62452,7 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
-	                            { 'class': 'row' },
+	                            { 'class': 'row four' },
 	                            _react2.default.createElement('i', { className: 'fab fa-dev', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fab fa-node', 'aria-hidden': 'true' }),
 	                            _react2.default.createElement('i', { className: 'fab fa-chrome', 'aria-hidden': 'true' })
@@ -73030,4 +73030,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.0b177f8c.js.map
+//# sourceMappingURL=main.5924ec4a.js.map
