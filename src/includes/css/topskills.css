@@ -31,79 +31,79 @@
 }	
 
 #the-guts #top-skills .icon-wrap .row.one i:nth-child(2) {
-	animation-delay: 10s; 
+	animation-delay: 2s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.one i:nth-child(3) {
-	animation-delay: 20s; 
+	animation-delay: 4s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.one i:nth-child(4) {
-	animation-delay: 30s; 
+	animation-delay: 6s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.one i:nth-child(5) {
-	animation-delay: 40s; 
+	animation-delay: 8s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.one i:nth-child(6) {
-	animation-delay: 50s; 
+	animation-delay: 10s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.one i:nth-child(7) {
-	animation-delay: 60s; 
+	animation-delay: 12s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.two i:nth-child(1) {
-	animation-delay: 70s; 
+	animation-delay: 14s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.two i:nth-child(2) {
-	animation-delay: 80s; 
+	animation-delay: 16s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.two i:nth-child(3) {
-	animation-delay: 90s; 
+	animation-delay: 18s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.two i:nth-child(4) {
-	animation-delay: 100s; 
+	animation-delay: 20s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.two i:nth-child(5) {
-	animation-delay: 110s; 
+	animation-delay: 22s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.two i:nth-child(6) {
-	animation-delay: 120s; 
+	animation-delay: 24s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.three i:nth-child(1) {
-	animation-delay: 130s; 
+	animation-delay: 26s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.three i:nth-child(2) {
-	animation-delay: 140s; 
+	animation-delay: 28s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.three i:nth-child(3) {
-	animation-delay: 150s; 
+	animation-delay: 30s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.three i:nth-child(4) {
-	animation-delay: 160s; 
+	animation-delay: 32s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.four i:nth-child(1) {
-	animation-delay: 170s; 
+	animation-delay: 34s; 
 }	
 
 #the-guts #top-skills .icon-wrap .row.four i:nth-child(2) {
-	animation-delay: 180s; 
+	animation-delay: 36s; 
 }
 
 #the-guts #top-skills .icon-wrap .row.four i:nth-child(3) {
-	animation-delay: 190s; 
+	animation-delay: 38s; 
 }
 
 
@@ -141,7 +141,7 @@
         font-size:1.4em;
 		transform:translateY(0);
 		color: rgba(255, 255, 255, .9);
-		animation: highlight-green 10s linear 1;
+		animation: highlight-green 2s linear 1;
 	}
 
 	#the-guts #top-skills .icon-wrap .row i:nth-child(7) {

@@ -121,22 +121,24 @@
     0% {
         color:white;
         transform:scale(1);
+        filter: blur(2px);
         opacity:initial;
     }
     40% { 
         color:#ecdd08;
-        transform:scale(2.5);
+        filter:blur(0px);
         opacity: 1;
     }
     60% {
         color:#ecdd08;
-        transform:scale(2.5);
         opacity: 1;
+        filter:blur(0px);
     }
     100% {
         transform:scale(1);
         color:white;
         opacity:initial;
+        filter:blur(2px);
     }
 }
 

@@ -61927,7 +61927,7 @@
 							null,
 							'Full Stack Developer'
 						),
-						_react2.default.createElement(_P2.default, { 'class': 'sub', text: 'I design and develop digital solutions for everyday people' })
+						_react2.default.createElement(_P2.default, { 'class': 'sub', text: 'Let\'s make the complex things simple!' })
 					)
 				);
 			}
@@ -73030,4 +73030,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.38eaacc3.js.map
+//# sourceMappingURL=main.3aeb4f86.js.map
