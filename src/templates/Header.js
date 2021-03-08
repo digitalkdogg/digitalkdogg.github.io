@@ -23,7 +23,7 @@ class Header extends Component {
 				<div id="sub-header-wrap">
 	
 					<h3>Full Stack Developer</h3>
-					<P class="sub" text="Let's make the complex things simple!" />
+					<P class="sub" text="Making the complex simple again" />
 
 					</div>
 			</div>
