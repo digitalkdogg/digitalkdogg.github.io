@@ -1,26 +1,19 @@
 {
-  "files": {
-    "main.css": "/digitalkdogg.github.io/static/css/main.d7f1dd1e.chunk.css",
-    "main.js": "/digitalkdogg.github.io/static/js/main.c1644b61.chunk.js",
-    "main.js.map": "/digitalkdogg.github.io/static/js/main.c1644b61.chunk.js.map",
-    "runtime-main.js": "/digitalkdogg.github.io/static/js/runtime-main.1abdf6c3.js",
-    "runtime-main.js.map": "/digitalkdogg.github.io/static/js/runtime-main.1abdf6c3.js.map",
-    "static/js/2.2aaa8a6a.chunk.js": "/digitalkdogg.github.io/static/js/2.2aaa8a6a.chunk.js",
-    "static/js/2.2aaa8a6a.chunk.js.map": "/digitalkdogg.github.io/static/js/2.2aaa8a6a.chunk.js.map",
-    "index.html": "/digitalkdogg.github.io/index.html",
-    "static/css/main.d7f1dd1e.chunk.css.map": "/digitalkdogg.github.io/static/css/main.d7f1dd1e.chunk.css.map",
-    "static/js/2.2aaa8a6a.chunk.js.LICENSE.txt": "/digitalkdogg.github.io/static/js/2.2aaa8a6a.chunk.js.LICENSE.txt",
-    "static/media/checkbook_scaled.c796ad81.png": "/digitalkdogg.github.io/static/media/checkbook_scaled.c796ad81.png",
-    "static/media/all.css": "/digitalkdogg.github.io/static/media/fa-solid-900.a84653d4.svg",
-    "static/media/millwood_thumb.6f78f11b.jpg": "/digitalkdogg.github.io/static/media/millwood_thumb.6f78f11b.jpg",
-    "static/media/olympic_inspection.7b4be5ee.png": "/digitalkdogg.github.io/static/media/olympic_inspection.7b4be5ee.png",
-    "static/media/plex_admin.05074778.png": "/digitalkdogg.github.io/static/media/plex_admin.05074778.png",
-    "static/media/walmartworld.c0c17007.png": "/digitalkdogg.github.io/static/media/walmartworld.c0c17007.png"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.1abdf6c3.js",
-    "static/js/2.2aaa8a6a.chunk.js",
-    "static/css/main.d7f1dd1e.chunk.css",
-    "static/js/main.c1644b61.chunk.js"
-  ]
+  "main.css": "static/css/main.61dfe136.css",
+  "main.css.map": "static/css/main.61dfe136.css.map",
+  "main.js": "static/js/main.db1e563e.js",
+  "main.js.map": "static/js/main.db1e563e.js.map",
+  "static/media/checkbook_scaled.png": "static/media/checkbook_scaled.5b48e589.png",
+  "static/media/fa-brands-400.svg": "static/media/fa-brands-400.9d67fa14.svg",
+  "static/media/fa-regular-400.eot": "static/media/fa-regular-400.3351f435.eot",
+  "static/media/fa-regular-400.svg": "static/media/fa-regular-400.5d086178.svg",
+  "static/media/fa-regular-400.ttf": "static/media/fa-regular-400.a0e3ac82.ttf",
+  "static/media/fa-regular-400.woff": "static/media/fa-regular-400.73cf49a2.woff",
+  "static/media/fa-regular-400.woff2": "static/media/fa-regular-400.4165c268.woff2",
+  "static/media/fa-solid-900.svg": "static/media/fa-solid-900.0724bb8b.svg",
+  "static/media/fa-solid-900.ttf": "static/media/fa-solid-900.75f38a15.ttf",
+  "static/media/millwood_thumb.jpg": "static/media/millwood_thumb.0df1ed9d.jpg",
+  "static/media/olympic_inspection.png": "static/media/olympic_inspection.476e8199.png",
+  "static/media/plex_admin.png": "static/media/plex_admin.13e86d94.png",
+  "static/media/walmartworld.png": "static/media/walmartworld.8c423425.png"
 }
