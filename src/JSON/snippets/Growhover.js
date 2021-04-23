@@ -17,6 +17,10 @@ class Growhover extends Component {
     }
   }
 
+  componentDidMount() {
+    Prism.highlightAll();
+  }
+
   hoverMe() {
     let hover = document.getElementById('hover-me')
     hover.setAttribute('style', 'transform:scale(1.2); transition:1s transform; width:100%; height:200px; background: green; cursor: pointer;');
