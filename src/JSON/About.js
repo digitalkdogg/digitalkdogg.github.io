@@ -13,62 +13,8 @@ class About extends Component {
 					 <div class = "drop"><i class="fas fa-dna"></i></div>
 					 <div class = "drop"><i class="fas fa-dna"></i></div>
 					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row two">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row three">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row four">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row five">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row six">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row seven">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row eight">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row nine">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row ten">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-					 <div class = "row eleven">
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 <div class = "drop"><i class="fas fa-dna"></i></div>
-					 </div>
-				
-		 </div> */ }
+					 </div> */}
+
 			 <div className="mobile-space-normal"></div>
              <div className="mobile-space-normal"></div>
 			 <div className="block c100 box box-shadow full-width about">
