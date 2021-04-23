@@ -2,12 +2,20 @@ import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
 import Buttonnav from '../../templates/Buttonnav';
+import '../../includes/css/prism.css';
+import '../../includes/css/projects.css';
 
 
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import Prism from 'prismjs';
+
 
 
 class Imageoverlay extends Component {
+
+	componentDidMount() {
+    Prism.highlightAll();
+  }
+
 
 	render(props){
     const bgstyle={
@@ -26,31 +34,34 @@ class Imageoverlay extends Component {
     'color': 'white'
     }
 
-    const htmlString='<div id = "parent">\n   Interesting title\n</div>' 
+    const htmlString='<div id = "parent">\n   Interesting title\n</div>'
     const htmlString2='<div id = "parent">\n  <div id = "child">\n       testing\n    </div>\n</div>'
     const cssString='div#parent {\n   background: url("cool.jpg");\n}';
     const cssString2='div#parent {\n   background: url("cool.jpg");\n} \n div#child {\n    background:rgba(0,0,0,0.5);\n}';
 		 return (
-     
-
           <div className="block c100 box mini box-shadow full-width">
-             <Div class="mobile-space-small desktop-space-large" />
+						 <Div class="mobile-space-small desktop-space-large" />
              <P class="title" text="Cover mask on images" />
              <P text="Sometimes you need to put text on a background image only to find that the text doen't pop enough Here is a trick you can do to get around that." />
-         
+
              <div className="row-wrap">
                 <div className="c5 min-height-50">
+								<pre>
+	  							<code className="language-html">
+	  								{htmlString}
+	  							</code>
+								</pre>
 
-                  <SyntaxHighlighter language="html" className="html" >
-                    {htmlString}
-                  </SyntaxHighlighter>
                 </div>
                 <div className="c5 min-height-50" >
-                  <SyntaxHighlighter language="css" className="css">
-                    {cssString}
-                  </SyntaxHighlighter>
+								<pre>
+									<code className="language-css">
+										{cssString}
+									</code>
+									</pre>
+
                 </div>
-                
+
               </div>
 
               <div className="row-wrap">
@@ -65,21 +76,25 @@ class Imageoverlay extends Component {
 
               <div className="row-wrap">
                 <div className="c5 min-height-50">
-                  <SyntaxHighlighter language="html" className="html">
+								<pre>
+	  							<code className="language-html">
                     {htmlString2}
-                  </SyntaxHighlighter>
+                	</code>
+									</pre>
                 </div>
                 <div className="c5 min-height-50">
-                  <SyntaxHighlighter language="css" className="css" >
+								<pre>
+									<code className="language-css">
                     {cssString2}
-                  </SyntaxHighlighter>
+                  </code>
+									</pre>
                 </div>
-                
+
               </div>
 
               <div className="row-wrap">
 
-              
+
                   <div id="backgorund" style={bgstyle}>
                     <div id="cover" style={coverstyle}>
                       <P className="align-center" text="some sort of text" />

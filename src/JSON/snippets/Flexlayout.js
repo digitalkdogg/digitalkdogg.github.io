@@ -3,8 +3,10 @@ import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
 import Buttonnav from '../../templates/Buttonnav';
 
-import SyntaxHighlighter from 'react-syntax-highlighter';
+import '../../includes/css/prism.css';
+import '../../includes/css/projects.css';
 
+import Prism from 'prismjs';
 
 class Flexlayout extends Component {
 
@@ -24,7 +26,7 @@ class Flexlayout extends Component {
       'background': '#eee',
       'width':'20%',
       'lineHeight': 2,
-      margin: '0 5%'
+      'margin': '0 5%'
     }
 
     const grow1={
@@ -51,19 +53,19 @@ class Flexlayout extends Component {
        'margin' : '0 20px'
     }
 
-    const htmlString='<div id = "parent">\n   <div class = "child">child1</div>\n   <div class = "child">child2</div>\n   <div class = "child">child3</div>\n</div>' 
-    const htmlString2='<div id = "parent">\n   <div class = "child one">child1</div>\n   <div class = "child two">child2</div>\n   <div class = "child three">child3</div>\n</div>' 
+    const htmlString='<div id = "parent">\n   <div class = "child">child1</div>\n   <div class = "child">child2</div>\n   <div class = "child">child3</div>\n</div>'
+    const htmlString2='<div id = "parent">\n   <div class = "child one">child1</div>\n   <div class = "child two">child2</div>\n   <div class = "child three">child3</div>\n</div>'
     const cssString='div#parent {\n   display:flex; flex-direction: row;\n}';
     const cssString2='div#parent {\n   display:flex;\n   flex-direction: row;\n} \ndiv.child.two {flex: 2;}';
 	  const columnString='<div id = "parent"\n  <div class = "child one">Child 1</div>\n  <div class = "child two">Child 2</div>\n  <div class = "child tow">Child 3</div>\n</div>'
      const columnCssString='div#parent {\n   display:flex; flex-direction: column;\n}'
 
      return (
-     
+
 
           <div className="block c100 box mini box-shadow full-width">
               <Div class="mobile-space-small desktop-space-large" />
-              
+
               <P class="title" text="Flex Box Layout" />
               <P text="Flex Box Layout can be an important tool in your web design arsonel but if you are not familar with it than it could tricky getting it to work right.  Here is how you can make it work." />
 
@@ -71,15 +73,19 @@ class Flexlayout extends Component {
 
                 <div className="row-wrap">
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="html" className="html" >
+									<pre>
+										<code className="language-html">
                       {htmlString}
-                    </SyntaxHighlighter>
+                		</code>
+									</pre>
                   </div>
-            
+
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="css" className="css" >
+									<pre>
+										<code className="language-html">
                       {cssString}
-                    </SyntaxHighlighter>
+                  	</code>
+										</pre>
                   </div>
                 </div>
 
@@ -97,15 +103,19 @@ class Flexlayout extends Component {
 
                 <div className="row-wrap">
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="html" className="html" >
+									<pre>
+										<code className="language-html">
                       {htmlString2}
-                    </SyntaxHighlighter>
+                    </code>
+										</pre>
                   </div>
-            
+
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="css" className="css" >
+									<pre>
+										<code className="language-html">
                       {cssString2}
-                    </SyntaxHighlighter>
+                  	</code>
+										</pre>
                   </div>
                 </div>
 
@@ -122,15 +132,19 @@ class Flexlayout extends Component {
 
                  <div className="row-wrap">
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="html" className="html" >
+									<pre>
+										<code className="language-html">
                       {columnString}
-                    </SyntaxHighlighter>
+                		</code>
+										</pre>
                   </div>
-            
+
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="css" className="css" >
+									<pre>
+										<code className="language-html">
                       {columnCssString}
-                    </SyntaxHighlighter>
+                  	</code>
+										</pre>
                   </div>
                 </div>
 

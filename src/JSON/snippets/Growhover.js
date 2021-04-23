@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import P from '../../templates/Utils/P';
 import Div from '../../templates/Utils/Div';
+import '../../includes/css/prism.css';
+import '../../includes/css/projects.css';
 
 import Buttonnav from '../../templates/Buttonnav';
 
-import SyntaxHighlighter from 'react-syntax-highlighter';
-
+import Prism from 'prismjs';
 
 class Growhover extends Component {
 
@@ -38,7 +39,7 @@ class Growhover extends Component {
     const htmlString='<div id = "hover-me">\n    Mouse over to see effect\n</div>' ;
     const cssString='div#hover-me:hover {\n   transform:scale(1.5); \n   transition: 2s transform;\n}';
 		 return (
-     
+
 
           <div className="block c100 box mini box-shadow full-width">
               <Div class="mobile-space-small desktop-space-large" />
@@ -49,15 +50,19 @@ class Growhover extends Component {
 
                 <div className="row-wrap">
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="html" className="html" >
+                  <pre>
+  	  							<code className="language-html">
                       {htmlString}
-                    </SyntaxHighlighter>
+                    </code>
+                    </pre>
                   </div>
-            
+
                   <div className="c5 min-height-50">
-                    <SyntaxHighlighter language="css" className="css" >
+                  <pre>
+                    <code className="language-html">
                       {cssString}
-                    </SyntaxHighlighter>
+                     </code>
+                     </pre>
                   </div>
                 </div>
 

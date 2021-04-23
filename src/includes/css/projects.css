@@ -34,6 +34,10 @@
 	width:95%;
 }
 
+#the-guts pre {
+	width:90%;
+}
+
 #the-guts #projects button.checkout {
     color: white;
     padding: 10px 0;
@@ -64,7 +68,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    
+
     #the-guts #projects .tag {
 		font-size:.6em;
 	}
@@ -84,16 +88,16 @@
     #the-guts #projects img.thumb {
 		width:65%;
 	}
-    
+
     #projects .flex.checkout-row {
 		position:static;
 	}
-    
+
     #projects .block.c100.full-width {
 		width:100%;
 		padding:0 0 0 20px;
     }
-    
+
     div#guts-section div#projects div.row-wrap {
 		margin: 0;
 	}
