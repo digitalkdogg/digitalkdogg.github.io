@@ -18,8 +18,7 @@ class About extends Component {
 			 <div className="mobile-space-normal"></div>
              <div className="mobile-space-normal"></div>
 			 <div className="block c100 box box-shadow full-width about">
-				
-				<div class = "icon-wraper">
+				<div class = "icon-wraper test">
 				<i class="fas fa-id-card"></i>
 				</div>
 				<div class = "dets-wraper">
