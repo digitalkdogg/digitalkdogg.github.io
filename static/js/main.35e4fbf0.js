@@ -60123,7 +60123,7 @@
 						{ className: 'block c100 box box-shadow full-width about' },
 						_react2.default.createElement(
 							'div',
-							{ 'class': 'icon-wraper' },
+							{ 'class': 'icon-wraper test' },
 							_react2.default.createElement('i', { 'class': 'fas fa-id-card' })
 						),
 						_react2.default.createElement(
@@ -73051,4 +73051,4 @@
 
 /***/ }
 /******/ ])));
-//# sourceMappingURL=main.db1e563e.js.map
+//# sourceMappingURL=main.35e4fbf0.js.map
