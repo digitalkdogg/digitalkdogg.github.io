@@ -112,7 +112,7 @@ class Flexlayout extends Component {
 
                   <div className="c5 min-height-50">
 									<pre>
-										<code className="language-html">
+										<code className="language-css">
                       {cssString2}
                   	</code>
 										</pre>
@@ -141,7 +141,7 @@ class Flexlayout extends Component {
 
                   <div className="c5 min-height-50">
 									<pre>
-										<code className="language-html">
+										<code className="language-css">
                       {columnCssString}
                   	</code>
 										</pre>

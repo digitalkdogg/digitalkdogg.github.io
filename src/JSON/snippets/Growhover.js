@@ -59,7 +59,7 @@ class Growhover extends Component {
 
                   <div className="c5 min-height-50">
                   <pre>
-                    <code className="language-html">
+                    <code className="language-css">
                       {cssString}
                      </code>
                      </pre>
