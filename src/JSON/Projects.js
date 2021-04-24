@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import '../includes/css/projects.css';
-import millwood from '../includes/img/millwood_thumb.jpg';
+import millwood from '../includes/img/millwood_thumb_new.jpg';
 import walmartworld from '../includes/img/walmartworld.png';
 import olympic from '../includes/img/olympic_inspection.png';
 import checkbook from '../includes/img/checkbook_scaled.png';
@@ -21,7 +21,7 @@ return (
 
 		<Aproject
 			title='Millwood Christian Church'
-			href='https://millwoodchurchnwa.com/'
+			href='https://millwoodchurchnwa.com'
 			desc='A website I desing and maintain for my church. I enjoy giving back to my community'
 			tags={[
 				{name:'PHP 7', value:'fab fa-php'},
