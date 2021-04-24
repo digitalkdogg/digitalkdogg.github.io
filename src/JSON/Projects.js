@@ -9,8 +9,6 @@ import plex from '../includes/img/plex_admin.png';
 
 import Aproject from '../templates/Aproject';
 
-console.log(millwood);
-
 
 class Projects extends Component {
 
