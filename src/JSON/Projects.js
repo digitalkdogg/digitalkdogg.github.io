@@ -9,6 +9,8 @@ import plex from '../includes/img/plex_admin.png';
 
 import Aproject from '../templates/Aproject';
 
+console.log(millwood);
+
 
 class Projects extends Component {
 
@@ -18,7 +20,6 @@ return (
 
 
 		<div className="mobile-space-small desktop-space-large"></div>
-
 		<Aproject
 			title='Millwood Christian Church'
 			href='https://millwoodchurchnwa.com'
